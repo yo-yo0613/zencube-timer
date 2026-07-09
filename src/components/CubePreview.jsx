@@ -1,5 +1,4 @@
 import React from 'react'
-import 'scramble-display'
 
 const CubePreview = ({ scramble, puzzleType }) => {
   const eventMap = {

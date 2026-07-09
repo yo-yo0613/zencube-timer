@@ -111,35 +111,9 @@ const Timer = ({ onSolveComplete, lastSolve, onDeleteLastSolve, onPenaltyChange,
     totalPhasesRef.current = totalPhases
   }, [totalPhases])
 
-  // Helper to dynamically load cubing.js and generate official WCA scrambles
-  const regenerateScramble = async () => {
-    try {
-      const { randomScrambleForEvent } = await import('cubing/scramble')
-      const eventMap = {
-        '333': '333',
-        '222': '222',
-        '444': '444',
-        '555': '555',
-        '666': '666',
-        '777': '777',
-        'pyram': 'pyram',
-        'skewb': 'skewb',
-        'minx': 'minx',
-        'clock': 'clock',
-        'sq1': 'sq1'
-      }
-      const wcaEvent = eventMap[puzzleType] || '333'
-      const scr = await randomScrambleForEvent(wcaEvent)
-      setScramble(scr.toString())
-    } catch (e) {
-      console.error('Failed to generate official WCA scramble via cubing.js, falling back:', e)
-      setScramble(generateScramble(puzzleType))
-    }
-  }
-
   // Regenerate scramble when puzzle type changes
   useEffect(() => {
-    regenerateScramble()
+    setScramble(generateScramble(puzzleType))
   }, [puzzleType])
 
   // Filter solves by current puzzle type AND active session for statistics
@@ -307,7 +281,7 @@ const Timer = ({ onSolveComplete, lastSolve, onDeleteLastSolve, onPenaltyChange,
         notes: completedPhases.length > 1 ? JSON.stringify(completedPhases) : ''
       })
     }
-    regenerateScramble()
+    setScramble(generateScramble(puzzleType))
   }
 
   // Keyboard Event Listeners
@@ -625,7 +599,7 @@ const Timer = ({ onSolveComplete, lastSolve, onDeleteLastSolve, onPenaltyChange,
 
             <button 
               type="button"
-              onClick={regenerateScramble}
+              onClick={() => setScramble(generateScramble(puzzleType))}
               className="flex items-center gap-1 hover:text-black dark:hover:text-white font-bold transition-colors py-2 px-3.5 rounded-full bg-brand-gray-50 border border-brand-gray-200 dark:bg-brand-gray-950 dark:border-brand-gray-900 text-xs text-brand-gray-500 select-none"
             >
               <RotateCw className="w-3.5 h-3.5 animate-spin-hover" />

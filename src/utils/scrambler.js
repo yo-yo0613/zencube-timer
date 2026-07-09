@@ -181,7 +181,7 @@ const generateClockScramble = () => {
   pins.forEach(pin => {
     const amount = Math.floor(Math.random() * 12) - 5 // -5 to 6
     if (amount !== 0) {
-      turns.push(`${pin}${amount >= 0 ? '+' : ''}${amount}`)
+      turns.push(`${pin}${Math.abs(amount)}${amount >= 0 ? '+' : '-'}`)
     }
   })
 
@@ -190,7 +190,7 @@ const generateClockScramble = () => {
   extraPins.forEach(pin => {
     const amount = Math.floor(Math.random() * 12) - 5
     if (amount !== 0) {
-      turns.push(`${pin}${amount >= 0 ? '+' : ''}${amount}`)
+      turns.push(`${pin}${Math.abs(amount)}${amount >= 0 ? '+' : '-'}`)
     }
   })
 
@@ -202,7 +202,7 @@ const generateClockScramble = () => {
   backPins.forEach(pin => {
     const amount = Math.floor(Math.random() * 12) - 5
     if (amount !== 0) {
-      turns.push(`${pin}${amount >= 0 ? '+' : ''}${amount}`)
+      turns.push(`${pin}${Math.abs(amount)}${amount >= 0 ? '+' : '-'}`)
     }
   })
 
@@ -215,7 +215,8 @@ const generateClockScramble = () => {
   })
   
   if (pinStates.length > 0) {
-    turns.push(pinStates.join(' '))
+    // WCA convention: pins that are UP are listed individually as separate moves
+    pinStates.forEach(pin => turns.push(pin))
   }
 
   return turns.join(' ')

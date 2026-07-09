@@ -465,12 +465,7 @@ const Timer = ({ onSolveComplete, lastSolve, onDeleteLastSolve, onPenaltyChange,
         )}
       </div>
 
-      {/* Cube Scramble Preview Net */}
-      {showScramblePreview && displayState !== 'running' && ['222', '333', '444', '555', '666', '777', 'pyram', 'skewb', 'minx', 'clock', 'sq1'].includes(puzzleType) && !isManualMode && (
-        <div className="absolute right-4 bottom-28 md:right-6 md:bottom-32 hidden sm:block z-20">
-          <CubePreview scramble={scramble} puzzleType={puzzleType} />
-        </div>
-      )}
+
 
       {/* Control panel and stats */}
       <div className={`w-full max-w-md transition-all duration-300 ${displayState === 'running' ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
@@ -526,6 +521,13 @@ const Timer = ({ onSolveComplete, lastSolve, onDeleteLastSolve, onPenaltyChange,
                 })}
               </div>
             )}
+          </div>
+        )}
+
+        {/* Cube Scramble Preview - inline for all screen sizes */}
+        {showScramblePreview && displayState !== 'running' && ['222', '333', '444', '555', '666', '777', 'pyram', 'skewb', 'minx', 'clock', 'sq1'].includes(puzzleType) && !isManualMode && (
+          <div className="flex justify-center mb-3">
+            <CubePreview scramble={scramble} puzzleType={puzzleType} />
           </div>
         )}
 

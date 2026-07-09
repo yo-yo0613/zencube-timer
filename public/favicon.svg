@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <!-- Rounded background square (Black) -->
+  <rect width="512" height="512" rx="128" fill="#000000"/>
+  <!-- Rubik's Cube 3x3 Grid Outline (White) -->
+  <rect x="96" y="96" width="320" height="320" rx="24" stroke="#ffffff" stroke-width="24" stroke-linejoin="round"/>
+  <!-- Vertical lines -->
+  <line x1="202.6" y1="96" x2="202.6" y2="416" stroke="#ffffff" stroke-width="20"/>
+  <line x1="309.3" y1="96" x2="309.3" y2="416" stroke="#ffffff" stroke-width="20"/>
+  <!-- Horizontal lines -->
+  <line x1="96" y1="202.6" x2="416" y2="202.6" stroke="#ffffff" stroke-width="20"/>
+  <line x1="96" y1="309.3" x2="416" y2="309.3" stroke="#ffffff" stroke-width="20"/>
+</svg>

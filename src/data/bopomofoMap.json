@@ -1,0 +1,3342 @@
+{
+  "charMap": {
+    "A": "ㄅ",
+    "B": "ㄆ",
+    "C": "ㄇ",
+    "D": "ㄈ",
+    "E": "ㄉ",
+    "F": "ㄊ",
+    "G": "ㄋ",
+    "H": "ㄌ",
+    "I": "ㄍ",
+    "J": "ㄎ",
+    "K": "ㄏ",
+    "L": "ㄐ",
+    "M": "ㄑ",
+    "N": "ㄒ",
+    "O": "ㄓ",
+    "P": "ㄔ",
+    "Q": "ㄕ",
+    "R": "ㄖ",
+    "S": "ㄗ",
+    "T": "ㄘ",
+    "U": "ㄙ",
+    "V": "ㄧ",
+    "W": "ㄨ",
+    "X": "ㄩ"
+  },
+  "pairs": [
+    {
+      "englishPair": "AB",
+      "bopomofoPair": "ㄅㄆ",
+      "firstTarget": "ㄅ",
+      "secondTarget": "ㄆ"
+    },
+    {
+      "englishPair": "AC",
+      "bopomofoPair": "ㄅㄇ",
+      "firstTarget": "ㄅ",
+      "secondTarget": "ㄇ"
+    },
+    {
+      "englishPair": "AD",
+      "bopomofoPair": "ㄅㄈ",
+      "firstTarget": "ㄅ",
+      "secondTarget": "ㄈ"
+    },
+    {
+      "englishPair": "AE",
+      "bopomofoPair": "ㄅㄉ",
+      "firstTarget": "ㄅ",
+      "secondTarget": "ㄉ"
+    },
+    {
+      "englishPair": "AF",
+      "bopomofoPair": "ㄅㄊ",
+      "firstTarget": "ㄅ",
+      "secondTarget": "ㄊ"
+    },
+    {
+      "englishPair": "AG",
+      "bopomofoPair": "ㄅㄋ",
+      "firstTarget": "ㄅ",
+      "secondTarget": "ㄋ"
+    },
+    {
+      "englishPair": "AH",
+      "bopomofoPair": "ㄅㄌ",
+      "firstTarget": "ㄅ",
+      "secondTarget": "ㄌ"
+    },
+    {
+      "englishPair": "AI",
+      "bopomofoPair": "ㄅㄍ",
+      "firstTarget": "ㄅ",
+      "secondTarget": "ㄍ"
+    },
+    {
+      "englishPair": "AJ",
+      "bopomofoPair": "ㄅㄎ",
+      "firstTarget": "ㄅ",
+      "secondTarget": "ㄎ"
+    },
+    {
+      "englishPair": "AK",
+      "bopomofoPair": "ㄅㄏ",
+      "firstTarget": "ㄅ",
+      "secondTarget": "ㄏ"
+    },
+    {
+      "englishPair": "AL",
+      "bopomofoPair": "ㄅㄐ",
+      "firstTarget": "ㄅ",
+      "secondTarget": "ㄐ"
+    },
+    {
+      "englishPair": "AM",
+      "bopomofoPair": "ㄅㄑ",
+      "firstTarget": "ㄅ",
+      "secondTarget": "ㄑ"
+    },
+    {
+      "englishPair": "AN",
+      "bopomofoPair": "ㄅㄒ",
+      "firstTarget": "ㄅ",
+      "secondTarget": "ㄒ"
+    },
+    {
+      "englishPair": "AO",
+      "bopomofoPair": "ㄅㄓ",
+      "firstTarget": "ㄅ",
+      "secondTarget": "ㄓ"
+    },
+    {
+      "englishPair": "AP",
+      "bopomofoPair": "ㄅㄔ",
+      "firstTarget": "ㄅ",
+      "secondTarget": "ㄔ"
+    },
+    {
+      "englishPair": "AQ",
+      "bopomofoPair": "ㄅㄕ",
+      "firstTarget": "ㄅ",
+      "secondTarget": "ㄕ"
+    },
+    {
+      "englishPair": "AR",
+      "bopomofoPair": "ㄅㄖ",
+      "firstTarget": "ㄅ",
+      "secondTarget": "ㄖ"
+    },
+    {
+      "englishPair": "AS",
+      "bopomofoPair": "ㄅㄗ",
+      "firstTarget": "ㄅ",
+      "secondTarget": "ㄗ"
+    },
+    {
+      "englishPair": "AT",
+      "bopomofoPair": "ㄅㄘ",
+      "firstTarget": "ㄅ",
+      "secondTarget": "ㄘ"
+    },
+    {
+      "englishPair": "AU",
+      "bopomofoPair": "ㄅㄙ",
+      "firstTarget": "ㄅ",
+      "secondTarget": "ㄙ"
+    },
+    {
+      "englishPair": "AV",
+      "bopomofoPair": "ㄅㄧ",
+      "firstTarget": "ㄅ",
+      "secondTarget": "ㄧ"
+    },
+    {
+      "englishPair": "AW",
+      "bopomofoPair": "ㄅㄨ",
+      "firstTarget": "ㄅ",
+      "secondTarget": "ㄨ"
+    },
+    {
+      "englishPair": "AX",
+      "bopomofoPair": "ㄅㄩ",
+      "firstTarget": "ㄅ",
+      "secondTarget": "ㄩ"
+    },
+    {
+      "englishPair": "BA",
+      "bopomofoPair": "ㄆㄅ",
+      "firstTarget": "ㄆ",
+      "secondTarget": "ㄅ"
+    },
+    {
+      "englishPair": "BC",
+      "bopomofoPair": "ㄆㄇ",
+      "firstTarget": "ㄆ",
+      "secondTarget": "ㄇ"
+    },
+    {
+      "englishPair": "BD",
+      "bopomofoPair": "ㄆㄈ",
+      "firstTarget": "ㄆ",
+      "secondTarget": "ㄈ"
+    },
+    {
+      "englishPair": "BE",
+      "bopomofoPair": "ㄆㄉ",
+      "firstTarget": "ㄆ",
+      "secondTarget": "ㄉ"
+    },
+    {
+      "englishPair": "BF",
+      "bopomofoPair": "ㄆㄊ",
+      "firstTarget": "ㄆ",
+      "secondTarget": "ㄊ"
+    },
+    {
+      "englishPair": "BG",
+      "bopomofoPair": "ㄆㄋ",
+      "firstTarget": "ㄆ",
+      "secondTarget": "ㄋ"
+    },
+    {
+      "englishPair": "BH",
+      "bopomofoPair": "ㄆㄌ",
+      "firstTarget": "ㄆ",
+      "secondTarget": "ㄌ"
+    },
+    {
+      "englishPair": "BI",
+      "bopomofoPair": "ㄆㄍ",
+      "firstTarget": "ㄆ",
+      "secondTarget": "ㄍ"
+    },
+    {
+      "englishPair": "BJ",
+      "bopomofoPair": "ㄆㄎ",
+      "firstTarget": "ㄆ",
+      "secondTarget": "ㄎ"
+    },
+    {
+      "englishPair": "BK",
+      "bopomofoPair": "ㄆㄏ",
+      "firstTarget": "ㄆ",
+      "secondTarget": "ㄏ"
+    },
+    {
+      "englishPair": "BL",
+      "bopomofoPair": "ㄆㄐ",
+      "firstTarget": "ㄆ",
+      "secondTarget": "ㄐ"
+    },
+    {
+      "englishPair": "BM",
+      "bopomofoPair": "ㄆㄑ",
+      "firstTarget": "ㄆ",
+      "secondTarget": "ㄑ"
+    },
+    {
+      "englishPair": "BN",
+      "bopomofoPair": "ㄆㄒ",
+      "firstTarget": "ㄆ",
+      "secondTarget": "ㄒ"
+    },
+    {
+      "englishPair": "BO",
+      "bopomofoPair": "ㄆㄓ",
+      "firstTarget": "ㄆ",
+      "secondTarget": "ㄓ"
+    },
+    {
+      "englishPair": "BP",
+      "bopomofoPair": "ㄆㄔ",
+      "firstTarget": "ㄆ",
+      "secondTarget": "ㄔ"
+    },
+    {
+      "englishPair": "BQ",
+      "bopomofoPair": "ㄆㄕ",
+      "firstTarget": "ㄆ",
+      "secondTarget": "ㄕ"
+    },
+    {
+      "englishPair": "BR",
+      "bopomofoPair": "ㄆㄖ",
+      "firstTarget": "ㄆ",
+      "secondTarget": "ㄖ"
+    },
+    {
+      "englishPair": "BS",
+      "bopomofoPair": "ㄆㄗ",
+      "firstTarget": "ㄆ",
+      "secondTarget": "ㄗ"
+    },
+    {
+      "englishPair": "BT",
+      "bopomofoPair": "ㄆㄘ",
+      "firstTarget": "ㄆ",
+      "secondTarget": "ㄘ"
+    },
+    {
+      "englishPair": "BU",
+      "bopomofoPair": "ㄆㄙ",
+      "firstTarget": "ㄆ",
+      "secondTarget": "ㄙ"
+    },
+    {
+      "englishPair": "BV",
+      "bopomofoPair": "ㄆㄧ",
+      "firstTarget": "ㄆ",
+      "secondTarget": "ㄧ"
+    },
+    {
+      "englishPair": "BW",
+      "bopomofoPair": "ㄆㄨ",
+      "firstTarget": "ㄆ",
+      "secondTarget": "ㄨ"
+    },
+    {
+      "englishPair": "BX",
+      "bopomofoPair": "ㄆㄩ",
+      "firstTarget": "ㄆ",
+      "secondTarget": "ㄩ"
+    },
+    {
+      "englishPair": "CA",
+      "bopomofoPair": "ㄇㄅ",
+      "firstTarget": "ㄇ",
+      "secondTarget": "ㄅ"
+    },
+    {
+      "englishPair": "CB",
+      "bopomofoPair": "ㄇㄆ",
+      "firstTarget": "ㄇ",
+      "secondTarget": "ㄆ"
+    },
+    {
+      "englishPair": "CD",
+      "bopomofoPair": "ㄇㄈ",
+      "firstTarget": "ㄇ",
+      "secondTarget": "ㄈ"
+    },
+    {
+      "englishPair": "CE",
+      "bopomofoPair": "ㄇㄉ",
+      "firstTarget": "ㄇ",
+      "secondTarget": "ㄉ"
+    },
+    {
+      "englishPair": "CF",
+      "bopomofoPair": "ㄇㄊ",
+      "firstTarget": "ㄇ",
+      "secondTarget": "ㄊ"
+    },
+    {
+      "englishPair": "CG",
+      "bopomofoPair": "ㄇㄋ",
+      "firstTarget": "ㄇ",
+      "secondTarget": "ㄋ"
+    },
+    {
+      "englishPair": "CH",
+      "bopomofoPair": "ㄇㄌ",
+      "firstTarget": "ㄇ",
+      "secondTarget": "ㄌ"
+    },
+    {
+      "englishPair": "CI",
+      "bopomofoPair": "ㄇㄍ",
+      "firstTarget": "ㄇ",
+      "secondTarget": "ㄍ"
+    },
+    {
+      "englishPair": "CJ",
+      "bopomofoPair": "ㄇㄎ",
+      "firstTarget": "ㄇ",
+      "secondTarget": "ㄎ"
+    },
+    {
+      "englishPair": "CK",
+      "bopomofoPair": "ㄇㄏ",
+      "firstTarget": "ㄇ",
+      "secondTarget": "ㄏ"
+    },
+    {
+      "englishPair": "CL",
+      "bopomofoPair": "ㄇㄐ",
+      "firstTarget": "ㄇ",
+      "secondTarget": "ㄐ"
+    },
+    {
+      "englishPair": "CM",
+      "bopomofoPair": "ㄇㄑ",
+      "firstTarget": "ㄇ",
+      "secondTarget": "ㄑ"
+    },
+    {
+      "englishPair": "CN",
+      "bopomofoPair": "ㄇㄒ",
+      "firstTarget": "ㄇ",
+      "secondTarget": "ㄒ"
+    },
+    {
+      "englishPair": "CO",
+      "bopomofoPair": "ㄇㄓ",
+      "firstTarget": "ㄇ",
+      "secondTarget": "ㄓ"
+    },
+    {
+      "englishPair": "CP",
+      "bopomofoPair": "ㄇㄔ",
+      "firstTarget": "ㄇ",
+      "secondTarget": "ㄔ"
+    },
+    {
+      "englishPair": "CQ",
+      "bopomofoPair": "ㄇㄕ",
+      "firstTarget": "ㄇ",
+      "secondTarget": "ㄕ"
+    },
+    {
+      "englishPair": "CR",
+      "bopomofoPair": "ㄇㄖ",
+      "firstTarget": "ㄇ",
+      "secondTarget": "ㄖ"
+    },
+    {
+      "englishPair": "CS",
+      "bopomofoPair": "ㄇㄗ",
+      "firstTarget": "ㄇ",
+      "secondTarget": "ㄗ"
+    },
+    {
+      "englishPair": "CT",
+      "bopomofoPair": "ㄇㄘ",
+      "firstTarget": "ㄇ",
+      "secondTarget": "ㄘ"
+    },
+    {
+      "englishPair": "CU",
+      "bopomofoPair": "ㄇㄙ",
+      "firstTarget": "ㄇ",
+      "secondTarget": "ㄙ"
+    },
+    {
+      "englishPair": "CV",
+      "bopomofoPair": "ㄇㄧ",
+      "firstTarget": "ㄇ",
+      "secondTarget": "ㄧ"
+    },
+    {
+      "englishPair": "CW",
+      "bopomofoPair": "ㄇㄨ",
+      "firstTarget": "ㄇ",
+      "secondTarget": "ㄨ"
+    },
+    {
+      "englishPair": "CX",
+      "bopomofoPair": "ㄇㄩ",
+      "firstTarget": "ㄇ",
+      "secondTarget": "ㄩ"
+    },
+    {
+      "englishPair": "DA",
+      "bopomofoPair": "ㄈㄅ",
+      "firstTarget": "ㄈ",
+      "secondTarget": "ㄅ"
+    },
+    {
+      "englishPair": "DB",
+      "bopomofoPair": "ㄈㄆ",
+      "firstTarget": "ㄈ",
+      "secondTarget": "ㄆ"
+    },
+    {
+      "englishPair": "DC",
+      "bopomofoPair": "ㄈㄇ",
+      "firstTarget": "ㄈ",
+      "secondTarget": "ㄇ"
+    },
+    {
+      "englishPair": "DE",
+      "bopomofoPair": "ㄈㄉ",
+      "firstTarget": "ㄈ",
+      "secondTarget": "ㄉ"
+    },
+    {
+      "englishPair": "DF",
+      "bopomofoPair": "ㄈㄊ",
+      "firstTarget": "ㄈ",
+      "secondTarget": "ㄊ"
+    },
+    {
+      "englishPair": "DG",
+      "bopomofoPair": "ㄈㄋ",
+      "firstTarget": "ㄈ",
+      "secondTarget": "ㄋ"
+    },
+    {
+      "englishPair": "DH",
+      "bopomofoPair": "ㄈㄌ",
+      "firstTarget": "ㄈ",
+      "secondTarget": "ㄌ"
+    },
+    {
+      "englishPair": "DI",
+      "bopomofoPair": "ㄈㄍ",
+      "firstTarget": "ㄈ",
+      "secondTarget": "ㄍ"
+    },
+    {
+      "englishPair": "DJ",
+      "bopomofoPair": "ㄈㄎ",
+      "firstTarget": "ㄈ",
+      "secondTarget": "ㄎ"
+    },
+    {
+      "englishPair": "DK",
+      "bopomofoPair": "ㄈㄏ",
+      "firstTarget": "ㄈ",
+      "secondTarget": "ㄏ"
+    },
+    {
+      "englishPair": "DL",
+      "bopomofoPair": "ㄈㄐ",
+      "firstTarget": "ㄈ",
+      "secondTarget": "ㄐ"
+    },
+    {
+      "englishPair": "DM",
+      "bopomofoPair": "ㄈㄑ",
+      "firstTarget": "ㄈ",
+      "secondTarget": "ㄑ"
+    },
+    {
+      "englishPair": "DN",
+      "bopomofoPair": "ㄈㄒ",
+      "firstTarget": "ㄈ",
+      "secondTarget": "ㄒ"
+    },
+    {
+      "englishPair": "DO",
+      "bopomofoPair": "ㄈㄓ",
+      "firstTarget": "ㄈ",
+      "secondTarget": "ㄓ"
+    },
+    {
+      "englishPair": "DP",
+      "bopomofoPair": "ㄈㄔ",
+      "firstTarget": "ㄈ",
+      "secondTarget": "ㄔ"
+    },
+    {
+      "englishPair": "DQ",
+      "bopomofoPair": "ㄈㄕ",
+      "firstTarget": "ㄈ",
+      "secondTarget": "ㄕ"
+    },
+    {
+      "englishPair": "DR",
+      "bopomofoPair": "ㄈㄖ",
+      "firstTarget": "ㄈ",
+      "secondTarget": "ㄖ"
+    },
+    {
+      "englishPair": "DS",
+      "bopomofoPair": "ㄈㄗ",
+      "firstTarget": "ㄈ",
+      "secondTarget": "ㄗ"
+    },
+    {
+      "englishPair": "DT",
+      "bopomofoPair": "ㄈㄘ",
+      "firstTarget": "ㄈ",
+      "secondTarget": "ㄘ"
+    },
+    {
+      "englishPair": "DU",
+      "bopomofoPair": "ㄈㄙ",
+      "firstTarget": "ㄈ",
+      "secondTarget": "ㄙ"
+    },
+    {
+      "englishPair": "DV",
+      "bopomofoPair": "ㄈㄧ",
+      "firstTarget": "ㄈ",
+      "secondTarget": "ㄧ"
+    },
+    {
+      "englishPair": "DW",
+      "bopomofoPair": "ㄈㄨ",
+      "firstTarget": "ㄈ",
+      "secondTarget": "ㄨ"
+    },
+    {
+      "englishPair": "DX",
+      "bopomofoPair": "ㄈㄩ",
+      "firstTarget": "ㄈ",
+      "secondTarget": "ㄩ"
+    },
+    {
+      "englishPair": "EA",
+      "bopomofoPair": "ㄉㄅ",
+      "firstTarget": "ㄉ",
+      "secondTarget": "ㄅ"
+    },
+    {
+      "englishPair": "EB",
+      "bopomofoPair": "ㄉㄆ",
+      "firstTarget": "ㄉ",
+      "secondTarget": "ㄆ"
+    },
+    {
+      "englishPair": "EC",
+      "bopomofoPair": "ㄉㄇ",
+      "firstTarget": "ㄉ",
+      "secondTarget": "ㄇ"
+    },
+    {
+      "englishPair": "ED",
+      "bopomofoPair": "ㄉㄈ",
+      "firstTarget": "ㄉ",
+      "secondTarget": "ㄈ"
+    },
+    {
+      "englishPair": "EF",
+      "bopomofoPair": "ㄉㄊ",
+      "firstTarget": "ㄉ",
+      "secondTarget": "ㄊ"
+    },
+    {
+      "englishPair": "EG",
+      "bopomofoPair": "ㄉㄋ",
+      "firstTarget": "ㄉ",
+      "secondTarget": "ㄋ"
+    },
+    {
+      "englishPair": "EH",
+      "bopomofoPair": "ㄉㄌ",
+      "firstTarget": "ㄉ",
+      "secondTarget": "ㄌ"
+    },
+    {
+      "englishPair": "EI",
+      "bopomofoPair": "ㄉㄍ",
+      "firstTarget": "ㄉ",
+      "secondTarget": "ㄍ"
+    },
+    {
+      "englishPair": "EJ",
+      "bopomofoPair": "ㄉㄎ",
+      "firstTarget": "ㄉ",
+      "secondTarget": "ㄎ"
+    },
+    {
+      "englishPair": "EK",
+      "bopomofoPair": "ㄉㄏ",
+      "firstTarget": "ㄉ",
+      "secondTarget": "ㄏ"
+    },
+    {
+      "englishPair": "EL",
+      "bopomofoPair": "ㄉㄐ",
+      "firstTarget": "ㄉ",
+      "secondTarget": "ㄐ"
+    },
+    {
+      "englishPair": "EM",
+      "bopomofoPair": "ㄉㄑ",
+      "firstTarget": "ㄉ",
+      "secondTarget": "ㄑ"
+    },
+    {
+      "englishPair": "EN",
+      "bopomofoPair": "ㄉㄒ",
+      "firstTarget": "ㄉ",
+      "secondTarget": "ㄒ"
+    },
+    {
+      "englishPair": "EO",
+      "bopomofoPair": "ㄉㄓ",
+      "firstTarget": "ㄉ",
+      "secondTarget": "ㄓ"
+    },
+    {
+      "englishPair": "EP",
+      "bopomofoPair": "ㄉㄔ",
+      "firstTarget": "ㄉ",
+      "secondTarget": "ㄔ"
+    },
+    {
+      "englishPair": "EQ",
+      "bopomofoPair": "ㄉㄕ",
+      "firstTarget": "ㄉ",
+      "secondTarget": "ㄕ"
+    },
+    {
+      "englishPair": "ER",
+      "bopomofoPair": "ㄉㄖ",
+      "firstTarget": "ㄉ",
+      "secondTarget": "ㄖ"
+    },
+    {
+      "englishPair": "ES",
+      "bopomofoPair": "ㄉㄗ",
+      "firstTarget": "ㄉ",
+      "secondTarget": "ㄗ"
+    },
+    {
+      "englishPair": "ET",
+      "bopomofoPair": "ㄉㄘ",
+      "firstTarget": "ㄉ",
+      "secondTarget": "ㄘ"
+    },
+    {
+      "englishPair": "EU",
+      "bopomofoPair": "ㄉㄙ",
+      "firstTarget": "ㄉ",
+      "secondTarget": "ㄙ"
+    },
+    {
+      "englishPair": "EV",
+      "bopomofoPair": "ㄉㄧ",
+      "firstTarget": "ㄉ",
+      "secondTarget": "ㄧ"
+    },
+    {
+      "englishPair": "EW",
+      "bopomofoPair": "ㄉㄨ",
+      "firstTarget": "ㄉ",
+      "secondTarget": "ㄨ"
+    },
+    {
+      "englishPair": "EX",
+      "bopomofoPair": "ㄉㄩ",
+      "firstTarget": "ㄉ",
+      "secondTarget": "ㄩ"
+    },
+    {
+      "englishPair": "FA",
+      "bopomofoPair": "ㄊㄅ",
+      "firstTarget": "ㄊ",
+      "secondTarget": "ㄅ"
+    },
+    {
+      "englishPair": "FB",
+      "bopomofoPair": "ㄊㄆ",
+      "firstTarget": "ㄊ",
+      "secondTarget": "ㄆ"
+    },
+    {
+      "englishPair": "FC",
+      "bopomofoPair": "ㄊㄇ",
+      "firstTarget": "ㄊ",
+      "secondTarget": "ㄇ"
+    },
+    {
+      "englishPair": "FD",
+      "bopomofoPair": "ㄊㄈ",
+      "firstTarget": "ㄊ",
+      "secondTarget": "ㄈ"
+    },
+    {
+      "englishPair": "FE",
+      "bopomofoPair": "ㄊㄉ",
+      "firstTarget": "ㄊ",
+      "secondTarget": "ㄉ"
+    },
+    {
+      "englishPair": "FG",
+      "bopomofoPair": "ㄊㄋ",
+      "firstTarget": "ㄊ",
+      "secondTarget": "ㄋ"
+    },
+    {
+      "englishPair": "FH",
+      "bopomofoPair": "ㄊㄌ",
+      "firstTarget": "ㄊ",
+      "secondTarget": "ㄌ"
+    },
+    {
+      "englishPair": "FI",
+      "bopomofoPair": "ㄊㄍ",
+      "firstTarget": "ㄊ",
+      "secondTarget": "ㄍ"
+    },
+    {
+      "englishPair": "FJ",
+      "bopomofoPair": "ㄊㄎ",
+      "firstTarget": "ㄊ",
+      "secondTarget": "ㄎ"
+    },
+    {
+      "englishPair": "FK",
+      "bopomofoPair": "ㄊㄏ",
+      "firstTarget": "ㄊ",
+      "secondTarget": "ㄏ"
+    },
+    {
+      "englishPair": "FL",
+      "bopomofoPair": "ㄊㄐ",
+      "firstTarget": "ㄊ",
+      "secondTarget": "ㄐ"
+    },
+    {
+      "englishPair": "FM",
+      "bopomofoPair": "ㄊㄑ",
+      "firstTarget": "ㄊ",
+      "secondTarget": "ㄑ"
+    },
+    {
+      "englishPair": "FN",
+      "bopomofoPair": "ㄊㄒ",
+      "firstTarget": "ㄊ",
+      "secondTarget": "ㄒ"
+    },
+    {
+      "englishPair": "FO",
+      "bopomofoPair": "ㄊㄓ",
+      "firstTarget": "ㄊ",
+      "secondTarget": "ㄓ"
+    },
+    {
+      "englishPair": "FP",
+      "bopomofoPair": "ㄊㄔ",
+      "firstTarget": "ㄊ",
+      "secondTarget": "ㄔ"
+    },
+    {
+      "englishPair": "FQ",
+      "bopomofoPair": "ㄊㄕ",
+      "firstTarget": "ㄊ",
+      "secondTarget": "ㄕ"
+    },
+    {
+      "englishPair": "FR",
+      "bopomofoPair": "ㄊㄖ",
+      "firstTarget": "ㄊ",
+      "secondTarget": "ㄖ"
+    },
+    {
+      "englishPair": "FS",
+      "bopomofoPair": "ㄊㄗ",
+      "firstTarget": "ㄊ",
+      "secondTarget": "ㄗ"
+    },
+    {
+      "englishPair": "FT",
+      "bopomofoPair": "ㄊㄘ",
+      "firstTarget": "ㄊ",
+      "secondTarget": "ㄘ"
+    },
+    {
+      "englishPair": "FU",
+      "bopomofoPair": "ㄊㄙ",
+      "firstTarget": "ㄊ",
+      "secondTarget": "ㄙ"
+    },
+    {
+      "englishPair": "FV",
+      "bopomofoPair": "ㄊㄧ",
+      "firstTarget": "ㄊ",
+      "secondTarget": "ㄧ"
+    },
+    {
+      "englishPair": "FW",
+      "bopomofoPair": "ㄊㄨ",
+      "firstTarget": "ㄊ",
+      "secondTarget": "ㄨ"
+    },
+    {
+      "englishPair": "FX",
+      "bopomofoPair": "ㄊㄩ",
+      "firstTarget": "ㄊ",
+      "secondTarget": "ㄩ"
+    },
+    {
+      "englishPair": "GA",
+      "bopomofoPair": "ㄋㄅ",
+      "firstTarget": "ㄋ",
+      "secondTarget": "ㄅ"
+    },
+    {
+      "englishPair": "GB",
+      "bopomofoPair": "ㄋㄆ",
+      "firstTarget": "ㄋ",
+      "secondTarget": "ㄆ"
+    },
+    {
+      "englishPair": "GC",
+      "bopomofoPair": "ㄋㄇ",
+      "firstTarget": "ㄋ",
+      "secondTarget": "ㄇ"
+    },
+    {
+      "englishPair": "GD",
+      "bopomofoPair": "ㄋㄈ",
+      "firstTarget": "ㄋ",
+      "secondTarget": "ㄈ"
+    },
+    {
+      "englishPair": "GE",
+      "bopomofoPair": "ㄋㄉ",
+      "firstTarget": "ㄋ",
+      "secondTarget": "ㄉ"
+    },
+    {
+      "englishPair": "GF",
+      "bopomofoPair": "ㄋㄊ",
+      "firstTarget": "ㄋ",
+      "secondTarget": "ㄊ"
+    },
+    {
+      "englishPair": "GH",
+      "bopomofoPair": "ㄋㄌ",
+      "firstTarget": "ㄋ",
+      "secondTarget": "ㄌ"
+    },
+    {
+      "englishPair": "GI",
+      "bopomofoPair": "ㄋㄍ",
+      "firstTarget": "ㄋ",
+      "secondTarget": "ㄍ"
+    },
+    {
+      "englishPair": "GJ",
+      "bopomofoPair": "ㄋㄎ",
+      "firstTarget": "ㄋ",
+      "secondTarget": "ㄎ"
+    },
+    {
+      "englishPair": "GK",
+      "bopomofoPair": "ㄋㄏ",
+      "firstTarget": "ㄋ",
+      "secondTarget": "ㄏ"
+    },
+    {
+      "englishPair": "GL",
+      "bopomofoPair": "ㄋㄐ",
+      "firstTarget": "ㄋ",
+      "secondTarget": "ㄐ"
+    },
+    {
+      "englishPair": "GM",
+      "bopomofoPair": "ㄋㄑ",
+      "firstTarget": "ㄋ",
+      "secondTarget": "ㄑ"
+    },
+    {
+      "englishPair": "GN",
+      "bopomofoPair": "ㄋㄒ",
+      "firstTarget": "ㄋ",
+      "secondTarget": "ㄒ"
+    },
+    {
+      "englishPair": "GO",
+      "bopomofoPair": "ㄋㄓ",
+      "firstTarget": "ㄋ",
+      "secondTarget": "ㄓ"
+    },
+    {
+      "englishPair": "GP",
+      "bopomofoPair": "ㄋㄔ",
+      "firstTarget": "ㄋ",
+      "secondTarget": "ㄔ"
+    },
+    {
+      "englishPair": "GQ",
+      "bopomofoPair": "ㄋㄕ",
+      "firstTarget": "ㄋ",
+      "secondTarget": "ㄕ"
+    },
+    {
+      "englishPair": "GR",
+      "bopomofoPair": "ㄋㄖ",
+      "firstTarget": "ㄋ",
+      "secondTarget": "ㄖ"
+    },
+    {
+      "englishPair": "GS",
+      "bopomofoPair": "ㄋㄗ",
+      "firstTarget": "ㄋ",
+      "secondTarget": "ㄗ"
+    },
+    {
+      "englishPair": "GT",
+      "bopomofoPair": "ㄋㄘ",
+      "firstTarget": "ㄋ",
+      "secondTarget": "ㄘ"
+    },
+    {
+      "englishPair": "GU",
+      "bopomofoPair": "ㄋㄙ",
+      "firstTarget": "ㄋ",
+      "secondTarget": "ㄙ"
+    },
+    {
+      "englishPair": "GV",
+      "bopomofoPair": "ㄋㄧ",
+      "firstTarget": "ㄋ",
+      "secondTarget": "ㄧ"
+    },
+    {
+      "englishPair": "GW",
+      "bopomofoPair": "ㄋㄨ",
+      "firstTarget": "ㄋ",
+      "secondTarget": "ㄨ"
+    },
+    {
+      "englishPair": "GX",
+      "bopomofoPair": "ㄋㄩ",
+      "firstTarget": "ㄋ",
+      "secondTarget": "ㄩ"
+    },
+    {
+      "englishPair": "HA",
+      "bopomofoPair": "ㄌㄅ",
+      "firstTarget": "ㄌ",
+      "secondTarget": "ㄅ"
+    },
+    {
+      "englishPair": "HB",
+      "bopomofoPair": "ㄌㄆ",
+      "firstTarget": "ㄌ",
+      "secondTarget": "ㄆ"
+    },
+    {
+      "englishPair": "HC",
+      "bopomofoPair": "ㄌㄇ",
+      "firstTarget": "ㄌ",
+      "secondTarget": "ㄇ"
+    },
+    {
+      "englishPair": "HD",
+      "bopomofoPair": "ㄌㄈ",
+      "firstTarget": "ㄌ",
+      "secondTarget": "ㄈ"
+    },
+    {
+      "englishPair": "HE",
+      "bopomofoPair": "ㄌㄉ",
+      "firstTarget": "ㄌ",
+      "secondTarget": "ㄉ"
+    },
+    {
+      "englishPair": "HF",
+      "bopomofoPair": "ㄌㄊ",
+      "firstTarget": "ㄌ",
+      "secondTarget": "ㄊ"
+    },
+    {
+      "englishPair": "HG",
+      "bopomofoPair": "ㄌㄋ",
+      "firstTarget": "ㄌ",
+      "secondTarget": "ㄋ"
+    },
+    {
+      "englishPair": "HI",
+      "bopomofoPair": "ㄌㄍ",
+      "firstTarget": "ㄌ",
+      "secondTarget": "ㄍ"
+    },
+    {
+      "englishPair": "HJ",
+      "bopomofoPair": "ㄌㄎ",
+      "firstTarget": "ㄌ",
+      "secondTarget": "ㄎ"
+    },
+    {
+      "englishPair": "HK",
+      "bopomofoPair": "ㄌㄏ",
+      "firstTarget": "ㄌ",
+      "secondTarget": "ㄏ"
+    },
+    {
+      "englishPair": "HL",
+      "bopomofoPair": "ㄌㄐ",
+      "firstTarget": "ㄌ",
+      "secondTarget": "ㄐ"
+    },
+    {
+      "englishPair": "HM",
+      "bopomofoPair": "ㄌㄑ",
+      "firstTarget": "ㄌ",
+      "secondTarget": "ㄑ"
+    },
+    {
+      "englishPair": "HN",
+      "bopomofoPair": "ㄌㄒ",
+      "firstTarget": "ㄌ",
+      "secondTarget": "ㄒ"
+    },
+    {
+      "englishPair": "HO",
+      "bopomofoPair": "ㄌㄓ",
+      "firstTarget": "ㄌ",
+      "secondTarget": "ㄓ"
+    },
+    {
+      "englishPair": "HP",
+      "bopomofoPair": "ㄌㄔ",
+      "firstTarget": "ㄌ",
+      "secondTarget": "ㄔ"
+    },
+    {
+      "englishPair": "HQ",
+      "bopomofoPair": "ㄌㄕ",
+      "firstTarget": "ㄌ",
+      "secondTarget": "ㄕ"
+    },
+    {
+      "englishPair": "HR",
+      "bopomofoPair": "ㄌㄖ",
+      "firstTarget": "ㄌ",
+      "secondTarget": "ㄖ"
+    },
+    {
+      "englishPair": "HS",
+      "bopomofoPair": "ㄌㄗ",
+      "firstTarget": "ㄌ",
+      "secondTarget": "ㄗ"
+    },
+    {
+      "englishPair": "HT",
+      "bopomofoPair": "ㄌㄘ",
+      "firstTarget": "ㄌ",
+      "secondTarget": "ㄘ"
+    },
+    {
+      "englishPair": "HU",
+      "bopomofoPair": "ㄌㄙ",
+      "firstTarget": "ㄌ",
+      "secondTarget": "ㄙ"
+    },
+    {
+      "englishPair": "HV",
+      "bopomofoPair": "ㄌㄧ",
+      "firstTarget": "ㄌ",
+      "secondTarget": "ㄧ"
+    },
+    {
+      "englishPair": "HW",
+      "bopomofoPair": "ㄌㄨ",
+      "firstTarget": "ㄌ",
+      "secondTarget": "ㄨ"
+    },
+    {
+      "englishPair": "HX",
+      "bopomofoPair": "ㄌㄩ",
+      "firstTarget": "ㄌ",
+      "secondTarget": "ㄩ"
+    },
+    {
+      "englishPair": "IA",
+      "bopomofoPair": "ㄍㄅ",
+      "firstTarget": "ㄍ",
+      "secondTarget": "ㄅ"
+    },
+    {
+      "englishPair": "IB",
+      "bopomofoPair": "ㄍㄆ",
+      "firstTarget": "ㄍ",
+      "secondTarget": "ㄆ"
+    },
+    {
+      "englishPair": "IC",
+      "bopomofoPair": "ㄍㄇ",
+      "firstTarget": "ㄍ",
+      "secondTarget": "ㄇ"
+    },
+    {
+      "englishPair": "ID",
+      "bopomofoPair": "ㄍㄈ",
+      "firstTarget": "ㄍ",
+      "secondTarget": "ㄈ"
+    },
+    {
+      "englishPair": "IE",
+      "bopomofoPair": "ㄍㄉ",
+      "firstTarget": "ㄍ",
+      "secondTarget": "ㄉ"
+    },
+    {
+      "englishPair": "IF",
+      "bopomofoPair": "ㄍㄊ",
+      "firstTarget": "ㄍ",
+      "secondTarget": "ㄊ"
+    },
+    {
+      "englishPair": "IG",
+      "bopomofoPair": "ㄍㄋ",
+      "firstTarget": "ㄍ",
+      "secondTarget": "ㄋ"
+    },
+    {
+      "englishPair": "IH",
+      "bopomofoPair": "ㄍㄌ",
+      "firstTarget": "ㄍ",
+      "secondTarget": "ㄌ"
+    },
+    {
+      "englishPair": "IJ",
+      "bopomofoPair": "ㄍㄎ",
+      "firstTarget": "ㄍ",
+      "secondTarget": "ㄎ"
+    },
+    {
+      "englishPair": "IK",
+      "bopomofoPair": "ㄍㄏ",
+      "firstTarget": "ㄍ",
+      "secondTarget": "ㄏ"
+    },
+    {
+      "englishPair": "IL",
+      "bopomofoPair": "ㄍㄐ",
+      "firstTarget": "ㄍ",
+      "secondTarget": "ㄐ"
+    },
+    {
+      "englishPair": "IM",
+      "bopomofoPair": "ㄍㄑ",
+      "firstTarget": "ㄍ",
+      "secondTarget": "ㄑ"
+    },
+    {
+      "englishPair": "IN",
+      "bopomofoPair": "ㄍㄒ",
+      "firstTarget": "ㄍ",
+      "secondTarget": "ㄒ"
+    },
+    {
+      "englishPair": "IO",
+      "bopomofoPair": "ㄍㄓ",
+      "firstTarget": "ㄍ",
+      "secondTarget": "ㄓ"
+    },
+    {
+      "englishPair": "IP",
+      "bopomofoPair": "ㄍㄔ",
+      "firstTarget": "ㄍ",
+      "secondTarget": "ㄔ"
+    },
+    {
+      "englishPair": "IQ",
+      "bopomofoPair": "ㄍㄕ",
+      "firstTarget": "ㄍ",
+      "secondTarget": "ㄕ"
+    },
+    {
+      "englishPair": "IR",
+      "bopomofoPair": "ㄍㄖ",
+      "firstTarget": "ㄍ",
+      "secondTarget": "ㄖ"
+    },
+    {
+      "englishPair": "IS",
+      "bopomofoPair": "ㄍㄗ",
+      "firstTarget": "ㄍ",
+      "secondTarget": "ㄗ"
+    },
+    {
+      "englishPair": "IT",
+      "bopomofoPair": "ㄍㄘ",
+      "firstTarget": "ㄍ",
+      "secondTarget": "ㄘ"
+    },
+    {
+      "englishPair": "IU",
+      "bopomofoPair": "ㄍㄙ",
+      "firstTarget": "ㄍ",
+      "secondTarget": "ㄙ"
+    },
+    {
+      "englishPair": "IV",
+      "bopomofoPair": "ㄍㄧ",
+      "firstTarget": "ㄍ",
+      "secondTarget": "ㄧ"
+    },
+    {
+      "englishPair": "IW",
+      "bopomofoPair": "ㄍㄨ",
+      "firstTarget": "ㄍ",
+      "secondTarget": "ㄨ"
+    },
+    {
+      "englishPair": "IX",
+      "bopomofoPair": "ㄍㄩ",
+      "firstTarget": "ㄍ",
+      "secondTarget": "ㄩ"
+    },
+    {
+      "englishPair": "JA",
+      "bopomofoPair": "ㄎㄅ",
+      "firstTarget": "ㄎ",
+      "secondTarget": "ㄅ"
+    },
+    {
+      "englishPair": "JB",
+      "bopomofoPair": "ㄎㄆ",
+      "firstTarget": "ㄎ",
+      "secondTarget": "ㄆ"
+    },
+    {
+      "englishPair": "JC",
+      "bopomofoPair": "ㄎㄇ",
+      "firstTarget": "ㄎ",
+      "secondTarget": "ㄇ"
+    },
+    {
+      "englishPair": "JD",
+      "bopomofoPair": "ㄎㄈ",
+      "firstTarget": "ㄎ",
+      "secondTarget": "ㄈ"
+    },
+    {
+      "englishPair": "JE",
+      "bopomofoPair": "ㄎㄉ",
+      "firstTarget": "ㄎ",
+      "secondTarget": "ㄉ"
+    },
+    {
+      "englishPair": "JF",
+      "bopomofoPair": "ㄎㄊ",
+      "firstTarget": "ㄎ",
+      "secondTarget": "ㄊ"
+    },
+    {
+      "englishPair": "JG",
+      "bopomofoPair": "ㄎㄋ",
+      "firstTarget": "ㄎ",
+      "secondTarget": "ㄋ"
+    },
+    {
+      "englishPair": "JH",
+      "bopomofoPair": "ㄎㄌ",
+      "firstTarget": "ㄎ",
+      "secondTarget": "ㄌ"
+    },
+    {
+      "englishPair": "JI",
+      "bopomofoPair": "ㄎㄍ",
+      "firstTarget": "ㄎ",
+      "secondTarget": "ㄍ"
+    },
+    {
+      "englishPair": "JK",
+      "bopomofoPair": "ㄎㄏ",
+      "firstTarget": "ㄎ",
+      "secondTarget": "ㄏ"
+    },
+    {
+      "englishPair": "JL",
+      "bopomofoPair": "ㄎㄐ",
+      "firstTarget": "ㄎ",
+      "secondTarget": "ㄐ"
+    },
+    {
+      "englishPair": "JM",
+      "bopomofoPair": "ㄎㄑ",
+      "firstTarget": "ㄎ",
+      "secondTarget": "ㄑ"
+    },
+    {
+      "englishPair": "JN",
+      "bopomofoPair": "ㄎㄒ",
+      "firstTarget": "ㄎ",
+      "secondTarget": "ㄒ"
+    },
+    {
+      "englishPair": "JO",
+      "bopomofoPair": "ㄎㄓ",
+      "firstTarget": "ㄎ",
+      "secondTarget": "ㄓ"
+    },
+    {
+      "englishPair": "JP",
+      "bopomofoPair": "ㄎㄔ",
+      "firstTarget": "ㄎ",
+      "secondTarget": "ㄔ"
+    },
+    {
+      "englishPair": "JQ",
+      "bopomofoPair": "ㄎㄕ",
+      "firstTarget": "ㄎ",
+      "secondTarget": "ㄕ"
+    },
+    {
+      "englishPair": "JR",
+      "bopomofoPair": "ㄎㄖ",
+      "firstTarget": "ㄎ",
+      "secondTarget": "ㄖ"
+    },
+    {
+      "englishPair": "JS",
+      "bopomofoPair": "ㄎㄗ",
+      "firstTarget": "ㄎ",
+      "secondTarget": "ㄗ"
+    },
+    {
+      "englishPair": "JT",
+      "bopomofoPair": "ㄎㄘ",
+      "firstTarget": "ㄎ",
+      "secondTarget": "ㄘ"
+    },
+    {
+      "englishPair": "JU",
+      "bopomofoPair": "ㄎㄙ",
+      "firstTarget": "ㄎ",
+      "secondTarget": "ㄙ"
+    },
+    {
+      "englishPair": "JV",
+      "bopomofoPair": "ㄎㄧ",
+      "firstTarget": "ㄎ",
+      "secondTarget": "ㄧ"
+    },
+    {
+      "englishPair": "JW",
+      "bopomofoPair": "ㄎㄨ",
+      "firstTarget": "ㄎ",
+      "secondTarget": "ㄨ"
+    },
+    {
+      "englishPair": "JX",
+      "bopomofoPair": "ㄎㄩ",
+      "firstTarget": "ㄎ",
+      "secondTarget": "ㄩ"
+    },
+    {
+      "englishPair": "KA",
+      "bopomofoPair": "ㄏㄅ",
+      "firstTarget": "ㄏ",
+      "secondTarget": "ㄅ"
+    },
+    {
+      "englishPair": "KB",
+      "bopomofoPair": "ㄏㄆ",
+      "firstTarget": "ㄏ",
+      "secondTarget": "ㄆ"
+    },
+    {
+      "englishPair": "KC",
+      "bopomofoPair": "ㄏㄇ",
+      "firstTarget": "ㄏ",
+      "secondTarget": "ㄇ"
+    },
+    {
+      "englishPair": "KD",
+      "bopomofoPair": "ㄏㄈ",
+      "firstTarget": "ㄏ",
+      "secondTarget": "ㄈ"
+    },
+    {
+      "englishPair": "KE",
+      "bopomofoPair": "ㄏㄉ",
+      "firstTarget": "ㄏ",
+      "secondTarget": "ㄉ"
+    },
+    {
+      "englishPair": "KF",
+      "bopomofoPair": "ㄏㄊ",
+      "firstTarget": "ㄏ",
+      "secondTarget": "ㄊ"
+    },
+    {
+      "englishPair": "KG",
+      "bopomofoPair": "ㄏㄋ",
+      "firstTarget": "ㄏ",
+      "secondTarget": "ㄋ"
+    },
+    {
+      "englishPair": "KH",
+      "bopomofoPair": "ㄏㄌ",
+      "firstTarget": "ㄏ",
+      "secondTarget": "ㄌ"
+    },
+    {
+      "englishPair": "KI",
+      "bopomofoPair": "ㄏㄍ",
+      "firstTarget": "ㄏ",
+      "secondTarget": "ㄍ"
+    },
+    {
+      "englishPair": "KJ",
+      "bopomofoPair": "ㄏㄎ",
+      "firstTarget": "ㄏ",
+      "secondTarget": "ㄎ"
+    },
+    {
+      "englishPair": "KL",
+      "bopomofoPair": "ㄏㄐ",
+      "firstTarget": "ㄏ",
+      "secondTarget": "ㄐ"
+    },
+    {
+      "englishPair": "KM",
+      "bopomofoPair": "ㄏㄑ",
+      "firstTarget": "ㄏ",
+      "secondTarget": "ㄑ"
+    },
+    {
+      "englishPair": "KN",
+      "bopomofoPair": "ㄏㄒ",
+      "firstTarget": "ㄏ",
+      "secondTarget": "ㄒ"
+    },
+    {
+      "englishPair": "KO",
+      "bopomofoPair": "ㄏㄓ",
+      "firstTarget": "ㄏ",
+      "secondTarget": "ㄓ"
+    },
+    {
+      "englishPair": "KP",
+      "bopomofoPair": "ㄏㄔ",
+      "firstTarget": "ㄏ",
+      "secondTarget": "ㄔ"
+    },
+    {
+      "englishPair": "KQ",
+      "bopomofoPair": "ㄏㄕ",
+      "firstTarget": "ㄏ",
+      "secondTarget": "ㄕ"
+    },
+    {
+      "englishPair": "KR",
+      "bopomofoPair": "ㄏㄖ",
+      "firstTarget": "ㄏ",
+      "secondTarget": "ㄖ"
+    },
+    {
+      "englishPair": "KS",
+      "bopomofoPair": "ㄏㄗ",
+      "firstTarget": "ㄏ",
+      "secondTarget": "ㄗ"
+    },
+    {
+      "englishPair": "KT",
+      "bopomofoPair": "ㄏㄘ",
+      "firstTarget": "ㄏ",
+      "secondTarget": "ㄘ"
+    },
+    {
+      "englishPair": "KU",
+      "bopomofoPair": "ㄏㄙ",
+      "firstTarget": "ㄏ",
+      "secondTarget": "ㄙ"
+    },
+    {
+      "englishPair": "KV",
+      "bopomofoPair": "ㄏㄧ",
+      "firstTarget": "ㄏ",
+      "secondTarget": "ㄧ"
+    },
+    {
+      "englishPair": "KW",
+      "bopomofoPair": "ㄏㄨ",
+      "firstTarget": "ㄏ",
+      "secondTarget": "ㄨ"
+    },
+    {
+      "englishPair": "KX",
+      "bopomofoPair": "ㄏㄩ",
+      "firstTarget": "ㄏ",
+      "secondTarget": "ㄩ"
+    },
+    {
+      "englishPair": "LA",
+      "bopomofoPair": "ㄐㄅ",
+      "firstTarget": "ㄐ",
+      "secondTarget": "ㄅ"
+    },
+    {
+      "englishPair": "LB",
+      "bopomofoPair": "ㄐㄆ",
+      "firstTarget": "ㄐ",
+      "secondTarget": "ㄆ"
+    },
+    {
+      "englishPair": "LC",
+      "bopomofoPair": "ㄐㄇ",
+      "firstTarget": "ㄐ",
+      "secondTarget": "ㄇ"
+    },
+    {
+      "englishPair": "LD",
+      "bopomofoPair": "ㄐㄈ",
+      "firstTarget": "ㄐ",
+      "secondTarget": "ㄈ"
+    },
+    {
+      "englishPair": "LE",
+      "bopomofoPair": "ㄐㄉ",
+      "firstTarget": "ㄐ",
+      "secondTarget": "ㄉ"
+    },
+    {
+      "englishPair": "LF",
+      "bopomofoPair": "ㄐㄊ",
+      "firstTarget": "ㄐ",
+      "secondTarget": "ㄊ"
+    },
+    {
+      "englishPair": "LG",
+      "bopomofoPair": "ㄐㄋ",
+      "firstTarget": "ㄐ",
+      "secondTarget": "ㄋ"
+    },
+    {
+      "englishPair": "LH",
+      "bopomofoPair": "ㄐㄌ",
+      "firstTarget": "ㄐ",
+      "secondTarget": "ㄌ"
+    },
+    {
+      "englishPair": "LI",
+      "bopomofoPair": "ㄐㄍ",
+      "firstTarget": "ㄐ",
+      "secondTarget": "ㄍ"
+    },
+    {
+      "englishPair": "LJ",
+      "bopomofoPair": "ㄐㄎ",
+      "firstTarget": "ㄐ",
+      "secondTarget": "ㄎ"
+    },
+    {
+      "englishPair": "LK",
+      "bopomofoPair": "ㄐㄏ",
+      "firstTarget": "ㄐ",
+      "secondTarget": "ㄏ"
+    },
+    {
+      "englishPair": "LM",
+      "bopomofoPair": "ㄐㄑ",
+      "firstTarget": "ㄐ",
+      "secondTarget": "ㄑ"
+    },
+    {
+      "englishPair": "LN",
+      "bopomofoPair": "ㄐㄒ",
+      "firstTarget": "ㄐ",
+      "secondTarget": "ㄒ"
+    },
+    {
+      "englishPair": "LO",
+      "bopomofoPair": "ㄐㄓ",
+      "firstTarget": "ㄐ",
+      "secondTarget": "ㄓ"
+    },
+    {
+      "englishPair": "LP",
+      "bopomofoPair": "ㄐㄔ",
+      "firstTarget": "ㄐ",
+      "secondTarget": "ㄔ"
+    },
+    {
+      "englishPair": "LQ",
+      "bopomofoPair": "ㄐㄕ",
+      "firstTarget": "ㄐ",
+      "secondTarget": "ㄕ"
+    },
+    {
+      "englishPair": "LR",
+      "bopomofoPair": "ㄐㄖ",
+      "firstTarget": "ㄐ",
+      "secondTarget": "ㄖ"
+    },
+    {
+      "englishPair": "LS",
+      "bopomofoPair": "ㄐㄗ",
+      "firstTarget": "ㄐ",
+      "secondTarget": "ㄗ"
+    },
+    {
+      "englishPair": "LT",
+      "bopomofoPair": "ㄐㄘ",
+      "firstTarget": "ㄐ",
+      "secondTarget": "ㄘ"
+    },
+    {
+      "englishPair": "LU",
+      "bopomofoPair": "ㄐㄙ",
+      "firstTarget": "ㄐ",
+      "secondTarget": "ㄙ"
+    },
+    {
+      "englishPair": "LV",
+      "bopomofoPair": "ㄐㄧ",
+      "firstTarget": "ㄐ",
+      "secondTarget": "ㄧ"
+    },
+    {
+      "englishPair": "LW",
+      "bopomofoPair": "ㄐㄨ",
+      "firstTarget": "ㄐ",
+      "secondTarget": "ㄨ"
+    },
+    {
+      "englishPair": "LX",
+      "bopomofoPair": "ㄐㄩ",
+      "firstTarget": "ㄐ",
+      "secondTarget": "ㄩ"
+    },
+    {
+      "englishPair": "MA",
+      "bopomofoPair": "ㄑㄅ",
+      "firstTarget": "ㄑ",
+      "secondTarget": "ㄅ"
+    },
+    {
+      "englishPair": "MB",
+      "bopomofoPair": "ㄑㄆ",
+      "firstTarget": "ㄑ",
+      "secondTarget": "ㄆ"
+    },
+    {
+      "englishPair": "MC",
+      "bopomofoPair": "ㄑㄇ",
+      "firstTarget": "ㄑ",
+      "secondTarget": "ㄇ"
+    },
+    {
+      "englishPair": "MD",
+      "bopomofoPair": "ㄑㄈ",
+      "firstTarget": "ㄑ",
+      "secondTarget": "ㄈ"
+    },
+    {
+      "englishPair": "ME",
+      "bopomofoPair": "ㄑㄉ",
+      "firstTarget": "ㄑ",
+      "secondTarget": "ㄉ"
+    },
+    {
+      "englishPair": "MF",
+      "bopomofoPair": "ㄑㄊ",
+      "firstTarget": "ㄑ",
+      "secondTarget": "ㄊ"
+    },
+    {
+      "englishPair": "MG",
+      "bopomofoPair": "ㄑㄋ",
+      "firstTarget": "ㄑ",
+      "secondTarget": "ㄋ"
+    },
+    {
+      "englishPair": "MH",
+      "bopomofoPair": "ㄑㄌ",
+      "firstTarget": "ㄑ",
+      "secondTarget": "ㄌ"
+    },
+    {
+      "englishPair": "MI",
+      "bopomofoPair": "ㄑㄍ",
+      "firstTarget": "ㄑ",
+      "secondTarget": "ㄍ"
+    },
+    {
+      "englishPair": "MJ",
+      "bopomofoPair": "ㄑㄎ",
+      "firstTarget": "ㄑ",
+      "secondTarget": "ㄎ"
+    },
+    {
+      "englishPair": "MK",
+      "bopomofoPair": "ㄑㄏ",
+      "firstTarget": "ㄑ",
+      "secondTarget": "ㄏ"
+    },
+    {
+      "englishPair": "ML",
+      "bopomofoPair": "ㄑㄐ",
+      "firstTarget": "ㄑ",
+      "secondTarget": "ㄐ"
+    },
+    {
+      "englishPair": "MN",
+      "bopomofoPair": "ㄑㄒ",
+      "firstTarget": "ㄑ",
+      "secondTarget": "ㄒ"
+    },
+    {
+      "englishPair": "MO",
+      "bopomofoPair": "ㄑㄓ",
+      "firstTarget": "ㄑ",
+      "secondTarget": "ㄓ"
+    },
+    {
+      "englishPair": "MP",
+      "bopomofoPair": "ㄑㄔ",
+      "firstTarget": "ㄑ",
+      "secondTarget": "ㄔ"
+    },
+    {
+      "englishPair": "MQ",
+      "bopomofoPair": "ㄑㄕ",
+      "firstTarget": "ㄑ",
+      "secondTarget": "ㄕ"
+    },
+    {
+      "englishPair": "MR",
+      "bopomofoPair": "ㄑㄖ",
+      "firstTarget": "ㄑ",
+      "secondTarget": "ㄖ"
+    },
+    {
+      "englishPair": "MS",
+      "bopomofoPair": "ㄑㄗ",
+      "firstTarget": "ㄑ",
+      "secondTarget": "ㄗ"
+    },
+    {
+      "englishPair": "MT",
+      "bopomofoPair": "ㄑㄘ",
+      "firstTarget": "ㄑ",
+      "secondTarget": "ㄘ"
+    },
+    {
+      "englishPair": "MU",
+      "bopomofoPair": "ㄑㄙ",
+      "firstTarget": "ㄑ",
+      "secondTarget": "ㄙ"
+    },
+    {
+      "englishPair": "MV",
+      "bopomofoPair": "ㄑㄧ",
+      "firstTarget": "ㄑ",
+      "secondTarget": "ㄧ"
+    },
+    {
+      "englishPair": "MW",
+      "bopomofoPair": "ㄑㄨ",
+      "firstTarget": "ㄑ",
+      "secondTarget": "ㄨ"
+    },
+    {
+      "englishPair": "MX",
+      "bopomofoPair": "ㄑㄩ",
+      "firstTarget": "ㄑ",
+      "secondTarget": "ㄩ"
+    },
+    {
+      "englishPair": "NA",
+      "bopomofoPair": "ㄒㄅ",
+      "firstTarget": "ㄒ",
+      "secondTarget": "ㄅ"
+    },
+    {
+      "englishPair": "NB",
+      "bopomofoPair": "ㄒㄆ",
+      "firstTarget": "ㄒ",
+      "secondTarget": "ㄆ"
+    },
+    {
+      "englishPair": "NC",
+      "bopomofoPair": "ㄒㄇ",
+      "firstTarget": "ㄒ",
+      "secondTarget": "ㄇ"
+    },
+    {
+      "englishPair": "ND",
+      "bopomofoPair": "ㄒㄈ",
+      "firstTarget": "ㄒ",
+      "secondTarget": "ㄈ"
+    },
+    {
+      "englishPair": "NE",
+      "bopomofoPair": "ㄒㄉ",
+      "firstTarget": "ㄒ",
+      "secondTarget": "ㄉ"
+    },
+    {
+      "englishPair": "NF",
+      "bopomofoPair": "ㄒㄊ",
+      "firstTarget": "ㄒ",
+      "secondTarget": "ㄊ"
+    },
+    {
+      "englishPair": "NG",
+      "bopomofoPair": "ㄒㄋ",
+      "firstTarget": "ㄒ",
+      "secondTarget": "ㄋ"
+    },
+    {
+      "englishPair": "NH",
+      "bopomofoPair": "ㄒㄌ",
+      "firstTarget": "ㄒ",
+      "secondTarget": "ㄌ"
+    },
+    {
+      "englishPair": "NI",
+      "bopomofoPair": "ㄒㄍ",
+      "firstTarget": "ㄒ",
+      "secondTarget": "ㄍ"
+    },
+    {
+      "englishPair": "NJ",
+      "bopomofoPair": "ㄒㄎ",
+      "firstTarget": "ㄒ",
+      "secondTarget": "ㄎ"
+    },
+    {
+      "englishPair": "NK",
+      "bopomofoPair": "ㄒㄏ",
+      "firstTarget": "ㄒ",
+      "secondTarget": "ㄏ"
+    },
+    {
+      "englishPair": "NL",
+      "bopomofoPair": "ㄒㄐ",
+      "firstTarget": "ㄒ",
+      "secondTarget": "ㄐ"
+    },
+    {
+      "englishPair": "NM",
+      "bopomofoPair": "ㄒㄑ",
+      "firstTarget": "ㄒ",
+      "secondTarget": "ㄑ"
+    },
+    {
+      "englishPair": "NO",
+      "bopomofoPair": "ㄒㄓ",
+      "firstTarget": "ㄒ",
+      "secondTarget": "ㄓ"
+    },
+    {
+      "englishPair": "NP",
+      "bopomofoPair": "ㄒㄔ",
+      "firstTarget": "ㄒ",
+      "secondTarget": "ㄔ"
+    },
+    {
+      "englishPair": "NQ",
+      "bopomofoPair": "ㄒㄕ",
+      "firstTarget": "ㄒ",
+      "secondTarget": "ㄕ"
+    },
+    {
+      "englishPair": "NR",
+      "bopomofoPair": "ㄒㄖ",
+      "firstTarget": "ㄒ",
+      "secondTarget": "ㄖ"
+    },
+    {
+      "englishPair": "NS",
+      "bopomofoPair": "ㄒㄗ",
+      "firstTarget": "ㄒ",
+      "secondTarget": "ㄗ"
+    },
+    {
+      "englishPair": "NT",
+      "bopomofoPair": "ㄒㄘ",
+      "firstTarget": "ㄒ",
+      "secondTarget": "ㄘ"
+    },
+    {
+      "englishPair": "NU",
+      "bopomofoPair": "ㄒㄙ",
+      "firstTarget": "ㄒ",
+      "secondTarget": "ㄙ"
+    },
+    {
+      "englishPair": "NV",
+      "bopomofoPair": "ㄒㄧ",
+      "firstTarget": "ㄒ",
+      "secondTarget": "ㄧ"
+    },
+    {
+      "englishPair": "NW",
+      "bopomofoPair": "ㄒㄨ",
+      "firstTarget": "ㄒ",
+      "secondTarget": "ㄨ"
+    },
+    {
+      "englishPair": "NX",
+      "bopomofoPair": "ㄒㄩ",
+      "firstTarget": "ㄒ",
+      "secondTarget": "ㄩ"
+    },
+    {
+      "englishPair": "OA",
+      "bopomofoPair": "ㄓㄅ",
+      "firstTarget": "ㄓ",
+      "secondTarget": "ㄅ"
+    },
+    {
+      "englishPair": "OB",
+      "bopomofoPair": "ㄓㄆ",
+      "firstTarget": "ㄓ",
+      "secondTarget": "ㄆ"
+    },
+    {
+      "englishPair": "OC",
+      "bopomofoPair": "ㄓㄇ",
+      "firstTarget": "ㄓ",
+      "secondTarget": "ㄇ"
+    },
+    {
+      "englishPair": "OD",
+      "bopomofoPair": "ㄓㄈ",
+      "firstTarget": "ㄓ",
+      "secondTarget": "ㄈ"
+    },
+    {
+      "englishPair": "OE",
+      "bopomofoPair": "ㄓㄉ",
+      "firstTarget": "ㄓ",
+      "secondTarget": "ㄉ"
+    },
+    {
+      "englishPair": "OF",
+      "bopomofoPair": "ㄓㄊ",
+      "firstTarget": "ㄓ",
+      "secondTarget": "ㄊ"
+    },
+    {
+      "englishPair": "OG",
+      "bopomofoPair": "ㄓㄋ",
+      "firstTarget": "ㄓ",
+      "secondTarget": "ㄋ"
+    },
+    {
+      "englishPair": "OH",
+      "bopomofoPair": "ㄓㄌ",
+      "firstTarget": "ㄓ",
+      "secondTarget": "ㄌ"
+    },
+    {
+      "englishPair": "OI",
+      "bopomofoPair": "ㄓㄍ",
+      "firstTarget": "ㄓ",
+      "secondTarget": "ㄍ"
+    },
+    {
+      "englishPair": "OJ",
+      "bopomofoPair": "ㄓㄎ",
+      "firstTarget": "ㄓ",
+      "secondTarget": "ㄎ"
+    },
+    {
+      "englishPair": "OK",
+      "bopomofoPair": "ㄓㄏ",
+      "firstTarget": "ㄓ",
+      "secondTarget": "ㄏ"
+    },
+    {
+      "englishPair": "OL",
+      "bopomofoPair": "ㄓㄐ",
+      "firstTarget": "ㄓ",
+      "secondTarget": "ㄐ"
+    },
+    {
+      "englishPair": "OM",
+      "bopomofoPair": "ㄓㄑ",
+      "firstTarget": "ㄓ",
+      "secondTarget": "ㄑ"
+    },
+    {
+      "englishPair": "ON",
+      "bopomofoPair": "ㄓㄒ",
+      "firstTarget": "ㄓ",
+      "secondTarget": "ㄒ"
+    },
+    {
+      "englishPair": "OP",
+      "bopomofoPair": "ㄓㄔ",
+      "firstTarget": "ㄓ",
+      "secondTarget": "ㄔ"
+    },
+    {
+      "englishPair": "OQ",
+      "bopomofoPair": "ㄓㄕ",
+      "firstTarget": "ㄓ",
+      "secondTarget": "ㄕ"
+    },
+    {
+      "englishPair": "OR",
+      "bopomofoPair": "ㄓㄖ",
+      "firstTarget": "ㄓ",
+      "secondTarget": "ㄖ"
+    },
+    {
+      "englishPair": "OS",
+      "bopomofoPair": "ㄓㄗ",
+      "firstTarget": "ㄓ",
+      "secondTarget": "ㄗ"
+    },
+    {
+      "englishPair": "OT",
+      "bopomofoPair": "ㄓㄘ",
+      "firstTarget": "ㄓ",
+      "secondTarget": "ㄘ"
+    },
+    {
+      "englishPair": "OU",
+      "bopomofoPair": "ㄓㄙ",
+      "firstTarget": "ㄓ",
+      "secondTarget": "ㄙ"
+    },
+    {
+      "englishPair": "OV",
+      "bopomofoPair": "ㄓㄧ",
+      "firstTarget": "ㄓ",
+      "secondTarget": "ㄧ"
+    },
+    {
+      "englishPair": "OW",
+      "bopomofoPair": "ㄓㄨ",
+      "firstTarget": "ㄓ",
+      "secondTarget": "ㄨ"
+    },
+    {
+      "englishPair": "OX",
+      "bopomofoPair": "ㄓㄩ",
+      "firstTarget": "ㄓ",
+      "secondTarget": "ㄩ"
+    },
+    {
+      "englishPair": "PA",
+      "bopomofoPair": "ㄔㄅ",
+      "firstTarget": "ㄔ",
+      "secondTarget": "ㄅ"
+    },
+    {
+      "englishPair": "PB",
+      "bopomofoPair": "ㄔㄆ",
+      "firstTarget": "ㄔ",
+      "secondTarget": "ㄆ"
+    },
+    {
+      "englishPair": "PC",
+      "bopomofoPair": "ㄔㄇ",
+      "firstTarget": "ㄔ",
+      "secondTarget": "ㄇ"
+    },
+    {
+      "englishPair": "PD",
+      "bopomofoPair": "ㄔㄈ",
+      "firstTarget": "ㄔ",
+      "secondTarget": "ㄈ"
+    },
+    {
+      "englishPair": "PE",
+      "bopomofoPair": "ㄔㄉ",
+      "firstTarget": "ㄔ",
+      "secondTarget": "ㄉ"
+    },
+    {
+      "englishPair": "PF",
+      "bopomofoPair": "ㄔㄊ",
+      "firstTarget": "ㄔ",
+      "secondTarget": "ㄊ"
+    },
+    {
+      "englishPair": "PG",
+      "bopomofoPair": "ㄔㄋ",
+      "firstTarget": "ㄔ",
+      "secondTarget": "ㄋ"
+    },
+    {
+      "englishPair": "PH",
+      "bopomofoPair": "ㄔㄌ",
+      "firstTarget": "ㄔ",
+      "secondTarget": "ㄌ"
+    },
+    {
+      "englishPair": "PI",
+      "bopomofoPair": "ㄔㄍ",
+      "firstTarget": "ㄔ",
+      "secondTarget": "ㄍ"
+    },
+    {
+      "englishPair": "PJ",
+      "bopomofoPair": "ㄔㄎ",
+      "firstTarget": "ㄔ",
+      "secondTarget": "ㄎ"
+    },
+    {
+      "englishPair": "PK",
+      "bopomofoPair": "ㄔㄏ",
+      "firstTarget": "ㄔ",
+      "secondTarget": "ㄏ"
+    },
+    {
+      "englishPair": "PL",
+      "bopomofoPair": "ㄔㄐ",
+      "firstTarget": "ㄔ",
+      "secondTarget": "ㄐ"
+    },
+    {
+      "englishPair": "PM",
+      "bopomofoPair": "ㄔㄑ",
+      "firstTarget": "ㄔ",
+      "secondTarget": "ㄑ"
+    },
+    {
+      "englishPair": "PN",
+      "bopomofoPair": "ㄔㄒ",
+      "firstTarget": "ㄔ",
+      "secondTarget": "ㄒ"
+    },
+    {
+      "englishPair": "PO",
+      "bopomofoPair": "ㄔㄓ",
+      "firstTarget": "ㄔ",
+      "secondTarget": "ㄓ"
+    },
+    {
+      "englishPair": "PQ",
+      "bopomofoPair": "ㄔㄕ",
+      "firstTarget": "ㄔ",
+      "secondTarget": "ㄕ"
+    },
+    {
+      "englishPair": "PR",
+      "bopomofoPair": "ㄔㄖ",
+      "firstTarget": "ㄔ",
+      "secondTarget": "ㄖ"
+    },
+    {
+      "englishPair": "PS",
+      "bopomofoPair": "ㄔㄗ",
+      "firstTarget": "ㄔ",
+      "secondTarget": "ㄗ"
+    },
+    {
+      "englishPair": "PT",
+      "bopomofoPair": "ㄔㄘ",
+      "firstTarget": "ㄔ",
+      "secondTarget": "ㄘ"
+    },
+    {
+      "englishPair": "PU",
+      "bopomofoPair": "ㄔㄙ",
+      "firstTarget": "ㄔ",
+      "secondTarget": "ㄙ"
+    },
+    {
+      "englishPair": "PV",
+      "bopomofoPair": "ㄔㄧ",
+      "firstTarget": "ㄔ",
+      "secondTarget": "ㄧ"
+    },
+    {
+      "englishPair": "PW",
+      "bopomofoPair": "ㄔㄨ",
+      "firstTarget": "ㄔ",
+      "secondTarget": "ㄨ"
+    },
+    {
+      "englishPair": "PX",
+      "bopomofoPair": "ㄔㄩ",
+      "firstTarget": "ㄔ",
+      "secondTarget": "ㄩ"
+    },
+    {
+      "englishPair": "QA",
+      "bopomofoPair": "ㄕㄅ",
+      "firstTarget": "ㄕ",
+      "secondTarget": "ㄅ"
+    },
+    {
+      "englishPair": "QB",
+      "bopomofoPair": "ㄕㄆ",
+      "firstTarget": "ㄕ",
+      "secondTarget": "ㄆ"
+    },
+    {
+      "englishPair": "QC",
+      "bopomofoPair": "ㄕㄇ",
+      "firstTarget": "ㄕ",
+      "secondTarget": "ㄇ"
+    },
+    {
+      "englishPair": "QD",
+      "bopomofoPair": "ㄕㄈ",
+      "firstTarget": "ㄕ",
+      "secondTarget": "ㄈ"
+    },
+    {
+      "englishPair": "QE",
+      "bopomofoPair": "ㄕㄉ",
+      "firstTarget": "ㄕ",
+      "secondTarget": "ㄉ"
+    },
+    {
+      "englishPair": "QF",
+      "bopomofoPair": "ㄕㄊ",
+      "firstTarget": "ㄕ",
+      "secondTarget": "ㄊ"
+    },
+    {
+      "englishPair": "QG",
+      "bopomofoPair": "ㄕㄋ",
+      "firstTarget": "ㄕ",
+      "secondTarget": "ㄋ"
+    },
+    {
+      "englishPair": "QH",
+      "bopomofoPair": "ㄕㄌ",
+      "firstTarget": "ㄕ",
+      "secondTarget": "ㄌ"
+    },
+    {
+      "englishPair": "QI",
+      "bopomofoPair": "ㄕㄍ",
+      "firstTarget": "ㄕ",
+      "secondTarget": "ㄍ"
+    },
+    {
+      "englishPair": "QJ",
+      "bopomofoPair": "ㄕㄎ",
+      "firstTarget": "ㄕ",
+      "secondTarget": "ㄎ"
+    },
+    {
+      "englishPair": "QK",
+      "bopomofoPair": "ㄕㄏ",
+      "firstTarget": "ㄕ",
+      "secondTarget": "ㄏ"
+    },
+    {
+      "englishPair": "QL",
+      "bopomofoPair": "ㄕㄐ",
+      "firstTarget": "ㄕ",
+      "secondTarget": "ㄐ"
+    },
+    {
+      "englishPair": "QM",
+      "bopomofoPair": "ㄕㄑ",
+      "firstTarget": "ㄕ",
+      "secondTarget": "ㄑ"
+    },
+    {
+      "englishPair": "QN",
+      "bopomofoPair": "ㄕㄒ",
+      "firstTarget": "ㄕ",
+      "secondTarget": "ㄒ"
+    },
+    {
+      "englishPair": "QO",
+      "bopomofoPair": "ㄕㄓ",
+      "firstTarget": "ㄕ",
+      "secondTarget": "ㄓ"
+    },
+    {
+      "englishPair": "QP",
+      "bopomofoPair": "ㄕㄔ",
+      "firstTarget": "ㄕ",
+      "secondTarget": "ㄔ"
+    },
+    {
+      "englishPair": "QR",
+      "bopomofoPair": "ㄕㄖ",
+      "firstTarget": "ㄕ",
+      "secondTarget": "ㄖ"
+    },
+    {
+      "englishPair": "QS",
+      "bopomofoPair": "ㄕㄗ",
+      "firstTarget": "ㄕ",
+      "secondTarget": "ㄗ"
+    },
+    {
+      "englishPair": "QT",
+      "bopomofoPair": "ㄕㄘ",
+      "firstTarget": "ㄕ",
+      "secondTarget": "ㄘ"
+    },
+    {
+      "englishPair": "QU",
+      "bopomofoPair": "ㄕㄙ",
+      "firstTarget": "ㄕ",
+      "secondTarget": "ㄙ"
+    },
+    {
+      "englishPair": "QV",
+      "bopomofoPair": "ㄕㄧ",
+      "firstTarget": "ㄕ",
+      "secondTarget": "ㄧ"
+    },
+    {
+      "englishPair": "QW",
+      "bopomofoPair": "ㄕㄨ",
+      "firstTarget": "ㄕ",
+      "secondTarget": "ㄨ"
+    },
+    {
+      "englishPair": "QX",
+      "bopomofoPair": "ㄕㄩ",
+      "firstTarget": "ㄕ",
+      "secondTarget": "ㄩ"
+    },
+    {
+      "englishPair": "RA",
+      "bopomofoPair": "ㄖㄅ",
+      "firstTarget": "ㄖ",
+      "secondTarget": "ㄅ"
+    },
+    {
+      "englishPair": "RB",
+      "bopomofoPair": "ㄖㄆ",
+      "firstTarget": "ㄖ",
+      "secondTarget": "ㄆ"
+    },
+    {
+      "englishPair": "RC",
+      "bopomofoPair": "ㄖㄇ",
+      "firstTarget": "ㄖ",
+      "secondTarget": "ㄇ"
+    },
+    {
+      "englishPair": "RD",
+      "bopomofoPair": "ㄖㄈ",
+      "firstTarget": "ㄖ",
+      "secondTarget": "ㄈ"
+    },
+    {
+      "englishPair": "RE",
+      "bopomofoPair": "ㄖㄉ",
+      "firstTarget": "ㄖ",
+      "secondTarget": "ㄉ"
+    },
+    {
+      "englishPair": "RF",
+      "bopomofoPair": "ㄖㄊ",
+      "firstTarget": "ㄖ",
+      "secondTarget": "ㄊ"
+    },
+    {
+      "englishPair": "RG",
+      "bopomofoPair": "ㄖㄋ",
+      "firstTarget": "ㄖ",
+      "secondTarget": "ㄋ"
+    },
+    {
+      "englishPair": "RH",
+      "bopomofoPair": "ㄖㄌ",
+      "firstTarget": "ㄖ",
+      "secondTarget": "ㄌ"
+    },
+    {
+      "englishPair": "RI",
+      "bopomofoPair": "ㄖㄍ",
+      "firstTarget": "ㄖ",
+      "secondTarget": "ㄍ"
+    },
+    {
+      "englishPair": "RJ",
+      "bopomofoPair": "ㄖㄎ",
+      "firstTarget": "ㄖ",
+      "secondTarget": "ㄎ"
+    },
+    {
+      "englishPair": "RK",
+      "bopomofoPair": "ㄖㄏ",
+      "firstTarget": "ㄖ",
+      "secondTarget": "ㄏ"
+    },
+    {
+      "englishPair": "RL",
+      "bopomofoPair": "ㄖㄐ",
+      "firstTarget": "ㄖ",
+      "secondTarget": "ㄐ"
+    },
+    {
+      "englishPair": "RM",
+      "bopomofoPair": "ㄖㄑ",
+      "firstTarget": "ㄖ",
+      "secondTarget": "ㄑ"
+    },
+    {
+      "englishPair": "RN",
+      "bopomofoPair": "ㄖㄒ",
+      "firstTarget": "ㄖ",
+      "secondTarget": "ㄒ"
+    },
+    {
+      "englishPair": "RO",
+      "bopomofoPair": "ㄖㄓ",
+      "firstTarget": "ㄖ",
+      "secondTarget": "ㄓ"
+    },
+    {
+      "englishPair": "RP",
+      "bopomofoPair": "ㄖㄔ",
+      "firstTarget": "ㄖ",
+      "secondTarget": "ㄔ"
+    },
+    {
+      "englishPair": "RQ",
+      "bopomofoPair": "ㄖㄕ",
+      "firstTarget": "ㄖ",
+      "secondTarget": "ㄕ"
+    },
+    {
+      "englishPair": "RS",
+      "bopomofoPair": "ㄖㄗ",
+      "firstTarget": "ㄖ",
+      "secondTarget": "ㄗ"
+    },
+    {
+      "englishPair": "RT",
+      "bopomofoPair": "ㄖㄘ",
+      "firstTarget": "ㄖ",
+      "secondTarget": "ㄘ"
+    },
+    {
+      "englishPair": "RU",
+      "bopomofoPair": "ㄖㄙ",
+      "firstTarget": "ㄖ",
+      "secondTarget": "ㄙ"
+    },
+    {
+      "englishPair": "RV",
+      "bopomofoPair": "ㄖㄧ",
+      "firstTarget": "ㄖ",
+      "secondTarget": "ㄧ"
+    },
+    {
+      "englishPair": "RW",
+      "bopomofoPair": "ㄖㄨ",
+      "firstTarget": "ㄖ",
+      "secondTarget": "ㄨ"
+    },
+    {
+      "englishPair": "RX",
+      "bopomofoPair": "ㄖㄩ",
+      "firstTarget": "ㄖ",
+      "secondTarget": "ㄩ"
+    },
+    {
+      "englishPair": "SA",
+      "bopomofoPair": "ㄗㄅ",
+      "firstTarget": "ㄗ",
+      "secondTarget": "ㄅ"
+    },
+    {
+      "englishPair": "SB",
+      "bopomofoPair": "ㄗㄆ",
+      "firstTarget": "ㄗ",
+      "secondTarget": "ㄆ"
+    },
+    {
+      "englishPair": "SC",
+      "bopomofoPair": "ㄗㄇ",
+      "firstTarget": "ㄗ",
+      "secondTarget": "ㄇ"
+    },
+    {
+      "englishPair": "SD",
+      "bopomofoPair": "ㄗㄈ",
+      "firstTarget": "ㄗ",
+      "secondTarget": "ㄈ"
+    },
+    {
+      "englishPair": "SE",
+      "bopomofoPair": "ㄗㄉ",
+      "firstTarget": "ㄗ",
+      "secondTarget": "ㄉ"
+    },
+    {
+      "englishPair": "SF",
+      "bopomofoPair": "ㄗㄊ",
+      "firstTarget": "ㄗ",
+      "secondTarget": "ㄊ"
+    },
+    {
+      "englishPair": "SG",
+      "bopomofoPair": "ㄗㄋ",
+      "firstTarget": "ㄗ",
+      "secondTarget": "ㄋ"
+    },
+    {
+      "englishPair": "SH",
+      "bopomofoPair": "ㄗㄌ",
+      "firstTarget": "ㄗ",
+      "secondTarget": "ㄌ"
+    },
+    {
+      "englishPair": "SI",
+      "bopomofoPair": "ㄗㄍ",
+      "firstTarget": "ㄗ",
+      "secondTarget": "ㄍ"
+    },
+    {
+      "englishPair": "SJ",
+      "bopomofoPair": "ㄗㄎ",
+      "firstTarget": "ㄗ",
+      "secondTarget": "ㄎ"
+    },
+    {
+      "englishPair": "SK",
+      "bopomofoPair": "ㄗㄏ",
+      "firstTarget": "ㄗ",
+      "secondTarget": "ㄏ"
+    },
+    {
+      "englishPair": "SL",
+      "bopomofoPair": "ㄗㄐ",
+      "firstTarget": "ㄗ",
+      "secondTarget": "ㄐ"
+    },
+    {
+      "englishPair": "SM",
+      "bopomofoPair": "ㄗㄑ",
+      "firstTarget": "ㄗ",
+      "secondTarget": "ㄑ"
+    },
+    {
+      "englishPair": "SN",
+      "bopomofoPair": "ㄗㄒ",
+      "firstTarget": "ㄗ",
+      "secondTarget": "ㄒ"
+    },
+    {
+      "englishPair": "SO",
+      "bopomofoPair": "ㄗㄓ",
+      "firstTarget": "ㄗ",
+      "secondTarget": "ㄓ"
+    },
+    {
+      "englishPair": "SP",
+      "bopomofoPair": "ㄗㄔ",
+      "firstTarget": "ㄗ",
+      "secondTarget": "ㄔ"
+    },
+    {
+      "englishPair": "SQ",
+      "bopomofoPair": "ㄗㄕ",
+      "firstTarget": "ㄗ",
+      "secondTarget": "ㄕ"
+    },
+    {
+      "englishPair": "SR",
+      "bopomofoPair": "ㄗㄖ",
+      "firstTarget": "ㄗ",
+      "secondTarget": "ㄖ"
+    },
+    {
+      "englishPair": "ST",
+      "bopomofoPair": "ㄗㄘ",
+      "firstTarget": "ㄗ",
+      "secondTarget": "ㄘ"
+    },
+    {
+      "englishPair": "SU",
+      "bopomofoPair": "ㄗㄙ",
+      "firstTarget": "ㄗ",
+      "secondTarget": "ㄙ"
+    },
+    {
+      "englishPair": "SV",
+      "bopomofoPair": "ㄗㄧ",
+      "firstTarget": "ㄗ",
+      "secondTarget": "ㄧ"
+    },
+    {
+      "englishPair": "SW",
+      "bopomofoPair": "ㄗㄨ",
+      "firstTarget": "ㄗ",
+      "secondTarget": "ㄨ"
+    },
+    {
+      "englishPair": "SX",
+      "bopomofoPair": "ㄗㄩ",
+      "firstTarget": "ㄗ",
+      "secondTarget": "ㄩ"
+    },
+    {
+      "englishPair": "TA",
+      "bopomofoPair": "ㄘㄅ",
+      "firstTarget": "ㄘ",
+      "secondTarget": "ㄅ"
+    },
+    {
+      "englishPair": "TB",
+      "bopomofoPair": "ㄘㄆ",
+      "firstTarget": "ㄘ",
+      "secondTarget": "ㄆ"
+    },
+    {
+      "englishPair": "TC",
+      "bopomofoPair": "ㄘㄇ",
+      "firstTarget": "ㄘ",
+      "secondTarget": "ㄇ"
+    },
+    {
+      "englishPair": "TD",
+      "bopomofoPair": "ㄘㄈ",
+      "firstTarget": "ㄘ",
+      "secondTarget": "ㄈ"
+    },
+    {
+      "englishPair": "TE",
+      "bopomofoPair": "ㄘㄉ",
+      "firstTarget": "ㄘ",
+      "secondTarget": "ㄉ"
+    },
+    {
+      "englishPair": "TF",
+      "bopomofoPair": "ㄘㄊ",
+      "firstTarget": "ㄘ",
+      "secondTarget": "ㄊ"
+    },
+    {
+      "englishPair": "TG",
+      "bopomofoPair": "ㄘㄋ",
+      "firstTarget": "ㄘ",
+      "secondTarget": "ㄋ"
+    },
+    {
+      "englishPair": "TH",
+      "bopomofoPair": "ㄘㄌ",
+      "firstTarget": "ㄘ",
+      "secondTarget": "ㄌ"
+    },
+    {
+      "englishPair": "TI",
+      "bopomofoPair": "ㄘㄍ",
+      "firstTarget": "ㄘ",
+      "secondTarget": "ㄍ"
+    },
+    {
+      "englishPair": "TJ",
+      "bopomofoPair": "ㄘㄎ",
+      "firstTarget": "ㄘ",
+      "secondTarget": "ㄎ"
+    },
+    {
+      "englishPair": "TK",
+      "bopomofoPair": "ㄘㄏ",
+      "firstTarget": "ㄘ",
+      "secondTarget": "ㄏ"
+    },
+    {
+      "englishPair": "TL",
+      "bopomofoPair": "ㄘㄐ",
+      "firstTarget": "ㄘ",
+      "secondTarget": "ㄐ"
+    },
+    {
+      "englishPair": "TM",
+      "bopomofoPair": "ㄘㄑ",
+      "firstTarget": "ㄘ",
+      "secondTarget": "ㄑ"
+    },
+    {
+      "englishPair": "TN",
+      "bopomofoPair": "ㄘㄒ",
+      "firstTarget": "ㄘ",
+      "secondTarget": "ㄒ"
+    },
+    {
+      "englishPair": "TO",
+      "bopomofoPair": "ㄘㄓ",
+      "firstTarget": "ㄘ",
+      "secondTarget": "ㄓ"
+    },
+    {
+      "englishPair": "TP",
+      "bopomofoPair": "ㄘㄔ",
+      "firstTarget": "ㄘ",
+      "secondTarget": "ㄔ"
+    },
+    {
+      "englishPair": "TQ",
+      "bopomofoPair": "ㄘㄕ",
+      "firstTarget": "ㄘ",
+      "secondTarget": "ㄕ"
+    },
+    {
+      "englishPair": "TR",
+      "bopomofoPair": "ㄘㄖ",
+      "firstTarget": "ㄘ",
+      "secondTarget": "ㄖ"
+    },
+    {
+      "englishPair": "TS",
+      "bopomofoPair": "ㄘㄗ",
+      "firstTarget": "ㄘ",
+      "secondTarget": "ㄗ"
+    },
+    {
+      "englishPair": "TU",
+      "bopomofoPair": "ㄘㄙ",
+      "firstTarget": "ㄘ",
+      "secondTarget": "ㄙ"
+    },
+    {
+      "englishPair": "TV",
+      "bopomofoPair": "ㄘㄧ",
+      "firstTarget": "ㄘ",
+      "secondTarget": "ㄧ"
+    },
+    {
+      "englishPair": "TW",
+      "bopomofoPair": "ㄘㄨ",
+      "firstTarget": "ㄘ",
+      "secondTarget": "ㄨ"
+    },
+    {
+      "englishPair": "TX",
+      "bopomofoPair": "ㄘㄩ",
+      "firstTarget": "ㄘ",
+      "secondTarget": "ㄩ"
+    },
+    {
+      "englishPair": "UA",
+      "bopomofoPair": "ㄙㄅ",
+      "firstTarget": "ㄙ",
+      "secondTarget": "ㄅ"
+    },
+    {
+      "englishPair": "UB",
+      "bopomofoPair": "ㄙㄆ",
+      "firstTarget": "ㄙ",
+      "secondTarget": "ㄆ"
+    },
+    {
+      "englishPair": "UC",
+      "bopomofoPair": "ㄙㄇ",
+      "firstTarget": "ㄙ",
+      "secondTarget": "ㄇ"
+    },
+    {
+      "englishPair": "UD",
+      "bopomofoPair": "ㄙㄈ",
+      "firstTarget": "ㄙ",
+      "secondTarget": "ㄈ"
+    },
+    {
+      "englishPair": "UE",
+      "bopomofoPair": "ㄙㄉ",
+      "firstTarget": "ㄙ",
+      "secondTarget": "ㄉ"
+    },
+    {
+      "englishPair": "UF",
+      "bopomofoPair": "ㄙㄊ",
+      "firstTarget": "ㄙ",
+      "secondTarget": "ㄊ"
+    },
+    {
+      "englishPair": "UG",
+      "bopomofoPair": "ㄙㄋ",
+      "firstTarget": "ㄙ",
+      "secondTarget": "ㄋ"
+    },
+    {
+      "englishPair": "UH",
+      "bopomofoPair": "ㄙㄌ",
+      "firstTarget": "ㄙ",
+      "secondTarget": "ㄌ"
+    },
+    {
+      "englishPair": "UI",
+      "bopomofoPair": "ㄙㄍ",
+      "firstTarget": "ㄙ",
+      "secondTarget": "ㄍ"
+    },
+    {
+      "englishPair": "UJ",
+      "bopomofoPair": "ㄙㄎ",
+      "firstTarget": "ㄙ",
+      "secondTarget": "ㄎ"
+    },
+    {
+      "englishPair": "UK",
+      "bopomofoPair": "ㄙㄏ",
+      "firstTarget": "ㄙ",
+      "secondTarget": "ㄏ"
+    },
+    {
+      "englishPair": "UL",
+      "bopomofoPair": "ㄙㄐ",
+      "firstTarget": "ㄙ",
+      "secondTarget": "ㄐ"
+    },
+    {
+      "englishPair": "UM",
+      "bopomofoPair": "ㄙㄑ",
+      "firstTarget": "ㄙ",
+      "secondTarget": "ㄑ"
+    },
+    {
+      "englishPair": "UN",
+      "bopomofoPair": "ㄙㄒ",
+      "firstTarget": "ㄙ",
+      "secondTarget": "ㄒ"
+    },
+    {
+      "englishPair": "UO",
+      "bopomofoPair": "ㄙㄓ",
+      "firstTarget": "ㄙ",
+      "secondTarget": "ㄓ"
+    },
+    {
+      "englishPair": "UP",
+      "bopomofoPair": "ㄙㄔ",
+      "firstTarget": "ㄙ",
+      "secondTarget": "ㄔ"
+    },
+    {
+      "englishPair": "UQ",
+      "bopomofoPair": "ㄙㄕ",
+      "firstTarget": "ㄙ",
+      "secondTarget": "ㄕ"
+    },
+    {
+      "englishPair": "UR",
+      "bopomofoPair": "ㄙㄖ",
+      "firstTarget": "ㄙ",
+      "secondTarget": "ㄖ"
+    },
+    {
+      "englishPair": "US",
+      "bopomofoPair": "ㄙㄗ",
+      "firstTarget": "ㄙ",
+      "secondTarget": "ㄗ"
+    },
+    {
+      "englishPair": "UT",
+      "bopomofoPair": "ㄙㄘ",
+      "firstTarget": "ㄙ",
+      "secondTarget": "ㄘ"
+    },
+    {
+      "englishPair": "UV",
+      "bopomofoPair": "ㄙㄧ",
+      "firstTarget": "ㄙ",
+      "secondTarget": "ㄧ"
+    },
+    {
+      "englishPair": "UW",
+      "bopomofoPair": "ㄙㄨ",
+      "firstTarget": "ㄙ",
+      "secondTarget": "ㄨ"
+    },
+    {
+      "englishPair": "UX",
+      "bopomofoPair": "ㄙㄩ",
+      "firstTarget": "ㄙ",
+      "secondTarget": "ㄩ"
+    },
+    {
+      "englishPair": "VA",
+      "bopomofoPair": "ㄧㄅ",
+      "firstTarget": "ㄧ",
+      "secondTarget": "ㄅ"
+    },
+    {
+      "englishPair": "VB",
+      "bopomofoPair": "ㄧㄆ",
+      "firstTarget": "ㄧ",
+      "secondTarget": "ㄆ"
+    },
+    {
+      "englishPair": "VC",
+      "bopomofoPair": "ㄧㄇ",
+      "firstTarget": "ㄧ",
+      "secondTarget": "ㄇ"
+    },
+    {
+      "englishPair": "VD",
+      "bopomofoPair": "ㄧㄈ",
+      "firstTarget": "ㄧ",
+      "secondTarget": "ㄈ"
+    },
+    {
+      "englishPair": "VE",
+      "bopomofoPair": "ㄧㄉ",
+      "firstTarget": "ㄧ",
+      "secondTarget": "ㄉ"
+    },
+    {
+      "englishPair": "VF",
+      "bopomofoPair": "ㄧㄊ",
+      "firstTarget": "ㄧ",
+      "secondTarget": "ㄊ"
+    },
+    {
+      "englishPair": "VG",
+      "bopomofoPair": "ㄧㄋ",
+      "firstTarget": "ㄧ",
+      "secondTarget": "ㄋ"
+    },
+    {
+      "englishPair": "VH",
+      "bopomofoPair": "ㄧㄌ",
+      "firstTarget": "ㄧ",
+      "secondTarget": "ㄌ"
+    },
+    {
+      "englishPair": "VI",
+      "bopomofoPair": "ㄧㄍ",
+      "firstTarget": "ㄧ",
+      "secondTarget": "ㄍ"
+    },
+    {
+      "englishPair": "VJ",
+      "bopomofoPair": "ㄧㄎ",
+      "firstTarget": "ㄧ",
+      "secondTarget": "ㄎ"
+    },
+    {
+      "englishPair": "VK",
+      "bopomofoPair": "ㄧㄏ",
+      "firstTarget": "ㄧ",
+      "secondTarget": "ㄏ"
+    },
+    {
+      "englishPair": "VL",
+      "bopomofoPair": "ㄧㄐ",
+      "firstTarget": "ㄧ",
+      "secondTarget": "ㄐ"
+    },
+    {
+      "englishPair": "VM",
+      "bopomofoPair": "ㄧㄑ",
+      "firstTarget": "ㄧ",
+      "secondTarget": "ㄑ"
+    },
+    {
+      "englishPair": "VN",
+      "bopomofoPair": "ㄧㄒ",
+      "firstTarget": "ㄧ",
+      "secondTarget": "ㄒ"
+    },
+    {
+      "englishPair": "VO",
+      "bopomofoPair": "ㄧㄓ",
+      "firstTarget": "ㄧ",
+      "secondTarget": "ㄓ"
+    },
+    {
+      "englishPair": "VP",
+      "bopomofoPair": "ㄧㄔ",
+      "firstTarget": "ㄧ",
+      "secondTarget": "ㄔ"
+    },
+    {
+      "englishPair": "VQ",
+      "bopomofoPair": "ㄧㄕ",
+      "firstTarget": "ㄧ",
+      "secondTarget": "ㄕ"
+    },
+    {
+      "englishPair": "VR",
+      "bopomofoPair": "ㄧㄖ",
+      "firstTarget": "ㄧ",
+      "secondTarget": "ㄖ"
+    },
+    {
+      "englishPair": "VS",
+      "bopomofoPair": "ㄧㄗ",
+      "firstTarget": "ㄧ",
+      "secondTarget": "ㄗ"
+    },
+    {
+      "englishPair": "VT",
+      "bopomofoPair": "ㄧㄘ",
+      "firstTarget": "ㄧ",
+      "secondTarget": "ㄘ"
+    },
+    {
+      "englishPair": "VU",
+      "bopomofoPair": "ㄧㄙ",
+      "firstTarget": "ㄧ",
+      "secondTarget": "ㄙ"
+    },
+    {
+      "englishPair": "VW",
+      "bopomofoPair": "ㄧㄨ",
+      "firstTarget": "ㄧ",
+      "secondTarget": "ㄨ"
+    },
+    {
+      "englishPair": "VX",
+      "bopomofoPair": "ㄧㄩ",
+      "firstTarget": "ㄧ",
+      "secondTarget": "ㄩ"
+    },
+    {
+      "englishPair": "WA",
+      "bopomofoPair": "ㄨㄅ",
+      "firstTarget": "ㄨ",
+      "secondTarget": "ㄅ"
+    },
+    {
+      "englishPair": "WB",
+      "bopomofoPair": "ㄨㄆ",
+      "firstTarget": "ㄨ",
+      "secondTarget": "ㄆ"
+    },
+    {
+      "englishPair": "WC",
+      "bopomofoPair": "ㄨㄇ",
+      "firstTarget": "ㄨ",
+      "secondTarget": "ㄇ"
+    },
+    {
+      "englishPair": "WD",
+      "bopomofoPair": "ㄨㄈ",
+      "firstTarget": "ㄨ",
+      "secondTarget": "ㄈ"
+    },
+    {
+      "englishPair": "WE",
+      "bopomofoPair": "ㄨㄉ",
+      "firstTarget": "ㄨ",
+      "secondTarget": "ㄉ"
+    },
+    {
+      "englishPair": "WF",
+      "bopomofoPair": "ㄨㄊ",
+      "firstTarget": "ㄨ",
+      "secondTarget": "ㄊ"
+    },
+    {
+      "englishPair": "WG",
+      "bopomofoPair": "ㄨㄋ",
+      "firstTarget": "ㄨ",
+      "secondTarget": "ㄋ"
+    },
+    {
+      "englishPair": "WH",
+      "bopomofoPair": "ㄨㄌ",
+      "firstTarget": "ㄨ",
+      "secondTarget": "ㄌ"
+    },
+    {
+      "englishPair": "WI",
+      "bopomofoPair": "ㄨㄍ",
+      "firstTarget": "ㄨ",
+      "secondTarget": "ㄍ"
+    },
+    {
+      "englishPair": "WJ",
+      "bopomofoPair": "ㄨㄎ",
+      "firstTarget": "ㄨ",
+      "secondTarget": "ㄎ"
+    },
+    {
+      "englishPair": "WK",
+      "bopomofoPair": "ㄨㄏ",
+      "firstTarget": "ㄨ",
+      "secondTarget": "ㄏ"
+    },
+    {
+      "englishPair": "WL",
+      "bopomofoPair": "ㄨㄐ",
+      "firstTarget": "ㄨ",
+      "secondTarget": "ㄐ"
+    },
+    {
+      "englishPair": "WM",
+      "bopomofoPair": "ㄨㄑ",
+      "firstTarget": "ㄨ",
+      "secondTarget": "ㄑ"
+    },
+    {
+      "englishPair": "WN",
+      "bopomofoPair": "ㄨㄒ",
+      "firstTarget": "ㄨ",
+      "secondTarget": "ㄒ"
+    },
+    {
+      "englishPair": "WO",
+      "bopomofoPair": "ㄨㄓ",
+      "firstTarget": "ㄨ",
+      "secondTarget": "ㄓ"
+    },
+    {
+      "englishPair": "WP",
+      "bopomofoPair": "ㄨㄔ",
+      "firstTarget": "ㄨ",
+      "secondTarget": "ㄔ"
+    },
+    {
+      "englishPair": "WQ",
+      "bopomofoPair": "ㄨㄕ",
+      "firstTarget": "ㄨ",
+      "secondTarget": "ㄕ"
+    },
+    {
+      "englishPair": "WR",
+      "bopomofoPair": "ㄨㄖ",
+      "firstTarget": "ㄨ",
+      "secondTarget": "ㄖ"
+    },
+    {
+      "englishPair": "WS",
+      "bopomofoPair": "ㄨㄗ",
+      "firstTarget": "ㄨ",
+      "secondTarget": "ㄗ"
+    },
+    {
+      "englishPair": "WT",
+      "bopomofoPair": "ㄨㄘ",
+      "firstTarget": "ㄨ",
+      "secondTarget": "ㄘ"
+    },
+    {
+      "englishPair": "WU",
+      "bopomofoPair": "ㄨㄙ",
+      "firstTarget": "ㄨ",
+      "secondTarget": "ㄙ"
+    },
+    {
+      "englishPair": "WV",
+      "bopomofoPair": "ㄨㄧ",
+      "firstTarget": "ㄨ",
+      "secondTarget": "ㄧ"
+    },
+    {
+      "englishPair": "WX",
+      "bopomofoPair": "ㄨㄩ",
+      "firstTarget": "ㄨ",
+      "secondTarget": "ㄩ"
+    },
+    {
+      "englishPair": "XA",
+      "bopomofoPair": "ㄩㄅ",
+      "firstTarget": "ㄩ",
+      "secondTarget": "ㄅ"
+    },
+    {
+      "englishPair": "XB",
+      "bopomofoPair": "ㄩㄆ",
+      "firstTarget": "ㄩ",
+      "secondTarget": "ㄆ"
+    },
+    {
+      "englishPair": "XC",
+      "bopomofoPair": "ㄩㄇ",
+      "firstTarget": "ㄩ",
+      "secondTarget": "ㄇ"
+    },
+    {
+      "englishPair": "XD",
+      "bopomofoPair": "ㄩㄈ",
+      "firstTarget": "ㄩ",
+      "secondTarget": "ㄈ"
+    },
+    {
+      "englishPair": "XE",
+      "bopomofoPair": "ㄩㄉ",
+      "firstTarget": "ㄩ",
+      "secondTarget": "ㄉ"
+    },
+    {
+      "englishPair": "XF",
+      "bopomofoPair": "ㄩㄊ",
+      "firstTarget": "ㄩ",
+      "secondTarget": "ㄊ"
+    },
+    {
+      "englishPair": "XG",
+      "bopomofoPair": "ㄩㄋ",
+      "firstTarget": "ㄩ",
+      "secondTarget": "ㄋ"
+    },
+    {
+      "englishPair": "XH",
+      "bopomofoPair": "ㄩㄌ",
+      "firstTarget": "ㄩ",
+      "secondTarget": "ㄌ"
+    },
+    {
+      "englishPair": "XI",
+      "bopomofoPair": "ㄩㄍ",
+      "firstTarget": "ㄩ",
+      "secondTarget": "ㄍ"
+    },
+    {
+      "englishPair": "XJ",
+      "bopomofoPair": "ㄩㄎ",
+      "firstTarget": "ㄩ",
+      "secondTarget": "ㄎ"
+    },
+    {
+      "englishPair": "XK",
+      "bopomofoPair": "ㄩㄏ",
+      "firstTarget": "ㄩ",
+      "secondTarget": "ㄏ"
+    },
+    {
+      "englishPair": "XL",
+      "bopomofoPair": "ㄩㄐ",
+      "firstTarget": "ㄩ",
+      "secondTarget": "ㄐ"
+    },
+    {
+      "englishPair": "XM",
+      "bopomofoPair": "ㄩㄑ",
+      "firstTarget": "ㄩ",
+      "secondTarget": "ㄑ"
+    },
+    {
+      "englishPair": "XN",
+      "bopomofoPair": "ㄩㄒ",
+      "firstTarget": "ㄩ",
+      "secondTarget": "ㄒ"
+    },
+    {
+      "englishPair": "XO",
+      "bopomofoPair": "ㄩㄓ",
+      "firstTarget": "ㄩ",
+      "secondTarget": "ㄓ"
+    },
+    {
+      "englishPair": "XP",
+      "bopomofoPair": "ㄩㄔ",
+      "firstTarget": "ㄩ",
+      "secondTarget": "ㄔ"
+    },
+    {
+      "englishPair": "XQ",
+      "bopomofoPair": "ㄩㄕ",
+      "firstTarget": "ㄩ",
+      "secondTarget": "ㄕ"
+    },
+    {
+      "englishPair": "XR",
+      "bopomofoPair": "ㄩㄖ",
+      "firstTarget": "ㄩ",
+      "secondTarget": "ㄖ"
+    },
+    {
+      "englishPair": "XS",
+      "bopomofoPair": "ㄩㄗ",
+      "firstTarget": "ㄩ",
+      "secondTarget": "ㄗ"
+    },
+    {
+      "englishPair": "XT",
+      "bopomofoPair": "ㄩㄘ",
+      "firstTarget": "ㄩ",
+      "secondTarget": "ㄘ"
+    },
+    {
+      "englishPair": "XU",
+      "bopomofoPair": "ㄩㄙ",
+      "firstTarget": "ㄩ",
+      "secondTarget": "ㄙ"
+    },
+    {
+      "englishPair": "XV",
+      "bopomofoPair": "ㄩㄧ",
+      "firstTarget": "ㄩ",
+      "secondTarget": "ㄧ"
+    },
+    {
+      "englishPair": "XW",
+      "bopomofoPair": "ㄩㄨ",
+      "firstTarget": "ㄩ",
+      "secondTarget": "ㄨ"
+    }
+  ]
+}

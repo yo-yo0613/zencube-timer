@@ -5,6 +5,56 @@ import { Brain, Search, Award, HelpCircle, Eye, RotateCw, Edit3, Save, Languages
 import { fetchBldMemosFromDb, saveBldMemoToDb } from '../utils/db'
 import { useAuth } from '../context/AuthContext'
 
+// Clean letters (e.g. "A (UB)" -> "A")
+const getLetter = (keyStr) => keyStr ? keyStr.split(' ')[0] : ''
+
+// Extract letter lists from preloaded JSON keys (Static Constants)
+const edgeRowKeys = Object.keys(dylanData.ufComms || {})
+const edgeColKeys = edgeRowKeys.length > 0 ? Object.keys(dylanData.ufComms[edgeRowKeys[0]] || {}) : []
+
+const cornerRowKeys = Object.keys(dylanData.ufrComms || {})
+const cornerColKeys = cornerRowKeys.length > 0 ? Object.keys(dylanData.ufrComms[cornerRowKeys[0]] || {}) : []
+
+// Translation helper
+const toBopomofo = (letter) => {
+  return bopomofoData.charMap[letter] || letter
+}
+
+// Get current formula from selectors
+const getFormula = (type, row, col) => {
+  if (type === 'edges') {
+    const rowKey = edgeRowKeys.find(k => k.startsWith(row))
+    const colKey = edgeColKeys.find(k => k.startsWith(col))
+    return dylanData.ufComms[rowKey]?.[colKey] || '無對應公式'
+  } else if (type === 'corners') {
+    const rowKey = cornerRowKeys.find(k => k.startsWith(row))
+    const colKey = cornerColKeys.find(k => k.startsWith(col))
+    return dylanData.ufrComms[rowKey]?.[colKey] || '無對應公式'
+  } else {
+    const targetKey = Object.keys(dylanData.parity).find(k => k.startsWith(row))
+    return dylanData.parity[targetKey] || '無對應公式'
+  }
+}
+
+// Get current target text (e.g. "A (UB)")
+const getFullTargetLabel = (type, letter, isRow = true) => {
+  if (type === 'edges') {
+    const keys = isRow ? edgeRowKeys : edgeColKeys
+    const matched = keys.find(k => k.startsWith(letter))
+    if (!matched) return letter
+    return matched.substring(matched.indexOf('('))
+  } else if (type === 'corners') {
+    const keys = isRow ? cornerRowKeys : cornerColKeys
+    const matched = keys.find(k => k.startsWith(letter))
+    if (!matched) return letter
+    return matched.substring(matched.indexOf('('))
+  } else {
+    const matched = Object.keys(dylanData.parity).find(k => k.startsWith(letter))
+    if (!matched) return letter
+    return matched.substring(matched.indexOf('('))
+  }
+}
+
 const Blindfold = () => {
   const [bldType, setBldType] = useState('edges') // 'edges' (UF), 'corners' (UFR), 'parity'
   const [rowTarget, setRowTarget] = useState('A')
@@ -134,21 +184,6 @@ const Blindfold = () => {
   
   const { user } = useAuth()
 
-  // Extract letter lists from preloaded JSON keys
-  const edgeRowKeys = Object.keys(dylanData.ufComms || {})
-  const edgeColKeys = edgeRowKeys.length > 0 ? Object.keys(dylanData.ufComms[edgeRowKeys[0]] || {}) : []
-  
-  const cornerRowKeys = Object.keys(dylanData.ufrComms || {})
-  const cornerColKeys = cornerRowKeys.length > 0 ? Object.keys(dylanData.ufrComms[cornerRowKeys[0]] || {}) : []
-
-  // Clean letters (e.g. "A (UB)" -> "A")
-  const getLetter = (keyStr) => keyStr ? keyStr.split(' ')[0] : ''
-
-  // Translation helper
-  const toBopomofo = (letter) => {
-    return bopomofoData.charMap[letter] || letter
-  }
-
   useEffect(() => {
     loadMemos()
   }, [user])
@@ -156,41 +191,6 @@ const Blindfold = () => {
   const loadMemos = async () => {
     const data = await fetchBldMemosFromDb()
     setMemos(data)
-  }
-
-  // Get current formula from selectors
-  const getFormula = (type, row, col) => {
-    if (type === 'edges') {
-      const rowKey = edgeRowKeys.find(k => k.startsWith(row))
-      const colKey = edgeColKeys.find(k => k.startsWith(col))
-      return dylanData.ufComms[rowKey]?.[colKey] || '無對應公式'
-    } else if (type === 'corners') {
-      const rowKey = cornerRowKeys.find(k => k.startsWith(row))
-      const colKey = cornerColKeys.find(k => k.startsWith(col))
-      return dylanData.ufrComms[rowKey]?.[colKey] || '無對應公式'
-    } else {
-      const targetKey = Object.keys(dylanData.parity).find(k => k.startsWith(row))
-      return dylanData.parity[targetKey] || '無對應公式'
-    }
-  }
-
-  // Get current target text (e.g. "A (UB)")
-  const getFullTargetLabel = (type, letter, isRow = true) => {
-    if (type === 'edges') {
-      const keys = isRow ? edgeRowKeys : edgeColKeys
-      const matched = keys.find(k => k.startsWith(letter))
-      if (!matched) return letter
-      return matched.substring(matched.indexOf('('))
-    } else if (type === 'corners') {
-      const keys = isRow ? cornerRowKeys : cornerColKeys
-      const matched = keys.find(k => k.startsWith(letter))
-      if (!matched) return letter
-      return matched.substring(matched.indexOf('('))
-    } else {
-      const matched = Object.keys(dylanData.parity).find(k => k.startsWith(letter))
-      if (!matched) return letter
-      return matched.substring(matched.indexOf('('))
-    }
   }
 
   // Get current memo for the active pair

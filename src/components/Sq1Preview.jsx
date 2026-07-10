@@ -29,19 +29,17 @@ class SQ1Simulator {
 
   performAlg(alg) {
     if (!alg) return
-    const clean = alg.replace(/\s+/g, ' ').replace(/\(/g, '').replace(/\)/g, '').trim()
-    const tokens = clean.split(' ').filter(x => x.trim())
-    for (const token of tokens) {
+    const regex = /\/|\(-?\d+,\s*-?\d+\)/g
+    const matches = alg.match(regex) || []
+    for (const token of matches) {
       if (token === '/') {
         this.slash()
-      } else if (token.includes(',')) {
-        const parts = token.split(',')
-        if (parts.length === 2) {
-          const topTurn = parseInt(parts[0], 10)
-          const bottomTurn = parseInt(parts[1], 10)
-          if (!isNaN(topTurn)) this.turnU(topTurn)
-          if (!isNaN(bottomTurn)) this.turnD(bottomTurn)
-        }
+      } else {
+        const parts = token.replace(/\(|\)/g, '').split(',')
+        const topTurn = parseInt(parts[0], 10)
+        const bottomTurn = parseInt(parts[1], 10)
+        this.turnU(topTurn)
+        this.turnD(bottomTurn)
       }
     }
   }

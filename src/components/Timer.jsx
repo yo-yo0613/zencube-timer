@@ -525,8 +525,13 @@ const Timer = ({ onSolveComplete, lastSolve, onDeleteLastSolve, onPenaltyChange,
         )}
 
         {/* Cube Scramble Preview - inline for all screen sizes */}
-        {showScramblePreview && displayState !== 'running' && ['222', '333', '444', '555', '666', '777', 'pyram', 'skewb', 'minx', 'clock', 'sq1'].includes(puzzleType) && !isManualMode && (
-          <div className="flex justify-center mb-3">
+        {['222', '333', '444', '555', '666', '777', 'pyram', 'skewb', 'minx', 'clock', 'sq1'].includes(puzzleType) && (
+          <div 
+            className="flex justify-center mb-3"
+            style={{
+              display: (showScramblePreview && displayState !== 'running' && !isManualMode) ? 'flex' : 'none'
+            }}
+          >
             <CubePreview scramble={scramble} puzzleType={puzzleType} />
           </div>
         )}

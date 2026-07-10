@@ -1,7 +1,7 @@
 import React from 'react'
 import Sq1Preview from './Sq1Preview'
 
-const CubePreview = ({ scramble, puzzleType }) => {
+const CubePreview = React.memo(({ scramble, puzzleType }) => {
   const eventMap = {
     '333': '333',
     '222': '222',
@@ -43,6 +43,6 @@ const CubePreview = ({ scramble, puzzleType }) => {
       />
     </div>
   )
-}
+})
 
 export default CubePreview

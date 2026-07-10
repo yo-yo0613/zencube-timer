@@ -1,4 +1,5 @@
 import React from 'react'
+import Sq1Preview from './Sq1Preview'
 
 const CubePreview = ({ scramble, puzzleType }) => {
   const eventMap = {
@@ -17,6 +18,10 @@ const CubePreview = ({ scramble, puzzleType }) => {
 
   const wcaEvent = eventMap[puzzleType]
   if (!wcaEvent) return null
+
+  if (puzzleType === 'sq1') {
+    return <Sq1Preview scramble={scramble} />
+  }
 
   return (
     <div className="bg-white dark:bg-brand-gray-950 p-3 rounded-2xl border border-brand-gray-150 dark:border-brand-gray-900 inline-block shadow-sm animate-in fade-in zoom-in-95 duration-200">

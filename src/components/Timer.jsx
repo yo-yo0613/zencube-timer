@@ -529,7 +529,7 @@ const Timer = ({ onSolveComplete, lastSolve, onDeleteLastSolve, onPenaltyChange,
           <div 
             className="flex justify-center mb-3"
             style={{
-              display: (showScramblePreview && displayState !== 'running' && !isManualMode) ? 'flex' : 'none'
+              display: (showScramblePreview && displayState !== 'running') ? 'flex' : 'none'
             }}
           >
             <CubePreview scramble={scramble} puzzleType={puzzleType} />

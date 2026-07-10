@@ -59,8 +59,12 @@ const History = () => {
   // Search and Filter State
   const [searchQuery, setSearchQuery] = useState('')
   const [filterPenalty, setFilterPenalty] = useState('ALL') // 'ALL', 'NONE', '+2', 'DNF'
-  const [filterPuzzle, setFilterPuzzle] = useState('ALL') // 'ALL' or specific WCA code
-  const [filterSession, setFilterSession] = useState('ALL') // 'ALL' or specific session ID
+  const [filterPuzzle, setFilterPuzzle] = useState(() => {
+    return localStorage.getItem('cube_puzzle_type') || 'ALL'
+  })
+  const [filterSession, setFilterSession] = useState(() => {
+    return localStorage.getItem('cube_active_session') || 'ALL'
+  })
   const [currentPage, setCurrentPage] = useState(1)
   const itemsPerPage = 15
 
@@ -340,38 +344,50 @@ const History = () => {
 
         {/* Detailed Stats Panel */}
         <BentoCard colSpan="md:col-span-6 lg:col-span-4" className="flex flex-col justify-between font-sans">
-          <div>
-            <h3 className="text-sm text-brand-gray-500 font-extrabold uppercase tracking-wider mb-3 flex items-center gap-1">
-              <BarChart3 className="w-4 h-4 text-brand-gray-400" />
-              指標分析 ({filterPuzzle === 'ALL' ? '全部項目' : filterPuzzle.toUpperCase()})
-            </h3>
-            <div className="grid grid-cols-2 gap-3 mt-4 text-xs">
-              <div className="bg-brand-gray-50 dark:bg-brand-gray-950 border border-brand-gray-150 dark:border-brand-gray-900 p-3 rounded-2xl">
-                <span className="text-[10px] text-brand-gray-400 block font-bold">總次數</span>
-                <span className="text-lg font-black font-mono">{totalCount} 次</span>
-              </div>
-              <div className="bg-brand-gray-50 dark:bg-brand-gray-950 border border-brand-gray-150 dark:border-brand-gray-900 p-3 rounded-2xl">
-                <span className="text-[10px] text-brand-gray-400 block font-bold">最佳單次</span>
-                <span className="text-lg font-black font-mono text-green-500">{bestTime ? formatTime(bestTime) : '--'}</span>
-              </div>
-              <div className="bg-brand-gray-50 dark:bg-brand-gray-950 border border-brand-gray-150 dark:border-brand-gray-900 p-3 rounded-2xl">
-                <span className="text-[10px] text-brand-gray-400 block font-bold">平均值 (Mean)</span>
-                <span className="text-lg font-black font-mono">{sessionMean ? formatTime(sessionMean) : '--'}</span>
-              </div>
-              <div className="bg-brand-gray-50 dark:bg-brand-gray-950 border border-brand-gray-150 dark:border-brand-gray-900 p-3 rounded-2xl">
-                <span className="text-[10px] text-brand-gray-400 block font-bold">最慢單次</span>
-                <span className="text-lg font-black font-mono">{worstTime ? formatTime(worstTime) : '--'}</span>
-              </div>
-              <div className="bg-brand-gray-50 dark:bg-brand-gray-950 border border-brand-gray-150 dark:border-brand-gray-900 p-3 rounded-2xl">
-                <span className="text-[10px] text-brand-gray-400 block font-bold">DNF 總數</span>
-                <span className="text-lg font-black font-mono text-red-500">{dnfCount} 次</span>
-              </div>
-              <div className="bg-brand-gray-50 dark:bg-brand-gray-950 border border-brand-gray-150 dark:border-brand-gray-900 p-3 rounded-2xl">
-                <span className="text-[10px] text-brand-gray-400 block font-bold">DNF 佔比率</span>
-                <span className="text-lg font-black font-mono">{dnfRate}%</span>
+          {filterPuzzle === 'ALL' || filterSession === 'ALL' ? (
+            <div className="flex flex-col items-center justify-center text-center h-full py-8 space-y-3">
+              <BarChart3 className="w-10 h-10 text-brand-gray-300 dark:text-brand-gray-700 animate-pulse" />
+              <div className="px-4">
+                <h3 className="text-xs font-black text-brand-gray-500 uppercase tracking-wider">指標分析已暫停</h3>
+                <p className="text-[10px] text-brand-gray-400 mt-2 leading-relaxed">
+                  ⚠️ 請在下方篩選器選擇特定的 <strong>WCA項目</strong> 與 <strong>分組階段</strong> 以展示精確的統計數據分析與滾動平均。
+                </p>
               </div>
             </div>
-          </div>
+          ) : (
+            <div>
+              <h3 className="text-sm text-brand-gray-500 font-extrabold uppercase tracking-wider mb-3 flex items-center gap-1">
+                <BarChart3 className="w-4 h-4 text-brand-gray-400" />
+                指標分析 ({filterPuzzle.toUpperCase()})
+              </h3>
+              <div className="grid grid-cols-2 gap-3 mt-4 text-xs">
+                <div className="bg-brand-gray-50 dark:bg-brand-gray-950 border border-brand-gray-150 dark:border-brand-gray-900 p-3 rounded-2xl">
+                  <span className="text-[10px] text-brand-gray-400 block font-bold">總次數</span>
+                  <span className="text-lg font-black font-mono">{totalCount} 次</span>
+                </div>
+                <div className="bg-brand-gray-50 dark:bg-brand-gray-950 border border-brand-gray-150 dark:border-brand-gray-900 p-3 rounded-2xl">
+                  <span className="text-[10px] text-brand-gray-400 block font-bold">最佳單次</span>
+                  <span className="text-lg font-black font-mono text-green-500">{bestTime ? formatTime(bestTime) : '--'}</span>
+                </div>
+                <div className="bg-brand-gray-50 dark:bg-brand-gray-950 border border-brand-gray-150 dark:border-brand-gray-900 p-3 rounded-2xl">
+                  <span className="text-[10px] text-brand-gray-400 block font-bold">平均值 (Mean)</span>
+                  <span className="text-lg font-black font-mono">{sessionMean ? formatTime(sessionMean) : '--'}</span>
+                </div>
+                <div className="bg-brand-gray-50 dark:bg-brand-gray-950 border border-brand-gray-150 dark:border-brand-gray-900 p-3 rounded-2xl">
+                  <span className="text-[10px] text-brand-gray-400 block font-bold">最慢單次</span>
+                  <span className="text-lg font-black font-mono">{worstTime ? formatTime(worstTime) : '--'}</span>
+                </div>
+                <div className="bg-brand-gray-50 dark:bg-brand-gray-950 border border-brand-gray-150 dark:border-brand-gray-900 p-3 rounded-2xl">
+                  <span className="text-[10px] text-brand-gray-400 block font-bold">DNF 總數</span>
+                  <span className="text-lg font-black font-mono text-red-500">{dnfCount} 次</span>
+                </div>
+                <div className="bg-brand-gray-50 dark:bg-brand-gray-950 border border-brand-gray-150 dark:border-brand-gray-900 p-3 rounded-2xl">
+                  <span className="text-[10px] text-brand-gray-400 block font-bold">DNF 佔比率</span>
+                  <span className="text-lg font-black font-mono">{dnfRate}%</span>
+                </div>
+              </div>
+            </div>
+          )}
           <div className="text-[10px] text-brand-gray-400 pt-3 border-t border-brand-gray-100 dark:border-brand-gray-900 mt-4">
             * 篩選特定的項目或分組以查閱統計資訊。
           </div>
@@ -517,8 +533,16 @@ const History = () => {
                           </button>
                         </td>
                         <td className="py-3.5 px-4 font-mono font-bold text-brand-gray-400">{indexNum}</td>
-                        <td className="py-3.5 px-4 font-bold uppercase">{solve.puzzle_type}</td>
-                        <td className="py-3.5 px-4 text-brand-gray-500 font-semibold">{getSessionName(solve.session_id || '1')}</td>
+                        <td className="py-3.5 px-4">
+                          <span className="px-2 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-brand-gray-100 dark:bg-brand-gray-900 border border-brand-gray-200 dark:border-brand-gray-800 text-brand-gray-600 dark:text-brand-gray-400">
+                            {solve.puzzle_type}
+                          </span>
+                        </td>
+                        <td className="py-3.5 px-4">
+                          <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-blue-50 dark:bg-blue-950/30 border border-blue-100 dark:border-blue-900/50 text-blue-600 dark:text-blue-400">
+                            {getSessionName(solve.session_id || '1')}
+                          </span>
+                        </td>
                         <td className="py-3.5 px-4 font-mono font-extrabold text-sm">{timeDisplay}</td>
                         <td className="py-3.5 px-4 font-mono text-brand-gray-500 dark:text-brand-gray-400 break-all select-all">{solve.scramble}</td>
                         <td className="py-3.5 px-4 text-brand-gray-400">

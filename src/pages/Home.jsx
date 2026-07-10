@@ -70,7 +70,9 @@ const formatTotalTime = (ms) => {
 const Home = () => {
   const [solves, setSolves] = useState([])
   const [loading, setLoading] = useState(true)
-  const [puzzleType, setPuzzleType] = useState('333') // Default to 3x3x3
+  const [puzzleType, setPuzzleType] = useState(() => {
+    return localStorage.getItem('cube_puzzle_type') || '333'
+  })
   const { user } = useAuth()
 
   // Session states
@@ -92,6 +94,10 @@ const Home = () => {
   useEffect(() => {
     localStorage.setItem('cube_active_session', activeSession)
   }, [activeSession])
+
+  useEffect(() => {
+    localStorage.setItem('cube_puzzle_type', puzzleType)
+  }, [puzzleType])
 
   useEffect(() => {
     loadSolves()

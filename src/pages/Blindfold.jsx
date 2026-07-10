@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
 import dylanData from '../data/dylan3Style.json'
 import bopomofoData from '../data/bopomofoMap.json'
 import { Brain, Search, Award, HelpCircle, Eye, RotateCw, Edit3, Save, Languages, ListFilter } from 'lucide-react'
@@ -13,6 +13,111 @@ const Blindfold = () => {
   const [memos, setMemos] = useState([])
   const [editingMemo, setEditingMemo] = useState(false)
   const [memoText, setMemoText] = useState('')
+
+  // Editor States
+  const [editorSearchQuery, setEditorSearchQuery] = useState('')
+  const [editorTypeFilter, setEditorTypeFilter] = useState('all') // 'all', 'edges', 'corners', 'parity'
+  const [editorCurrentPage, setEditorCurrentPage] = useState(1)
+  const editorItemsPerPage = 20
+
+  useEffect(() => {
+    setEditorCurrentPage(1)
+  }, [editorSearchQuery, editorTypeFilter])
+
+  const allPairs = useMemo(() => {
+    const list = []
+    // Edges
+    edgeRowKeys.forEach(rowKey => {
+      const rowLetter = getLetter(rowKey)
+      edgeColKeys.forEach(colKey => {
+        const colLetter = getLetter(colKey)
+        if (rowLetter !== colLetter) {
+          list.push({
+            row: rowLetter,
+            col: colLetter,
+            type: 'edges',
+            pair: `${rowLetter}${colLetter}`,
+            rowLabel: rowKey,
+            colLabel: colKey,
+            formula: dylanData.ufComms[rowKey]?.[colKey] || ''
+          })
+        }
+      })
+    })
+    // Corners
+    cornerRowKeys.forEach(rowKey => {
+      const rowLetter = getLetter(rowKey)
+      cornerColKeys.forEach(colKey => {
+        const colLetter = getLetter(colKey)
+        if (rowLetter !== colLetter) {
+          list.push({
+            row: rowLetter,
+            col: colLetter,
+            type: 'corners',
+            pair: `${rowLetter}${colLetter}`,
+            rowLabel: rowKey,
+            colLabel: colKey,
+            formula: dylanData.ufrComms[rowKey]?.[colKey] || ''
+          })
+        }
+      })
+    })
+    // Parity
+    Object.keys(dylanData.parity).forEach(rowKey => {
+      const rowLetter = getLetter(rowKey)
+      list.push({
+        row: rowLetter,
+        col: '',
+        type: 'parity',
+        pair: `${rowLetter}`,
+        rowLabel: rowKey,
+        colLabel: '',
+        formula: dylanData.parity[rowKey] || ''
+      })
+    })
+    return list
+  }, [edgeRowKeys, edgeColKeys, cornerRowKeys, cornerColKeys])
+
+  const filteredPairs = useMemo(() => {
+    return allPairs.filter(p => {
+      const bopomofoRow = toBopomofo(p.row)
+      const bopomofoCol = toBopomofo(p.col)
+      const bopomofoPairStr = `${bopomofoRow}${bopomofoCol}`
+      
+      const matchesType = editorTypeFilter === 'all' || p.type === editorTypeFilter
+      const searchLower = editorSearchQuery.toLowerCase()
+      
+      const savedMemoObj = memos.find(m => m.letter_pair === p.pair && m.type === p.type)
+      const memoText = savedMemoObj?.memo_text || ''
+
+      const matchesSearch = 
+        p.pair.toLowerCase().includes(searchLower) ||
+        bopomofoPairStr.includes(editorSearchQuery) ||
+        p.rowLabel.toLowerCase().includes(searchLower) ||
+        p.colLabel.toLowerCase().includes(searchLower) ||
+        p.formula.toLowerCase().includes(searchLower) ||
+        memoText.toLowerCase().includes(searchLower)
+
+      return matchesType && matchesSearch
+    })
+  }, [allPairs, editorSearchQuery, editorTypeFilter, memos, useBopomofo])
+
+  const totalEditorPages = Math.ceil(filteredPairs.length / editorItemsPerPage)
+  
+  const paginatedPairs = useMemo(() => {
+    return filteredPairs.slice(
+      (editorCurrentPage - 1) * editorItemsPerPage,
+      editorCurrentPage * editorItemsPerPage
+    )
+  }, [filteredPairs, editorCurrentPage])
+
+  const handleSavePairMemo = async (pair, type, text) => {
+    const saved = await saveBldMemoToDb(pair, type, text, '')
+    setMemos((prev) => {
+      const filtered = prev.filter(m => !(m.letter_pair === pair && m.type === type))
+      return [...filtered, saved]
+    })
+  }
 
   // Right Side Trainer Tab: 'comms' (Formulas) or 'memos' (Memo Codes)
   const [trainerTab, setTrainerTab] = useState('comms') 
@@ -238,12 +343,132 @@ const Blindfold = () => {
             >
               Parity (奇偶)
             </button>
+            <button
+              onClick={() => { setBldType('editor'); setTrainerActive(false); }}
+              className={`py-2 px-4 rounded-xl text-xs font-bold transition-all ${
+                bldType === 'editor'
+                  ? 'bg-white dark:bg-black text-black dark:text-white shadow-sm'
+                  : 'text-brand-gray-400 dark:text-brand-gray-500 hover:text-brand-gray-600 dark:hover:text-brand-gray-300'
+              }`}
+            >
+              ✍️ 編輯總表
+            </button>
           </div>
         </div>
       </header>
 
       {/* Main Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      {bldType === 'editor' ? (
+        <div className="bg-white dark:bg-black border border-brand-gray-200 dark:border-brand-gray-800 rounded-[2.5rem] p-6 md:p-8 space-y-6 shadow-sm">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-brand-gray-100 dark:border-brand-gray-900 pb-4">
+            <div>
+              <h2 className="text-xl font-black">✍️ 字元對記憶詞編輯總表</h2>
+              <p className="text-xs text-brand-gray-400 mt-1">在單一表格中直接搜尋、批量編輯與儲存所有 3-Style 組合的聯想記憶詞</p>
+            </div>
+            
+            <div className="flex flex-wrap items-center gap-3">
+              {/* Search Input */}
+              <div className="relative">
+                <Search className="w-4 h-4 text-brand-gray-400 absolute left-3.5 top-3.5" />
+                <input
+                  type="text"
+                  placeholder="搜尋字母, 注音, 記憶詞, 公式..."
+                  value={editorSearchQuery}
+                  onChange={(e) => setEditorSearchQuery(e.target.value)}
+                  className="pl-10 pr-4 py-2.5 bg-brand-gray-50 dark:bg-brand-gray-950 border border-brand-gray-200 dark:border-brand-gray-900 rounded-2xl text-xs focus:outline-none focus:border-black dark:focus:border-white transition-colors w-60 font-sans"
+                />
+              </div>
+              
+              {/* Type Selector */}
+              <div className="flex bg-brand-gray-100 dark:bg-brand-gray-950 p-1 rounded-xl text-xs font-bold">
+                {[
+                  { id: 'all', label: '全部' },
+                  { id: 'edges', label: '邊塊 (UF)' },
+                  { id: 'corners', label: '角塊 (UFR)' },
+                  { id: 'parity', label: '奇偶 (Parity)' }
+                ].map(t => (
+                  <button
+                    key={t.id}
+                    onClick={() => setEditorTypeFilter(t.id)}
+                    className={`py-1.5 px-3 rounded-lg text-[10px] transition-all ${
+                      editorTypeFilter === t.id
+                        ? 'bg-white dark:bg-black text-black dark:text-white shadow-sm'
+                        : 'text-brand-gray-400 hover:text-brand-gray-600 dark:hover:text-brand-gray-300'
+                    }`}
+                  >
+                    {t.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Table list */}
+          <div className="overflow-x-auto">
+            <table className="w-full text-left border-collapse font-sans">
+              <thead>
+                <tr className="border-b border-brand-gray-200 dark:border-brand-gray-800 text-[10px] text-brand-gray-400 uppercase font-black tracking-wider">
+                  <th className="p-3 w-[80px]">組合</th>
+                  <th className="p-3 w-[120px]">類型</th>
+                  <th className="p-3 w-[200px]">目標位置</th>
+                  <th className="p-3 w-[180px]">Commutator 公式</th>
+                  <th className="p-3">自訂記憶聯想詞 (點擊輸入編輯)</th>
+                </tr>
+              </thead>
+              <tbody>
+                {paginatedPairs.length > 0 ? (
+                  paginatedPairs.map(item => {
+                    const initialMemo = memos.find(m => m.letter_pair === item.pair && m.type === item.type)?.memo_text || ''
+                    return (
+                      <EditorRow
+                        key={`${item.type}-${item.pair}`}
+                        item={item}
+                        initialMemo={initialMemo}
+                        onSave={handleSavePairMemo}
+                        useBopomofo={useBopomofo}
+                        toBopomofo={toBopomofo}
+                        getFullTargetLabel={getFullTargetLabel}
+                      />
+                    )
+                  })
+                ) : (
+                  <tr>
+                    <td colSpan="5" className="p-8 text-center text-xs text-brand-gray-400 font-bold">
+                      沒有找到符合搜尋條件的字元對紀錄。
+                    </td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Pagination controls */}
+          {totalEditorPages > 1 && (
+            <div className="flex justify-between items-center pt-4 border-t border-brand-gray-100 dark:border-brand-gray-900 text-xs select-none">
+              <span className="text-brand-gray-400 font-semibold">
+                第 {editorCurrentPage} 頁，共 {totalEditorPages} 頁 (共 {filteredPairs.length} 筆資料)
+              </span>
+              <div className="flex gap-2 font-bold">
+                <button
+                  disabled={editorCurrentPage === 1}
+                  onClick={() => setEditorCurrentPage(prev => prev - 1)}
+                  className="px-3.5 py-2 border border-brand-gray-200 dark:border-brand-gray-800 hover:bg-brand-gray-50 dark:hover:bg-brand-gray-950 disabled:opacity-30 rounded-xl transition-all"
+                >
+                  上一頁
+                </button>
+                <button
+                  disabled={editorCurrentPage === totalEditorPages}
+                  onClick={() => setEditorCurrentPage(prev => prev + 1)}
+                  className="px-3.5 py-2 border border-brand-gray-200 dark:border-brand-gray-800 hover:bg-brand-gray-50 dark:hover:bg-brand-gray-950 disabled:opacity-30 rounded-xl transition-all"
+                >
+                  下一頁
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         
         {/* Formula Browser */}
         <div className="lg:col-span-7 bg-white dark:bg-black border border-brand-gray-200 dark:border-brand-gray-800 rounded-[2.5rem] p-6 md:p-8 space-y-6">
@@ -587,8 +812,71 @@ const Blindfold = () => {
             )}
           </div>
         </div>
-      </div>
+        </div>
+      )}
     </div>
+  )
+}
+
+// EditorRow component to optimize typing performance and prevent table lags
+const EditorRow = ({ item, initialMemo, onSave, useBopomofo, toBopomofo, getFullTargetLabel }) => {
+  const [memo, setMemo] = useState(initialMemo)
+  const [isSaved, setIsSaved] = useState(true)
+
+  useEffect(() => {
+    setMemo(initialMemo)
+    setIsSaved(true)
+  }, [initialMemo])
+
+  const handleSave = () => {
+    onSave(item.pair, item.type, memo)
+    setIsSaved(true)
+  }
+
+  const rowBld = useBopomofo ? toBopomofo(item.row) : item.row
+  const colBld = useBopomofo ? toBopomofo(item.col) : item.col
+  const pairDisplay = item.type === 'parity' ? rowBld : `${rowBld}${colBld}`
+
+  return (
+    <tr className="border-b border-brand-gray-100 dark:border-brand-gray-900 text-xs hover:bg-brand-gray-50/50 dark:hover:bg-brand-gray-950/20 font-sans">
+      <td className="p-3 font-mono font-black text-sm">{pairDisplay}</td>
+      <td className="p-3 capitalize font-semibold text-brand-gray-400">
+        {item.type === 'edges' ? '邊塊 (UF)' : item.type === 'corners' ? '角塊 (UFR)' : '奇偶 (Parity)'}
+      </td>
+      <td className="p-3 font-mono text-brand-gray-500">
+        {item.type === 'parity' 
+          ? `${item.row} ${getFullTargetLabel(item.type, item.row, true)}`
+          : `${item.row} ${getFullTargetLabel(item.type, item.row, true)} ➔ ${item.col} ${getFullTargetLabel(item.type, item.col, false)}`
+        }
+      </td>
+      <td className="p-3 font-mono text-brand-gray-600 dark:text-brand-gray-400 max-w-[200px] truncate" title={item.formula}>
+        {item.formula}
+      </td>
+      <td className="p-3">
+        <div className="flex items-center gap-2">
+          <input
+            type="text"
+            value={memo}
+            onChange={(e) => { setMemo(e.target.value); setIsSaved(false); }}
+            onKeyDown={(e) => { if (e.key === 'Enter') handleSave(); }}
+            placeholder="尚未設定記憶詞..."
+            className="flex-1 bg-brand-gray-50 dark:bg-brand-gray-950 border border-brand-gray-200 dark:border-brand-gray-900 rounded-xl px-3 py-1.5 focus:outline-none focus:border-black dark:focus:border-white transition-colors"
+          />
+          <button
+            onClick={handleSave}
+            disabled={isSaved}
+            className={`p-1.5 rounded-lg border transition-all ${
+              isSaved
+                ? 'bg-transparent text-brand-gray-300 border-transparent pointer-events-none'
+                : 'bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm hover:scale-105 active:scale-95'
+            }`}
+            title="儲存記憶詞"
+          >
+            <Save className="w-3.5 h-3.5" />
+          </button>
+        </div>
+      </td>
+    </tr>
   )
 }
 

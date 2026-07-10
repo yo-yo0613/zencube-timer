@@ -10,10 +10,9 @@ const getLetter = (keyStr) => keyStr ? keyStr.split(' ')[0] : ''
 
 // Extract letter lists from preloaded JSON keys (Static Constants)
 const edgeRowKeys = Object.keys(dylanData.ufComms || {})
-const edgeColKeys = edgeRowKeys.length > 0 ? Object.keys(dylanData.ufComms[edgeRowKeys[0]] || {}) : []
-
+const edgeColKeys = edgeRowKeys
 const cornerRowKeys = Object.keys(dylanData.ufrComms || {})
-const cornerColKeys = cornerRowKeys.length > 0 ? Object.keys(dylanData.ufrComms[cornerRowKeys[0]] || {}) : []
+const cornerColKeys = cornerRowKeys
 
 // Translation helper
 const toBopomofo = (letter) => {

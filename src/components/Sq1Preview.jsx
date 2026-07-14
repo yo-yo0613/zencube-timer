@@ -29,17 +29,52 @@ class SQ1Simulator {
 
   performAlg(alg) {
     if (!alg) return
-    const regex = /\/|\(-?\d+,\s*-?\d+\)/g
-    const matches = alg.match(regex) || []
-    for (const token of matches) {
-      if (token === '/') {
-        this.slash()
-      } else {
-        const parts = token.replace(/\(|\)/g, '').split(',')
-        const topTurn = parseInt(parts[0], 10)
-        const bottomTurn = parseInt(parts[1], 10)
-        this.turnU(topTurn)
-        this.turnD(bottomTurn)
+    const trimmed = alg.trim()
+    
+    // Detect format: if contains bare "x,y" pattern (no parens around first occurrence)
+    // e.g. "0,-2 / -2,0 / ..." vs "(0,-2) / (-2,0) / ..."
+    const hasBareFormat = /^-?\d+,-?\d+/.test(trimmed) || /^\s*\//.test(trimmed)
+    
+    if (hasBareFormat) {
+      // Parse bare format: "x,y / x,y / ..." or "/ x,y / x,y"
+      // Strategy: The leading "/" means slash-first; then alternate turn/slash
+      // Split by slash to get segments between slashes
+      const parts = trimmed.split('/')
+      // If trimmed starts with "/", first part will be empty => slash first
+      for (let i = 0; i < parts.length; i++) {
+        const seg = parts[i].trim()
+        if (i === 0 && seg === '') {
+          // Leading slash
+          this.slash()
+        } else if (seg !== '') {
+          // Parse turn "x,y"
+          const numParts = seg.replace(/[()]/g, '').split(',')
+          if (numParts.length === 2) {
+            const topTurn = parseInt(numParts[0].trim(), 10)
+            const bottomTurn = parseInt(numParts[1].trim(), 10)
+            this.turnU(topTurn)
+            this.turnD(bottomTurn)
+          }
+          // After a turn segment, there was a slash (separator) unless it's the last
+          if (i < parts.length - 1) {
+            this.slash()
+          }
+        }
+      }
+    } else {
+      // Parse (x,y) format
+      const regex = /\/|\(-?\d+,\s*-?\d+\)/g
+      const matches = trimmed.match(regex) || []
+      for (const token of matches) {
+        if (token === '/') {
+          this.slash()
+        } else {
+          const mparts = token.replace(/\(|\)/g, '').split(',')
+          const topTurn = parseInt(mparts[0], 10)
+          const bottomTurn = parseInt(mparts[1], 10)
+          this.turnU(topTurn)
+          this.turnD(bottomTurn)
+        }
       }
     }
   }

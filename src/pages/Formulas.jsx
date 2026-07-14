@@ -84,6 +84,7 @@ const Formulas = () => {
     }
   }
 
+
   // Get all SQ1 CSP items formatted for display
   const getSq1Formulas = () => {
     const cases = []
@@ -92,7 +93,6 @@ const Formulas = () => {
         id: `sq1-${caseName}`,
         name: caseName,
         type: 'SQ1-CSP',
-        scramble: '',
         formula: Object.keys(caseData.algs).join(' 或 '),
         subset: caseData.subset,
         svgTop: caseData.svgTop || '',
@@ -102,6 +102,7 @@ const Formulas = () => {
     }
     return cases
   }
+
 
   // Combine formulas list dynamically based on active tab
   const getDisplayFormulas = () => {
@@ -225,36 +226,71 @@ const Formulas = () => {
 
                 <h3 className="text-lg font-black tracking-tight mb-2">{item.name}</h3>
 
-                {/* SQ1 CSP Dynamic SVG Drawings */}
-                {item.type === 'SQ1-CSP' && item.svgTop && (
-                  <div className="flex gap-4 items-center justify-center bg-brand-gray-50 dark:bg-brand-gray-950 p-4 rounded-2xl mb-4 border border-brand-gray-100 dark:border-brand-gray-900">
-                    <div className="flex flex-col items-center gap-1">
-                      <span className="text-[9px] uppercase tracking-wider text-brand-gray-400 font-extrabold">U Layer (頂層)</span>
-                      <div dangerouslySetInnerHTML={{ __html: item.svgTop }} className="w-12 h-12 flex items-center justify-center" />
+
+                {/* SQ1 CSP: show recognition shape with clear flow label */}
+                {item.type === 'SQ1-CSP' ? (
+                  <div className="mb-4">
+                    <div className="flex items-center gap-1.5 mb-2">
+                      <span className="text-[10px] text-brand-gray-400 uppercase font-semibold">遇到此形狀時</span>
+                      <span className="text-[10px] text-brand-gray-300 dark:text-brand-gray-600">（辨識圖）</span>
                     </div>
-                    <div className="w-px h-10 bg-brand-gray-200 dark:bg-brand-gray-800" />
-                    <div className="flex flex-col items-center gap-1">
-                      <span className="text-[9px] uppercase tracking-wider text-brand-gray-400 font-extrabold">D Layer (底層)</span>
-                      <div dangerouslySetInnerHTML={{ __html: item.svgBottom }} className="w-12 h-12 flex items-center justify-center" />
+                    {/* Static SVGs scraped from CubingApp — identical to reference */}
+                    {(item.svgTop || item.svgBottom) ? (
+                      <div className="flex items-center justify-center gap-3 bg-brand-gray-50 dark:bg-[#111] p-3 rounded-2xl border border-brand-gray-150 dark:border-brand-gray-800">
+                        {item.svgTop && (
+                          <div
+                            className="w-20 h-20 flex-shrink-0 [&_svg]:w-full [&_svg]:h-full [&_polygon]:stroke-[#111] dark:[&_polygon]:stroke-[#ddd]"
+                            dangerouslySetInnerHTML={{ __html: item.svgTop }}
+                          />
+                        )}
+                        {item.svgBottom && (
+                          <div
+                            className="w-20 h-20 flex-shrink-0 [&_svg]:w-full [&_svg]:h-full [&_polygon]:stroke-[#111] dark:[&_polygon]:stroke-[#ddd]"
+                            dangerouslySetInnerHTML={{ __html: item.svgBottom }}
+                          />
+                        )}
+                      </div>
+                    ) : (
+                      <div className="text-xs text-brand-gray-400 text-center py-4">無圖</div>
+                    )}
+                    <div className="flex items-center gap-2 my-2 px-1">
+                      <div className="flex-1 h-px bg-brand-gray-200 dark:bg-brand-gray-800" />
+                      <span className="text-xs text-brand-gray-400 font-bold flex items-center gap-1">
+                        ↓ 套用此公式
+                      </span>
+                      <div className="flex-1 h-px bg-brand-gray-200 dark:bg-brand-gray-800" />
+                    </div>
+                    <div>
+                      <code className="text-sm font-mono font-extrabold text-black dark:text-white bg-brand-gray-100 dark:bg-brand-gray-900 p-2 rounded-xl block break-words border border-brand-gray-200 dark:border-brand-gray-800">
+                        {item.formula}
+                      </code>
+                    </div>
+                    <div className="flex items-center gap-2 mt-2 px-1">
+                      <div className="flex-1 h-px bg-brand-gray-200 dark:bg-brand-gray-800" />
+                      <span className="text-xs text-green-500 font-bold">✓ 還原方塊形狀</span>
+                      <div className="flex-1 h-px bg-brand-gray-200 dark:bg-brand-gray-800" />
                     </div>
                   </div>
-                )}
-                
-                {item.scramble && (
-                  <div className="mb-3">
-                    <span className="text-[10px] text-brand-gray-400 uppercase font-semibold block">打亂步驟:</span>
-                    <code className="text-xs font-mono bg-brand-gray-50 dark:bg-brand-gray-950 p-1.5 rounded block break-all text-brand-gray-500 dark:text-brand-gray-400 mt-1">
-                      {item.scramble}
-                    </code>
-                  </div>
+                ) : (
+                  <>
+                    {item.scramble && (
+                      <div className="mb-3">
+                        <span className="text-[10px] text-brand-gray-400 uppercase font-semibold block">打亂步驟:</span>
+                        <code className="text-xs font-mono bg-brand-gray-50 dark:bg-brand-gray-950 p-1.5 rounded block break-all text-brand-gray-500 dark:text-brand-gray-400 mt-1">
+                          {item.scramble}
+                        </code>
+                      </div>
+                    )}
+
+                    <div className="mb-4">
+                      <span className="text-[10px] text-brand-gray-400 uppercase font-semibold block">公式解法:</span>
+                      <code className="text-sm font-mono font-extrabold text-black dark:text-white bg-brand-gray-100 dark:bg-brand-gray-900 p-2 rounded-xl block break-words mt-1 border border-brand-gray-200 dark:border-brand-gray-800">
+                        {item.formula}
+                      </code>
+                    </div>
+                  </>
                 )}
 
-                <div className="mb-4">
-                  <span className="text-[10px] text-brand-gray-400 uppercase font-semibold block">公式解法:</span>
-                  <code className="text-sm font-mono font-extrabold text-black dark:text-white bg-brand-gray-100 dark:bg-brand-gray-900 p-2 rounded-xl block break-words mt-1 border border-brand-gray-200 dark:border-brand-gray-800">
-                    {item.formula}
-                  </code>
-                </div>
               </div>
 
               {item.memo && (

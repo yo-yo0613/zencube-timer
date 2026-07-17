@@ -187,7 +187,7 @@ const Formulas = () => {
           </div>
         )}
 
-        <div className="flex bg-brand-gray-100 dark:bg-brand-gray-950 p-1.5 rounded-2xl overflow-x-auto gap-1 self-start lg:self-auto">
+        <div className="flex flex-wrap bg-brand-gray-100 dark:bg-brand-gray-950 p-1.5 rounded-2xl gap-1.5 self-start lg:self-auto">
           {tabs.map((tab) => (
             <button
               key={tab}

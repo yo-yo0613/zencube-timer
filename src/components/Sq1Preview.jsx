@@ -147,15 +147,15 @@ class SQ1Simulator {
       ['#FFCC00', '#00cc44'],            // Edge top (5)
       ['#FFCC00', '#ff1100', '#00cc44'], // Corner top (6)
       ['#FFCC00', '#ff1100'],            // Edge top (7)
-      // Bottom face stickers (White base)
-      ['#FFFFFF', '#ff1100', '#0044ff'], // Corner bottom (8)
-      ['#FFFFFF', '#0044ff'],            // Edge bottom (9)
-      ['#FFFFFF', '#0044ff', '#ffaa00'], // Corner bottom (10)
-      ['#FFFFFF', '#ffaa00'],            // Edge bottom (11)
-      ['#FFFFFF', '#ffaa00', '#00cc44'], // Corner bottom (12)
-      ['#FFFFFF', '#00cc44'],            // Edge bottom (13)
-      ['#FFFFFF', '#00cc44', '#ff1100'], // Corner bottom (14)
-      ['#FFFFFF', '#ff1100'],            // Edge bottom (15)
+      // Bottom face stickers (White base) - corrected physical clockwise color mappings
+      ['#FFFFFF', '#00cc44', '#ff1100'], // Corner bottom (8) - DFL (Green/Red)
+      ['#FFFFFF', '#ff1100'],            // Edge bottom (9) - DF (Red)
+      ['#FFFFFF', '#0044ff', '#ff1100'], // Corner bottom (10) - DFR (Blue/Red)
+      ['#FFFFFF', '#0044ff'],            // Edge bottom (11) - DR (Blue)
+      ['#FFFFFF', '#0044ff', '#ffaa00'], // Corner bottom (12) - DBR (Blue/Orange)
+      ['#FFFFFF', '#ffaa00'],            // Edge bottom (13) - DB (Orange)
+      ['#FFFFFF', '#00cc44', '#ffaa00'], // Corner bottom (14) - DBL (Green/Orange)
+      ['#FFFFFF', '#00cc44'],            // Edge bottom (15) - DL (Green)
     ]
 
     const size = 100
@@ -170,12 +170,6 @@ class SQ1Simulator {
     let corner3 = `${pad},${size - pad} ${width + pad},${size - width - pad} ${inner},${size - width - pad} ${outer},${size - pad}`
     const edge1 = `${mid},${mid} ${size - inner},${size - width - pad} ${inner},${size - width - pad}`
     const edge2 = `${outer},${size - pad} ${inner},${size - width - pad} ${size - inner},${size - width - pad} ${size - outer},${size - pad}`
-
-    if (!top) {
-      const tmp = corner2
-      corner2 = corner3
-      corner3 = tmp
-    }
 
     let angle = 0
     const polygons = []
@@ -214,12 +208,12 @@ const Sq1Preview = ({ scramble }) => {
     }
   }, [scramble])
 
-  const renderSvg = (polygons) => (
+  const renderSvg = (polygons, isBottom = false) => (
     <svg 
       viewBox="0 0 100 100" 
       strokeLinejoin="round" 
       className="w-16 h-16 md:w-20 md:h-20"
-      style={{ display: 'inline-block' }}
+      style={{ display: 'inline-block', transform: isBottom ? 'scaleX(-1)' : 'none' }}
     >
       {polygons.map((p, idx) => (
         <polygon 
@@ -237,11 +231,11 @@ const Sq1Preview = ({ scramble }) => {
   return (
     <div className="flex items-center justify-center gap-4 bg-brand-gray-50 dark:bg-brand-gray-900/40 p-2 rounded-2xl border border-brand-gray-150 dark:border-brand-gray-800">
       <div className="flex flex-col items-center">
-        {renderSvg(topPolygons)}
+        {renderSvg(topPolygons, false)}
       </div>
       <div className="w-px h-12 bg-brand-gray-200 dark:bg-brand-gray-800" />
       <div className="flex flex-col items-center">
-        {renderSvg(bottomPolygons)}
+        {renderSvg(bottomPolygons, true)}
       </div>
     </div>
   )

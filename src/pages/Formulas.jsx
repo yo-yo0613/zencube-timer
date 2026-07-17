@@ -3,15 +3,9 @@ import { Plus, Trash2, Search, BookOpen, Layers, Check, HelpCircle } from 'lucid
 import { fetchFormulasFromDb, saveFormulaToDb, deleteFormulaFromDb } from '../utils/db'
 import { useAuth } from '../context/AuthContext'
 import sq1Data from '../data/SQ1-CSP.json'
-
-const PRELOADED_FORMULAS = [
-  { id: 'p1', name: 'T-Perm (T 霸)', type: 'PLL', scramble: "F R U' R' U' R U R' F' R U R' U' R' F R F'", formula: "R U R' U' R' F R2 U' R' U' R U R' F'", memo: "標準 T 步，觀察左右兩側對色與一組 headlight", image_url: "" },
-  { id: 'p2', name: 'Y-Perm (Y 霸)', type: 'PLL', scramble: "F R U' R' U' R U R' F' R U R' U' R' F R F'", formula: "F R U' R' U' R U R' F' R U R' U' R' F R F'", memo: "標準 Y 步，對稱角塊交換，兩組一對的 F2L 對色", image_url: "" },
-  { id: 'p3', name: 'H-Perm (H 霸)', type: 'PLL', scramble: "M2 U M2 U2 M2 U M2", formula: "M2' U M2' U2 M2' U M2'", memo: "邊塊十字交叉對換", image_url: "" },
-  { id: 'p4', name: 'Ua-Perm (Ua 霸)', type: 'PLL', scramble: "R U' R U R U R U' R' U' R2", formula: "M2' U M' U2 M U M2'", memo: "邊塊逆時針三循環", image_url: "" },
-  { id: 'o1', name: 'OLL 21 (十字)', type: 'OLL', scramble: "R U2 R' U' R U R' U' R U' R'", formula: "(R U2 R' U' R U R' U') (R U' R')", memo: "頂面十字，四個角塊朝外", image_url: "" },
-  { id: 'o2', name: 'OLL 22 (十字)', type: 'OLL', scramble: "R U2 R2 U' R2 U' R2 U2 R", formula: "R U2' R2' U' R2 U' R2' U2' R", memo: "頂面十字，大車頭", image_url: "" },
-]
+import preloaded3x3Algs from '../data/3x3algs.json'
+import preloaded2x2Algs from '../data/2x2algs.json'
+import CubePreview from '../components/CubePreview'
 
 const Formulas = () => {
   const [formulas, setFormulas] = useState([])
@@ -38,10 +32,15 @@ const Formulas = () => {
     setLoading(true)
     const dbFormulas = await fetchFormulasFromDb()
     
-    // Merge preloaded and database formulas
+    // Merge database formulas, preloaded 3x3 algorithms, and preloaded 2x2 algorithms
     const combined = [...dbFormulas]
-    PRELOADED_FORMULAS.forEach(pre => {
-      if (!combined.some(f => f.name === pre.name)) {
+    preloaded3x3Algs.forEach(pre => {
+      if (!combined.some(f => f.id === pre.id)) {
+        combined.push(pre)
+      }
+    })
+    preloaded2x2Algs.forEach(pre => {
+      if (!combined.some(f => f.id === pre.id)) {
         combined.push(pre)
       }
     })
@@ -125,7 +124,18 @@ const Formulas = () => {
            (f.memo && f.memo.toLowerCase().includes(searchQuery.toLowerCase()))
   })
 
-  const tabs = ['ALL', 'F2L', 'OLL', 'PLL', 'SQ1-CSP', 'CUSTOM']
+  const sortedFormulas = [...filteredFormulas].sort((a, b) => {
+    const matchA = a.name.match(/\d+/);
+    const matchB = b.name.match(/\d+/);
+    if (matchA && matchB) {
+      const numA = parseInt(matchA[0], 10);
+      const numB = parseInt(matchB[0], 10);
+      if (numA !== numB) return numA - numB;
+    }
+    return a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: 'base' });
+  });
+
+  const tabs = ['ALL', 'F2L', 'OLL', 'PLL', 'CLL', 'EG1', 'EG2', 'WV', 'COLL', 'OLLCP', 'ZBLL', 'SQ1-CSP', 'CUSTOM']
   const sq1Subsets = ['ALL', '1 Slash', '2 Slashes', '3 Slashes', '4 Slashes', '5 Slashes', '6 Slashes', '7 Slashes']
 
   return (
@@ -196,14 +206,14 @@ const Formulas = () => {
 
       {/* Formulas Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filteredFormulas.length === 0 ? (
-          <div className="col-span-full text-center py-16 bg-brand-gray-50 dark:bg-brand-gray-950 rounded-3xl border border-brand-gray-100 dark:border-brand-gray-900">
+        {sortedFormulas.length === 0 ? (
+          <div className="col-span-full text-center py-16 bg-brand-gray-50 dark:bg-brand-gray-950 rounded-3xl border border-brand-gray-150 dark:border-brand-gray-900">
             <BookOpen className="w-8 h-8 mx-auto text-brand-gray-400 mb-3" />
             <p className="text-sm font-semibold text-brand-gray-500">找不到相符的公式</p>
             <p className="text-xs text-brand-gray-400 mt-1">您可以點擊右上角「新增公式」按鈕來建立自己的公式！</p>
           </div>
         ) : (
-          filteredFormulas.map((item) => (
+          sortedFormulas.map((item) => (
             <div
               key={item.id}
               className="bg-white dark:bg-black border border-brand-gray-200 dark:border-brand-gray-800 rounded-[2rem] p-6 hover:border-black dark:hover:border-white transition-all duration-300 flex flex-col justify-between"
@@ -214,7 +224,7 @@ const Formulas = () => {
                     {item.subset || item.type}
                   </span>
                   {/* Delete button (only show for non-preloaded or customized ones) */}
-                  {(!item.id.startsWith('p') && !item.id.startsWith('o') && !item.id.startsWith('sq1')) && (
+                  {!['f2l-', 'oll-', 'pll-', 'sq1-', 'cll-', 'eg1-', 'eg2-', 'wv-', 'coll-', 'ollcp-', 'zbll-'].some(prefix => item.id.startsWith(prefix)) && (
                     <button
                       onClick={() => handleDeleteFormula(item.id)}
                       className="p-1 text-brand-gray-400 hover:text-red-500 transition-colors"
@@ -274,17 +284,25 @@ const Formulas = () => {
                 ) : (
                   <>
                     {item.scramble && (
-                      <div className="mb-3">
-                        <span className="text-[10px] text-brand-gray-400 uppercase font-semibold block">打亂步驟:</span>
-                        <code className="text-xs font-mono bg-brand-gray-50 dark:bg-brand-gray-950 p-1.5 rounded block break-all text-brand-gray-500 dark:text-brand-gray-400 mt-1">
-                          {item.scramble}
-                        </code>
+                      <div className="mb-3 flex flex-col items-center">
+                        <div className="w-full mb-3">
+                          <span className="text-[10px] text-brand-gray-400 dark:text-brand-gray-500 uppercase font-bold tracking-wider block mb-1">對照圖案:</span>
+                          <div className="flex justify-center bg-brand-gray-50 dark:bg-brand-gray-950 p-2 rounded-2xl border border-brand-gray-150 dark:border-brand-gray-900">
+                            <CubePreview scramble={item.scramble} puzzleType={['CLL', 'EG1', 'EG2'].includes(item.type) ? '222' : '333'} />
+                          </div>
+                        </div>
+                        <div className="w-full">
+                          <span className="text-[10px] text-brand-gray-400 dark:text-brand-gray-500 uppercase font-bold tracking-wider block mb-1">打亂步驟:</span>
+                          <code className="text-xs font-mono bg-brand-gray-50 dark:bg-brand-gray-950 p-2 rounded-xl block break-all text-brand-gray-500 dark:text-brand-gray-400 border border-brand-gray-150 dark:border-brand-gray-900">
+                            {item.scramble}
+                          </code>
+                        </div>
                       </div>
                     )}
 
                     <div className="mb-4">
-                      <span className="text-[10px] text-brand-gray-400 uppercase font-semibold block">公式解法:</span>
-                      <code className="text-sm font-mono font-extrabold text-black dark:text-white bg-brand-gray-100 dark:bg-brand-gray-900 p-2 rounded-xl block break-words mt-1 border border-brand-gray-200 dark:border-brand-gray-800">
+                      <span className="text-[10px] text-brand-gray-400 dark:text-brand-gray-500 uppercase font-bold tracking-wider block mb-1">公式解法:</span>
+                      <code className="text-sm font-mono font-extrabold text-black dark:text-white bg-brand-gray-100 dark:bg-brand-gray-900 p-2.5 rounded-xl block break-words border border-brand-gray-200 dark:border-brand-gray-800">
                         {item.formula}
                       </code>
                     </div>
@@ -333,6 +351,13 @@ const Formulas = () => {
                     <option value="PLL">PLL</option>
                     <option value="OLL">OLL</option>
                     <option value="F2L">F2L</option>
+                    <option value="CLL">CLL</option>
+                    <option value="EG1">EG1</option>
+                    <option value="EG2">EG2</option>
+                    <option value="WV">WV</option>
+                    <option value="COLL">COLL</option>
+                    <option value="OLLCP">OLLCP</option>
+                    <option value="ZBLL">ZBLL</option>
                     <option value="SQ1-CSP">SQ1-CSP</option>
                     <option value="CUSTOM">自訂 (CUSTOM)</option>
                   </select>

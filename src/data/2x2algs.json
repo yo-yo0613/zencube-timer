@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "cll-cll-as-1",
+    "name": "CLL AS 1",
+    "type": "CLL",
+    "subset": "Antisune",
+    "formula": "U R U2 R' U' R U' R'",
+    "scramble": "R U R' U R U2' R' U'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-as-2",
+    "name": "CLL AS 2",
+    "type": "CLL",
+    "subset": "Antisune",
+    "formula": "R U2 R' F R' F' R U' R U' R'",
+    "scramble": "R U R' U R' F R F' R U2' R'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-as-3",
+    "name": "CLL AS 3",
+    "type": "CLL",
+    "subset": "Antisune",
+    "formula": "U2 F' L F L' U2 L' U2 L",
+    "scramble": "L' U2' L U2' L F' L' F U2'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-as-4",
+    "name": "CLL AS 4",
+    "type": "CLL",
+    "subset": "Antisune",
+    "formula": "U2 R' F R F' R U R'",
+    "scramble": "R U' R' F R' F' R U2'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-as-5",
+    "name": "CLL AS 5",
+    "type": "CLL",
+    "subset": "Antisune",
+    "formula": "U2 R U2 R' U2 R' F R F'",
+    "scramble": "F R' F' R U2' R U2' R' U2'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-as-6",
+    "name": "CLL AS 6",
+    "type": "CLL",
+    "subset": "Antisune",
+    "formula": "U2 L' U' L U L F' L' F L' U' L U' L' U2 L",
+    "scramble": "L' U2' L U L' U L F' L F L' U' L' U L U2'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-h-1",
+    "name": "CLL H 1",
+    "type": "CLL",
+    "subset": "H",
+    "formula": "F R2 U' R2 U' R2 U R2 F'",
+    "scramble": "F R2' U' R2' U R2' U R2' F'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-h-2",
+    "name": "CLL H 2",
+    "type": "CLL",
+    "subset": "H",
+    "formula": "R U R' U R U R' F R' F' R",
+    "scramble": "R' F R F' R U' R' U' R U' R'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-h-3",
+    "name": "CLL H 3",
+    "type": "CLL",
+    "subset": "H",
+    "formula": "U F R U R' U' R U R' U' R U R' U' F'",
+    "scramble": "F U R U' R' U R U' R' U R U' R' F' U'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-h-4",
+    "name": "CLL H 4",
+    "type": "CLL",
+    "subset": "H",
+    "formula": "U R2 U2 R' U2 R2",
+    "scramble": "R2' U2' R U2' R2' U'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-l-1",
+    "name": "CLL L 1",
+    "type": "CLL",
+    "subset": "L",
+    "formula": "U R U2 R' F' R U2 R' U R' F2 R",
+    "scramble": "R' F2' R U' R U2' R' F R U2' R' U'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-l-2",
+    "name": "CLL L 2",
+    "type": "CLL",
+    "subset": "L",
+    "formula": "U2 R U2 R2 F2 R U R' F2 R F'",
+    "scramble": "F R' F2' R U' R' F2' R2' U2' R' U2'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-l-3",
+    "name": "CLL L 3",
+    "type": "CLL",
+    "subset": "L",
+    "formula": "U2 R' U R' U2 R U' R' U R U' R2",
+    "scramble": "R2' U R' U' R U R' U2' R U' R U2'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-l-4",
+    "name": "CLL L 4",
+    "type": "CLL",
+    "subset": "L",
+    "formula": "U R U2 R2 F R F' R U2 R'",
+    "scramble": "R U2' R' F R' F' R2' U2' R' U'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-l-5",
+    "name": "CLL L 5",
+    "type": "CLL",
+    "subset": "L",
+    "formula": "U F R' F' R U R U' R'",
+    "scramble": "R U R' U' R' F R F' U'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-l-6",
+    "name": "CLL L 6",
+    "type": "CLL",
+    "subset": "L",
+    "formula": "U2 F' R U R' U' R' F R",
+    "scramble": "R' F' R U R U' R' F U2'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-pi-1",
+    "name": "CLL Pi 1",
+    "type": "CLL",
+    "subset": "Pi",
+    "formula": "U F R' F' R U2 R U' R' U R U2 R'",
+    "scramble": "R U2' R' U' R U R' U2' R' F R F' U'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-pi-2",
+    "name": "CLL Pi 2",
+    "type": "CLL",
+    "subset": "Pi",
+    "formula": "R U2 R' U' R U R' U2 R' F R F'",
+    "scramble": "F R' F' R U2' R U' R' U R U2' R'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-pi-3",
+    "name": "CLL Pi 3",
+    "type": "CLL",
+    "subset": "Pi",
+    "formula": "U F R2 U' R2 U R2 U R2 F'",
+    "scramble": "F R2' U' R2' U' R2' U R2' F' U'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-pi-4",
+    "name": "CLL Pi 4",
+    "type": "CLL",
+    "subset": "Pi",
+    "formula": "U2 R' F R F' R U' R' U' R U' R'",
+    "scramble": "R U R' U R U R' F R' F' R U2'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-pi-5",
+    "name": "CLL Pi 5",
+    "type": "CLL",
+    "subset": "Pi",
+    "formula": "U' R' U' R' F R F' R U' R' U2 R",
+    "scramble": "R' U2' R U R' F R' F' R U R U",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-pi-6",
+    "name": "CLL Pi 6",
+    "type": "CLL",
+    "subset": "Pi",
+    "formula": "R U' R2 U R2 U R2 U' R",
+    "scramble": "R' U R2' U' R2' U' R2' U R'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-sune-1",
+    "name": "CLL Sune 1",
+    "type": "CLL",
+    "subset": "Sune",
+    "formula": "L' U2 L U2 L F' L' F",
+    "scramble": "F' L F L' U2' L' U2' L",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-sune-2",
+    "name": "CLL Sune 2",
+    "type": "CLL",
+    "subset": "Sune",
+    "formula": "R U R' U' R' F R F' R U R' U R U2 R'",
+    "scramble": "R U2' R' U' R U' R' F R' F' R U R U' R'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-sune-3",
+    "name": "CLL Sune 3",
+    "type": "CLL",
+    "subset": "Sune",
+    "formula": "R U' R' F R' F' R",
+    "scramble": "R' F R F' R U R'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-sune-4",
+    "name": "CLL Sune 4",
+    "type": "CLL",
+    "subset": "Sune",
+    "formula": "F R' F' R U2 R U2 R'",
+    "scramble": "R U2' R' U2' R' F R F'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-sune-5",
+    "name": "CLL Sune 5",
+    "type": "CLL",
+    "subset": "Sune",
+    "formula": "U' R' F R2 F' U' R' U' R2 U R'",
+    "scramble": "R U' R2' U R U F R2' F' R U",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-sune-6",
+    "name": "CLL Sune 6",
+    "type": "CLL",
+    "subset": "Sune",
+    "formula": "R U R' U R U2 R'",
+    "scramble": "R U2' R' U' R U' R'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-t-1",
+    "name": "CLL T 1",
+    "type": "CLL",
+    "subset": "T",
+    "formula": "U' R U R' U' R' F R F'",
+    "scramble": "F R' F' R U R U' R' U",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-t-2",
+    "name": "CLL T 2",
+    "type": "CLL",
+    "subset": "T",
+    "formula": "U L' U' L U L F' L' F",
+    "scramble": "F' L F L' U' L' U L U'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-t-3",
+    "name": "CLL T 3",
+    "type": "CLL",
+    "subset": "T",
+    "formula": "F U' R U2 R' U' F2 R U R'",
+    "scramble": "R U' R' F2' U R U2' R' U F'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-t-4",
+    "name": "CLL T 4",
+    "type": "CLL",
+    "subset": "T",
+    "formula": "R' U R U2 R2 F' R U' R' F2 R2",
+    "scramble": "R2' F2' R U R' F R2' U2' R' U' R",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-t-5",
+    "name": "CLL T 5",
+    "type": "CLL",
+    "subset": "T",
+    "formula": "U2 F R U R' U' R U' R' U' R U R' F'",
+    "scramble": "F R U' R' U R U R' U R U' R' F' U2'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-t-6",
+    "name": "CLL T 6",
+    "type": "CLL",
+    "subset": "T",
+    "formula": "R' U R U2 R2 F R F' R",
+    "scramble": "R' F R' F' R2' U2' R' U' R",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-u-1",
+    "name": "CLL U 1",
+    "type": "CLL",
+    "subset": "U",
+    "formula": "U' F R U R' U' F'",
+    "scramble": "F U R U' R' F' U",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-u-2",
+    "name": "CLL U 2",
+    "type": "CLL",
+    "subset": "U",
+    "formula": "U' R2 F2 R U R' F R2 U2 R' U' R",
+    "scramble": "R' U R U2' R2' F' R U' R' F2' R2' U",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-u-3",
+    "name": "CLL U 3",
+    "type": "CLL",
+    "subset": "U",
+    "formula": "U2 F R U R' U2 F' R U' R' F",
+    "scramble": "F' R U R' F U2' R U' R' F' U2'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-u-4",
+    "name": "CLL U 4",
+    "type": "CLL",
+    "subset": "U",
+    "formula": "U' F R' F' R U' R U' R' U2 R U' R'",
+    "scramble": "R U R' U2' R U R' U R' F R F' U",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-u-5",
+    "name": "CLL U 5",
+    "type": "CLL",
+    "subset": "U",
+    "formula": "R U' R2 F R F' R U R' U' R U R'",
+    "scramble": "R U' R' U R U' R' F R' F' R2' U R'",
+    "memo": ""
+  },
+  {
+    "id": "cll-cll-u-6",
+    "name": "CLL U 6",
+    "type": "CLL",
+    "subset": "U",
+    "formula": "R' U R' F R F' R U2 R' U R",
+    "scramble": "R' U' R U2' R' F R' F' R U' R",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-as-1",
+    "name": "EG1 AS 1",
+    "type": "EG1",
+    "subset": "Antisune",
+    "formula": "U R' F R2 U R' F' U' R U' R'",
+    "scramble": "R U R' U F R U' R2' F' R U'",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-as-2",
+    "name": "EG1 AS 2",
+    "type": "EG1",
+    "subset": "Antisune",
+    "formula": "U R U' R' F' U' F2 R U' R'",
+    "scramble": "R U R' F2' U F R U R' U'",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-as-3",
+    "name": "EG1 AS 3",
+    "type": "EG1",
+    "subset": "Antisune",
+    "formula": "F' R U R' U' R U R2 F' R",
+    "scramble": "R' F R2' U' R' U R U' R' F",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-as-4",
+    "name": "EG1 AS 4",
+    "type": "EG1",
+    "subset": "Antisune",
+    "formula": "R U' R' F' U' R U R' U' F",
+    "scramble": "F' U R U' R' U F R U R'",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-as-5",
+    "name": "EG1 AS 5",
+    "type": "EG1",
+    "subset": "Antisune",
+    "formula": "U' R U R' F' U' R U R' U' R U R'",
+    "scramble": "R U' R' U R U' R' U F R U' R' U",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-as-6",
+    "name": "EG1 AS 6",
+    "type": "EG1",
+    "subset": "Antisune",
+    "formula": "U2 R U' R2 F R U' R' F R F'",
+    "scramble": "F R' F' R U R' F' R2' U R' U2'",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-h-1",
+    "name": "EG1 H 1",
+    "type": "EG1",
+    "subset": "H",
+    "formula": "U' R' F R2 U' R' F R U R' F'",
+    "scramble": "F R U' R' F' R U R2' F' R U",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-h-2",
+    "name": "EG1 H 2",
+    "type": "EG1",
+    "subset": "H",
+    "formula": "U' F' U R U' R2 F2 R U' F",
+    "scramble": "F' U R' F2' R2' U R' U' F U",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-h-3",
+    "name": "EG1 H 3",
+    "type": "EG1",
+    "subset": "H",
+    "formula": "U R' F R F' U2 F R U2 R' F",
+    "scramble": "F' R U2' R' F' U2' F R' F' R U'",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-h-4",
+    "name": "EG1 H 4",
+    "type": "EG1",
+    "subset": "H",
+    "formula": "U' R U R' F' R U R' U' R U R' U'",
+    "scramble": "U R U' R' U R U' R' F R U' R' U",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-l-1",
+    "name": "EG1 L 1",
+    "type": "EG1",
+    "subset": "L",
+    "formula": "U R U' R' U R U' R2 F' R F",
+    "scramble": "F' R' F R2' U R' U' R U R' U'",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-l-2",
+    "name": "EG1 L 2",
+    "type": "EG1",
+    "subset": "L",
+    "formula": "U2 R' F R U' R' F R2 U R' F' U2",
+    "scramble": "U2' F R U' R2' F' R U R' F' R U2'",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-l-3",
+    "name": "EG1 L 3",
+    "type": "EG1",
+    "subset": "L",
+    "formula": "U R' U R2 U' R2 U' F R2 U' R'",
+    "scramble": "R U R2' F' U R2' U R2' U' R U'",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-l-4",
+    "name": "EG1 L 4",
+    "type": "EG1",
+    "subset": "L",
+    "formula": "U R' F R2 U R' F' R U2 R'",
+    "scramble": "R U2' R' F R U' R2' F' R U'",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-l-5",
+    "name": "EG1 L 5",
+    "type": "EG1",
+    "subset": "L",
+    "formula": "U2 R U R' F' R U R' U' F R' F' R",
+    "scramble": "R' F R F' U R U' R' F R U' R' U2'",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-l-6",
+    "name": "EG1 L 6",
+    "type": "EG1",
+    "subset": "L",
+    "formula": "F R U' R' U R' F' R U R' F' R",
+    "scramble": "R' F R U' R' F R U' R U R' F'",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-pi-1",
+    "name": "EG1 Pi 1",
+    "type": "EG1",
+    "subset": "Pi",
+    "formula": "U F U' R' F R U' F2 R U R'",
+    "scramble": "R U' R' F2' U R' F' R U F' U'",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-pi-2",
+    "name": "EG1 Pi 2",
+    "type": "EG1",
+    "subset": "Pi",
+    "formula": "U' R U' R2 F R2 U' R'",
+    "scramble": "R U R2' F' R2' U R' U",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-pi-3",
+    "name": "EG1 Pi 3",
+    "type": "EG1",
+    "subset": "Pi",
+    "formula": "U' F R' F U' F2 R U R",
+    "scramble": "R' U' R' F2' U F' R F' U",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-pi-4",
+    "name": "EG1 Pi 4",
+    "type": "EG1",
+    "subset": "Pi",
+    "formula": "U' R U' R' U R U' R' F R U' R'",
+    "scramble": "R U R' F' R U R' U' R U R' U",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-pi-5",
+    "name": "EG1 Pi 5",
+    "type": "EG1",
+    "subset": "Pi",
+    "formula": "R U' R2 F R U R U' R' U' R' F R F'",
+    "scramble": "F R' F' R U R U R' U' R' F' R2' U R'",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-pi-6",
+    "name": "EG1 Pi 6",
+    "type": "EG1",
+    "subset": "Pi",
+    "formula": "U' R' F' R U' R' F R2 U R' F' R U R'",
+    "scramble": "R U' R' F R U' R2' F' R U R' F R U",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-s-1",
+    "name": "EG1 S 1",
+    "type": "EG1",
+    "subset": "Sune",
+    "formula": "U2 R U R' U F R U' R2 F' R",
+    "scramble": "R' F R2' U R' F' U' R U' R' U2'",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-s-2",
+    "name": "EG1 S 2",
+    "type": "EG1",
+    "subset": "Sune",
+    "formula": "R U R' F2 U F R U R'",
+    "scramble": "R U' R' F' U' F2' R U' R'",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-s-3",
+    "name": "EG1 S 3",
+    "type": "EG1",
+    "subset": "Sune",
+    "formula": "U2 F R' F' R U R' F' R2 U R'",
+    "scramble": "R U' R2' F R U' R' F R F' U2'",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-s-4",
+    "name": "EG1 S 4",
+    "type": "EG1",
+    "subset": "Sune",
+    "formula": "U F' R' F R2 U R' U' F R' F' R U",
+    "scramble": "U' R' F R F' U R U' R2' F' R F U'",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-s-5",
+    "name": "EG1 S 5",
+    "type": "EG1",
+    "subset": "Sune",
+    "formula": "U R U' R' U R U' R' U F R U' R'",
+    "scramble": "R U R' F' U' R U R' U' R U R' U'",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-s-6",
+    "name": "EG1 S 6",
+    "type": "EG1",
+    "subset": "Sune",
+    "formula": "R' F R2 U' R' U R U' R' F",
+    "scramble": "F' R U R' U' R U R2' F' R",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-t-1",
+    "name": "EG1 T 1",
+    "type": "EG1",
+    "subset": "T",
+    "formula": "F R U' R2 F' R U R' F' R",
+    "scramble": "R' F R U' R' F R2' U R' F'",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-t-2",
+    "name": "EG1 T 2",
+    "type": "EG1",
+    "subset": "T",
+    "formula": "F' R' F R2 U R' U' R U R'",
+    "scramble": "R U' R' U R U' R2' F' R F",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-t-3",
+    "name": "EG1 T 3",
+    "type": "EG1",
+    "subset": "T",
+    "formula": "U R U' R2 F R U R U2 R'",
+    "scramble": "R U2' R' U' R' F' R2' U R' U'",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-t-4",
+    "name": "EG1 T 4",
+    "type": "EG1",
+    "subset": "T",
+    "formula": "U2 R' U F R2 U' R2 U' F U' R",
+    "scramble": "R' U F' U R2' U R2' F' U' R U2'",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-t-5",
+    "name": "EG1 T 5",
+    "type": "EG1",
+    "subset": "T",
+    "formula": "U' R' F' R2 U R' F' R U R'",
+    "scramble": "R U' R' F R U' R2' F R U",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-t-6",
+    "name": "EG1 T 6",
+    "type": "EG1",
+    "subset": "T",
+    "formula": "U2 R U' R' U2 F R U2 R' F",
+    "scramble": "F' R U2' R' F' U2' R U R' U2'",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-u-1",
+    "name": "EG1 U 1",
+    "type": "EG1",
+    "subset": "U",
+    "formula": "U' R U R' U R U R2 F R2 U' R'",
+    "scramble": "R U R2' F' R2' U' R' U' R U' R' U",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-u-2",
+    "name": "EG1 U 2",
+    "type": "EG1",
+    "subset": "U",
+    "formula": "U2 y R' U R' U' R U' R' U' F2 R2",
+    "scramble": "R2' F2' U R U R' U R U' R y' U2'",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-u-3",
+    "name": "EG1 U 3",
+    "type": "EG1",
+    "subset": "U",
+    "formula": "F' U2 R U2 R' U2 F",
+    "scramble": "F' U2' R U2' R' U2' F",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-u-4",
+    "name": "EG1 U 4",
+    "type": "EG1",
+    "subset": "U",
+    "formula": "U R' F R F' R' F R2 U' R'",
+    "scramble": "R U R2' F' R F R' F' R U'",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-u-5",
+    "name": "EG1 U 5",
+    "type": "EG1",
+    "subset": "U",
+    "formula": "U2 R U' R' U R U' R' U' F R U' R'",
+    "scramble": "R U R' F' U R U R' U' R U R' U2'",
+    "memo": ""
+  },
+  {
+    "id": "eg1-eg1-u-6",
+    "name": "EG1 U 6",
+    "type": "EG1",
+    "subset": "U",
+    "formula": "U2 R' F R U' R' F R U' R U R' F' U2",
+    "scramble": "U2' F R U' R' U R' F' R U R' F' R U2'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-as-1",
+    "name": "EG2 AS 1",
+    "type": "EG2",
+    "subset": "Antisune",
+    "formula": "F R2 U R' U2 R U R2 U F'",
+    "scramble": "F U' R2' U' R' U2' R U' R2' F'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-as-2",
+    "name": "EG2 AS 2",
+    "type": "EG2",
+    "subset": "Antisune",
+    "formula": "U2 R' F' R U' R' F2 R' F2 R2",
+    "scramble": "R2' F2' R F2' R U R' F R U2'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-as-3",
+    "name": "EG2 AS 3",
+    "type": "EG2",
+    "subset": "Antisune",
+    "formula": "U2 R' F R F' R U R B2 R2",
+    "scramble": "R2' B2' R' U' R' F R' F' R U2'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-as-4",
+    "name": "EG2 AS 4",
+    "type": "EG2",
+    "subset": "Antisune",
+    "formula": "U2 F' L F L' U2 L' U2 L' B2 L2",
+    "scramble": "L2' B2' L U2' L U2' L F' L' F U2'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-as-5",
+    "name": "EG2 AS 5",
+    "type": "EG2",
+    "subset": "Antisune",
+    "formula": "R' U' R U' R' U' R' F2 R F' R",
+    "scramble": "R' F R' F2' R U R U R' U R",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-as-6",
+    "name": "EG2 AS 6",
+    "type": "EG2",
+    "subset": "Antisune",
+    "formula": "U2 R2 F2 R F R F' R U R'",
+    "scramble": "R U' R' F R' F' R' F2' R2' U2'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-h-1",
+    "name": "EG2 H 1",
+    "type": "EG2",
+    "subset": "H",
+    "formula": "R2 F U2 F2 R2 F' R2",
+    "scramble": "R2' F R2' F2' U2' F' R2'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-h-2",
+    "name": "EG2 H 2",
+    "type": "EG2",
+    "subset": "H",
+    "formula": "U R2 B2 U2 R' U2 R2",
+    "scramble": "R2' U2' R U2' B2' R2' U'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-h-3",
+    "name": "EG2 H 3",
+    "type": "EG2",
+    "subset": "H",
+    "formula": "R' U' R U2 R2 F' R U' F R",
+    "scramble": "R' F' U R' F R2' U2' R' U R",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-h-4",
+    "name": "EG2 H 4",
+    "type": "EG2",
+    "subset": "H",
+    "formula": "U' R U2 B2 R' U R U' B R'",
+    "scramble": "R B' U R' U' R B2' U2' R' U",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-l-1",
+    "name": "EG2 L 1",
+    "type": "EG2",
+    "subset": "L",
+    "formula": "U L2 B2 L U' L' U L F' L F",
+    "scramble": "F' L' F L' U' L U L' B2' L2' U'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-l-2",
+    "name": "EG2 L 2",
+    "type": "EG2",
+    "subset": "L",
+    "formula": "U2 F2 R2 F R U R' U' R' F R",
+    "scramble": "R' F' R U R U' R' F' R2' F2' U2'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-l-3",
+    "name": "EG2 L 3",
+    "type": "EG2",
+    "subset": "L",
+    "formula": "U2 R2 U' R U2 R' U2 R U' F2 R2",
+    "scramble": "R2' F2' U R' U2' R U2' R' U R2' U2'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-l-4",
+    "name": "EG2 L 4",
+    "type": "EG2",
+    "subset": "L",
+    "formula": "U' R' U L' U2 R' F R U' R' U' F' x2",
+    "scramble": "x2' F U R U R' F' R U2' L U' R U",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-l-5",
+    "name": "EG2 L 5",
+    "type": "EG2",
+    "subset": "L",
+    "formula": "U F R' F' R U R U' R B2 R2",
+    "scramble": "R2' B2' R' U R' U' R' F R F' U'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-l-6",
+    "name": "EG2 L 6",
+    "type": "EG2",
+    "subset": "L",
+    "formula": "U2 F' R U R' U' R' F R' F2 R2",
+    "scramble": "R2' F2' R F' R U R U' R' F U2'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-pi-1",
+    "name": "EG2 Pi 1",
+    "type": "EG2",
+    "subset": "Pi",
+    "formula": "F U' R U2 R U' R' U R' F'",
+    "scramble": "F R U' R U R' U2' R' U F'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-pi-2",
+    "name": "EG2 Pi 2",
+    "type": "EG2",
+    "subset": "Pi",
+    "formula": "R U2 R2 U R' F2 R2 F'",
+    "scramble": "F R2' F2' R U' R2' U2' R'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-pi-3",
+    "name": "EG2 Pi 3",
+    "type": "EG2",
+    "subset": "Pi",
+    "formula": "U F R2 U' R2 U R2 U R2 F R2 F2 U2",
+    "scramble": "U2' F2' R2' F' R2' U' R2' U' R2' U R2' F' U'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-pi-4",
+    "name": "EG2 Pi 4",
+    "type": "EG2",
+    "subset": "Pi",
+    "formula": "U2 R' F R F' R U' R' U' R U' R F2 R2",
+    "scramble": "R2' F2' R' U R' U R U R' F R' F' R U2'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-pi-5",
+    "name": "EG2 Pi 5",
+    "type": "EG2",
+    "subset": "Pi",
+    "formula": "U' R' F' R' F2 R2 U R' U2 R U",
+    "scramble": "U' R' U2' R U' R2' F2' R F R U",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-pi-6",
+    "name": "EG2 Pi 6",
+    "type": "EG2",
+    "subset": "Pi",
+    "formula": "U R' U2 R U' R2 F2 R F R U'",
+    "scramble": "U R' F' R' F2' R2' U R' U2' R U'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-s-1",
+    "name": "EG2 S 1",
+    "type": "EG2",
+    "subset": "S",
+    "formula": "U' F U' R2 U' R' U2 R U' R2 F' U'",
+    "scramble": "U F R2' U R' U2' R U R2' U F' U",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-s-2",
+    "name": "EG2 S 2",
+    "type": "EG2",
+    "subset": "S",
+    "formula": "U' R2 F2 R U2 R U R' U R",
+    "scramble": "R' U' R U' R' U2' R' F2' R2' U",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-s-3",
+    "name": "EG2 S 3",
+    "type": "EG2",
+    "subset": "S",
+    "formula": "R U' R' F R' F' R' F2 R2",
+    "scramble": "R2' F2' R F R F' R U R'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-s-4",
+    "name": "EG2 S 4",
+    "type": "EG2",
+    "subset": "S",
+    "formula": "F R' F' R U2 R U2 R B2 R2",
+    "scramble": "R2' B2' R' U2' R' U2' R' F R F'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-s-5",
+    "name": "EG2 S 5",
+    "type": "EG2",
+    "subset": "S",
+    "formula": "R' U R' F R2 U' F R' F'",
+    "scramble": "F R F' U R2' F' R U' R",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-s-6",
+    "name": "EG2 S 6",
+    "type": "EG2",
+    "subset": "S",
+    "formula": "R2 B2 R' U' R' F R' F' R",
+    "scramble": "R' F R F' R U R B2' R2'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-t-1",
+    "name": "EG2 T 1",
+    "type": "EG2",
+    "subset": "T",
+    "formula": "U R' F' R U R U' R' F' R2 B2 U",
+    "scramble": "U' B2' R2' F R U R' U' R' F R U'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-t-2",
+    "name": "EG2 T 2",
+    "type": "EG2",
+    "subset": "T",
+    "formula": "U F R' U2 R' U' R U2 F'",
+    "scramble": "F U2' R' U R U2' R F' U'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-t-3",
+    "name": "EG2 T 3",
+    "type": "EG2",
+    "subset": "T",
+    "formula": "R' U R U2 R2 F' R U' R",
+    "scramble": "R' U R' F R2' U2' R' U' R",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-t-4",
+    "name": "EG2 T 4",
+    "type": "EG2",
+    "subset": "T",
+    "formula": "R2 F2 R U' F R' F' R U R",
+    "scramble": "R' U' R' F R F' U R' F2' R2'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-t-5",
+    "name": "EG2 T 5",
+    "type": "EG2",
+    "subset": "T",
+    "formula": "U' R' U2 R U' R' F R' F R F' R",
+    "scramble": "R' F R' F' R F' R U R' U2' R U",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-t-6",
+    "name": "EG2 T 6",
+    "type": "EG2",
+    "subset": "T",
+    "formula": "U R' U2 R' F2 R F2 R",
+    "scramble": "R' F2' R' F2' R U2' R U'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-u-1",
+    "name": "EG2 U 1",
+    "type": "EG2",
+    "subset": "U",
+    "formula": "R2 U2 R U R' U F' R U' R",
+    "scramble": "R' U R' F U' R U' R' U2' R2'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-u-2",
+    "name": "EG2 U 2",
+    "type": "EG2",
+    "subset": "U",
+    "formula": "U' F R U R' U' F R2 B2",
+    "scramble": "B2' R2' F' U R U' R' F' U",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-u-3",
+    "name": "EG2 U 3",
+    "type": "EG2",
+    "subset": "U",
+    "formula": "R' F' U' R U2 R' U F R",
+    "scramble": "R' F' U' R U2' R' U F R",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-u-4",
+    "name": "EG2 U 4",
+    "type": "EG2",
+    "subset": "U",
+    "formula": "R' F' U' F U2 L' U2 R U' L",
+    "scramble": "L' U R' U2' L U2' F' U F R",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-u-5",
+    "name": "EG2 U 5",
+    "type": "EG2",
+    "subset": "U",
+    "formula": "U2 R2 B2 R' U R' U' R' F R F'",
+    "scramble": "F R' F' R U R U' R B2' R2' U2'",
+    "memo": ""
+  },
+  {
+    "id": "eg2-eg2-u-6",
+    "name": "EG2 U 6",
+    "type": "EG2",
+    "subset": "U",
+    "formula": "U2 R2 F2 R F' R U L F' L' F",
+    "scramble": "F' L F L' U' R' F R' F2' R2' U2'",
+    "memo": ""
+  }
+]

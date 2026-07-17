@@ -2,6 +2,9 @@ import React, { useState, useEffect, useRef } from 'react'
 import cspData from '../data/SQ1-CSP.json'
 import { Award, Layers, HelpCircle, Eye, EyeOff, RotateCw, Play, BarChart2, Trash2, Clock, Check, X, BookOpen } from 'lucide-react'
 import { formatTime } from '../components/Timer'
+import CspTracePanel from '../components/CspTracePanel'
+import Sq1Preview from '../components/Sq1Preview'
+import { generateRandomCspScramble } from '../lib/sq1ScrambleGenerator'
 
 function rotatePoint2d(x, y, cx, cy, angle) {
   const radians = (angle * Math.PI) / 180
@@ -23,6 +26,27 @@ function rotatePoints2d(points, cx, cy, angle) {
     .join(' ')
 }
 
+const ColorPatternBar = ({ colors }) => {
+  const colorMap = {
+    'B': '#3b82f6',
+    'G': '#10b981',
+    'R': '#ef4444',
+    'O': '#f97316',
+  }
+  return (
+    <div className="flex gap-1.5 items-center">
+      {colors.map((c, idx) => (
+        <div
+          key={idx}
+          className="w-3.5 h-3.5 rounded-sm border border-black/10 shadow-sm"
+          style={{ backgroundColor: colorMap[c] || '#ccc' }}
+          title={c}
+        />
+      ))}
+    </div>
+  )
+}
+
 const Sq1ReferenceDiagram = ({ top, type }) => {
   const pieces = [
     ['#FFCC00', '#0044ff', '#ff1100'], // Corner top (0)
@@ -33,15 +57,15 @@ const Sq1ReferenceDiagram = ({ top, type }) => {
     ['#FFCC00', '#00cc44'],            // Edge top (5)
     ['#FFCC00', '#ff1100', '#00cc44'], // Corner top (6)
     ['#FFCC00', '#ff1100'],            // Edge top (7)
-    // Bottom face stickers (White base)
-    ['#FFFFFF', '#ff1100', '#0044ff'], // Corner bottom (8)
-    ['#FFFFFF', '#0044ff'],            // Edge bottom (9)
-    ['#FFFFFF', '#0044ff', '#ffaa00'], // Corner bottom (10)
-    ['#FFFFFF', '#ffaa00'],            // Edge bottom (11)
-    ['#FFFFFF', '#ffaa00', '#00cc44'], // Corner bottom (12)
-    ['#FFFFFF', '#00cc44'],            // Edge bottom (13)
-    ['#FFFFFF', '#00cc44', '#ff1100'], // Corner bottom (14)
-    ['#FFFFFF', '#ff1100'],            // Edge bottom (15)
+    // Bottom face stickers (White base) - corrected physical clockwise color mappings
+    ['#FFFFFF', '#00cc44', '#ff1100'], // Corner bottom (8) - DFL (Green/Red)
+    ['#FFFFFF', '#ff1100'],            // Edge bottom (9) - DF (Red)
+    ['#FFFFFF', '#0044ff', '#ff1100'], // Corner bottom (10) - DFR (Blue/Red)
+    ['#FFFFFF', '#0044ff'],            // Edge bottom (11) - DR (Blue)
+    ['#FFFFFF', '#0044ff', '#ffaa00'], // Corner bottom (12) - DBR (Blue/Orange)
+    ['#FFFFFF', '#ffaa00'],            // Edge bottom (13) - DB (Orange)
+    ['#FFFFFF', '#00cc44', '#ffaa00'], // Corner bottom (14) - DBL (Green/Orange)
+    ['#FFFFFF', '#00cc44'],            // Edge bottom (15) - DL (Green)
   ]
 
   const size = 100
@@ -57,15 +81,22 @@ const Sq1ReferenceDiagram = ({ top, type }) => {
   const edge1 = `${mid},${mid} ${size - inner},${size - width - pad} ${inner},${size - width - pad}`
   const edge2 = `${outer},${size - pad} ${inner},${size - width - pad} ${size - inner},${size - width - pad} ${size - outer},${size - pad}`
 
-  if (!top) {
-    const tmp = corner2
-    corner2 = corner3
-    corner3 = tmp
-  }
-
   const face = top 
     ? [0, 1, 2, 3, 4, 5, 6, 7] 
     : [8, 9, 10, 11, 12, 13, 14, 15]
+
+  // Mirror D layer polygons horizontally to match bottom view
+  const maybeMirror = (pointsStr) => {
+    if (top) return pointsStr
+    return pointsStr
+      .split(' ')
+      .map((p) => {
+        const [x, y] = p.split(',')
+        const nx = 100 - parseFloat(x)
+        return `${nx.toFixed(1)},${y}`
+      })
+      .join(' ')
+  }
 
   let angle = 0
   const polygons = []
@@ -74,9 +105,9 @@ const Sq1ReferenceDiagram = ({ top, type }) => {
   for (let i = 0; i < face.length; i++) {
     const piece = pieces[face[i]]
     if (piece.length === 3) {
-      polygons.push({ points: rotatePoints2d(corner1, mid, mid, angle), fill: piece[0] })
-      polygons.push({ points: rotatePoints2d(corner2, mid, mid, angle), fill: piece[1] })
-      polygons.push({ points: rotatePoints2d(corner3, mid, mid, angle), fill: piece[2] })
+      polygons.push({ points: maybeMirror(rotatePoints2d(corner1, mid, mid, angle)), fill: piece[0] })
+      polygons.push({ points: maybeMirror(rotatePoints2d(corner2, mid, mid, angle)), fill: piece[1] })
+      polygons.push({ points: maybeMirror(rotatePoints2d(corner3, mid, mid, angle)), fill: piece[2] })
       
       // Calculate label position for Corner
       if (type === 'corners') {
@@ -96,12 +127,12 @@ const Sq1ReferenceDiagram = ({ top, type }) => {
           if (i === 4) num = '7' // DBR
           if (i === 6) num = '8' // DBL
         }
-        labels.push({ x: gx, y: gy, text: num })
+        labels.push({ x: top ? gx : 100 - gx, y: gy, text: num })
       }
       angle -= 60
     } else if (piece.length === 2) {
-      polygons.push({ points: rotatePoints2d(edge1, mid, mid, angle - 30), fill: piece[0] })
-      polygons.push({ points: rotatePoints2d(edge2, mid, mid, angle - 30), fill: piece[1] })
+      polygons.push({ points: maybeMirror(rotatePoints2d(edge1, mid, mid, angle - 30)), fill: piece[0] })
+      polygons.push({ points: maybeMirror(rotatePoints2d(edge2, mid, mid, angle - 30)), fill: piece[1] })
       
       // Calculate label position for Edge
       if (type === 'edges') {
@@ -121,7 +152,7 @@ const Sq1ReferenceDiagram = ({ top, type }) => {
           if (i === 1) num = '7' // DR
           if (i === 3) num = '8' // DB
         }
-        labels.push({ x: gx, y: gy, text: num })
+        labels.push({ x: top ? gx : 100 - gx, y: gy, text: num })
       }
       angle -= 30
     }
@@ -151,12 +182,42 @@ const Sq1ReferenceDiagram = ({ top, type }) => {
   )
 }
 
+function invertSq1Alg(alg) {
+  if (!alg) return ''
+  const tokens = []
+  let current = ''
+  for (let i = 0; i < alg.length; i++) {
+    const char = alg[i]
+    if (char === '/') {
+      if (current.trim()) tokens.push(current.trim())
+      tokens.push('/')
+      current = ''
+    } else {
+      current += char
+    }
+  }
+  if (current.trim()) tokens.push(current.trim())
+  const invertedTokens = tokens.map(token => {
+    if (token === '/') return '/'
+    const match = token.match(/\(?(-?\d+),\s*(-?\d+)\)?/)
+    if (match) {
+      const x = -parseInt(match[1], 10)
+      const y = -parseInt(match[2], 10)
+      return `(${x}, ${y})`
+    }
+    return token
+  })
+  return invertedTokens.reverse().join(' ')
+}
+
 const CspTrainer = () => {
   const [activeView, setActiveView] = useState('trainer') // 'trainer', 'tutorial'
   // Subsets filtering
   const [selectedSubsets, setSelectedSubsets] = useState(cspData.subsets || [])
   const [activeCaseName, setActiveCaseName] = useState('')
   const [showSolution, setShowSolution] = useState(false)
+  const [scrambleMode, setScrambleMode] = useState('random') // 'random' or 'reference'
+  const [currentScramble, setCurrentScramble] = useState('')
 
   // Timer states
   const [time, setTime] = useState(0)
@@ -193,6 +254,31 @@ const CspTrainer = () => {
   const filteredCases = getFilteredCases()
   const caseNames = Object.keys(filteredCases)
 
+  const getAlgString = (caseName = activeCaseName) => {
+    if (!caseName || !filteredCases[caseName]) return ''
+    const algs = filteredCases[caseName].algs || {}
+    return Object.keys(algs)[0] || ''
+  }
+
+  const refreshScramble = (caseName, mode) => {
+    const refAlg = getAlgString(caseName)
+    if (!refAlg) {
+      setCurrentScramble('')
+      return
+    }
+    if (mode === 'random') {
+      try {
+        const rand = generateRandomCspScramble(refAlg)
+        setCurrentScramble(rand)
+      } catch (err) {
+        console.error("Failed to generate random scramble:", err)
+        setCurrentScramble(invertSq1Alg(refAlg))
+      }
+    } else {
+      setCurrentScramble(invertSq1Alg(refAlg))
+    }
+  }
+
   // Load a random case
   const loadRandomCase = () => {
     if (caseNames.length === 0) {
@@ -208,6 +294,7 @@ const CspTrainer = () => {
       nextCase = caseNames[0]
     }
     setActiveCaseName(nextCase)
+    refreshScramble(nextCase, scrambleMode)
     setShowSolution(false)
     setTime(0)
     setTimerState('idle')
@@ -218,6 +305,8 @@ const CspTrainer = () => {
   useEffect(() => {
     if (!activeCaseName || !filteredCases[activeCaseName]) {
       loadRandomCase()
+    } else {
+      refreshScramble(activeCaseName, scrambleMode)
     }
   }, [selectedSubsets])
 
@@ -374,11 +463,7 @@ const CspTrainer = () => {
     return 'text-black dark:text-white'
   }
 
-  // Get algorithm string
-  const getAlgString = () => {
-    if (!activeCaseData?.algs) return ''
-    return Object.keys(activeCaseData.algs)[0] || ''
-  }
+
 
   return (
     <div className="pb-24 px-4 md:px-8 max-w-7xl mx-auto pt-6 font-sans">
@@ -490,29 +575,97 @@ const CspTrainer = () => {
                   <h2 className="text-2xl font-black text-black dark:text-white mt-2">{activeCaseName}</h2>
                 </div>
 
-                <div className="my-6 z-10 w-full">
+                <div className="my-6 z-10 w-full space-y-4">
+                  {/* Physical Scramble Card */}
+                  <div className="bg-brand-gray-50 dark:bg-brand-gray-950/60 border border-brand-gray-150 dark:border-brand-gray-900 rounded-[2rem] p-4 text-center space-y-3 max-w-md mx-auto shadow-sm">
+                    <div className="flex items-center justify-between px-1">
+                      <span className="text-[10px] text-brand-gray-450 uppercase tracking-widest font-black block text-left">
+                        🧩 實體方塊打亂 Scramble (從正方形復原狀態開始)
+                      </span>
+                      <button
+                        onClick={() => refreshScramble(activeCaseName, scrambleMode)}
+                        className="p-1 rounded-lg text-brand-gray-450 hover:text-black dark:hover:text-white hover:bg-brand-gray-150 dark:hover:bg-brand-gray-900 transition btn-active-scale"
+                        title="重新生成打亂 (Regenerate)"
+                      >
+                        <RotateCw className="w-3.5 h-3.5" />
+                      </button>
+                    </div>
+
+                    <code className="block bg-white dark:bg-black px-3 py-2 rounded-xl border border-brand-gray-150 dark:border-brand-gray-900 font-mono text-[11px] text-brand-gray-700 dark:text-brand-gray-300 break-all select-all">
+                      {currentScramble}
+                    </code>
+
+                    {/* Mode Toggle Selector */}
+                    <div className="flex justify-center gap-1.5 text-[9px] font-black uppercase tracking-wider">
+                      <button
+                        onClick={() => {
+                          setScrambleMode('random')
+                          refreshScramble(activeCaseName, 'random')
+                        }}
+                        className={`px-3 py-1 rounded-full border transition ${
+                          scrambleMode === 'random'
+                            ? 'bg-black text-white dark:bg-white dark:text-black border-transparent'
+                            : 'bg-transparent text-brand-gray-450 border-brand-gray-200 dark:border-brand-gray-800 hover:text-black dark:hover:text-white'
+                        }`}
+                      >
+                        🎲 隨機打亂 (Random)
+                      </button>
+                      <button
+                        onClick={() => {
+                          setScrambleMode('reference')
+                          refreshScramble(activeCaseName, 'reference')
+                        }}
+                        className={`px-3 py-1 rounded-full border transition ${
+                          scrambleMode === 'reference'
+                            ? 'bg-black text-white dark:bg-white dark:text-black border-transparent'
+                            : 'bg-transparent text-brand-gray-450 border-brand-gray-200 dark:border-brand-gray-800 hover:text-black dark:hover:text-white'
+                        }`}
+                      >
+                        固定打亂 (Reference)
+                      </button>
+                    </div>
+                  </div>
+
                   <p className="text-center text-[10px] text-brand-gray-400 uppercase font-bold tracking-wider mb-2">
-                    遇到此形狀時 → 套用下方公式還原
+                    遇到此形狀時 (黃色朝下，白色朝上，紅色朝前)
                   </p>
-                  {/* Static SVGs scraped from CubingApp — identical to reference */}
-                  {(activeCaseData.svgTop || activeCaseData.svgBottom) ? (
-                    <div className="flex items-center justify-center gap-4">
-                      {activeCaseData.svgTop && (
-                        <div
-                          className="w-24 h-24 flex-shrink-0 [&_svg]:w-full [&_svg]:h-full [&_polygon]:stroke-[#ddd]"
-                          dangerouslySetInnerHTML={{ __html: activeCaseData.svgTop }}
-                        />
-                      )}
-                      {activeCaseData.svgBottom && (
-                        <div
-                          className="w-24 h-24 flex-shrink-0 [&_svg]:w-full [&_svg]:h-full [&_polygon]:stroke-[#ddd]"
-                          dangerouslySetInnerHTML={{ __html: activeCaseData.svgBottom }}
-                        />
+
+                  {/* Side-by-side Shape and Color Preview */}
+                  <div className="flex items-center justify-center gap-8 py-2">
+                    {/* Left: Reference Shape */}
+                    <div className="flex flex-col items-center space-y-2">
+                      <span className="text-[9px] text-brand-gray-450 uppercase font-black tracking-widest">基準形狀</span>
+                      {(activeCaseData.svgTop || activeCaseData.svgBottom) ? (
+                        <div className="flex items-center justify-center gap-2 bg-brand-gray-50/50 dark:bg-brand-gray-900/10 p-2 rounded-2xl border border-brand-gray-150/40 dark:border-brand-gray-900/30">
+                          {activeCaseData.svgTop && (
+                            <div
+                              className="w-16 h-16 flex-shrink-0 [&_svg]:w-full [&_svg]:h-full [&_polygon]:stroke-[#ddd]"
+                              dangerouslySetInnerHTML={{ __html: activeCaseData.svgTop }}
+                            />
+                          )}
+                          {activeCaseData.svgBottom && (
+                            <div
+                              className="w-16 h-16 flex-shrink-0 [&_svg]:w-full [&_svg]:h-full [&_polygon]:stroke-[#ddd]"
+                              dangerouslySetInnerHTML={{ __html: activeCaseData.svgBottom }}
+                            />
+                          )}
+                        </div>
+                      ) : (
+                        <div className="text-center text-brand-gray-500 text-sm">無圖</div>
                       )}
                     </div>
-                  ) : (
-                    <div className="text-center text-brand-gray-500 text-sm">無圖</div>
-                  )}
+
+                    <div className="w-px h-16 bg-brand-gray-200 dark:bg-brand-gray-800" />
+
+                    {/* Right: Scrambled Color State */}
+                    <div className="flex flex-col items-center space-y-2">
+                      <span className="text-[9px] text-brand-gray-450 uppercase font-black tracking-widest">打亂配色對照</span>
+                      <Sq1Preview scramble={currentScramble} />
+                    </div>
+                  </div>
+
+                  {/* CSP Live Trace Panel */}
+                  <CspTracePanel scramble={currentScramble} />
                 </div>
 
                 <div 
@@ -696,48 +849,40 @@ const CspTrainer = () => {
           </div>
         </div>
       ) : (
-        /* Tutorial Block */
         <div className="bg-white dark:bg-brand-gray-950 border border-brand-gray-200 dark:border-brand-gray-800 rounded-[2.5rem] p-6 md:p-10 animate-in fade-in duration-250 space-y-10 shadow-sm">
-          {/* Section: Intro */}
+
+          {/* Intro */}
           <div className="space-y-4">
             <h2 className="text-2xl font-black tracking-tight flex items-center gap-2 text-black dark:text-white">
-              <BookOpen className="w-6 h-6 text-brand-gray-505" />
+              <BookOpen className="w-6 h-6 text-brand-gray-550" />
               什麼是 CSP (Cubeshape Parity)？
             </h2>
             <p className="text-sm text-brand-gray-500 dark:text-brand-gray-400 leading-relaxed">
               Cubeshape Parity（簡稱 <strong>CSP</strong>）是 Square-1 中最具決定性的進階復原技術。
-              它的核心思想是：<strong>在觀察階段（Inspection）計算出整個方塊的奇偶狀態（Parity）</strong>，並在隨後復原成正方形（Cubeshape）的過程中，直接選擇對應的還原路徑（即 Even 與 Odd 算法），從而<strong>在進入正方形時 100% 修正並消滅 Parity</strong>。
-              這樣一來，後續還原步驟（特別是最後的 EP 邊排列）將永遠不會遇到惱人且耗時的單純 Parity 特例公式。
+              它的核心思想是：在觀察階段計算出整個方塊的奇偶狀態（Parity），並在隨後復原成正方形的過程中，
+              直接選擇對應的還原路徑，從而<strong>在進入正方形時 100% 修正並消滅 Parity</strong>。
             </p>
           </div>
 
           <hr className="border-brand-gray-150 dark:border-brand-gray-900" />
 
-          {/* Section: Math */}
+          {/* Section 1: Math */}
           <div className="space-y-4">
             <h2 className="text-xl font-black text-black dark:text-white">📐 1. Parity 的置換數學原理</h2>
-            <p className="text-sm text-brand-gray-500 dark:text-brand-gray-400 leading-relaxed">
-              在置換群中，Parity（奇偶性）代表將一個打亂狀態還原到目標狀態所需的「兩兩互換次數（Swaps）」的奇偶性：
-            </p>
             <ul className="text-xs text-brand-gray-550 dark:text-brand-gray-400 list-disc pl-5 space-y-2">
-              <li><strong>Even Parity (偶數奇偶性)</strong>：需要偶數次交換還原。在正方形下，每次 / (Slice) 轉動會同時交換 2 對角塊與 2 對邊塊（總共 4 次交換，為偶數），因此正方形轉動會維持偶數狀態。</li>
-              <li><strong>Odd Parity (奇數奇偶性)</strong>：需要奇數次交換還原。在非正方形下，由於形狀不對稱，一次切片可能會造成「3 次角塊交換 + 0 次邊塊交換」（奇數）等情況，使方塊陷入 Odd 狀態。</li>
+              <li><strong>Even Parity</strong>：需要偶數次交換還原。</li>
+              <li><strong>Odd Parity</strong>：需要奇數次交換還原。</li>
             </ul>
           </div>
 
           <hr className="border-brand-gray-150 dark:border-brand-gray-900" />
 
-          {/* Section: Reference Schemes */}
+          {/* Section 2: Reference Schemes */}
           <div className="space-y-6">
             <h2 className="text-xl font-black text-black dark:text-white">🎯 2. 官方基準置換編號 (WCA Reference Schemes)</h2>
-            <p className="text-sm text-brand-gray-500 dark:text-brand-gray-400 leading-relaxed">
-              為了在觀察時「數出交換次數」，我們必須為每一種 Cubeshape 定義一個<strong>「基準狀態（Reference Scheme）」</strong>（通常是完全解開或最直覺的配色對齊狀態），並將每個位置進行編號：
-            </p>
-
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Corners Scheme Card */}
               <div className="bg-brand-gray-50 dark:bg-brand-gray-950/40 border border-brand-gray-150 dark:border-brand-gray-900 rounded-3xl p-6 flex flex-col items-center shadow-sm">
-                <h3 className="text-sm font-black uppercase tracking-widest text-brand-gray-400 mb-4">角塊編號基準 (Corners 1-8)</h3>
+                <h3 className="text-sm font-black uppercase tracking-widest text-brand-gray-450 mb-4">角塊編號基準 (Corners 1-8)</h3>
                 <div className="flex gap-8 items-center justify-center">
                   <div className="text-center">
                     <Sq1ReferenceDiagram top={true} type="corners" />
@@ -749,12 +894,10 @@ const CspTrainer = () => {
                   </div>
                 </div>
                 <div className="mt-6 text-xs text-brand-gray-500 dark:text-brand-gray-400 space-y-1.5 w-full border-t border-brand-gray-150 dark:border-brand-gray-900/60 pt-4">
-                  <p>• <strong>頂層 (1-4)</strong>: UFL ➔ <strong className="text-black dark:text-white">1</strong>, UFR ➔ <strong className="text-black dark:text-white">2</strong>, UBR ➔ <strong className="text-black dark:text-white">3</strong>, UBL ➔ <strong className="text-black dark:text-white">4</strong></p>
-                  <p>• <strong>底層 (5-8)</strong>: DFL ➔ <strong className="text-black dark:text-white">5</strong>, DFR ➔ <strong className="text-black dark:text-white">6</strong>, DBR ➔ <strong className="text-black dark:text-white">7</strong>, DBL ➔ <strong className="text-black dark:text-white">8</strong></p>
+                  <p>• <strong>頂層 (1-4)</strong>: UFL➔1, UFR➔2, UBR➔3, UBL➔4</p>
+                  <p>• <strong>底層 (5-8)</strong>: DFL➔5, DFR➔6, DBR➔7, DBL➔8</p>
                 </div>
               </div>
-
-              {/* Edges Scheme Card */}
               <div className="bg-brand-gray-50 dark:bg-brand-gray-950/40 border border-brand-gray-150 dark:border-brand-gray-900 rounded-3xl p-6 flex flex-col items-center shadow-sm">
                 <h3 className="text-sm font-black uppercase tracking-widest text-brand-gray-450 mb-4">邊塊編號基準 (Edges 1-8)</h3>
                 <div className="flex gap-8 items-center justify-center">
@@ -768,8 +911,8 @@ const CspTrainer = () => {
                   </div>
                 </div>
                 <div className="mt-6 text-xs text-brand-gray-500 dark:text-brand-gray-400 space-y-1.5 w-full border-t border-brand-gray-150 dark:border-brand-gray-900/60 pt-4">
-                  <p>• <strong>頂層 (1-4)</strong>: UL ➔ <strong className="text-black dark:text-white">1</strong>, UF ➔ <strong className="text-black dark:text-white">2</strong>, UR ➔ <strong className="text-black dark:text-white">3</strong>, UB ➔ <strong className="text-black dark:text-white">4</strong></p>
-                  <p>• <strong>底層 (5-8)</strong>: DL ➔ <strong className="text-black dark:text-white">5</strong>, DF ➔ <strong className="text-black dark:text-white">6</strong>, DR ➔ <strong className="text-black dark:text-white">7</strong>, DB ➔ <strong className="text-black dark:text-white">8</strong></p>
+                  <p>• <strong>頂層 (1-4)</strong>: UL➔1, UF➔2, UR➔3, UB➔4</p>
+                  <p>• <strong>底層 (5-8)</strong>: DL➔5, DF➔6, DR➔7, DB➔8</p>
                 </div>
               </div>
             </div>
@@ -777,66 +920,191 @@ const CspTrainer = () => {
 
           <hr className="border-brand-gray-150 dark:border-brand-gray-900" />
 
-          {/* Section: Counting */}
-          <div className="space-y-4">
+          {/* Section 3: Counting + Videos */}
+          <div className="space-y-6">
             <h2 className="text-xl font-black text-black dark:text-white">🔄 3. 循環計數步驟 (How to Trace & Count)</h2>
-            <p className="text-sm text-brand-gray-500 dark:text-brand-gray-400 leading-relaxed">
-              觀察打亂的方塊時，請獨立針對角塊和邊塊寫出置換循環：
-            </p>
-            <div className="bg-brand-gray-50 dark:bg-brand-gray-950/40 border border-brand-gray-150 dark:border-brand-gray-900 rounded-3xl p-6 space-y-4">
-              <div>
-                <h4 className="text-xs font-black uppercase tracking-widest text-brand-gray-450">1. 寫出置換循環 (Cycles)</h4>
-                <p className="text-xs text-brand-gray-500 dark:text-brand-gray-400 mt-1 leading-relaxed">
-                  從未追蹤的編號位置出發（例如 1 號角塊），查看此位置上的角塊原本應去哪裡（如 3），再看 3 號位置的角塊應去哪裡（如 5），直到回到起點。這是一個完整循環。如果還有未數完的角塊，開啟下一個循環，直到 8 個角塊都被計算。
-                </p>
-              </div>
-              <div className="border-t border-brand-gray-150 dark:border-brand-gray-900/60 pt-3">
-                <h4 className="text-xs font-black uppercase tracking-widest text-brand-gray-450">2. 計算總交換次數 (Swaps)</h4>
-                <p className="text-xs text-brand-gray-500 dark:text-brand-gray-400 mt-1">
-                  一個長度為 <code className="bg-brand-gray-100 dark:bg-brand-gray-900 px-1.5 py-0.5 rounded font-mono font-bold text-black dark:text-white">L</code> 的循環，需要 <code className="bg-brand-gray-100 dark:bg-brand-gray-900 px-1.5 py-0.5 rounded font-mono font-bold text-black dark:text-white">L - 1</code> 次兩兩交換。
-                </p>
-                <div className="bg-white dark:bg-black p-4 rounded-2xl border border-brand-gray-150 dark:border-brand-gray-900 text-xs font-mono mt-2 text-center text-black dark:text-white space-y-1">
-                  <div>角塊交換數 = Σ (各角塊循環長度 - 1)</div>
-                  <div>邊塊交換數 = Σ (各邊塊循環長度 - 1)</div>
-                  <div className="font-extrabold border-t border-brand-gray-150 dark:border-brand-gray-900/60 pt-2 mt-2">總交換次數 = 角塊交換數 + 邊塊交換數</div>
+
+            {/* YouTube embeds */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div className="bg-brand-gray-50 dark:bg-brand-gray-950/40 border border-brand-gray-150 dark:border-brand-gray-900 rounded-[2.5rem] p-5 space-y-3 shadow-sm">
+                <h4 className="text-sm font-black text-black dark:text-white flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-red-500"></span>Tucker Chamberlain CSP 實戰教學
+                </h4>
+                <p className="text-xs text-brand-gray-500 dark:text-brand-gray-400">主打全局 Solved 狀態對比，Star-shift 及 Slice-shift 奇偶性反轉邏輯。</p>
+                <div className="w-full aspect-video rounded-2xl overflow-hidden border border-brand-gray-200 dark:border-brand-gray-800 bg-black">
+                  <iframe className="w-full h-full" src="https://www.youtube.com/embed/BLVZlRQMbSU" title="Tucker Chamberlain CSP" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
               </div>
-              <div className="border-t border-brand-gray-150 dark:border-brand-gray-900/60 pt-3 flex flex-wrap gap-4 text-xs font-bold justify-around">
-                <div className="text-green-500 flex items-center gap-1">✓ 總交換次數為 偶數 ➔ Even Parity</div>
-                <div className="text-red-500 flex items-center gap-1">✗ 總交換次數為 奇數 ➔ Odd Parity</div>
+              <div className="bg-brand-gray-50 dark:bg-brand-gray-950/40 border border-brand-gray-150 dark:border-brand-gray-900 rounded-[2.5rem] p-5 space-y-3 shadow-sm">
+                <h4 className="text-sm font-black text-black dark:text-white flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-red-500"></span>Eva Kato SQ1 CSP Visual Recognition
+                </h4>
+                <p className="text-xs text-brand-gray-500 dark:text-brand-gray-400">主打側面三色排列（ABA / ABC）快速判定角塊奇偶性。</p>
+                <div className="w-full aspect-video rounded-2xl overflow-hidden border border-brand-gray-200 dark:border-brand-gray-800 bg-black">
+                  <iframe className="w-full h-full" src="https://www.youtube.com/embed/pXXr87kwZuI" title="Eva Kato CSP" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                </div>
+              </div>
+            </div>
+
+            {/* Cycle explanation */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-white dark:bg-brand-gray-950 border border-brand-gray-150 dark:border-brand-gray-900 rounded-[2rem] p-6 space-y-3 shadow-sm">
+                <h3 className="text-sm font-black text-black dark:text-white">1. 寫出置換循環 (Cycles)</h3>
+                <p className="text-xs text-brand-gray-500 dark:text-brand-gray-400 leading-relaxed">
+                  從未數過的位置（如位置 1）出發，查看其碎片應去哪裡（如 3），再看 3 的碎片應去哪裡（如 5），直到回到起點。所有碎片都追蹤完才算結束。
+                </p>
+              </div>
+              <div className="bg-white dark:bg-brand-gray-950 border border-brand-gray-150 dark:border-brand-gray-900 rounded-[2rem] p-6 space-y-3 shadow-sm">
+                <h3 className="text-sm font-black text-black dark:text-white">2. 計算交換數 (Swaps)</h3>
+                <p className="text-xs text-brand-gray-500 dark:text-brand-gray-400">長度 L 的循環需要 L-1 次交換。</p>
+                <div className="bg-brand-gray-50 dark:bg-black p-3 rounded-xl border border-brand-gray-150 dark:border-brand-gray-900 font-mono text-xs text-center space-y-1">
+                  <div>邊塊交換數 = Σ (邊塊循環長度 - 1)</div>
+                  <div>角塊交換數 = Σ (角塊循環長度 - 1)</div>
+                  <div className="font-extrabold pt-2 border-t border-brand-gray-200 dark:border-brand-gray-900 text-black dark:text-white">總交換數 = 邊 + 角</div>
+                </div>
+                <div className="flex gap-4 text-xs font-bold">
+                  <span className="text-green-500">偶數 ➔ Even</span>
+                  <span className="text-red-500">奇數 ➔ Odd</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Examples */}
+            <h3 className="text-base font-black text-black dark:text-white">💡 Brandon Lin 經典實例</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-brand-gray-50 dark:bg-brand-gray-950/40 border border-brand-gray-150 dark:border-brand-gray-900 rounded-[2rem] p-5 space-y-2 shadow-sm">
+                <h4 className="text-xs font-black uppercase tracking-wider text-brand-gray-450">實例一：80 / Star</h4>
+                <div className="text-xs text-brand-gray-500 dark:text-brand-gray-400 space-y-1.5 leading-relaxed">
+                  <p>邊塊: 4次交換 | 角塊: 5次交換</p>
+                  <p>總計 <strong>9次 (奇數 ➔ Odd)</strong></p>
+                  <p className="text-red-500 font-bold">➔ 第一步需 star-shift (0,2) 抵消奇偶性</p>
+                </div>
+              </div>
+              <div className="bg-brand-gray-50 dark:bg-brand-gray-950/40 border border-brand-gray-150 dark:border-brand-gray-900 rounded-[2rem] p-5 space-y-2 shadow-sm">
+                <h4 className="text-xs font-black uppercase tracking-wider text-brand-gray-450">實例二：Scallop / Scallop</h4>
+                <div className="text-xs text-brand-gray-500 dark:text-brand-gray-400 space-y-1.5 leading-relaxed">
+                  <p>邊塊: 7次交換 | 角塊: 9次交換</p>
+                  <p>總計 <strong>16次 (偶數 ➔ Even)</strong></p>
+                  <p className="text-green-500 font-bold">➔ 選擇 Even 復形路徑</p>
+                </div>
               </div>
             </div>
           </div>
 
           <hr className="border-brand-gray-150 dark:border-brand-gray-900" />
 
-          {/* Section: Brandon Lin's Tips */}
+          {/* Section 4: Toggling Trick */}
           <div className="space-y-4">
             <h2 className="text-xl font-black text-black dark:text-white">💡 4. Brandon Lin 觀察實戰竅門 (Toggling Trick)</h2>
-            <p className="text-sm text-brand-gray-500 dark:text-brand-gray-400 leading-relaxed">
-              在 15 秒的極限觀察中，我們不可能在腦海中記錄多位數字。Brandon Lin 影片中介紹了以下實用的心算降維技巧：
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               <div className="bg-brand-gray-50 dark:bg-brand-gray-950/40 border border-brand-gray-150 dark:border-brand-gray-900 rounded-3xl p-5 shadow-sm space-y-2">
                 <h4 className="text-xs font-black uppercase tracking-widest text-brand-gray-450">奇偶指針法 (Toggling)</h4>
-                <p className="text-[11px] text-brand-gray-500 dark:text-brand-gray-400 leading-relaxed">
-                  心裡只維持一個布林值（0 或 1，即 Even 或 Odd）。每數到一個 2-cycle (長度為 2 的循環，即 1 次交換)，就反轉一次指針狀態。遇到 3-cycle (2 次交換) 則狀態保持不變。
-                </p>
+                <p className="text-[11px] text-brand-gray-500 dark:text-brand-gray-400 leading-relaxed">心裡只維持 0 或 1（Even/Odd）。每遇到 2-cycle 就反轉；3-cycle 則保持不變。</p>
               </div>
               <div className="bg-brand-gray-50 dark:bg-brand-gray-950/40 border border-brand-gray-150 dark:border-brand-gray-900 rounded-3xl p-5 shadow-sm space-y-2">
                 <h4 className="text-xs font-black uppercase tracking-widest text-brand-gray-450">先角後邊，分步擊破</h4>
-                <p className="text-[11px] text-brand-gray-500 dark:text-brand-gray-400 leading-relaxed">
-                  先花 5-7 秒完全數完面積較大、特徵明顯的角塊，得出角塊的指針（例如 Odd）。接著再數邊塊，在此基礎上繼續反轉指針，最後得出的 0 或 1 即為方塊的最終 CSP 答案。
-                </p>
+                <p className="text-[11px] text-brand-gray-500 dark:text-brand-gray-400 leading-relaxed">先 5-7 秒數完角塊，得出角塊指針。再數邊塊繼續反轉，最後的值即為 CSP 答案。</p>
               </div>
               <div className="bg-brand-gray-50 dark:bg-brand-gray-950/40 border border-brand-gray-150 dark:border-brand-gray-900 rounded-3xl p-5 shadow-sm space-y-2">
-                <h4 className="text-xs font-black uppercase tracking-widest text-brand-gray-450">輔助練習軟體推薦</h4>
-                <p className="text-[11px] text-brand-gray-500 dark:text-brand-gray-400 leading-relaxed">
-                  建議結合 <strong>SpeedCubeDB (SQ1 Trace)</strong> 網頁，練習用眼睛和點擊確認置換；熟練後再使用 <strong>Squanmate</strong> 來進行特定 Subset 的公式記憶與計時訓練。
-                </p>
+                <h4 className="text-xs font-black uppercase tracking-widest text-brand-gray-450">輔助練習工具</h4>
+                <p className="text-[11px] text-brand-gray-500 dark:text-brand-gray-400 leading-relaxed">結合 <strong>SpeedCubeDB (SQ1 Trace)</strong> 練習置換確認；熟練後用 <strong>Squanmate</strong> 計時訓練。</p>
               </div>
             </div>
           </div>
+
+          <hr className="border-brand-gray-150 dark:border-brand-gray-900" />
+
+          {/* Section 5: SpeedCubeDB Walkthrough */}
+          <div className="bg-brand-gray-50 dark:bg-brand-gray-950/40 border border-brand-gray-150 dark:border-brand-gray-900 rounded-[2.5rem] p-6 md:p-8 space-y-4 shadow-sm">
+            <h2 className="text-xl font-black text-black dark:text-white">🔎 5. SpeedCubeDB Trace 實戰拆解 (Walkthrough)</h2>
+            <p className="text-xs text-brand-gray-500 dark:text-brand-gray-400">SpeedCubeDB 從每個角塊讀取側面三格顏色，判斷是 ABA (固定 Even) 還是 ABC (查 24 格表)，各角塊奇偶性相加取模即最終結果。</p>
+            <code className="block bg-white dark:bg-black p-3 rounded-2xl border border-brand-gray-150 dark:border-brand-gray-900 font-mono text-[11px] text-brand-gray-600 dark:text-brand-gray-300">
+              範例打亂: (1,0)/ (3,3)/ (-1,5)/ (0,-3)/ (-3,0)/ (-5,-5)/ (0,-1)/ (3,0)/ (-4,-3)/ (0,-4)/ (-5,-2)/ (3,0)
+            </code>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs text-brand-gray-500 dark:text-brand-gray-400">
+              <div><strong className="text-black dark:text-white block mb-1">1. 形狀識別</strong>打亂後形狀為 3-1-2 / Paired Edges。</div>
+              <div className="md:border-l border-brand-gray-150 dark:border-brand-gray-900 md:pl-4"><strong className="text-black dark:text-white block mb-1">2. 追蹤邊塊</strong>從 UL 開始追蹤：DB➔UF➔DL➔DR➔UL（長度5，4次交換）。繼續追蹤其餘碎片。</div>
+              <div className="md:border-l border-brand-gray-150 dark:border-brand-gray-900 md:pl-4"><strong className="text-black dark:text-white block mb-1">3. 選擇路徑</strong>累加邊塊+角塊交換數：奇數選 Odd 路徑，偶數選 Even 路徑。</div>
+            </div>
+          </div>
+
+          <hr className="border-brand-gray-150 dark:border-brand-gray-900" />
+
+          {/* Section 6: Eva Kato Corner Recognition */}
+          <div className="space-y-6">
+            <h2 className="text-xl font-black text-black dark:text-white">🌟 6. 實戰快速判定法 (Eva Kato - Parity vs Not Parity Visual Recognition)</h2>
+            <p className="text-sm text-brand-gray-500 dark:text-brand-gray-400 leading-relaxed">
+              查看相鄰三個角塊的側面顏色排列（順時針，B=藍, G=綠, R=紅, O=橘）快速判定：
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+              {/* ABA — always Even */}
+              <div className="bg-green-50/40 dark:bg-green-950/10 border border-green-200/60 dark:border-green-900/30 rounded-[2.5rem] p-6 space-y-4">
+                <h3 className="text-sm font-black text-green-600 dark:text-green-400 flex items-center gap-2">
+                  <span className="w-2.5 h-2.5 rounded-full bg-green-500 flex-shrink-0"></span>
+                  ABA 模式 ➔ 無 Parity (偶數 / Even)
+                </h3>
+                <p className="text-xs text-brand-gray-500 dark:text-brand-gray-400">首尾顏色相同，中間不同 — 共 12 種，必定 Even：</p>
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="bg-white dark:bg-black/30 p-3 rounded-2xl border border-green-100/40 dark:border-green-900/20 space-y-2.5">
+                    <span className="text-[9px] font-black uppercase tracking-widest text-brand-gray-450 block">對色 (首尾相反)</span>
+                    {[['B','G','B'],['G','B','G'],['R','O','R'],['O','R','O']].map(c => (
+                      <div key={c.join('')} className="flex items-center justify-between">
+                        <ColorPatternBar colors={c} />
+                        <span className="text-[10px] font-mono text-brand-gray-500">{c.join(' ')}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="bg-white dark:bg-black/30 p-3 rounded-2xl border border-green-100/40 dark:border-green-900/20 space-y-2.5">
+                    <span className="text-[9px] font-black uppercase tracking-widest text-brand-gray-450 block">相鄰色 (首尾相鄰)</span>
+                    {[['B','R','B'],['R','B','R'],['G','R','G'],['R','G','R'],['O','G','O'],['G','O','G'],['O','B','O'],['B','O','B']].map(c => (
+                      <div key={c.join('')} className="flex items-center justify-between">
+                        <ColorPatternBar colors={c} />
+                        <span className="text-[10px] font-mono text-brand-gray-500">{c.join(' ')}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* ABC — lookup table */}
+              <div className="bg-red-50/50 dark:bg-red-950/10 border border-red-200/60 dark:border-red-900/40 rounded-[2.5rem] p-6 space-y-4">
+                <h3 className="text-sm font-black text-red-600 dark:text-red-400 flex items-center gap-2">
+                  <span className="w-2.5 h-2.5 rounded-full bg-red-500 flex-shrink-0"></span>
+                  ABC 模式 ➔ 需查表判定 (12 Even / 12 Odd)
+                </h3>
+                <p className="text-xs text-brand-gray-500 dark:text-brand-gray-400">三色各不同 — 共 24 種，需查下表：</p>
+                <div className="bg-white dark:bg-black/30 p-4 rounded-2xl border border-red-100/40 dark:border-red-900/20">
+                  <div className="grid grid-cols-2 gap-x-4 gap-y-2 max-h-72 overflow-y-auto pr-1 text-[11px]">
+                    {[
+                      [['B','G','O'],'Odd'],[['B','G','R'],'Even'],
+                      [['B','R','O'],'Even'],[['B','R','G'],'Odd'],
+                      [['B','O','R'],'Odd'],[['B','O','G'],'Even'],
+                      [['G','R','O'],'Odd'],[['G','R','B'],'Even'],
+                      [['G','O','R'],'Even'],[['G','O','B'],'Odd'],
+                      [['G','B','O'],'Even'],[['G','B','R'],'Odd'],
+                      [['R','G','B'],'Odd'],[['R','G','O'],'Even'],
+                      [['R','O','B'],'Even'],[['R','O','G'],'Odd'],
+                      [['R','B','O'],'Odd'],[['R','B','G'],'Even'],
+                      [['O','G','B'],'Even'],[['O','G','R'],'Odd'],
+                      [['O','R','G'],'Even'],[['O','R','B'],'Odd'],
+                      [['O','B','R'],'Even'],[['O','B','G'],'Odd'],
+                    ].map(([c, p]) => (
+                      <div key={c.join('')} className="flex items-center justify-between border-b border-brand-gray-100 dark:border-brand-gray-900 pb-1">
+                        <div className="flex items-center gap-1.5">
+                          <ColorPatternBar colors={c} />
+                          <span className="font-mono font-bold text-brand-gray-600 dark:text-brand-gray-400">{c.join(' ')}</span>
+                        </div>
+                        <span className={`font-bold ${p === 'Odd' ? 'text-red-500' : 'text-green-500'}`}>{p === 'Odd' ? 'Odd (有)' : 'Even (無)'}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
       )}
     </div>

@@ -30,3313 +30,4417 @@
       "englishPair": "AB",
       "bopomofoPair": "ㄅㄆ",
       "firstTarget": "ㄅ",
-      "secondTarget": "ㄆ"
+      "secondTarget": "ㄆ",
+      "cn": "冰棒",
+      "en": "Abby"
     },
     {
       "englishPair": "AC",
       "bopomofoPair": "ㄅㄇ",
       "firstTarget": "ㄅ",
-      "secondTarget": "ㄇ"
+      "secondTarget": "ㄇ",
+      "cn": "爸媽",
+      "en": "Acme"
     },
     {
       "englishPair": "AD",
       "bopomofoPair": "ㄅㄈ",
       "firstTarget": "ㄅ",
-      "secondTarget": "ㄈ"
+      "secondTarget": "ㄈ",
+      "cn": "播放",
+      "en": "Ad"
     },
     {
       "englishPair": "AE",
       "bopomofoPair": "ㄅㄉ",
       "firstTarget": "ㄅ",
-      "secondTarget": "ㄉ"
+      "secondTarget": "ㄉ",
+      "cn": "便當",
+      "en": "Aegis"
     },
     {
       "englishPair": "AF",
       "bopomofoPair": "ㄅㄊ",
       "firstTarget": "ㄅ",
-      "secondTarget": "ㄊ"
+      "secondTarget": "ㄊ",
+      "cn": "白兔",
+      "en": "After"
     },
     {
       "englishPair": "AG",
       "bopomofoPair": "ㄅㄋ",
       "firstTarget": "ㄅ",
-      "secondTarget": "ㄋ"
+      "secondTarget": "ㄋ",
+      "cn": "避難",
+      "en": "Agent"
     },
     {
       "englishPair": "AH",
       "bopomofoPair": "ㄅㄌ",
       "firstTarget": "ㄅ",
-      "secondTarget": "ㄌ"
+      "secondTarget": "ㄌ",
+      "cn": "波蘿",
+      "en": "Ahoy"
     },
     {
       "englishPair": "AI",
       "bopomofoPair": "ㄅㄍ",
       "firstTarget": "ㄅ",
-      "secondTarget": "ㄍ"
+      "secondTarget": "ㄍ",
+      "cn": "包裹",
+      "en": "Aim"
     },
     {
       "englishPair": "AJ",
       "bopomofoPair": "ㄅㄎ",
       "firstTarget": "ㄅ",
-      "secondTarget": "ㄎ"
+      "secondTarget": "ㄎ",
+      "cn": "百科",
+      "en": "Ajar"
     },
     {
       "englishPair": "AK",
       "bopomofoPair": "ㄅㄏ",
       "firstTarget": "ㄅ",
-      "secondTarget": "ㄏ"
+      "secondTarget": "ㄏ",
+      "cn": "冰河",
+      "en": "Akimbo"
     },
     {
       "englishPair": "AL",
       "bopomofoPair": "ㄅㄐ",
       "firstTarget": "ㄅ",
-      "secondTarget": "ㄐ"
+      "secondTarget": "ㄐ",
+      "cn": "筆記",
+      "en": "Alan"
     },
     {
       "englishPair": "AM",
       "bopomofoPair": "ㄅㄑ",
       "firstTarget": "ㄅ",
-      "secondTarget": "ㄑ"
+      "secondTarget": "ㄑ",
+      "cn": "冰淇",
+      "en": "Amigo"
     },
     {
       "englishPair": "AN",
       "bopomofoPair": "ㄅㄒ",
       "firstTarget": "ㄅ",
-      "secondTarget": "ㄒ"
+      "secondTarget": "ㄒ",
+      "cn": "冰箱",
+      "en": "Ant"
     },
     {
       "englishPair": "AO",
       "bopomofoPair": "ㄅㄓ",
       "firstTarget": "ㄅ",
-      "secondTarget": "ㄓ"
+      "secondTarget": "ㄓ",
+      "cn": "保證",
+      "en": "Aorta"
     },
     {
       "englishPair": "AP",
       "bopomofoPair": "ㄅㄔ",
       "firstTarget": "ㄅ",
-      "secondTarget": "ㄔ"
+      "secondTarget": "ㄔ",
+      "cn": "病床",
+      "en": "Ape"
     },
     {
       "englishPair": "AQ",
       "bopomofoPair": "ㄅㄕ",
       "firstTarget": "ㄅ",
-      "secondTarget": "ㄕ"
+      "secondTarget": "ㄕ",
+      "cn": "幫手",
+      "en": "Aqua"
     },
     {
       "englishPair": "AR",
       "bopomofoPair": "ㄅㄖ",
       "firstTarget": "ㄅ",
-      "secondTarget": "ㄖ"
+      "secondTarget": "ㄖ",
+      "cn": "病人",
+      "en": "Art"
     },
     {
       "englishPair": "AS",
       "bopomofoPair": "ㄅㄗ",
       "firstTarget": "ㄅ",
-      "secondTarget": "ㄗ"
+      "secondTarget": "ㄗ",
+      "cn": "脖子",
+      "en": "Ashes"
     },
     {
       "englishPair": "AT",
       "bopomofoPair": "ㄅㄘ",
       "firstTarget": "ㄅ",
-      "secondTarget": "ㄘ"
+      "secondTarget": "ㄘ",
+      "cn": "白菜",
+      "en": "At"
     },
     {
       "englishPair": "AU",
       "bopomofoPair": "ㄅㄙ",
       "firstTarget": "ㄅ",
-      "secondTarget": "ㄙ"
+      "secondTarget": "ㄙ",
+      "cn": "比賽",
+      "en": "Audio"
     },
     {
       "englishPair": "AV",
       "bopomofoPair": "ㄅㄧ",
       "firstTarget": "ㄅ",
-      "secondTarget": "ㄧ"
+      "secondTarget": "ㄧ",
+      "cn": "白衣",
+      "en": "Avid"
     },
     {
       "englishPair": "AW",
       "bopomofoPair": "ㄅㄨ",
       "firstTarget": "ㄅ",
-      "secondTarget": "ㄨ"
+      "secondTarget": "ㄨ",
+      "cn": "百萬",
+      "en": "Away"
     },
     {
       "englishPair": "AX",
       "bopomofoPair": "ㄅㄩ",
       "firstTarget": "ㄅ",
-      "secondTarget": "ㄩ"
+      "secondTarget": "ㄩ",
+      "cn": "白魚",
+      "en": "Axe"
     },
     {
       "englishPair": "BA",
       "bopomofoPair": "ㄆㄅ",
       "firstTarget": "ㄆ",
-      "secondTarget": "ㄅ"
+      "secondTarget": "ㄅ",
+      "cn": "跑步",
+      "en": "Baby"
     },
     {
       "englishPair": "BC",
       "bopomofoPair": "ㄆㄇ",
       "firstTarget": "ㄆ",
-      "secondTarget": "ㄇ"
+      "secondTarget": "ㄇ",
+      "cn": "泡沫",
+      "en": "Puma"
     },
     {
       "englishPair": "BD",
       "bopomofoPair": "ㄆㄈ",
       "firstTarget": "ㄆ",
-      "secondTarget": "ㄈ"
+      "secondTarget": "ㄈ",
+      "cn": "皮膚",
+      "en": "Pdf"
     },
     {
       "englishPair": "BE",
       "bopomofoPair": "ㄆㄉ",
       "firstTarget": "ㄆ",
-      "secondTarget": "ㄉ"
+      "secondTarget": "ㄉ",
+      "cn": "跑道",
+      "en": "Pedal"
     },
     {
       "englishPair": "BF",
       "bopomofoPair": "ㄆㄊ",
       "firstTarget": "ㄆ",
-      "secondTarget": "ㄊ"
+      "secondTarget": "ㄊ",
+      "cn": "皮套",
+      "en": "Pet"
     },
     {
       "englishPair": "BG",
       "bopomofoPair": "ㄆㄋ",
       "firstTarget": "ㄆ",
-      "secondTarget": "ㄋ"
+      "secondTarget": "ㄋ",
+      "cn": "噴泥",
+      "en": "Penguin"
     },
     {
       "englishPair": "BH",
       "bopomofoPair": "ㄆㄌ",
       "firstTarget": "ㄆ",
-      "secondTarget": "ㄌ"
+      "secondTarget": "ㄌ",
+      "cn": "排列",
+      "en": "Phlox"
     },
     {
       "englishPair": "BI",
       "bopomofoPair": "ㄆㄍ",
       "firstTarget": "ㄆ",
-      "secondTarget": "ㄍ"
+      "secondTarget": "ㄍ",
+      "cn": "蘋果",
+      "en": "Pig"
     },
     {
       "englishPair": "BJ",
       "bopomofoPair": "ㄆㄎ",
       "firstTarget": "ㄆ",
-      "secondTarget": "ㄎ"
+      "secondTarget": "ㄎ",
+      "cn": "皮卡",
+      "en": "Pike"
     },
     {
       "englishPair": "BK",
       "bopomofoPair": "ㄆㄏ",
       "firstTarget": "ㄆ",
-      "secondTarget": "ㄏ"
+      "secondTarget": "ㄏ",
+      "cn": "配合",
+      "en": "Phone"
     },
     {
       "englishPair": "BL",
       "bopomofoPair": "ㄆㄐ",
       "firstTarget": "ㄆ",
-      "secondTarget": "ㄐ"
+      "secondTarget": "ㄐ",
+      "cn": "啤酒",
+      "en": "Pill"
     },
     {
       "englishPair": "BM",
       "bopomofoPair": "ㄆㄑ",
       "firstTarget": "ㄆ",
-      "secondTarget": "ㄑ"
+      "secondTarget": "ㄑ",
+      "cn": "排球",
+      "en": "Pimple"
     },
     {
       "englishPair": "BN",
       "bopomofoPair": "ㄆㄒ",
       "firstTarget": "ㄆ",
-      "secondTarget": "ㄒ"
+      "secondTarget": "ㄒ",
+      "cn": "皮鞋",
+      "en": "Pin"
     },
     {
       "englishPair": "BO",
       "bopomofoPair": "ㄆㄓ",
       "firstTarget": "ㄆ",
-      "secondTarget": "ㄓ"
+      "secondTarget": "ㄓ",
+      "cn": "拍照",
+      "en": "Poet"
     },
     {
       "englishPair": "BP",
       "bopomofoPair": "ㄆㄔ",
       "firstTarget": "ㄆ",
-      "secondTarget": "ㄔ"
+      "secondTarget": "ㄔ",
+      "cn": "跑車",
+      "en": "Pope"
     },
     {
       "englishPair": "BQ",
       "bopomofoPair": "ㄆㄕ",
       "firstTarget": "ㄆ",
-      "secondTarget": "ㄕ"
+      "secondTarget": "ㄕ",
+      "cn": "配手",
+      "en": "Posh"
     },
     {
       "englishPair": "BR",
       "bopomofoPair": "ㄆㄖ",
       "firstTarget": "ㄆ",
-      "secondTarget": "ㄖ"
+      "secondTarget": "ㄖ",
+      "cn": "判若",
+      "en": "Prism"
     },
     {
       "englishPair": "BS",
       "bopomofoPair": "ㄆㄗ",
       "firstTarget": "ㄆ",
-      "secondTarget": "ㄗ"
+      "secondTarget": "ㄗ",
+      "cn": "拍子",
+      "en": "Psalm"
     },
     {
       "englishPair": "BT",
       "bopomofoPair": "ㄆㄘ",
       "firstTarget": "ㄆ",
-      "secondTarget": "ㄘ"
+      "secondTarget": "ㄘ",
+      "cn": "偏差",
+      "en": "Ptarmigan"
     },
     {
       "englishPair": "BU",
       "bopomofoPair": "ㄆㄙ",
       "firstTarget": "ㄆ",
-      "secondTarget": "ㄙ"
+      "secondTarget": "ㄙ",
+      "cn": "配送",
+      "en": "Pudding"
     },
     {
       "englishPair": "BV",
       "bopomofoPair": "ㄆㄧ",
       "firstTarget": "ㄆ",
-      "secondTarget": "ㄧ"
+      "secondTarget": "ㄧ",
+      "cn": "便宜",
+      "en": "Pygmy"
     },
     {
       "englishPair": "BW",
       "bopomofoPair": "ㄆㄨ",
       "firstTarget": "ㄆ",
-      "secondTarget": "ㄨ"
+      "secondTarget": "ㄨ",
+      "cn": "排屋",
+      "en": "Pyre"
     },
     {
       "englishPair": "BX",
       "bopomofoPair": "ㄆㄩ",
       "firstTarget": "ㄆ",
-      "secondTarget": "ㄩ"
+      "secondTarget": "ㄩ",
+      "cn": "排魚",
+      "en": "Pixel"
     },
     {
       "englishPair": "CA",
       "bopomofoPair": "ㄇㄅ",
       "firstTarget": "ㄇ",
-      "secondTarget": "ㄅ"
+      "secondTarget": "ㄅ",
+      "cn": "麵包",
+      "en": "Mabel"
     },
     {
       "englishPair": "CB",
       "bopomofoPair": "ㄇㄆ",
       "firstTarget": "ㄇ",
-      "secondTarget": "ㄆ"
+      "secondTarget": "ㄆ",
+      "cn": "毛胚",
+      "en": "Maple"
     },
     {
       "englishPair": "CD",
       "bopomofoPair": "ㄇㄈ",
       "firstTarget": "ㄇ",
-      "secondTarget": "ㄈ"
+      "secondTarget": "ㄈ",
+      "cn": "免費",
+      "en": "Mdf"
     },
     {
       "englishPair": "CE",
       "bopomofoPair": "ㄇㄉ",
       "firstTarget": "ㄇ",
-      "secondTarget": "ㄉ"
+      "secondTarget": "ㄉ",
+      "cn": "目的",
+      "en": "Medal"
     },
     {
       "englishPair": "CF",
       "bopomofoPair": "ㄇㄊ",
       "firstTarget": "ㄇ",
-      "secondTarget": "ㄊ"
+      "secondTarget": "ㄊ",
+      "cn": "每天",
+      "en": "Met"
     },
     {
       "englishPair": "CG",
       "bopomofoPair": "ㄇㄋ",
       "firstTarget": "ㄇ",
-      "secondTarget": "ㄋ"
+      "secondTarget": "ㄋ",
+      "cn": "牛奶",
+      "en": "Mina"
     },
     {
       "englishPair": "CH",
       "bopomofoPair": "ㄇㄌ",
       "firstTarget": "ㄇ",
-      "secondTarget": "ㄌ"
+      "secondTarget": "ㄌ",
+      "cn": "美麗",
+      "en": "Mile"
     },
     {
       "englishPair": "CI",
       "bopomofoPair": "ㄇㄍ",
       "firstTarget": "ㄇ",
-      "secondTarget": "ㄍ"
+      "secondTarget": "ㄍ",
+      "cn": "玫瑰",
+      "en": "Mig"
     },
     {
       "englishPair": "CJ",
       "bopomofoPair": "ㄇㄎ",
       "firstTarget": "ㄇ",
-      "secondTarget": "ㄎ"
+      "secondTarget": "ㄎ",
+      "cn": "門口",
+      "en": "Mike"
     },
     {
       "englishPair": "CK",
       "bopomofoPair": "ㄇㄏ",
       "firstTarget": "ㄇ",
-      "secondTarget": "ㄏ"
+      "secondTarget": "ㄏ",
+      "cn": "美好",
+      "en": "Mho"
     },
     {
       "englishPair": "CL",
       "bopomofoPair": "ㄇㄐ",
       "firstTarget": "ㄇ",
-      "secondTarget": "ㄐ"
+      "secondTarget": "ㄐ",
+      "cn": "密碼",
+      "en": "Mill"
     },
     {
       "englishPair": "CM",
       "bopomofoPair": "ㄇㄑ",
       "firstTarget": "ㄇ",
-      "secondTarget": "ㄑ"
+      "secondTarget": "ㄑ",
+      "cn": "棉籤",
+      "en": "Mime"
     },
     {
       "englishPair": "CN",
       "bopomofoPair": "ㄇㄒ",
       "firstTarget": "ㄇ",
-      "secondTarget": "ㄒ"
+      "secondTarget": "ㄒ",
+      "cn": "模型",
+      "en": "Min"
     },
     {
       "englishPair": "CO",
       "bopomofoPair": "ㄇㄓ",
       "firstTarget": "ㄇ",
-      "secondTarget": "ㄓ"
+      "secondTarget": "ㄓ",
+      "cn": "帽子",
+      "en": "Mote"
     },
     {
       "englishPair": "CP",
       "bopomofoPair": "ㄇㄔ",
       "firstTarget": "ㄇ",
-      "secondTarget": "ㄔ"
+      "secondTarget": "ㄔ",
+      "cn": "摩托",
+      "en": "Mope"
     },
     {
       "englishPair": "CQ",
       "bopomofoPair": "ㄇㄕ",
       "firstTarget": "ㄇ",
-      "secondTarget": "ㄕ"
+      "secondTarget": "ㄕ",
+      "cn": "秘書",
+      "en": "Mosh"
     },
     {
       "englishPair": "CR",
       "bopomofoPair": "ㄇㄖ",
       "firstTarget": "ㄇ",
-      "secondTarget": "ㄖ"
+      "secondTarget": "ㄖ",
+      "cn": "美容",
+      "en": "Mr"
     },
     {
       "englishPair": "CS",
       "bopomofoPair": "ㄇㄗ",
       "firstTarget": "ㄇ",
-      "secondTarget": "ㄗ"
+      "secondTarget": "ㄗ",
+      "cn": "帽子",
+      "en": "Ms"
     },
     {
       "englishPair": "CT",
       "bopomofoPair": "ㄇㄘ",
       "firstTarget": "ㄇ",
-      "secondTarget": "ㄘ"
+      "secondTarget": "ㄘ",
+      "cn": "麵茶",
+      "en": "Mite"
     },
     {
       "englishPair": "CU",
       "bopomofoPair": "ㄇㄙ",
       "firstTarget": "ㄇ",
-      "secondTarget": "ㄙ"
+      "secondTarget": "ㄙ",
+      "cn": "迷宮",
+      "en": "Mud"
     },
     {
       "englishPair": "CV",
       "bopomofoPair": "ㄇㄧ",
       "firstTarget": "ㄇ",
-      "secondTarget": "ㄧ"
+      "secondTarget": "ㄧ",
+      "cn": "螞蟻",
+      "en": "Myriad"
     },
     {
       "englishPair": "CW",
       "bopomofoPair": "ㄇㄨ",
       "firstTarget": "ㄇ",
-      "secondTarget": "ㄨ"
+      "secondTarget": "ㄨ",
+      "cn": "美味",
+      "en": "Mew"
     },
     {
       "englishPair": "CX",
       "bopomofoPair": "ㄇㄩ",
       "firstTarget": "ㄇ",
-      "secondTarget": "ㄩ"
+      "secondTarget": "ㄩ",
+      "cn": "木魚",
+      "en": "Mix"
     },
     {
       "englishPair": "DA",
       "bopomofoPair": "ㄈㄅ",
       "firstTarget": "ㄈ",
-      "secondTarget": "ㄅ"
+      "secondTarget": "ㄅ",
+      "cn": "方法",
+      "en": "Fab"
     },
     {
       "englishPair": "DB",
       "bopomofoPair": "ㄈㄆ",
       "firstTarget": "ㄈ",
-      "secondTarget": "ㄆ"
+      "secondTarget": "ㄆ",
+      "cn": "分派",
+      "en": "Fbi"
     },
     {
       "englishPair": "DC",
       "bopomofoPair": "ㄈㄇ",
       "firstTarget": "ㄈ",
-      "secondTarget": "ㄇ"
+      "secondTarget": "ㄇ",
+      "cn": "蜂蜜",
+      "en": "Fume"
     },
     {
       "englishPair": "DE",
       "bopomofoPair": "ㄈㄉ",
       "firstTarget": "ㄈ",
-      "secondTarget": "ㄉ"
+      "secondTarget": "ㄉ",
+      "cn": "奮鬥",
+      "en": "Fed"
     },
     {
       "englishPair": "DF",
       "bopomofoPair": "ㄈㄊ",
       "firstTarget": "ㄈ",
-      "secondTarget": "ㄊ"
+      "secondTarget": "ㄊ",
+      "cn": "發貼",
+      "en": "Feet"
     },
     {
       "englishPair": "DG",
       "bopomofoPair": "ㄈㄋ",
       "firstTarget": "ㄈ",
-      "secondTarget": "ㄋ"
+      "secondTarget": "ㄋ",
+      "cn": "憤怒",
+      "en": "Finca"
     },
     {
       "englishPair": "DH",
       "bopomofoPair": "ㄈㄌ",
       "firstTarget": "ㄈ",
-      "secondTarget": "ㄌ"
+      "secondTarget": "ㄌ",
+      "cn": "法律",
+      "en": "File"
     },
     {
       "englishPair": "DI",
       "bopomofoPair": "ㄈㄍ",
       "firstTarget": "ㄈ",
-      "secondTarget": "ㄍ"
+      "secondTarget": "ㄍ",
+      "cn": "放歌",
+      "en": "Fig"
     },
     {
       "englishPair": "DJ",
       "bopomofoPair": "ㄈㄎ",
       "firstTarget": "ㄈ",
-      "secondTarget": "ㄎ"
+      "secondTarget": "ㄎ",
+      "cn": "放寬",
+      "en": "Fike"
     },
     {
       "englishPair": "DK",
       "bopomofoPair": "ㄈㄏ",
       "firstTarget": "ㄈ",
-      "secondTarget": "ㄏ"
+      "secondTarget": "ㄏ",
+      "cn": "防護",
+      "en": "Foehn"
     },
     {
       "englishPair": "DL",
       "bopomofoPair": "ㄈㄐ",
       "firstTarget": "ㄈ",
-      "secondTarget": "ㄐ"
+      "secondTarget": "ㄐ",
+      "cn": "佛教",
+      "en": "Fill"
     },
     {
       "englishPair": "DM",
       "bopomofoPair": "ㄈㄑ",
       "firstTarget": "ㄈ",
-      "secondTarget": "ㄑ"
+      "secondTarget": "ㄑ",
+      "cn": "發球",
+      "en": "Flame"
     },
     {
       "englishPair": "DN",
       "bopomofoPair": "ㄈㄒ",
       "firstTarget": "ㄈ",
-      "secondTarget": "ㄒ"
+      "secondTarget": "ㄒ",
+      "cn": "方向",
+      "en": "Fin"
     },
     {
       "englishPair": "DO",
       "bopomofoPair": "ㄈㄓ",
       "firstTarget": "ㄈ",
-      "secondTarget": "ㄓ"
+      "secondTarget": "ㄓ",
+      "cn": "非洲",
+      "en": "Foci"
     },
     {
       "englishPair": "DP",
       "bopomofoPair": "ㄈㄔ",
       "firstTarget": "ㄈ",
-      "secondTarget": "ㄔ"
+      "secondTarget": "ㄔ",
+      "cn": "發車",
+      "en": "Fop"
     },
     {
       "englishPair": "DQ",
       "bopomofoPair": "ㄈㄕ",
       "firstTarget": "ㄈ",
-      "secondTarget": "ㄕ"
+      "secondTarget": "ㄕ",
+      "cn": "發射",
+      "en": "Fish"
     },
     {
       "englishPair": "DR",
       "bopomofoPair": "ㄈㄖ",
       "firstTarget": "ㄈ",
-      "secondTarget": "ㄖ"
+      "secondTarget": "ㄖ",
+      "cn": "繁榮",
+      "en": "Free"
     },
     {
       "englishPair": "DS",
       "bopomofoPair": "ㄈㄗ",
       "firstTarget": "ㄈ",
-      "secondTarget": "ㄗ"
+      "secondTarget": "ㄗ",
+      "cn": "分子",
+      "en": "Fuzz"
     },
     {
       "englishPair": "DT",
       "bopomofoPair": "ㄈㄘ",
       "firstTarget": "ㄈ",
-      "secondTarget": "ㄘ"
+      "secondTarget": "ㄘ",
+      "cn": "發財",
+      "en": "Fit"
     },
     {
       "englishPair": "DU",
       "bopomofoPair": "ㄈㄙ",
       "firstTarget": "ㄈ",
-      "secondTarget": "ㄙ"
+      "secondTarget": "ㄙ",
+      "cn": "發送",
+      "en": "Fud"
     },
     {
       "englishPair": "DV",
       "bopomofoPair": "ㄈㄧ",
       "firstTarget": "ㄈ",
-      "secondTarget": "ㄧ"
+      "secondTarget": "ㄧ",
+      "cn": "翻譯",
+      "en": "Five"
     },
     {
       "englishPair": "DW",
       "bopomofoPair": "ㄈㄨ",
       "firstTarget": "ㄈ",
-      "secondTarget": "ㄨ"
+      "secondTarget": "ㄨ",
+      "cn": "房屋",
+      "en": "Few"
     },
     {
       "englishPair": "DX",
       "bopomofoPair": "ㄈㄩ",
       "firstTarget": "ㄈ",
-      "secondTarget": "ㄩ"
+      "secondTarget": "ㄩ",
+      "cn": "防禦",
+      "en": "Fix"
     },
     {
       "englishPair": "EA",
       "bopomofoPair": "ㄉㄅ",
       "firstTarget": "ㄉ",
-      "secondTarget": "ㄅ"
+      "secondTarget": "ㄅ",
+      "cn": "打包",
+      "en": "Dab"
     },
     {
       "englishPair": "EB",
       "bopomofoPair": "ㄉㄆ",
       "firstTarget": "ㄉ",
-      "secondTarget": "ㄆ"
+      "secondTarget": "ㄆ",
+      "cn": "地痞",
+      "en": "Dope"
     },
     {
       "englishPair": "EC",
       "bopomofoPair": "ㄉㄇ",
       "firstTarget": "ㄉ",
-      "secondTarget": "ㄇ"
+      "secondTarget": "ㄇ",
+      "cn": "電腦",
+      "en": "Dame"
     },
     {
       "englishPair": "ED",
       "bopomofoPair": "ㄉㄈ",
       "firstTarget": "ㄉ",
-      "secondTarget": "ㄈ"
+      "secondTarget": "ㄈ",
+      "cn": "地方",
+      "en": "Deaf"
     },
     {
       "englishPair": "EF",
       "bopomofoPair": "ㄉㄊ",
       "firstTarget": "ㄉ",
-      "secondTarget": "ㄊ"
+      "secondTarget": "ㄊ",
+      "cn": "地圖",
+      "en": "Debt"
     },
     {
       "englishPair": "EG",
       "bopomofoPair": "ㄉㄋ",
       "firstTarget": "ㄉ",
-      "secondTarget": "ㄋ"
+      "secondTarget": "ㄋ",
+      "cn": "電腦",
+      "en": "Dingo"
     },
     {
       "englishPair": "EH",
       "bopomofoPair": "ㄉㄌ",
       "firstTarget": "ㄉ",
-      "secondTarget": "ㄌ"
+      "secondTarget": "ㄌ",
+      "cn": "代理",
+      "en": "Dial"
     },
     {
       "englishPair": "EI",
       "bopomofoPair": "ㄉㄍ",
       "firstTarget": "ㄉ",
-      "secondTarget": "ㄍ"
+      "secondTarget": "ㄍ",
+      "cn": "蛋糕",
+      "en": "Dig"
     },
     {
       "englishPair": "EJ",
       "bopomofoPair": "ㄉㄎ",
       "firstTarget": "ㄉ",
-      "secondTarget": "ㄎ"
+      "secondTarget": "ㄎ",
+      "cn": "帝國",
+      "en": "Dike"
     },
     {
       "englishPair": "EK",
       "bopomofoPair": "ㄉㄏ",
       "firstTarget": "ㄉ",
-      "secondTarget": "ㄏ"
+      "secondTarget": "ㄏ",
+      "cn": "電話",
+      "en": "Dhow"
     },
     {
       "englishPair": "EL",
       "bopomofoPair": "ㄉㄐ",
       "firstTarget": "ㄉ",
-      "secondTarget": "ㄐ"
+      "secondTarget": "ㄐ",
+      "cn": "點擊",
+      "en": "Dill"
     },
     {
       "englishPair": "EM",
       "bopomofoPair": "ㄉㄑ",
       "firstTarget": "ㄉ",
-      "secondTarget": "ㄑ"
+      "secondTarget": "ㄑ",
+      "cn": "地球",
+      "en": "Dime"
     },
     {
       "englishPair": "EN",
       "bopomofoPair": "ㄉㄒ",
       "firstTarget": "ㄉ",
-      "secondTarget": "ㄒ"
+      "secondTarget": "ㄒ",
+      "cn": "大型",
+      "en": "Din"
     },
     {
       "englishPair": "EO",
       "bopomofoPair": "ㄉㄓ",
       "firstTarget": "ㄉ",
-      "secondTarget": "ㄓ"
+      "secondTarget": "ㄓ",
+      "cn": "地址",
+      "en": "Doze"
     },
     {
       "englishPair": "EP",
       "bopomofoPair": "ㄉㄔ",
       "firstTarget": "ㄉ",
-      "secondTarget": "ㄔ"
+      "secondTarget": "ㄔ",
+      "cn": "電車",
+      "en": "Dope"
     },
     {
       "englishPair": "EQ",
       "bopomofoPair": "ㄉㄕ",
       "firstTarget": "ㄉ",
-      "secondTarget": "ㄕ"
+      "secondTarget": "ㄕ",
+      "cn": "讀書",
+      "en": "Dish"
     },
     {
       "englishPair": "ER",
       "bopomofoPair": "ㄉㄖ",
       "firstTarget": "ㄉ",
-      "secondTarget": "ㄖ"
+      "secondTarget": "ㄖ",
+      "cn": "導入",
+      "en": "Draw"
     },
     {
       "englishPair": "ES",
       "bopomofoPair": "ㄉㄗ",
       "firstTarget": "ㄉ",
-      "secondTarget": "ㄗ"
+      "secondTarget": "ㄗ",
+      "cn": "電子",
+      "en": "Daze"
     },
     {
       "englishPair": "ET",
       "bopomofoPair": "ㄉㄘ",
       "firstTarget": "ㄉ",
-      "secondTarget": "ㄘ"
+      "secondTarget": "ㄘ",
+      "cn": "地毯",
+      "en": "Diet"
     },
     {
       "englishPair": "EU",
       "bopomofoPair": "ㄉㄙ",
       "firstTarget": "ㄉ",
-      "secondTarget": "ㄙ"
+      "secondTarget": "ㄙ",
+      "cn": "大蒜",
+      "en": "Dud"
     },
     {
       "englishPair": "EV",
       "bopomofoPair": "ㄉㄧ",
       "firstTarget": "ㄉ",
-      "secondTarget": "ㄧ"
+      "secondTarget": "ㄧ",
+      "cn": "第一",
+      "en": "Dive"
     },
     {
       "englishPair": "EW",
       "bopomofoPair": "ㄉㄨ",
       "firstTarget": "ㄉ",
-      "secondTarget": "ㄨ"
+      "secondTarget": "ㄨ",
+      "cn": "隊伍",
+      "en": "Dew"
     },
     {
       "englishPair": "EX",
       "bopomofoPair": "ㄉㄩ",
       "firstTarget": "ㄉ",
-      "secondTarget": "ㄩ"
+      "secondTarget": "ㄩ",
+      "cn": "盾魚",
+      "en": "Dux"
     },
     {
       "englishPair": "FA",
       "bopomofoPair": "ㄊㄅ",
       "firstTarget": "ㄊ",
-      "secondTarget": "ㄅ"
+      "secondTarget": "ㄅ",
+      "cn": "特別",
+      "en": "Tab"
     },
     {
       "englishPair": "FB",
       "bopomofoPair": "ㄊㄆ",
       "firstTarget": "ㄊ",
-      "secondTarget": "ㄆ"
+      "secondTarget": "ㄆ",
+      "cn": "投票",
+      "en": "Tape"
     },
     {
       "englishPair": "FC",
       "bopomofoPair": "ㄊㄇ",
       "firstTarget": "ㄊ",
-      "secondTarget": "ㄇ"
+      "secondTarget": "ㄇ",
+      "cn": "甜美",
+      "en": "Tame"
     },
     {
       "englishPair": "FD",
       "bopomofoPair": "ㄊㄈ",
       "firstTarget": "ㄊ",
-      "secondTarget": "ㄈ"
+      "secondTarget": "ㄈ",
+      "cn": "頭髮",
+      "en": "Taf"
     },
     {
       "englishPair": "FE",
       "bopomofoPair": "ㄊㄉ",
       "firstTarget": "ㄊ",
-      "secondTarget": "ㄉ"
+      "secondTarget": "ㄉ",
+      "cn": "通道",
+      "en": "Ted"
     },
     {
       "englishPair": "FG",
       "bopomofoPair": "ㄊㄋ",
       "firstTarget": "ㄊ",
-      "secondTarget": "ㄋ"
+      "secondTarget": "ㄋ",
+      "cn": "體能",
+      "en": "Tango"
     },
     {
       "englishPair": "FH",
       "bopomofoPair": "ㄊㄌ",
       "firstTarget": "ㄊ",
-      "secondTarget": "ㄌ"
+      "secondTarget": "ㄌ",
+      "cn": "鐵路",
+      "en": "Tail"
     },
     {
       "englishPair": "FI",
       "bopomofoPair": "ㄊㄍ",
       "firstTarget": "ㄊ",
-      "secondTarget": "ㄍ"
+      "secondTarget": "ㄍ",
+      "cn": "糖果",
+      "en": "Tag"
     },
     {
       "englishPair": "FJ",
       "bopomofoPair": "ㄊㄎ",
       "firstTarget": "ㄊ",
-      "secondTarget": "ㄎ"
+      "secondTarget": "ㄎ",
+      "cn": "天空",
+      "en": "Tike"
     },
     {
       "englishPair": "FK",
       "bopomofoPair": "ㄊㄏ",
       "firstTarget": "ㄊ",
-      "secondTarget": "ㄏ"
+      "secondTarget": "ㄏ",
+      "cn": "桃花",
+      "en": "Thaw"
     },
     {
       "englishPair": "FL",
       "bopomofoPair": "ㄊㄐ",
       "firstTarget": "ㄊ",
-      "secondTarget": "ㄐ"
+      "secondTarget": "ㄐ",
+      "cn": "體檢",
+      "en": "Till"
     },
     {
       "englishPair": "FM",
       "bopomofoPair": "ㄊㄑ",
       "firstTarget": "ㄊ",
-      "secondTarget": "ㄑ"
+      "secondTarget": "ㄑ",
+      "cn": "天氣",
+      "en": "Time"
     },
     {
       "englishPair": "FN",
       "bopomofoPair": "ㄊㄒ",
       "firstTarget": "ㄊ",
-      "secondTarget": "ㄒ"
+      "secondTarget": "ㄒ",
+      "cn": "頭像",
+      "en": "Tin"
     },
     {
       "englishPair": "FO",
       "bopomofoPair": "ㄊㄓ",
       "firstTarget": "ㄊ",
-      "secondTarget": "ㄓ"
+      "secondTarget": "ㄓ",
+      "cn": "投資",
+      "en": "Toad"
     },
     {
       "englishPair": "FP",
       "bopomofoPair": "ㄊㄔ",
       "firstTarget": "ㄊ",
-      "secondTarget": "ㄔ"
+      "secondTarget": "ㄔ",
+      "cn": "單車",
+      "en": "Top"
     },
     {
       "englishPair": "FQ",
       "bopomofoPair": "ㄊㄕ",
       "firstTarget": "ㄊ",
-      "secondTarget": "ㄕ"
+      "secondTarget": "ㄕ",
+      "cn": "圖書",
+      "en": "Tish"
     },
     {
       "englishPair": "FR",
       "bopomofoPair": "ㄊㄖ",
       "firstTarget": "ㄊ",
-      "secondTarget": "ㄖ"
+      "secondTarget": "ㄖ",
+      "cn": "天然",
+      "en": "Tray"
     },
     {
       "englishPair": "FS",
       "bopomofoPair": "ㄊㄗ",
       "firstTarget": "ㄊ",
-      "secondTarget": "ㄗ"
+      "secondTarget": "ㄗ",
+      "cn": "兔子",
+      "en": "Taze"
     },
     {
       "englishPair": "FT",
       "bopomofoPair": "ㄊㄘ",
       "firstTarget": "ㄊ",
-      "secondTarget": "ㄘ"
+      "secondTarget": "ㄘ",
+      "cn": "淘汰",
+      "en": "Tit"
     },
     {
       "englishPair": "FU",
       "bopomofoPair": "ㄊㄙ",
       "firstTarget": "ㄊ",
-      "secondTarget": "ㄙ"
+      "secondTarget": "ㄙ",
+      "cn": "推算",
+      "en": "Tud"
     },
     {
       "englishPair": "FV",
       "bopomofoPair": "ㄊㄧ",
       "firstTarget": "ㄊ",
-      "secondTarget": "ㄧ"
+      "secondTarget": "ㄧ",
+      "cn": "統一",
+      "en": "Tyg"
     },
     {
       "englishPair": "FW",
       "bopomofoPair": "ㄊㄨ",
       "firstTarget": "ㄊ",
-      "secondTarget": "ㄨ"
+      "secondTarget": "ㄨ",
+      "cn": "退伍",
+      "en": "Tew"
     },
     {
       "englishPair": "FX",
       "bopomofoPair": "ㄊㄩ",
       "firstTarget": "ㄊ",
-      "secondTarget": "ㄩ"
+      "secondTarget": "ㄩ",
+      "cn": "鐵魚",
+      "en": "Tux"
     },
     {
       "englishPair": "GA",
       "bopomofoPair": "ㄋㄅ",
       "firstTarget": "ㄋ",
-      "secondTarget": "ㄅ"
+      "secondTarget": "ㄅ",
+      "cn": "泥巴",
+      "en": "Nab"
     },
     {
       "englishPair": "GB",
       "bopomofoPair": "ㄋㄆ",
       "firstTarget": "ㄋ",
-      "secondTarget": "ㄆ"
+      "secondTarget": "ㄆ",
+      "cn": "奶瓶",
+      "en": "Nope"
     },
     {
       "englishPair": "GC",
       "bopomofoPair": "ㄋㄇ",
       "firstTarget": "ㄋ",
-      "secondTarget": "ㄇ"
+      "secondTarget": "ㄇ",
+      "cn": "檸檬",
+      "en": "Name"
     },
     {
       "englishPair": "GD",
       "bopomofoPair": "ㄋㄈ",
       "firstTarget": "ㄋ",
-      "secondTarget": "ㄈ"
+      "secondTarget": "ㄈ",
+      "cn": "南方",
+      "en": "Naif"
     },
     {
       "englishPair": "GE",
       "bopomofoPair": "ㄋㄉ",
       "firstTarget": "ㄋ",
-      "secondTarget": "ㄉ"
+      "secondTarget": "ㄉ",
+      "cn": "年度",
+      "en": "Ned"
     },
     {
       "englishPair": "GF",
       "bopomofoPair": "ㄋㄊ",
       "firstTarget": "ㄋ",
-      "secondTarget": "ㄊ"
+      "secondTarget": "ㄊ",
+      "cn": "難題",
+      "en": "Net"
     },
     {
       "englishPair": "GH",
       "bopomofoPair": "ㄋㄌ",
       "firstTarget": "ㄋ",
-      "secondTarget": "ㄌ"
+      "secondTarget": "ㄌ",
+      "cn": "能量",
+      "en": "Nail"
     },
     {
       "englishPair": "GI",
       "bopomofoPair": "ㄋㄍ",
       "firstTarget": "ㄋ",
-      "secondTarget": "ㄍ"
+      "secondTarget": "ㄍ",
+      "cn": "泥糕",
+      "en": "Nag"
     },
     {
       "englishPair": "GJ",
       "bopomofoPair": "ㄋㄎ",
       "firstTarget": "ㄋ",
-      "secondTarget": "ㄎ"
+      "secondTarget": "ㄎ",
+      "cn": "耐克",
+      "en": "Nike"
     },
     {
       "englishPair": "GK",
       "bopomofoPair": "ㄋㄏ",
       "firstTarget": "ㄋ",
-      "secondTarget": "ㄏ"
+      "secondTarget": "ㄏ",
+      "cn": "你好",
+      "en": "Nhow"
     },
     {
       "englishPair": "GL",
       "bopomofoPair": "ㄋㄐ",
       "firstTarget": "ㄋ",
-      "secondTarget": "ㄐ"
+      "secondTarget": "ㄐ",
+      "cn": "內褲",
+      "en": "Nill"
     },
     {
       "englishPair": "GM",
       "bopomofoPair": "ㄋㄑ",
       "firstTarget": "ㄋ",
-      "secondTarget": "ㄑ"
+      "secondTarget": "ㄑ",
+      "cn": "奶酪",
+      "en": "Name"
     },
     {
       "englishPair": "GN",
       "bopomofoPair": "ㄋㄒ",
       "firstTarget": "ㄋ",
-      "secondTarget": "ㄒ"
+      "secondTarget": "ㄒ",
+      "cn": "內心",
+      "en": "Nin"
     },
     {
       "englishPair": "GO",
       "bopomofoPair": "ㄋㄓ",
       "firstTarget": "ㄋ",
-      "secondTarget": "ㄓ"
+      "secondTarget": "ㄓ",
+      "cn": "男子",
+      "en": "Node"
     },
     {
       "englishPair": "GP",
       "bopomofoPair": "ㄋㄔ",
       "firstTarget": "ㄋ",
-      "secondTarget": "ㄔ"
+      "secondTarget": "ㄔ",
+      "cn": "腦袋",
+      "en": "Nope"
     },
     {
       "englishPair": "GQ",
       "bopomofoPair": "ㄋㄕ",
       "firstTarget": "ㄋ",
-      "secondTarget": "ㄕ"
+      "secondTarget": "ㄕ",
+      "cn": "女生",
+      "en": "Nash"
     },
     {
       "englishPair": "GR",
       "bopomofoPair": "ㄋㄖ",
       "firstTarget": "ㄋ",
-      "secondTarget": "ㄖ"
+      "secondTarget": "ㄖ",
+      "cn": "內容",
+      "en": "Near"
     },
     {
       "englishPair": "GS",
       "bopomofoPair": "ㄋㄗ",
       "firstTarget": "ㄋ",
-      "secondTarget": "ㄗ"
+      "secondTarget": "ㄗ",
+      "cn": "腦袋",
+      "en": "Naze"
     },
     {
       "englishPair": "GT",
       "bopomofoPair": "ㄋㄘ",
       "firstTarget": "ㄋ",
-      "secondTarget": "ㄘ"
+      "secondTarget": "ㄘ",
+      "cn": "泥炭",
+      "en": "Nit"
     },
     {
       "englishPair": "GU",
       "bopomofoPair": "ㄋㄙ",
       "firstTarget": "ㄋ",
-      "secondTarget": "ㄙ"
+      "secondTarget": "ㄙ",
+      "cn": "男士",
+      "en": "Nud"
     },
     {
       "englishPair": "GV",
       "bopomofoPair": "ㄋㄧ",
       "firstTarget": "ㄋ",
-      "secondTarget": "ㄧ"
+      "secondTarget": "ㄧ",
+      "cn": "內衣",
+      "en": "Nix"
     },
     {
       "englishPair": "GW",
       "bopomofoPair": "ㄋㄨ",
       "firstTarget": "ㄋ",
-      "secondTarget": "ㄨ"
+      "secondTarget": "ㄨ",
+      "cn": "奶粉",
+      "en": "New"
     },
     {
       "englishPair": "GX",
       "bopomofoPair": "ㄋㄩ",
       "firstTarget": "ㄋ",
-      "secondTarget": "ㄩ"
+      "secondTarget": "ㄩ",
+      "cn": "奶油",
+      "en": "Nux"
     },
     {
       "englishPair": "HA",
       "bopomofoPair": "ㄌㄅ",
       "firstTarget": "ㄌ",
-      "secondTarget": "ㄅ"
+      "secondTarget": "ㄅ",
+      "cn": "喇叭",
+      "en": "Lab"
     },
     {
       "englishPair": "HB",
       "bopomofoPair": "ㄌㄆ",
       "firstTarget": "ㄌ",
-      "secondTarget": "ㄆ"
+      "secondTarget": "ㄆ",
+      "cn": "老婆",
+      "en": "Lobe"
     },
     {
       "englishPair": "HC",
       "bopomofoPair": "ㄌㄇ",
       "firstTarget": "ㄌ",
-      "secondTarget": "ㄇ"
+      "secondTarget": "ㄇ",
+      "cn": "綠帽",
+      "en": "Lime"
     },
     {
       "englishPair": "HD",
       "bopomofoPair": "ㄌㄈ",
       "firstTarget": "ㄌ",
-      "secondTarget": "ㄈ"
+      "secondTarget": "ㄈ",
+      "cn": "禮服",
+      "en": "Leaf"
     },
     {
       "englishPair": "HE",
       "bopomofoPair": "ㄌㄉ",
       "firstTarget": "ㄌ",
-      "secondTarget": "ㄉ"
+      "secondTarget": "ㄉ",
+      "cn": "雷達",
+      "en": "Led"
     },
     {
       "englishPair": "HF",
       "bopomofoPair": "ㄌㄊ",
       "firstTarget": "ㄌ",
-      "secondTarget": "ㄊ"
+      "secondTarget": "ㄊ",
+      "cn": "輪胎",
+      "en": "Let"
     },
     {
       "englishPair": "HG",
       "bopomofoPair": "ㄌㄋ",
       "firstTarget": "ㄌ",
-      "secondTarget": "ㄋ"
+      "secondTarget": "ㄋ",
+      "cn": "老衲",
+      "en": "Lingo"
     },
     {
       "englishPair": "HI",
       "bopomofoPair": "ㄌㄍ",
       "firstTarget": "ㄌ",
-      "secondTarget": "ㄍ"
+      "secondTarget": "ㄍ",
+      "cn": "綠歌",
+      "en": "Lig"
     },
     {
       "englishPair": "HJ",
       "bopomofoPair": "ㄌㄎ",
       "firstTarget": "ㄌ",
-      "secondTarget": "ㄎ"
+      "secondTarget": "ㄎ",
+      "cn": "旅客",
+      "en": "Like"
     },
     {
       "englishPair": "HK",
       "bopomofoPair": "ㄌㄏ",
       "firstTarget": "ㄌ",
-      "secondTarget": "ㄏ"
+      "secondTarget": "ㄏ",
+      "cn": "落花",
+      "en": "Lhow"
     },
     {
       "englishPair": "HL",
       "bopomofoPair": "ㄌㄐ",
       "firstTarget": "ㄌ",
-      "secondTarget": "ㄐ"
+      "secondTarget": "ㄐ",
+      "cn": "垃圾",
+      "en": "Lill"
     },
     {
       "englishPair": "HM",
       "bopomofoPair": "ㄌㄑ",
       "firstTarget": "ㄌ",
-      "secondTarget": "ㄑ"
+      "secondTarget": "ㄑ",
+      "cn": "綠茶",
+      "en": "Lime"
     },
     {
       "englishPair": "HN",
       "bopomofoPair": "ㄌㄒ",
       "firstTarget": "ㄌ",
-      "secondTarget": "ㄒ"
+      "secondTarget": "ㄒ",
+      "cn": "路線",
+      "en": "Lin"
     },
     {
       "englishPair": "HO",
       "bopomofoPair": "ㄌㄓ",
       "firstTarget": "ㄌ",
-      "secondTarget": "ㄓ"
+      "secondTarget": "ㄓ",
+      "cn": "籃子",
+      "en": "Load"
     },
     {
       "englishPair": "HP",
       "bopomofoPair": "ㄌㄔ",
       "firstTarget": "ㄌ",
-      "secondTarget": "ㄔ"
+      "secondTarget": "ㄔ",
+      "cn": "列車",
+      "en": "Lop"
     },
     {
       "englishPair": "HQ",
       "bopomofoPair": "ㄌㄕ",
       "firstTarget": "ㄌ",
-      "secondTarget": "ㄕ"
+      "secondTarget": "ㄕ",
+      "cn": "綠色",
+      "en": "Lash"
     },
     {
       "englishPair": "HR",
       "bopomofoPair": "ㄌㄖ",
       "firstTarget": "ㄌ",
-      "secondTarget": "ㄖ"
+      "secondTarget": "ㄖ",
+      "cn": "老人",
+      "en": "Liar"
     },
     {
       "englishPair": "HS",
       "bopomofoPair": "ㄌㄗ",
       "firstTarget": "ㄌ",
-      "secondTarget": "ㄗ"
+      "secondTarget": "ㄗ",
+      "cn": "籃子",
+      "en": "Laze"
     },
     {
       "englishPair": "HT",
       "bopomofoPair": "ㄌㄘ",
       "firstTarget": "ㄌ",
-      "secondTarget": "ㄘ"
+      "secondTarget": "ㄘ",
+      "cn": "論壇",
+      "en": "Lit"
     },
     {
       "englishPair": "HU",
       "bopomofoPair": "ㄌㄙ",
       "firstTarget": "ㄌ",
-      "secondTarget": "ㄙ"
+      "secondTarget": "ㄙ",
+      "cn": "綠化",
+      "en": "Lud"
     },
     {
       "englishPair": "HV",
       "bopomofoPair": "ㄌㄧ",
       "firstTarget": "ㄌ",
-      "secondTarget": "ㄧ"
+      "secondTarget": "ㄧ",
+      "cn": "藍衣",
+      "en": "Live"
     },
     {
       "englishPair": "HW",
       "bopomofoPair": "ㄌㄨ",
       "firstTarget": "ㄌ",
-      "secondTarget": "ㄨ"
+      "secondTarget": "ㄨ",
+      "cn": "禮物",
+      "en": "Lew"
     },
     {
       "englishPair": "HX",
       "bopomofoPair": "ㄌㄩ",
       "firstTarget": "ㄌ",
-      "secondTarget": "ㄩ"
+      "secondTarget": "ㄩ",
+      "cn": "鯉魚",
+      "en": "Lux"
     },
     {
       "englishPair": "IA",
       "bopomofoPair": "ㄍㄅ",
       "firstTarget": "ㄍ",
-      "secondTarget": "ㄅ"
+      "secondTarget": "ㄅ",
+      "cn": "廣播",
+      "en": "Gab"
     },
     {
       "englishPair": "IB",
       "bopomofoPair": "ㄍㄆ",
       "firstTarget": "ㄍ",
-      "secondTarget": "ㄆ"
+      "secondTarget": "ㄆ",
+      "cn": "公婆",
+      "en": "Gape"
     },
     {
       "englishPair": "IC",
       "bopomofoPair": "ㄍㄇ",
       "firstTarget": "ㄍ",
-      "secondTarget": "ㄇ"
+      "secondTarget": "ㄇ",
+      "cn": "購買",
+      "en": "Game"
     },
     {
       "englishPair": "ID",
       "bopomofoPair": "ㄍㄈ",
       "firstTarget": "ㄍ",
-      "secondTarget": "ㄈ"
+      "secondTarget": "ㄈ",
+      "cn": "官方",
+      "en": "Gaff"
     },
     {
       "englishPair": "IE",
       "bopomofoPair": "ㄍㄉ",
       "firstTarget": "ㄍ",
-      "secondTarget": "ㄉ"
+      "secondTarget": "ㄉ",
+      "cn": "管道",
+      "en": "Ged"
     },
     {
       "englishPair": "IF",
       "bopomofoPair": "ㄍㄊ",
       "firstTarget": "ㄍ",
-      "secondTarget": "ㄊ"
+      "secondTarget": "ㄊ",
+      "cn": "高鐵",
+      "en": "Get"
     },
     {
       "englishPair": "IG",
       "bopomofoPair": "ㄍㄋ",
       "firstTarget": "ㄍ",
-      "secondTarget": "ㄋ"
+      "secondTarget": "ㄋ",
+      "cn": "姑娘",
+      "en": "Gingo"
     },
     {
       "englishPair": "IH",
       "bopomofoPair": "ㄍㄌ",
       "firstTarget": "ㄍ",
-      "secondTarget": "ㄌ"
+      "secondTarget": "ㄌ",
+      "cn": "過濾",
+      "en": "Gail"
     },
     {
       "englishPair": "IJ",
       "bopomofoPair": "ㄍㄎ",
       "firstTarget": "ㄍ",
-      "secondTarget": "ㄎ"
+      "secondTarget": "ㄎ",
+      "cn": "顧客",
+      "en": "Gike"
     },
     {
       "englishPair": "IK",
       "bopomofoPair": "ㄍㄏ",
       "firstTarget": "ㄍ",
-      "secondTarget": "ㄏ"
+      "secondTarget": "ㄏ",
+      "cn": "規劃",
+      "en": "Ghow"
     },
     {
       "englishPair": "IL",
       "bopomofoPair": "ㄍㄐ",
       "firstTarget": "ㄍ",
-      "secondTarget": "ㄐ"
+      "secondTarget": "ㄐ",
+      "cn": "工具",
+      "en": "Gill"
     },
     {
       "englishPair": "IM",
       "bopomofoPair": "ㄍㄑ",
       "firstTarget": "ㄍ",
-      "secondTarget": "ㄑ"
+      "secondTarget": "ㄑ",
+      "cn": "鋼琴",
+      "en": "Gim"
     },
     {
       "englishPair": "IN",
       "bopomofoPair": "ㄍㄒ",
       "firstTarget": "ㄍ",
-      "secondTarget": "ㄒ"
+      "secondTarget": "ㄒ",
+      "cn": "共享",
+      "en": "Gin"
     },
     {
       "englishPair": "IO",
       "bopomofoPair": "ㄍㄓ",
       "firstTarget": "ㄍ",
-      "secondTarget": "ㄓ"
+      "secondTarget": "ㄓ",
+      "cn": "高職",
+      "en": "Goad"
     },
     {
       "englishPair": "IP",
       "bopomofoPair": "ㄍㄔ",
       "firstTarget": "ㄍ",
-      "secondTarget": "ㄔ"
+      "secondTarget": "ㄔ",
+      "cn": "公車",
+      "en": "Gop"
     },
     {
       "englishPair": "IQ",
       "bopomofoPair": "ㄍㄕ",
       "firstTarget": "ㄍ",
-      "secondTarget": "ㄕ"
+      "secondTarget": "ㄕ",
+      "cn": "歌手",
+      "en": "Gash"
     },
     {
       "englishPair": "IR",
       "bopomofoPair": "ㄍㄖ",
       "firstTarget": "ㄍ",
-      "secondTarget": "ㄖ"
+      "secondTarget": "ㄖ",
+      "cn": "個人",
+      "en": "Gear"
     },
     {
       "englishPair": "IS",
       "bopomofoPair": "ㄍㄗ",
       "firstTarget": "ㄍ",
-      "secondTarget": "ㄗ"
+      "secondTarget": "ㄗ",
+      "cn": "鴿子",
+      "en": "Gaze"
     },
     {
       "englishPair": "IT",
       "bopomofoPair": "ㄍㄘ",
       "firstTarget": "ㄍ",
-      "secondTarget": "ㄘ"
+      "secondTarget": "ㄘ",
+      "cn": "觀察",
+      "en": "Git"
     },
     {
       "englishPair": "IU",
       "bopomofoPair": "ㄍㄙ",
       "firstTarget": "ㄍ",
-      "secondTarget": "ㄙ"
+      "secondTarget": "ㄙ",
+      "cn": "高速",
+      "en": "Gud"
     },
     {
       "englishPair": "IV",
       "bopomofoPair": "ㄍㄧ",
       "firstTarget": "ㄍ",
-      "secondTarget": "ㄧ"
+      "secondTarget": "ㄧ",
+      "cn": "公益",
+      "en": "Give"
     },
     {
       "englishPair": "IW",
       "bopomofoPair": "ㄍㄨ",
       "firstTarget": "ㄍ",
-      "secondTarget": "ㄨ"
+      "secondTarget": "ㄨ",
+      "cn": "高屋",
+      "en": "Gew"
     },
     {
       "englishPair": "IX",
       "bopomofoPair": "ㄍㄩ",
       "firstTarget": "ㄍ",
-      "secondTarget": "ㄩ"
+      "secondTarget": "ㄩ",
+      "cn": "公寓",
+      "en": "Gux"
     },
     {
       "englishPair": "JA",
       "bopomofoPair": "ㄎㄅ",
       "firstTarget": "ㄎ",
-      "secondTarget": "ㄅ"
+      "secondTarget": "ㄅ",
+      "cn": "看板",
+      "en": "Kab"
     },
     {
       "englishPair": "JB",
       "bopomofoPair": "ㄎㄆ",
       "firstTarget": "ㄎ",
-      "secondTarget": "ㄆ"
+      "secondTarget": "ㄆ",
+      "cn": "科普",
+      "en": "Kobe"
     },
     {
       "englishPair": "JC",
       "bopomofoPair": "ㄎㄇ",
       "firstTarget": "ㄎ",
-      "secondTarget": "ㄇ"
+      "secondTarget": "ㄇ",
+      "cn": "科目",
+      "en": "Kame"
     },
     {
       "englishPair": "JD",
       "bopomofoPair": "ㄎㄈ",
       "firstTarget": "ㄎ",
-      "secondTarget": "ㄈ"
+      "secondTarget": "ㄈ",
+      "cn": "客服",
+      "en": "Kaff"
     },
     {
       "englishPair": "JE",
       "bopomofoPair": "ㄎㄉ",
       "firstTarget": "ㄎ",
-      "secondTarget": "ㄉ"
+      "secondTarget": "ㄉ",
+      "cn": "口袋",
+      "en": "Ked"
     },
     {
       "englishPair": "JF",
       "bopomofoPair": "ㄎㄊ",
       "firstTarget": "ㄎ",
-      "secondTarget": "ㄊ"
+      "secondTarget": "ㄊ",
+      "cn": "卡通",
+      "en": "Ket"
     },
     {
       "englishPair": "JG",
       "bopomofoPair": "ㄎㄋ",
       "firstTarget": "ㄎ",
-      "secondTarget": "ㄋ"
+      "secondTarget": "ㄋ",
+      "cn": "客納",
+      "en": "Keno"
     },
     {
       "englishPair": "JH",
       "bopomofoPair": "ㄎㄌ",
       "firstTarget": "ㄎ",
-      "secondTarget": "ㄌ"
+      "secondTarget": "ㄌ",
+      "cn": "顆粒",
+      "en": "Kail"
     },
     {
       "englishPair": "JI",
       "bopomofoPair": "ㄎㄍ",
       "firstTarget": "ㄎ",
-      "secondTarget": "ㄍ"
+      "secondTarget": "ㄍ",
+      "cn": "客官",
+      "en": "Keg"
     },
     {
       "englishPair": "JK",
       "bopomofoPair": "ㄎㄏ",
       "firstTarget": "ㄎ",
-      "secondTarget": "ㄏ"
+      "secondTarget": "ㄏ",
+      "cn": "客戶",
+      "en": "Khow"
     },
     {
       "englishPair": "JL",
       "bopomofoPair": "ㄎㄐ",
       "firstTarget": "ㄎ",
-      "secondTarget": "ㄐ"
+      "secondTarget": "ㄐ",
+      "cn": "空間",
+      "en": "Kill"
     },
     {
       "englishPair": "JM",
       "bopomofoPair": "ㄎㄑ",
       "firstTarget": "ㄎ",
-      "secondTarget": "ㄑ"
+      "secondTarget": "ㄑ",
+      "cn": "口琴",
+      "en": "Kim"
     },
     {
       "englishPair": "JN",
       "bopomofoPair": "ㄎㄒ",
       "firstTarget": "ㄎ",
-      "secondTarget": "ㄒ"
+      "secondTarget": "ㄒ",
+      "cn": "科學",
+      "en": "Kin"
     },
     {
       "englishPair": "JO",
       "bopomofoPair": "ㄎㄓ",
       "firstTarget": "ㄎ",
-      "secondTarget": "ㄓ"
+      "secondTarget": "ㄓ",
+      "cn": "卡紙",
+      "en": "Koad"
     },
     {
       "englishPair": "JP",
       "bopomofoPair": "ㄎㄔ",
       "firstTarget": "ㄎ",
-      "secondTarget": "ㄔ"
+      "secondTarget": "ㄔ",
+      "cn": "卡車",
+      "en": "Kop"
     },
     {
       "englishPair": "JQ",
       "bopomofoPair": "ㄎㄕ",
       "firstTarget": "ㄎ",
-      "secondTarget": "ㄕ"
+      "secondTarget": "ㄕ",
+      "cn": "看書",
+      "en": "Kash"
     },
     {
       "englishPair": "JR",
       "bopomofoPair": "ㄎㄖ",
       "firstTarget": "ㄎ",
-      "secondTarget": "ㄖ"
+      "secondTarget": "ㄖ",
+      "cn": "狂人",
+      "en": "Kerr"
     },
     {
       "englishPair": "JS",
       "bopomofoPair": "ㄎㄗ",
       "firstTarget": "ㄎ",
-      "secondTarget": "ㄗ"
+      "secondTarget": "ㄗ",
+      "cn": "褲子",
+      "en": "Kaze"
     },
     {
       "englishPair": "JT",
       "bopomofoPair": "ㄎㄘ",
       "firstTarget": "ㄎ",
-      "secondTarget": "ㄘ"
+      "secondTarget": "ㄘ",
+      "cn": "考察",
+      "en": "Kit"
     },
     {
       "englishPair": "JU",
       "bopomofoPair": "ㄎㄙ",
       "firstTarget": "ㄎ",
-      "secondTarget": "ㄙ"
+      "secondTarget": "ㄙ",
+      "cn": "快速",
+      "en": "Kud"
     },
     {
       "englishPair": "JV",
       "bopomofoPair": "ㄎㄧ",
       "firstTarget": "ㄎ",
-      "secondTarget": "ㄧ"
+      "secondTarget": "ㄧ",
+      "cn": "口譯",
+      "en": "Kive"
     },
     {
       "englishPair": "JW",
       "bopomofoPair": "ㄎㄨ",
       "firstTarget": "ㄎ",
-      "secondTarget": "ㄨ"
+      "secondTarget": "ㄨ",
+      "cn": "空屋",
+      "en": "Kew"
     },
     {
       "englishPair": "JX",
       "bopomofoPair": "ㄎㄩ",
       "firstTarget": "ㄎ",
-      "secondTarget": "ㄩ"
+      "secondTarget": "ㄩ",
+      "cn": "烤魚",
+      "en": "Kux"
     },
     {
       "englishPair": "KA",
       "bopomofoPair": "ㄏㄅ",
       "firstTarget": "ㄏ",
-      "secondTarget": "ㄅ"
+      "secondTarget": "ㄅ",
+      "cn": "海報",
+      "en": "Hab"
     },
     {
       "englishPair": "KB",
       "bopomofoPair": "ㄏㄆ",
       "firstTarget": "ㄏ",
-      "secondTarget": "ㄆ"
+      "secondTarget": "ㄆ",
+      "cn": "合夥",
+      "en": "Hope"
     },
     {
       "englishPair": "KC",
       "bopomofoPair": "ㄏㄇ",
       "firstTarget": "ㄏ",
-      "secondTarget": "ㄇ"
+      "secondTarget": "ㄇ",
+      "cn": "畫面",
+      "en": "Home"
     },
     {
       "englishPair": "KD",
       "bopomofoPair": "ㄏㄈ",
       "firstTarget": "ㄏ",
-      "secondTarget": "ㄈ"
+      "secondTarget": "ㄈ",
+      "cn": "恢復",
+      "en": "Haf"
     },
     {
       "englishPair": "KE",
       "bopomofoPair": "ㄏㄉ",
       "firstTarget": "ㄏ",
-      "secondTarget": "ㄉ"
+      "secondTarget": "ㄉ",
+      "cn": "活動",
+      "en": "Hed"
     },
     {
       "englishPair": "KF",
       "bopomofoPair": "ㄏㄊ",
       "firstTarget": "ㄏ",
-      "secondTarget": "ㄊ"
+      "secondTarget": "ㄊ",
+      "cn": "後台",
+      "en": "Het"
     },
     {
       "englishPair": "KG",
       "bopomofoPair": "ㄏㄋ",
       "firstTarget": "ㄏ",
-      "secondTarget": "ㄋ"
+      "secondTarget": "ㄋ",
+      "cn": "河馬",
+      "en": "Heno"
     },
     {
       "englishPair": "KH",
       "bopomofoPair": "ㄏㄌ",
       "firstTarget": "ㄏ",
-      "secondTarget": "ㄌ"
+      "secondTarget": "ㄌ",
+      "cn": "合理",
+      "en": "Hail"
     },
     {
       "englishPair": "KI",
       "bopomofoPair": "ㄏㄍ",
       "firstTarget": "ㄏ",
-      "secondTarget": "ㄍ"
+      "secondTarget": "ㄍ",
+      "cn": "黃金",
+      "en": "Hag"
     },
     {
       "englishPair": "KJ",
       "bopomofoPair": "ㄏㄎ",
       "firstTarget": "ㄏ",
-      "secondTarget": "ㄎ"
+      "secondTarget": "ㄎ",
+      "cn": "航空",
+      "en": "Hike"
     },
     {
       "englishPair": "KL",
       "bopomofoPair": "ㄏㄐ",
       "firstTarget": "ㄏ",
-      "secondTarget": "ㄐ"
+      "secondTarget": "ㄐ",
+      "cn": "環境",
+      "en": "Hill"
     },
     {
       "englishPair": "KM",
       "bopomofoPair": "ㄏㄑ",
       "firstTarget": "ㄏ",
-      "secondTarget": "ㄑ"
+      "secondTarget": "ㄑ",
+      "cn": "好奇",
+      "en": "Him"
     },
     {
       "englishPair": "KN",
       "bopomofoPair": "ㄏㄒ",
       "firstTarget": "ㄏ",
-      "secondTarget": "ㄒ"
+      "secondTarget": "ㄒ",
+      "cn": "核心",
+      "en": "Hin"
     },
     {
       "englishPair": "KO",
       "bopomofoPair": "ㄏㄓ",
       "firstTarget": "ㄏ",
-      "secondTarget": "ㄓ"
+      "secondTarget": "ㄓ",
+      "cn": "合作",
+      "en": "Hoad"
     },
     {
       "englishPair": "KP",
       "bopomofoPair": "ㄏㄔ",
       "firstTarget": "ㄏ",
-      "secondTarget": "ㄔ"
+      "secondTarget": "ㄔ",
+      "cn": "火車",
+      "en": "Hop"
     },
     {
       "englishPair": "KQ",
       "bopomofoPair": "ㄏㄕ",
       "firstTarget": "ㄏ",
-      "secondTarget": "ㄕ"
+      "secondTarget": "ㄕ",
+      "cn": "紅書",
+      "en": "Hash"
     },
     {
       "englishPair": "KR",
       "bopomofoPair": "ㄏㄖ",
       "firstTarget": "ㄏ",
-      "secondTarget": "ㄖ"
+      "secondTarget": "ㄖ",
+      "cn": "華人",
+      "en": "Hear"
     },
     {
       "englishPair": "KS",
       "bopomofoPair": "ㄏㄗ",
       "firstTarget": "ㄏ",
-      "secondTarget": "ㄗ"
+      "secondTarget": "ㄗ",
+      "cn": "盒子",
+      "en": "Haze"
     },
     {
       "englishPair": "KT",
       "bopomofoPair": "ㄏㄘ",
       "firstTarget": "ㄏ",
-      "secondTarget": "ㄘ"
+      "secondTarget": "ㄘ",
+      "cn": "後台",
+      "en": "Hit"
     },
     {
       "englishPair": "KU",
       "bopomofoPair": "ㄏㄙ",
       "firstTarget": "ㄏ",
-      "secondTarget": "ㄙ"
+      "secondTarget": "ㄙ",
+      "cn": "黑色",
+      "en": "Hud"
     },
     {
       "englishPair": "KV",
       "bopomofoPair": "ㄏㄧ",
       "firstTarget": "ㄏ",
-      "secondTarget": "ㄧ"
+      "secondTarget": "ㄧ",
+      "cn": "會議",
+      "en": "Hive"
     },
     {
       "englishPair": "KW",
       "bopomofoPair": "ㄏㄨ",
       "firstTarget": "ㄏ",
-      "secondTarget": "ㄨ"
+      "secondTarget": "ㄨ",
+      "cn": "下午",
+      "en": "Hew"
     },
     {
       "englishPair": "KX",
       "bopomofoPair": "ㄏㄩ",
       "firstTarget": "ㄏ",
-      "secondTarget": "ㄩ"
+      "secondTarget": "ㄩ",
+      "cn": "河魚",
+      "en": "Hux"
     },
     {
       "englishPair": "LA",
       "bopomofoPair": "ㄐㄅ",
       "firstTarget": "ㄐ",
-      "secondTarget": "ㄅ"
+      "secondTarget": "ㄅ",
+      "cn": "加班",
+      "en": "Jab"
     },
     {
       "englishPair": "LB",
       "bopomofoPair": "ㄐㄆ",
       "firstTarget": "ㄐ",
-      "secondTarget": "ㄆ"
+      "secondTarget": "ㄆ",
+      "cn": "獎品",
+      "en": "Job"
     },
     {
       "englishPair": "LC",
       "bopomofoPair": "ㄐㄇ",
       "firstTarget": "ㄐ",
-      "secondTarget": "ㄇ"
+      "secondTarget": "ㄇ",
+      "cn": "節目",
+      "en": "Jam"
     },
     {
       "englishPair": "LD",
       "bopomofoPair": "ㄐㄈ",
       "firstTarget": "ㄐ",
-      "secondTarget": "ㄈ"
+      "secondTarget": "ㄈ",
+      "cn": "交付",
+      "en": "Jaff"
     },
     {
       "englishPair": "LE",
       "bopomofoPair": "ㄐㄉ",
       "firstTarget": "ㄐ",
-      "secondTarget": "ㄉ"
+      "secondTarget": "ㄉ",
+      "cn": "焦點",
+      "en": "Jed"
     },
     {
       "englishPair": "LF",
       "bopomofoPair": "ㄐㄊ",
       "firstTarget": "ㄐ",
-      "secondTarget": "ㄊ"
+      "secondTarget": "ㄊ",
+      "cn": "交通",
+      "en": "Jet"
     },
     {
       "englishPair": "LG",
       "bopomofoPair": "ㄐㄋ",
       "firstTarget": "ㄐ",
-      "secondTarget": "ㄋ"
+      "secondTarget": "ㄋ",
+      "cn": "今年",
+      "en": "Jingo"
     },
     {
       "englishPair": "LH",
       "bopomofoPair": "ㄐㄌ",
       "firstTarget": "ㄐ",
-      "secondTarget": "ㄌ"
+      "secondTarget": "ㄌ",
+      "cn": "紀錄",
+      "en": "Jail"
     },
     {
       "englishPair": "LI",
       "bopomofoPair": "ㄐㄍ",
       "firstTarget": "ㄐ",
-      "secondTarget": "ㄍ"
+      "secondTarget": "ㄍ",
+      "cn": "結構",
+      "en": "Jig"
     },
     {
       "englishPair": "LJ",
       "bopomofoPair": "ㄐㄎ",
       "firstTarget": "ㄐ",
-      "secondTarget": "ㄎ"
+      "secondTarget": "ㄎ",
+      "cn": "健康",
+      "en": "Jike"
     },
     {
       "englishPair": "LK",
       "bopomofoPair": "ㄐㄏ",
       "firstTarget": "ㄐ",
-      "secondTarget": "ㄏ"
+      "secondTarget": "ㄏ",
+      "cn": "計畫",
+      "en": "Jhow"
     },
     {
       "englishPair": "LM",
       "bopomofoPair": "ㄐㄑ",
       "firstTarget": "ㄐ",
-      "secondTarget": "ㄑ"
+      "secondTarget": "ㄑ",
+      "cn": "精確",
+      "en": "Jim"
     },
     {
       "englishPair": "LN",
       "bopomofoPair": "ㄐㄒ",
       "firstTarget": "ㄐ",
-      "secondTarget": "ㄒ"
+      "secondTarget": "ㄒ",
+      "cn": "解析",
+      "en": "Jin"
     },
     {
       "englishPair": "LO",
       "bopomofoPair": "ㄐㄓ",
       "firstTarget": "ㄐ",
-      "secondTarget": "ㄓ"
+      "secondTarget": "ㄓ",
+      "cn": "金子",
+      "en": "Joad"
     },
     {
       "englishPair": "LP",
       "bopomofoPair": "ㄐㄔ",
       "firstTarget": "ㄐ",
-      "secondTarget": "ㄔ"
+      "secondTarget": "ㄔ",
+      "cn": "警車",
+      "en": "Jop"
     },
     {
       "englishPair": "LQ",
       "bopomofoPair": "ㄐㄕ",
       "firstTarget": "ㄐ",
-      "secondTarget": "ㄕ"
+      "secondTarget": "ㄕ",
+      "cn": "角色",
+      "en": "Jash"
     },
     {
       "englishPair": "LR",
       "bopomofoPair": "ㄐㄖ",
       "firstTarget": "ㄐ",
-      "secondTarget": "ㄖ"
+      "secondTarget": "ㄖ",
+      "cn": "巨人",
+      "en": "Jeer"
     },
     {
       "englishPair": "LS",
       "bopomofoPair": "ㄐㄗ",
       "firstTarget": "ㄐ",
-      "secondTarget": "ㄗ"
+      "secondTarget": "ㄗ",
+      "cn": "餃子",
+      "en": "Jaze"
     },
     {
       "englishPair": "LT",
       "bopomofoPair": "ㄐㄘ",
       "firstTarget": "ㄐ",
-      "secondTarget": "ㄘ"
+      "secondTarget": "ㄘ",
+      "cn": "簡稱",
+      "en": "Jit"
     },
     {
       "englishPair": "LU",
       "bopomofoPair": "ㄐㄙ",
       "firstTarget": "ㄐ",
-      "secondTarget": "ㄙ"
+      "secondTarget": "ㄙ",
+      "cn": "計算",
+      "en": "Jud"
     },
     {
       "englishPair": "LV",
       "bopomofoPair": "ㄐㄧ",
       "firstTarget": "ㄐ",
-      "secondTarget": "ㄧ"
+      "secondTarget": "ㄧ",
+      "cn": "記憶",
+      "en": "Jive"
     },
     {
       "englishPair": "LW",
       "bopomofoPair": "ㄐㄨ",
       "firstTarget": "ㄐ",
-      "secondTarget": "ㄨ"
+      "secondTarget": "ㄨ",
+      "cn": "解物",
+      "en": "Jew"
     },
     {
       "englishPair": "LX",
       "bopomofoPair": "ㄐㄩ",
       "firstTarget": "ㄐ",
-      "secondTarget": "ㄩ"
+      "secondTarget": "ㄩ",
+      "cn": "金魚",
+      "en": "Jux"
     },
     {
       "englishPair": "MA",
       "bopomofoPair": "ㄑㄅ",
       "firstTarget": "ㄑ",
-      "secondTarget": "ㄅ"
+      "secondTarget": "ㄅ",
+      "cn": "錢包",
+      "en": "Qab"
     },
     {
       "englishPair": "MB",
       "bopomofoPair": "ㄑㄆ",
       "firstTarget": "ㄑ",
-      "secondTarget": "ㄆ"
+      "secondTarget": "ㄆ",
+      "cn": "強迫",
+      "en": "Qope"
     },
     {
       "englishPair": "MC",
       "bopomofoPair": "ㄑㄇ",
       "firstTarget": "ㄑ",
-      "secondTarget": "ㄇ"
+      "secondTarget": "ㄇ",
+      "cn": "簽名",
+      "en": "Qame"
     },
     {
       "englishPair": "MD",
       "bopomofoPair": "ㄑㄈ",
       "firstTarget": "ㄑ",
-      "secondTarget": "ㄈ"
+      "secondTarget": "ㄈ",
+      "cn": "氣氛",
+      "en": "Qaf"
     },
     {
       "englishPair": "ME",
       "bopomofoPair": "ㄑㄉ",
       "firstTarget": "ㄑ",
-      "secondTarget": "ㄉ"
+      "secondTarget": "ㄉ",
+      "cn": "渠道",
+      "en": "Qed"
     },
     {
       "englishPair": "MF",
       "bopomofoPair": "ㄑㄊ",
       "firstTarget": "ㄑ",
-      "secondTarget": "ㄊ"
+      "secondTarget": "ㄊ",
+      "cn": "期末",
+      "en": "Qet"
     },
     {
       "englishPair": "MG",
       "bopomofoPair": "ㄑㄋ",
       "firstTarget": "ㄑ",
-      "secondTarget": "ㄋ"
+      "secondTarget": "ㄋ",
+      "cn": "去年",
+      "en": "Qeno"
     },
     {
       "englishPair": "MH",
       "bopomofoPair": "ㄑㄌ",
       "firstTarget": "ㄑ",
-      "secondTarget": "ㄌ"
+      "secondTarget": "ㄌ",
+      "cn": "權利",
+      "en": "Qail"
     },
     {
       "englishPair": "MI",
       "bopomofoPair": "ㄑㄍ",
       "firstTarget": "ㄑ",
-      "secondTarget": "ㄍ"
+      "secondTarget": "ㄍ",
+      "cn": "氣功",
+      "en": "Qeg"
     },
     {
       "englishPair": "MJ",
       "bopomofoPair": "ㄑㄎ",
       "firstTarget": "ㄑ",
-      "secondTarget": "ㄎ"
+      "secondTarget": "ㄎ",
+      "cn": "乾坤",
+      "en": "Qike"
     },
     {
       "englishPair": "MK",
       "bopomofoPair": "ㄑㄏ",
       "firstTarget": "ㄑ",
-      "secondTarget": "ㄏ"
+      "secondTarget": "ㄏ",
+      "cn": "氣候",
+      "en": "Qhow"
     },
     {
       "englishPair": "ML",
       "bopomofoPair": "ㄑㄐ",
       "firstTarget": "ㄑ",
-      "secondTarget": "ㄐ"
+      "secondTarget": "ㄐ",
+      "cn": "清潔",
+      "en": "Qill"
     },
     {
       "englishPair": "MN",
       "bopomofoPair": "ㄑㄒ",
       "firstTarget": "ㄑ",
-      "secondTarget": "ㄒ"
+      "secondTarget": "ㄒ",
+      "cn": "親切",
+      "en": "Qin"
     },
     {
       "englishPair": "MO",
       "bopomofoPair": "ㄑㄓ",
       "firstTarget": "ㄑ",
-      "secondTarget": "ㄓ"
+      "secondTarget": "ㄓ",
+      "cn": "妻子",
+      "en": "Qoad"
     },
     {
       "englishPair": "MP",
       "bopomofoPair": "ㄑㄔ",
       "firstTarget": "ㄑ",
-      "secondTarget": "ㄔ"
+      "secondTarget": "ㄔ",
+      "cn": "卡車",
+      "en": "Qop"
     },
     {
       "englishPair": "MQ",
       "bopomofoPair": "ㄑㄕ",
       "firstTarget": "ㄑ",
-      "secondTarget": "ㄕ"
+      "secondTarget": "ㄕ",
+      "cn": "氣勢",
+      "en": "Qash"
     },
     {
       "englishPair": "MR",
       "bopomofoPair": "ㄑㄖ",
       "firstTarget": "ㄑ",
-      "secondTarget": "ㄖ"
+      "secondTarget": "ㄖ",
+      "cn": "情人",
+      "en": "Qear"
     },
     {
       "englishPair": "MS",
       "bopomofoPair": "ㄑㄗ",
       "firstTarget": "ㄑ",
-      "secondTarget": "ㄗ"
+      "secondTarget": "ㄗ",
+      "cn": "裙子",
+      "en": "Qaze"
     },
     {
       "englishPair": "MT",
       "bopomofoPair": "ㄑㄘ",
       "firstTarget": "ㄑ",
-      "secondTarget": "ㄘ"
+      "secondTarget": "ㄘ",
+      "cn": "汽車",
+      "en": "Qit"
     },
     {
       "englishPair": "MU",
       "bopomofoPair": "ㄑㄙ",
       "firstTarget": "ㄑ",
-      "secondTarget": "ㄙ"
+      "secondTarget": "ㄙ",
+      "cn": "潛水",
+      "en": "Qud"
     },
     {
       "englishPair": "MV",
       "bopomofoPair": "ㄑㄧ",
       "firstTarget": "ㄑ",
-      "secondTarget": "ㄧ"
+      "secondTarget": "ㄧ",
+      "cn": "輕易",
+      "en": "Qive"
     },
     {
       "englishPair": "MW",
       "bopomofoPair": "ㄑㄨ",
       "firstTarget": "ㄑ",
-      "secondTarget": "ㄨ"
+      "secondTarget": "ㄨ",
+      "cn": "氣味",
+      "en": "Qew"
     },
     {
       "englishPair": "MX",
       "bopomofoPair": "ㄑㄩ",
       "firstTarget": "ㄑ",
-      "secondTarget": "ㄩ"
+      "secondTarget": "ㄩ",
+      "cn": "青魚",
+      "en": "Qux"
     },
     {
       "englishPair": "NA",
       "bopomofoPair": "ㄒㄅ",
       "firstTarget": "ㄒ",
-      "secondTarget": "ㄅ"
+      "secondTarget": "ㄅ",
+      "cn": "細胞",
+      "en": "Xab"
     },
     {
       "englishPair": "NB",
       "bopomofoPair": "ㄒㄆ",
       "firstTarget": "ㄒ",
-      "secondTarget": "ㄆ"
+      "secondTarget": "ㄆ",
+      "cn": "新品",
+      "en": "Xope"
     },
     {
       "englishPair": "NC",
       "bopomofoPair": "ㄒㄇ",
       "firstTarget": "ㄒ",
-      "secondTarget": "ㄇ"
+      "secondTarget": "ㄇ",
+      "cn": "項目",
+      "en": "Xame"
     },
     {
       "englishPair": "ND",
       "bopomofoPair": "ㄒㄈ",
       "firstTarget": "ㄒ",
-      "secondTarget": "ㄈ"
+      "secondTarget": "ㄈ",
+      "cn": "下方",
+      "en": "Xaf"
     },
     {
       "englishPair": "NE",
       "bopomofoPair": "ㄒㄉ",
       "firstTarget": "ㄒ",
-      "secondTarget": "ㄉ"
+      "secondTarget": "ㄉ",
+      "cn": "現代",
+      "en": "Xed"
     },
     {
       "englishPair": "NF",
       "bopomofoPair": "ㄒㄊ",
       "firstTarget": "ㄒ",
-      "secondTarget": "ㄊ"
+      "secondTarget": "ㄊ",
+      "cn": "系統",
+      "en": "Xet"
     },
     {
       "englishPair": "NG",
       "bopomofoPair": "ㄒㄋ",
       "firstTarget": "ㄒ",
-      "secondTarget": "ㄋ"
+      "secondTarget": "ㄋ",
+      "cn": "新年",
+      "en": "Xeno"
     },
     {
       "englishPair": "NH",
       "bopomofoPair": "ㄒㄌ",
       "firstTarget": "ㄒ",
-      "secondTarget": "ㄌ"
+      "secondTarget": "ㄌ",
+      "cn": "效率",
+      "en": "Xail"
     },
     {
       "englishPair": "NI",
       "bopomofoPair": "ㄒㄍ",
       "firstTarget": "ㄒ",
-      "secondTarget": "ㄍ"
+      "secondTarget": "ㄍ",
+      "cn": "效果",
+      "en": "Xeg"
     },
     {
       "englishPair": "NJ",
       "bopomofoPair": "ㄒㄎ",
       "firstTarget": "ㄒ",
-      "secondTarget": "ㄎ"
+      "secondTarget": "ㄎ",
+      "cn": "寫入",
+      "en": "Xike"
     },
     {
       "englishPair": "NK",
       "bopomofoPair": "ㄒㄏ",
       "firstTarget": "ㄒ",
-      "secondTarget": "ㄏ"
+      "secondTarget": "ㄏ",
+      "cn": "信號",
+      "en": "Xhow"
     },
     {
       "englishPair": "NL",
       "bopomofoPair": "ㄒㄐ",
       "firstTarget": "ㄒ",
-      "secondTarget": "ㄐ"
+      "secondTarget": "ㄐ",
+      "cn": "相機",
+      "en": "Xill"
     },
     {
       "englishPair": "NM",
       "bopomofoPair": "ㄒㄑ",
       "firstTarget": "ㄒ",
-      "secondTarget": "ㄑ"
+      "secondTarget": "ㄑ",
+      "cn": "興趣",
+      "en": "Xim"
     },
     {
       "englishPair": "NO",
       "bopomofoPair": "ㄒㄓ",
       "firstTarget": "ㄒ",
-      "secondTarget": "ㄓ"
+      "secondTarget": "ㄓ",
+      "cn": "仙子",
+      "en": "Xoad"
     },
     {
       "englishPair": "NP",
       "bopomofoPair": "ㄒㄔ",
       "firstTarget": "ㄒ",
-      "secondTarget": "ㄔ"
+      "secondTarget": "ㄔ",
+      "cn": "洗車",
+      "en": "Xop"
     },
     {
       "englishPair": "NQ",
       "bopomofoPair": "ㄒㄕ",
       "firstTarget": "ㄒ",
-      "secondTarget": "ㄕ"
+      "secondTarget": "ㄕ",
+      "cn": "小說",
+      "en": "Xash"
     },
     {
       "englishPair": "NR",
       "bopomofoPair": "ㄒㄖ",
       "firstTarget": "ㄒ",
-      "secondTarget": "ㄖ"
+      "secondTarget": "ㄖ",
+      "cn": "新人",
+      "en": "Xear"
     },
     {
       "englishPair": "NS",
       "bopomofoPair": "ㄒㄗ",
       "firstTarget": "ㄒ",
-      "secondTarget": "ㄗ"
+      "secondTarget": "ㄗ",
+      "cn": "箱子",
+      "en": "Xaze"
     },
     {
       "englishPair": "NT",
       "bopomofoPair": "ㄒㄘ",
       "firstTarget": "ㄒ",
-      "secondTarget": "ㄘ"
+      "secondTarget": "ㄘ",
+      "cn": "相冊",
+      "en": "Xit"
     },
     {
       "englishPair": "NU",
       "bopomofoPair": "ㄒㄙ",
       "firstTarget": "ㄒ",
-      "secondTarget": "ㄙ"
+      "secondTarget": "ㄙ",
+      "cn": "現實",
+      "en": "Xud"
     },
     {
       "englishPair": "NV",
       "bopomofoPair": "ㄒㄧ",
       "firstTarget": "ㄒ",
-      "secondTarget": "ㄧ"
+      "secondTarget": "ㄧ",
+      "cn": "協議",
+      "en": "Xive"
     },
     {
       "englishPair": "NW",
       "bopomofoPair": "ㄒㄨ",
       "firstTarget": "ㄒ",
-      "secondTarget": "ㄨ"
+      "secondTarget": "ㄨ",
+      "cn": "下午",
+      "en": "Xew"
     },
     {
       "englishPair": "NX",
       "bopomofoPair": "ㄒㄩ",
       "firstTarget": "ㄒ",
-      "secondTarget": "ㄩ"
+      "secondTarget": "ㄩ",
+      "cn": "鮮魚",
+      "en": "Xux"
     },
     {
       "englishPair": "OA",
       "bopomofoPair": "ㄓㄅ",
       "firstTarget": "ㄓ",
-      "secondTarget": "ㄅ"
+      "secondTarget": "ㄅ",
+      "cn": "指標",
+      "en": "Zhab"
     },
     {
       "englishPair": "OB",
       "bopomofoPair": "ㄓㄆ",
       "firstTarget": "ㄓ",
-      "secondTarget": "ㄆ"
+      "secondTarget": "ㄆ",
+      "cn": "支部",
+      "en": "Zhope"
     },
     {
       "englishPair": "OC",
       "bopomofoPair": "ㄓㄇ",
       "firstTarget": "ㄓ",
-      "secondTarget": "ㄇ"
+      "secondTarget": "ㄇ",
+      "cn": "知名",
+      "en": "Zhame"
     },
     {
       "englishPair": "OD",
       "bopomofoPair": "ㄓㄈ",
       "firstTarget": "ㄓ",
-      "secondTarget": "ㄈ"
+      "secondTarget": "ㄈ",
+      "cn": "政府",
+      "en": "Zhaf"
     },
     {
       "englishPair": "OE",
       "bopomofoPair": "ㄓㄉ",
       "firstTarget": "ㄓ",
-      "secondTarget": "ㄉ"
+      "secondTarget": "ㄉ",
+      "cn": "主導",
+      "en": "Zhed"
     },
     {
       "englishPair": "OF",
       "bopomofoPair": "ㄓㄊ",
       "firstTarget": "ㄓ",
-      "secondTarget": "ㄊ"
+      "secondTarget": "ㄊ",
+      "cn": "主體",
+      "en": "Zhet"
     },
     {
       "englishPair": "OG",
       "bopomofoPair": "ㄓㄋ",
       "firstTarget": "ㄓ",
-      "secondTarget": "ㄋ"
+      "secondTarget": "ㄋ",
+      "cn": "指南",
+      "en": "Zheno"
     },
     {
       "englishPair": "OH",
       "bopomofoPair": "ㄓㄌ",
       "firstTarget": "ㄓ",
-      "secondTarget": "ㄌ"
+      "secondTarget": "ㄌ",
+      "cn": "助理",
+      "en": "Zhail"
     },
     {
       "englishPair": "OI",
       "bopomofoPair": "ㄓㄍ",
       "firstTarget": "ㄓ",
-      "secondTarget": "ㄍ"
+      "secondTarget": "ㄍ",
+      "cn": "中國",
+      "en": "Zheg"
     },
     {
       "englishPair": "OJ",
       "bopomofoPair": "ㄓㄎ",
       "firstTarget": "ㄓ",
-      "secondTarget": "ㄎ"
+      "secondTarget": "ㄎ",
+      "cn": "展開",
+      "en": "Zhike"
     },
     {
       "englishPair": "OK",
       "bopomofoPair": "ㄓㄏ",
       "firstTarget": "ㄓ",
-      "secondTarget": "ㄏ"
+      "secondTarget": "ㄏ",
+      "cn": "智慧",
+      "en": "Zhhow"
     },
     {
       "englishPair": "OL",
       "bopomofoPair": "ㄓㄐ",
       "firstTarget": "ㄓ",
-      "secondTarget": "ㄐ"
+      "secondTarget": "ㄐ",
+      "cn": "主角",
+      "en": "Zhill"
     },
     {
       "englishPair": "OM",
       "bopomofoPair": "ㄓㄑ",
       "firstTarget": "ㄓ",
-      "secondTarget": "ㄑ"
+      "secondTarget": "ㄑ",
+      "cn": "政權",
+      "en": "Zhim"
     },
     {
       "englishPair": "ON",
       "bopomofoPair": "ㄓㄒ",
       "firstTarget": "ㄓ",
-      "secondTarget": "ㄒ"
+      "secondTarget": "ㄒ",
+      "cn": "中心",
+      "en": "Zhin"
     },
     {
       "englishPair": "OP",
       "bopomofoPair": "ㄓㄔ",
       "firstTarget": "ㄓ",
-      "secondTarget": "ㄔ"
+      "secondTarget": "ㄔ",
+      "cn": "支持",
+      "en": "Zhop"
     },
     {
       "englishPair": "OQ",
       "bopomofoPair": "ㄓㄕ",
       "firstTarget": "ㄓ",
-      "secondTarget": "ㄕ"
+      "secondTarget": "ㄕ",
+      "cn": "證書",
+      "en": "Zhash"
     },
     {
       "englishPair": "OR",
       "bopomofoPair": "ㄓㄖ",
       "firstTarget": "ㄓ",
-      "secondTarget": "ㄖ"
+      "secondTarget": "ㄖ",
+      "cn": "真人",
+      "en": "Zhear"
     },
     {
       "englishPair": "OS",
       "bopomofoPair": "ㄓㄗ",
       "firstTarget": "ㄓ",
-      "secondTarget": "ㄗ"
+      "secondTarget": "ㄗ",
+      "cn": "桌子",
+      "en": "Zhaze"
     },
     {
       "englishPair": "OT",
       "bopomofoPair": "ㄓㄘ",
       "firstTarget": "ㄓ",
-      "secondTarget": "ㄘ"
+      "secondTarget": "ㄘ",
+      "cn": "偵查",
+      "en": "Zhit"
     },
     {
       "englishPair": "OU",
       "bopomofoPair": "ㄓㄙ",
       "firstTarget": "ㄓ",
-      "secondTarget": "ㄙ"
+      "secondTarget": "ㄙ",
+      "cn": "知識",
+      "en": "Zhud"
     },
     {
       "englishPair": "OV",
       "bopomofoPair": "ㄓㄧ",
       "firstTarget": "ㄓ",
-      "secondTarget": "ㄧ"
+      "secondTarget": "ㄧ",
+      "cn": "正義",
+      "en": "Zhive"
     },
     {
       "englishPair": "OW",
       "bopomofoPair": "ㄓㄨ",
       "firstTarget": "ㄓ",
-      "secondTarget": "ㄨ"
+      "secondTarget": "ㄨ",
+      "cn": "職務",
+      "en": "Zhew"
     },
     {
       "englishPair": "OX",
       "bopomofoPair": "ㄓㄩ",
       "firstTarget": "ㄓ",
-      "secondTarget": "ㄩ"
+      "secondTarget": "ㄩ",
+      "cn": "章魚",
+      "en": "Zhux"
     },
     {
       "englishPair": "PA",
       "bopomofoPair": "ㄔㄅ",
       "firstTarget": "ㄔ",
-      "secondTarget": "ㄅ"
+      "secondTarget": "ㄅ",
+      "cn": "長輩",
+      "en": "Chab"
     },
     {
       "englishPair": "PB",
       "bopomofoPair": "ㄔㄆ",
       "firstTarget": "ㄔ",
-      "secondTarget": "ㄆ"
+      "secondTarget": "ㄆ",
+      "cn": "產品",
+      "en": "Chope"
     },
     {
       "englishPair": "PC",
       "bopomofoPair": "ㄔㄇ",
       "firstTarget": "ㄔ",
-      "secondTarget": "ㄇ"
+      "secondTarget": "ㄇ",
+      "cn": "充滿",
+      "en": "Chame"
     },
     {
       "englishPair": "PD",
       "bopomofoPair": "ㄔㄈ",
       "firstTarget": "ㄔ",
-      "secondTarget": "ㄈ"
+      "secondTarget": "ㄈ",
+      "cn": "拆發",
+      "en": "Chaf"
     },
     {
       "englishPair": "PE",
       "bopomofoPair": "ㄔㄉ",
       "firstTarget": "ㄔ",
-      "secondTarget": "ㄉ"
+      "secondTarget": "ㄉ",
+      "cn": "長度",
+      "en": "Ched"
     },
     {
       "englishPair": "PF",
       "bopomofoPair": "ㄔㄊ",
       "firstTarget": "ㄔ",
-      "secondTarget": "ㄊ"
+      "secondTarget": "ㄊ",
+      "cn": "車胎",
+      "en": "Chet"
     },
     {
       "englishPair": "PG",
       "bopomofoPair": "ㄔㄋ",
       "firstTarget": "ㄔ",
-      "secondTarget": "ㄋ"
+      "secondTarget": "ㄋ",
+      "cn": "常年",
+      "en": "Cheno"
     },
     {
       "englishPair": "PH",
       "bopomofoPair": "ㄔㄌ",
       "firstTarget": "ㄔ",
-      "secondTarget": "ㄌ"
+      "secondTarget": "ㄌ",
+      "cn": "車輪",
+      "en": "Chail"
     },
     {
       "englishPair": "PI",
       "bopomofoPair": "ㄔㄍ",
       "firstTarget": "ㄔ",
-      "secondTarget": "ㄍ"
+      "secondTarget": "ㄍ",
+      "cn": "成果",
+      "en": "Cheg"
     },
     {
       "englishPair": "PJ",
       "bopomofoPair": "ㄔㄎ",
       "firstTarget": "ㄔ",
-      "secondTarget": "ㄎ"
+      "secondTarget": "ㄎ",
+      "cn": "乾坤",
+      "en": "Chike"
     },
     {
       "englishPair": "PK",
       "bopomofoPair": "ㄔㄏ",
       "firstTarget": "ㄔ",
-      "secondTarget": "ㄏ"
+      "secondTarget": "ㄏ",
+      "cn": "策劃",
+      "en": "Chhow"
     },
     {
       "englishPair": "PL",
       "bopomofoPair": "ㄔㄐ",
       "firstTarget": "ㄔ",
-      "secondTarget": "ㄐ"
+      "secondTarget": "ㄐ",
+      "cn": "超級",
+      "en": "Chill"
     },
     {
       "englishPair": "PM",
       "bopomofoPair": "ㄔㄑ",
       "firstTarget": "ㄔ",
-      "secondTarget": "ㄑ"
+      "secondTarget": "ㄑ",
+      "cn": "長期",
+      "en": "Chim"
     },
     {
       "englishPair": "PN",
       "bopomofoPair": "ㄔㄒ",
       "firstTarget": "ㄔ",
-      "secondTarget": "ㄒ"
+      "secondTarget": "ㄒ",
+      "cn": "程序",
+      "en": "Chin"
     },
     {
       "englishPair": "PO",
       "bopomofoPair": "ㄔㄓ",
       "firstTarget": "ㄔ",
-      "secondTarget": "ㄓ"
+      "secondTarget": "ㄓ",
+      "cn": "車子",
+      "en": "Chop"
     },
     {
       "englishPair": "PQ",
       "bopomofoPair": "ㄔㄕ",
       "firstTarget": "ㄔ",
-      "secondTarget": "ㄕ"
+      "secondTarget": "ㄕ",
+      "cn": "車身",
+      "en": "Chash"
     },
     {
       "englishPair": "PR",
       "bopomofoPair": "ㄔㄖ",
       "firstTarget": "ㄔ",
-      "secondTarget": "ㄖ"
+      "secondTarget": "ㄖ",
+      "cn": "潮人",
+      "en": "Chear"
     },
     {
       "englishPair": "PS",
       "bopomofoPair": "ㄔㄗ",
       "firstTarget": "ㄔ",
-      "secondTarget": "ㄗ"
+      "secondTarget": "ㄗ",
+      "cn": "橙子",
+      "en": "Chaze"
     },
     {
       "englishPair": "PT",
       "bopomofoPair": "ㄔㄘ",
       "firstTarget": "ㄔ",
-      "secondTarget": "ㄘ"
+      "secondTarget": "ㄘ",
+      "cn": "火車",
+      "en": "Chit"
     },
     {
       "englishPair": "PU",
       "bopomofoPair": "ㄔㄙ",
       "firstTarget": "ㄔ",
-      "secondTarget": "ㄙ"
+      "secondTarget": "ㄙ",
+      "cn": "超市",
+      "en": "Chud"
     },
     {
       "englishPair": "PV",
       "bopomofoPair": "ㄔㄧ",
       "firstTarget": "ㄔ",
-      "secondTarget": "ㄧ"
+      "secondTarget": "ㄧ",
+      "cn": "創意",
+      "en": "Chive"
     },
     {
       "englishPair": "PW",
       "bopomofoPair": "ㄔㄨ",
       "firstTarget": "ㄔ",
-      "secondTarget": "ㄨ"
+      "secondTarget": "ㄨ",
+      "cn": "寵物",
+      "en": "Chew"
     },
     {
       "englishPair": "PX",
       "bopomofoPair": "ㄔㄩ",
       "firstTarget": "ㄔ",
-      "secondTarget": "ㄩ"
+      "secondTarget": "ㄩ",
+      "cn": "柴魚",
+      "en": "Chux"
     },
     {
       "englishPair": "QA",
       "bopomofoPair": "ㄕㄅ",
       "firstTarget": "ㄕ",
-      "secondTarget": "ㄅ"
+      "secondTarget": "ㄅ",
+      "cn": "設備",
+      "en": "Shab"
     },
     {
       "englishPair": "QB",
       "bopomofoPair": "ㄕㄆ",
       "firstTarget": "ㄕ",
-      "secondTarget": "ㄆ"
+      "secondTarget": "ㄆ",
+      "cn": "商品",
+      "en": "Shope"
     },
     {
       "englishPair": "QC",
       "bopomofoPair": "ㄕㄇ",
       "firstTarget": "ㄕ",
-      "secondTarget": "ㄇ"
+      "secondTarget": "ㄇ",
+      "cn": "聲明",
+      "en": "Shame"
     },
     {
       "englishPair": "QD",
       "bopomofoPair": "ㄕㄈ",
       "firstTarget": "ㄕ",
-      "secondTarget": "ㄈ"
+      "secondTarget": "ㄈ",
+      "cn": "身份",
+      "en": "Shaf"
     },
     {
       "englishPair": "QE",
       "bopomofoPair": "ㄕㄉ",
       "firstTarget": "ㄕ",
-      "secondTarget": "ㄉ"
+      "secondTarget": "ㄉ",
+      "cn": "首都",
+      "en": "Shed"
     },
     {
       "englishPair": "QF",
       "bopomofoPair": "ㄕㄊ",
       "firstTarget": "ㄕ",
-      "secondTarget": "ㄊ"
+      "secondTarget": "ㄊ",
+      "cn": "身體",
+      "en": "Shet"
     },
     {
       "englishPair": "QG",
       "bopomofoPair": "ㄕㄋ",
       "firstTarget": "ㄕ",
-      "secondTarget": "ㄋ"
+      "secondTarget": "ㄋ",
+      "cn": "少年",
+      "en": "Sheno"
     },
     {
       "englishPair": "QH",
       "bopomofoPair": "ㄕㄌ",
       "firstTarget": "ㄕ",
-      "secondTarget": "ㄌ"
+      "secondTarget": "ㄌ",
+      "cn": "沙龍",
+      "en": "Shail"
     },
     {
       "englishPair": "QI",
       "bopomofoPair": "ㄕㄍ",
       "firstTarget": "ㄕ",
-      "secondTarget": "ㄍ"
+      "secondTarget": "ㄍ",
+      "cn": "手工",
+      "en": "Sheg"
     },
     {
       "englishPair": "QJ",
       "bopomofoPair": "ㄕㄎ",
       "firstTarget": "ㄕ",
-      "secondTarget": "ㄎ"
+      "secondTarget": "ㄎ",
+      "cn": "商客",
+      "en": "Shike"
     },
     {
       "englishPair": "QK",
       "bopomofoPair": "ㄕㄏ",
       "firstTarget": "ㄕ",
-      "secondTarget": "ㄏ"
+      "secondTarget": "ㄏ",
+      "cn": "生活",
+      "en": "Shhow"
     },
     {
       "englishPair": "QL",
       "bopomofoPair": "ㄕㄐ",
       "firstTarget": "ㄕ",
-      "secondTarget": "ㄐ"
+      "secondTarget": "ㄐ",
+      "cn": "時間",
+      "en": "Shill"
     },
     {
       "englishPair": "QM",
       "bopomofoPair": "ㄕㄑ",
       "firstTarget": "ㄕ",
-      "secondTarget": "ㄑ"
+      "secondTarget": "ㄑ",
+      "cn": "社區",
+      "en": "Shim"
     },
     {
       "englishPair": "QN",
       "bopomofoPair": "ㄕㄒ",
       "firstTarget": "ㄕ",
-      "secondTarget": "ㄒ"
+      "secondTarget": "ㄒ",
+      "cn": "屬性",
+      "en": "Shin"
     },
     {
       "englishPair": "QO",
       "bopomofoPair": "ㄕㄓ",
       "firstTarget": "ㄕ",
-      "secondTarget": "ㄓ"
+      "secondTarget": "ㄓ",
+      "cn": "扇子",
+      "en": "Shop"
     },
     {
       "englishPair": "QP",
       "bopomofoPair": "ㄕㄔ",
       "firstTarget": "ㄕ",
-      "secondTarget": "ㄔ"
+      "secondTarget": "ㄔ",
+      "cn": "煞車",
+      "en": "Shop"
     },
     {
       "englishPair": "QR",
       "bopomofoPair": "ㄕㄖ",
       "firstTarget": "ㄕ",
-      "secondTarget": "ㄖ"
+      "secondTarget": "ㄖ",
+      "cn": "詩人",
+      "en": "Shear"
     },
     {
       "englishPair": "QS",
       "bopomofoPair": "ㄕㄗ",
       "firstTarget": "ㄕ",
-      "secondTarget": "ㄗ"
+      "secondTarget": "ㄗ",
+      "cn": "勺子",
+      "en": "Shaze"
     },
     {
       "englishPair": "QT",
       "bopomofoPair": "ㄕㄘ",
       "firstTarget": "ㄕ",
-      "secondTarget": "ㄘ"
+      "secondTarget": "ㄘ",
+      "cn": "市場",
+      "en": "Shit"
     },
     {
       "englishPair": "QU",
       "bopomofoPair": "ㄕㄙ",
       "firstTarget": "ㄕ",
-      "secondTarget": "ㄙ"
+      "secondTarget": "ㄙ",
+      "cn": "雙手",
+      "en": "Shud"
     },
     {
       "englishPair": "QV",
       "bopomofoPair": "ㄕㄧ",
       "firstTarget": "ㄕ",
-      "secondTarget": "ㄧ"
+      "secondTarget": "ㄧ",
+      "cn": "生意",
+      "en": "Shive"
     },
     {
       "englishPair": "QW",
       "bopomofoPair": "ㄕㄨ",
       "firstTarget": "ㄕ",
-      "secondTarget": "ㄨ"
+      "secondTarget": "ㄨ",
+      "cn": "下午",
+      "en": "Shew"
     },
     {
       "englishPair": "QX",
       "bopomofoPair": "ㄕㄩ",
       "firstTarget": "ㄕ",
-      "secondTarget": "ㄩ"
+      "secondTarget": "ㄩ",
+      "cn": "鯊魚",
+      "en": "Shux"
     },
     {
       "englishPair": "RA",
       "bopomofoPair": "ㄖㄅ",
       "firstTarget": "ㄖ",
-      "secondTarget": "ㄅ"
+      "secondTarget": "ㄅ",
+      "cn": "軟包",
+      "en": "Rab"
     },
     {
       "englishPair": "RB",
       "bopomofoPair": "ㄖㄆ",
       "firstTarget": "ㄖ",
-      "secondTarget": "ㄆ"
+      "secondTarget": "ㄆ",
+      "cn": "肉鋪",
+      "en": "Rope"
     },
     {
       "englishPair": "RC",
       "bopomofoPair": "ㄖㄇ",
       "firstTarget": "ㄖ",
-      "secondTarget": "ㄇ"
+      "secondTarget": "ㄇ",
+      "cn": "熱門",
+      "en": "Rame"
     },
     {
       "englishPair": "RD",
       "bopomofoPair": "ㄖㄈ",
       "firstTarget": "ㄖ",
-      "secondTarget": "ㄈ"
+      "secondTarget": "ㄈ",
+      "cn": "軟體",
+      "en": "Raf"
     },
     {
       "englishPair": "RE",
       "bopomofoPair": "ㄖㄉ",
       "firstTarget": "ㄖ",
-      "secondTarget": "ㄉ"
+      "secondTarget": "ㄉ",
+      "cn": "熱度",
+      "en": "Red"
     },
     {
       "englishPair": "RF",
       "bopomofoPair": "ㄖㄊ",
       "firstTarget": "ㄖ",
-      "secondTarget": "ㄊ"
+      "secondTarget": "ㄊ",
+      "cn": "人體",
+      "en": "Ret"
     },
     {
       "englishPair": "RG",
       "bopomofoPair": "ㄖㄋ",
       "firstTarget": "ㄖ",
-      "secondTarget": "ㄋ"
+      "secondTarget": "ㄋ",
+      "cn": "熱能",
+      "en": "Reno"
     },
     {
       "englishPair": "RH",
       "bopomofoPair": "ㄖㄌ",
       "firstTarget": "ㄖ",
-      "secondTarget": "ㄌ"
+      "secondTarget": "ㄌ",
+      "cn": "日曆",
+      "en": "Rail"
     },
     {
       "englishPair": "RI",
       "bopomofoPair": "ㄖㄍ",
       "firstTarget": "ㄖ",
-      "secondTarget": "ㄍ"
+      "secondTarget": "ㄍ",
+      "cn": "軟骨",
+      "en": "Reg"
     },
     {
       "englishPair": "RJ",
       "bopomofoPair": "ㄖㄎ",
       "firstTarget": "ㄖ",
-      "secondTarget": "ㄎ"
+      "secondTarget": "ㄎ",
+      "cn": "人口",
+      "en": "Rike"
     },
     {
       "englishPair": "RK",
       "bopomofoPair": "ㄖㄏ",
       "firstTarget": "ㄖ",
-      "secondTarget": "ㄏ"
+      "secondTarget": "ㄏ",
+      "cn": "融合",
+      "en": "Rhow"
     },
     {
       "englishPair": "RL",
       "bopomofoPair": "ㄖㄐ",
       "firstTarget": "ㄖ",
-      "secondTarget": "ㄐ"
+      "secondTarget": "ㄐ",
+      "cn": "日記",
+      "en": "Rill"
     },
     {
       "englishPair": "RM",
       "bopomofoPair": "ㄖㄑ",
       "firstTarget": "ㄖ",
-      "secondTarget": "ㄑ"
+      "secondTarget": "ㄑ",
+      "cn": "熱氣",
+      "en": "Rim"
     },
     {
       "englishPair": "RN",
       "bopomofoPair": "ㄖㄒ",
       "firstTarget": "ㄖ",
-      "secondTarget": "ㄒ"
+      "secondTarget": "ㄒ",
+      "cn": "人心",
+      "en": "Rin"
     },
     {
       "englishPair": "RO",
       "bopomofoPair": "ㄖㄓ",
       "firstTarget": "ㄖ",
-      "secondTarget": "ㄓ"
+      "secondTarget": "ㄓ",
+      "cn": "日子",
+      "en": "Road"
     },
     {
       "englishPair": "RP",
       "bopomofoPair": "ㄖㄔ",
       "firstTarget": "ㄖ",
-      "secondTarget": "ㄔ"
+      "secondTarget": "ㄔ",
+      "cn": "日常",
+      "en": "Rop"
     },
     {
       "englishPair": "RQ",
       "bopomofoPair": "ㄖㄕ",
       "firstTarget": "ㄖ",
-      "secondTarget": "ㄕ"
+      "secondTarget": "ㄕ",
+      "cn": "熱水",
+      "en": "Rash"
     },
     {
       "englishPair": "RS",
       "bopomofoPair": "ㄖㄗ",
       "firstTarget": "ㄖ",
-      "secondTarget": "ㄗ"
+      "secondTarget": "ㄗ",
+      "cn": "揉子",
+      "en": "Raze"
     },
     {
       "englishPair": "RT",
       "bopomofoPair": "ㄖㄘ",
       "firstTarget": "ㄖ",
-      "secondTarget": "ㄘ"
+      "secondTarget": "ㄘ",
+      "cn": "日常",
+      "en": "Rit"
     },
     {
       "englishPair": "RU",
       "bopomofoPair": "ㄖㄙ",
       "firstTarget": "ㄖ",
-      "secondTarget": "ㄙ"
+      "secondTarget": "ㄙ",
+      "cn": "熱水",
+      "en": "Rud"
     },
     {
       "englishPair": "RV",
       "bopomofoPair": "ㄖㄧ",
       "firstTarget": "ㄖ",
-      "secondTarget": "ㄧ"
+      "secondTarget": "ㄧ",
+      "cn": "容易",
+      "en": "Rive"
     },
     {
       "englishPair": "RW",
       "bopomofoPair": "ㄖㄨ",
       "firstTarget": "ㄖ",
-      "secondTarget": "ㄨ"
+      "secondTarget": "ㄨ",
+      "cn": "人物",
+      "en": "Rew"
     },
     {
       "englishPair": "RX",
       "bopomofoPair": "ㄖㄩ",
       "firstTarget": "ㄖ",
-      "secondTarget": "ㄩ"
+      "secondTarget": "ㄩ",
+      "cn": "熱魚",
+      "en": "Rux"
     },
     {
       "englishPair": "SA",
       "bopomofoPair": "ㄗㄅ",
       "firstTarget": "ㄗ",
-      "secondTarget": "ㄅ"
+      "secondTarget": "ㄅ",
+      "cn": "自備",
+      "en": "Zab"
     },
     {
       "englishPair": "SB",
       "bopomofoPair": "ㄗㄆ",
       "firstTarget": "ㄗ",
-      "secondTarget": "ㄆ"
+      "secondTarget": "ㄆ",
+      "cn": "作品",
+      "en": "Zope"
     },
     {
       "englishPair": "SC",
       "bopomofoPair": "ㄗㄇ",
       "firstTarget": "ㄗ",
-      "secondTarget": "ㄇ"
+      "secondTarget": "ㄇ",
+      "cn": "字幕",
+      "en": "Zame"
     },
     {
       "englishPair": "SD",
       "bopomofoPair": "ㄗㄈ",
       "firstTarget": "ㄗ",
-      "secondTarget": "ㄈ"
+      "secondTarget": "ㄈ",
+      "cn": "作法",
+      "en": "Zaf"
     },
     {
       "englishPair": "SE",
       "bopomofoPair": "ㄗㄉ",
       "firstTarget": "ㄗ",
-      "secondTarget": "ㄉ"
+      "secondTarget": "ㄉ",
+      "cn": "自動",
+      "en": "Zed"
     },
     {
       "englishPair": "SF",
       "bopomofoPair": "ㄗㄊ",
       "firstTarget": "ㄗ",
-      "secondTarget": "ㄊ"
+      "secondTarget": "ㄊ",
+      "cn": "字體",
+      "en": "Zet"
     },
     {
       "englishPair": "SG",
       "bopomofoPair": "ㄗㄋ",
       "firstTarget": "ㄗ",
-      "secondTarget": "ㄋ"
+      "secondTarget": "ㄋ",
+      "cn": "自能",
+      "en": "Zeno"
     },
     {
       "englishPair": "SH",
       "bopomofoPair": "ㄗㄌ",
       "firstTarget": "ㄗ",
-      "secondTarget": "ㄌ"
+      "secondTarget": "ㄌ",
+      "cn": "自立",
+      "en": "Zail"
     },
     {
       "englishPair": "SI",
       "bopomofoPair": "ㄗㄍ",
       "firstTarget": "ㄗ",
-      "secondTarget": "ㄍ"
+      "secondTarget": "ㄍ",
+      "cn": "祖國",
+      "en": "Zeg"
     },
     {
       "englishPair": "SJ",
       "bopomofoPair": "ㄗㄎ",
       "firstTarget": "ㄗ",
-      "secondTarget": "ㄎ"
+      "secondTarget": "ㄎ",
+      "cn": "自豪",
+      "en": "Zike"
     },
     {
       "englishPair": "SK",
       "bopomofoPair": "ㄗㄏ",
       "firstTarget": "ㄗ",
-      "secondTarget": "ㄏ"
+      "secondTarget": "ㄏ",
+      "cn": "字畫",
+      "en": "Zhow"
     },
     {
       "englishPair": "SL",
       "bopomofoPair": "ㄗㄐ",
       "firstTarget": "ㄗ",
-      "secondTarget": "ㄐ"
+      "secondTarget": "ㄐ",
+      "cn": "資金",
+      "en": "Zill"
     },
     {
       "englishPair": "SM",
       "bopomofoPair": "ㄗㄑ",
       "firstTarget": "ㄗ",
-      "secondTarget": "ㄑ"
+      "secondTarget": "ㄑ",
+      "cn": "自然",
+      "en": "Zim"
     },
     {
       "englishPair": "SN",
       "bopomofoPair": "ㄗㄒ",
       "firstTarget": "ㄗ",
-      "secondTarget": "ㄒ"
+      "secondTarget": "ㄒ",
+      "cn": "自學",
+      "en": "Zin"
     },
     {
       "englishPair": "SO",
       "bopomofoPair": "ㄗㄓ",
       "firstTarget": "ㄗ",
-      "secondTarget": "ㄓ"
+      "secondTarget": "ㄓ",
+      "cn": "字面",
+      "en": "Zoad"
     },
     {
       "englishPair": "SP",
       "bopomofoPair": "ㄗㄔ",
       "firstTarget": "ㄗ",
-      "secondTarget": "ㄔ"
+      "secondTarget": "ㄔ",
+      "cn": "自行",
+      "en": "Zop"
     },
     {
       "englishPair": "SQ",
       "bopomofoPair": "ㄗㄕ",
       "firstTarget": "ㄗ",
-      "secondTarget": "ㄕ"
+      "secondTarget": "ㄕ",
+      "cn": "自我",
+      "en": "Zash"
     },
     {
       "englishPair": "SR",
       "bopomofoPair": "ㄗㄖ",
       "firstTarget": "ㄗ",
-      "secondTarget": "ㄖ"
+      "secondTarget": "ㄖ",
+      "cn": "自然",
+      "en": "Zear"
     },
     {
       "englishPair": "ST",
       "bopomofoPair": "ㄗㄘ",
       "firstTarget": "ㄗ",
-      "secondTarget": "ㄘ"
+      "secondTarget": "ㄘ",
+      "cn": "走菜",
+      "en": "Zit"
     },
     {
       "englishPair": "SU",
       "bopomofoPair": "ㄗㄙ",
       "firstTarget": "ㄗ",
-      "secondTarget": "ㄙ"
+      "secondTarget": "ㄙ",
+      "cn": "紫色",
+      "en": "Zud"
     },
     {
       "englishPair": "SV",
       "bopomofoPair": "ㄗㄧ",
       "firstTarget": "ㄗ",
-      "secondTarget": "ㄧ"
+      "secondTarget": "ㄧ",
+      "cn": "走音",
+      "en": "Zive"
     },
     {
       "englishPair": "SW",
       "bopomofoPair": "ㄗㄨ",
       "firstTarget": "ㄗ",
-      "secondTarget": "ㄨ"
+      "secondTarget": "ㄨ",
+      "cn": "左手",
+      "en": "Zew"
     },
     {
       "englishPair": "SX",
       "bopomofoPair": "ㄗㄩ",
       "firstTarget": "ㄗ",
-      "secondTarget": "ㄩ"
+      "secondTarget": "ㄩ",
+      "cn": "子魚",
+      "en": "Zux"
     },
     {
       "englishPair": "TA",
       "bopomofoPair": "ㄘㄅ",
       "firstTarget": "ㄘ",
-      "secondTarget": "ㄅ"
+      "secondTarget": "ㄅ",
+      "cn": "草包",
+      "en": "Cab"
     },
     {
       "englishPair": "TB",
       "bopomofoPair": "ㄘㄆ",
       "firstTarget": "ㄘ",
-      "secondTarget": "ㄆ"
+      "secondTarget": "ㄆ",
+      "cn": "草皮",
+      "en": "Cope"
     },
     {
       "englishPair": "TC",
       "bopomofoPair": "ㄘㄇ",
       "firstTarget": "ㄘ",
-      "secondTarget": "ㄇ"
+      "secondTarget": "ㄇ",
+      "cn": "草帽",
+      "en": "Came"
     },
     {
       "englishPair": "TD",
       "bopomofoPair": "ㄘㄈ",
       "firstTarget": "ㄘ",
-      "secondTarget": "ㄈ"
+      "secondTarget": "ㄈ",
+      "cn": "踩閥",
+      "en": "Caf"
     },
     {
       "englishPair": "TE",
       "bopomofoPair": "ㄘㄉ",
       "firstTarget": "ㄘ",
-      "secondTarget": "ㄉ"
+      "secondTarget": "ㄉ",
+      "cn": "菜刀",
+      "en": "Ced"
     },
     {
       "englishPair": "TF",
       "bopomofoPair": "ㄘㄊ",
       "firstTarget": "ㄘ",
-      "secondTarget": "ㄊ"
+      "secondTarget": "ㄊ",
+      "cn": "踩踏",
+      "en": "Cet"
     },
     {
       "englishPair": "TG",
       "bopomofoPair": "ㄘㄋ",
       "firstTarget": "ㄘ",
-      "secondTarget": "ㄋ"
+      "secondTarget": "ㄋ",
+      "cn": "菜鳥",
+      "en": "Ceno"
     },
     {
       "englishPair": "TH",
       "bopomofoPair": "ㄘㄌ",
       "firstTarget": "ㄘ",
-      "secondTarget": "ㄌ"
+      "secondTarget": "ㄌ",
+      "cn": "草綠",
+      "en": "Cail"
     },
     {
       "englishPair": "TI",
       "bopomofoPair": "ㄘㄍ",
       "firstTarget": "ㄘ",
-      "secondTarget": "ㄍ"
+      "secondTarget": "ㄍ",
+      "cn": "草菇",
+      "en": "Cag"
     },
     {
       "englishPair": "TJ",
       "bopomofoPair": "ㄘㄎ",
       "firstTarget": "ㄘ",
-      "secondTarget": "ㄎ"
+      "secondTarget": "ㄎ",
+      "cn": "草跨",
+      "en": "Cike"
     },
     {
       "englishPair": "TK",
       "bopomofoPair": "ㄘㄏ",
       "firstTarget": "ㄘ",
-      "secondTarget": "ㄏ"
+      "secondTarget": "ㄏ",
+      "cn": "草花",
+      "en": "Chow"
     },
     {
       "englishPair": "TL",
       "bopomofoPair": "ㄘㄐ",
       "firstTarget": "ㄘ",
-      "secondTarget": "ㄐ"
+      "secondTarget": "ㄐ",
+      "cn": "草蓆",
+      "en": "Cill"
     },
     {
       "englishPair": "TM",
       "bopomofoPair": "ㄘㄑ",
       "firstTarget": "ㄘ",
-      "secondTarget": "ㄑ"
+      "secondTarget": "ㄑ",
+      "cn": "草氣",
+      "en": "Cim"
     },
     {
       "englishPair": "TN",
       "bopomofoPair": "ㄘㄒ",
       "firstTarget": "ㄘ",
-      "secondTarget": "ㄒ"
+      "secondTarget": "ㄒ",
+      "cn": "草鞋",
+      "en": "Cin"
     },
     {
       "englishPair": "TO",
       "bopomofoPair": "ㄘㄓ",
       "firstTarget": "ㄘ",
-      "secondTarget": "ㄓ"
+      "secondTarget": "ㄓ",
+      "cn": "冊子",
+      "en": "Coad"
     },
     {
       "englishPair": "TP",
       "bopomofoPair": "ㄘㄔ",
       "firstTarget": "ㄘ",
-      "secondTarget": "ㄔ"
+      "secondTarget": "ㄔ",
+      "cn": "草地",
+      "en": "Cop"
     },
     {
       "englishPair": "TQ",
       "bopomofoPair": "ㄘㄕ",
       "firstTarget": "ㄘ",
-      "secondTarget": "ㄕ"
+      "secondTarget": "ㄕ",
+      "cn": "彩色",
+      "en": "Cash"
     },
     {
       "englishPair": "TR",
       "bopomofoPair": "ㄘㄖ",
       "firstTarget": "ㄘ",
-      "secondTarget": "ㄖ"
+      "secondTarget": "ㄖ",
+      "cn": "草人",
+      "en": "Cear"
     },
     {
       "englishPair": "TS",
       "bopomofoPair": "ㄘㄗ",
       "firstTarget": "ㄘ",
-      "secondTarget": "ㄗ"
+      "secondTarget": "ㄗ",
+      "cn": "草子",
+      "en": "Caze"
     },
     {
       "englishPair": "TU",
       "bopomofoPair": "ㄘㄙ",
       "firstTarget": "ㄘ",
-      "secondTarget": "ㄙ"
+      "secondTarget": "ㄙ",
+      "cn": "刺死",
+      "en": "Cud"
     },
     {
       "englishPair": "TV",
       "bopomofoPair": "ㄘㄧ",
       "firstTarget": "ㄘ",
-      "secondTarget": "ㄧ"
+      "secondTarget": "ㄧ",
+      "cn": "菜油",
+      "en": "Cive"
     },
     {
       "englishPair": "TW",
       "bopomofoPair": "ㄘㄨ",
       "firstTarget": "ㄘ",
-      "secondTarget": "ㄨ"
+      "secondTarget": "ㄨ",
+      "cn": "草屋",
+      "en": "Cew"
     },
     {
       "englishPair": "TX",
       "bopomofoPair": "ㄘㄩ",
       "firstTarget": "ㄘ",
-      "secondTarget": "ㄩ"
+      "secondTarget": "ㄩ",
+      "cn": "草魚",
+      "en": "Cux"
     },
     {
       "englishPair": "UA",
       "bopomofoPair": "ㄙㄅ",
       "firstTarget": "ㄙ",
-      "secondTarget": "ㄅ"
+      "secondTarget": "ㄅ",
+      "cn": "送包",
+      "en": "Sab"
     },
     {
       "englishPair": "UB",
       "bopomofoPair": "ㄙㄆ",
       "firstTarget": "ㄙ",
-      "secondTarget": "ㄆ"
+      "secondTarget": "ㄆ",
+      "cn": "死皮",
+      "en": "Sope"
     },
     {
       "englishPair": "UC",
       "bopomofoPair": "ㄙㄇ",
       "firstTarget": "ㄙ",
-      "secondTarget": "ㄇ"
+      "secondTarget": "ㄇ",
+      "cn": "送帽",
+      "en": "Same"
     },
     {
       "englishPair": "UD",
       "bopomofoPair": "ㄙㄈ",
       "firstTarget": "ㄙ",
-      "secondTarget": "ㄈ"
+      "secondTarget": "ㄈ",
+      "cn": "司法",
+      "en": "Saf"
     },
     {
       "englishPair": "UE",
       "bopomofoPair": "ㄙㄉ",
       "firstTarget": "ㄙ",
-      "secondTarget": "ㄉ"
+      "secondTarget": "ㄉ",
+      "cn": "速度",
+      "en": "Sed"
     },
     {
       "englishPair": "UF",
       "bopomofoPair": "ㄙㄊ",
       "firstTarget": "ㄙ",
-      "secondTarget": "ㄊ"
+      "secondTarget": "ㄊ",
+      "cn": "送帖",
+      "en": "Set"
     },
     {
       "englishPair": "UG",
       "bopomofoPair": "ㄙㄋ",
       "firstTarget": "ㄙ",
-      "secondTarget": "ㄋ"
+      "secondTarget": "ㄋ",
+      "cn": "送泥",
+      "en": "Seno"
     },
     {
       "englishPair": "UH",
       "bopomofoPair": "ㄙㄌ",
       "firstTarget": "ㄙ",
-      "secondTarget": "ㄌ"
+      "secondTarget": "ㄌ",
+      "cn": "塑料",
+      "en": "Sail"
     },
     {
       "englishPair": "UI",
       "bopomofoPair": "ㄙㄍ",
       "firstTarget": "ㄙ",
-      "secondTarget": "ㄍ"
+      "secondTarget": "ㄍ",
+      "cn": "水果",
+      "en": "Sag"
     },
     {
       "englishPair": "UJ",
       "bopomofoPair": "ㄙㄎ",
       "firstTarget": "ㄙ",
-      "secondTarget": "ㄎ"
+      "secondTarget": "ㄎ",
+      "cn": "思考",
+      "en": "Sike"
     },
     {
       "englishPair": "UK",
       "bopomofoPair": "ㄙㄏ",
       "firstTarget": "ㄙ",
-      "secondTarget": "ㄏ"
+      "secondTarget": "ㄏ",
+      "cn": "鎖花",
+      "en": "Show"
     },
     {
       "englishPair": "UL",
       "bopomofoPair": "ㄙㄐ",
       "firstTarget": "ㄙ",
-      "secondTarget": "ㄐ"
+      "secondTarget": "ㄐ",
+      "cn": "送金",
+      "en": "Sill"
     },
     {
       "englishPair": "UM",
       "bopomofoPair": "ㄙㄑ",
       "firstTarget": "ㄙ",
-      "secondTarget": "ㄑ"
+      "secondTarget": "ㄑ",
+      "cn": "送去",
+      "en": "Sim"
     },
     {
       "englishPair": "UN",
       "bopomofoPair": "ㄙㄒ",
       "firstTarget": "ㄙ",
-      "secondTarget": "ㄒ"
+      "secondTarget": "ㄒ",
+      "cn": "送行",
+      "en": "Sin"
     },
     {
       "englishPair": "UO",
       "bopomofoPair": "ㄙㄓ",
       "firstTarget": "ㄙ",
-      "secondTarget": "ㄓ"
+      "secondTarget": "ㄓ",
+      "cn": "雙子",
+      "en": "Soad"
     },
     {
       "englishPair": "UP",
       "bopomofoPair": "ㄙㄔ",
       "firstTarget": "ㄙ",
-      "secondTarget": "ㄔ"
+      "secondTarget": "ㄔ",
+      "cn": "送車",
+      "en": "Sop"
     },
     {
       "englishPair": "UQ",
       "bopomofoPair": "ㄙㄕ",
       "firstTarget": "ㄙ",
-      "secondTarget": "ㄕ"
+      "secondTarget": "ㄕ",
+      "cn": "送手",
+      "en": "Sash"
     },
     {
       "englishPair": "UR",
       "bopomofoPair": "ㄙㄖ",
       "firstTarget": "ㄙ",
-      "secondTarget": "ㄖ"
+      "secondTarget": "ㄖ",
+      "cn": "私人",
+      "en": "Sear"
     },
     {
       "englishPair": "US",
       "bopomofoPair": "ㄙㄗ",
       "firstTarget": "ㄙ",
-      "secondTarget": "ㄗ"
+      "secondTarget": "ㄗ",
+      "cn": "雙子",
+      "en": "Saze"
     },
     {
       "englishPair": "UT",
       "bopomofoPair": "ㄙㄘ",
       "firstTarget": "ㄙ",
-      "secondTarget": "ㄘ"
+      "secondTarget": "ㄘ",
+      "cn": "速查",
+      "en": "Sit"
     },
     {
       "englishPair": "UV",
       "bopomofoPair": "ㄙㄧ",
       "firstTarget": "ㄙ",
-      "secondTarget": "ㄧ"
+      "secondTarget": "ㄧ",
+      "cn": "送衣",
+      "en": "Sive"
     },
     {
       "englishPair": "UW",
       "bopomofoPair": "ㄙㄨ",
       "firstTarget": "ㄙ",
-      "secondTarget": "ㄨ"
+      "secondTarget": "ㄨ",
+      "cn": "送物",
+      "en": "Sew"
     },
     {
       "englishPair": "UX",
       "bopomofoPair": "ㄙㄩ",
       "firstTarget": "ㄙ",
-      "secondTarget": "ㄩ"
+      "secondTarget": "ㄩ",
+      "cn": "速魚",
+      "en": "Sux"
     },
     {
       "englishPair": "VA",
       "bopomofoPair": "ㄧㄅ",
       "firstTarget": "ㄧ",
-      "secondTarget": "ㄅ"
+      "secondTarget": "ㄅ",
+      "cn": "一把",
+      "en": "Yab"
     },
     {
       "englishPair": "VB",
       "bopomofoPair": "ㄧㄆ",
       "firstTarget": "ㄧ",
-      "secondTarget": "ㄆ"
+      "secondTarget": "ㄆ",
+      "cn": "一片",
+      "en": "Yope"
     },
     {
       "englishPair": "VC",
       "bopomofoPair": "ㄧㄇ",
       "firstTarget": "ㄧ",
-      "secondTarget": "ㄇ"
+      "secondTarget": "ㄇ",
+      "cn": "移民",
+      "en": "Yame"
     },
     {
       "englishPair": "VD",
       "bopomofoPair": "ㄧㄈ",
       "firstTarget": "ㄧ",
-      "secondTarget": "ㄈ"
+      "secondTarget": "ㄈ",
+      "cn": "衣服",
+      "en": "Yaf"
     },
     {
       "englishPair": "VE",
       "bopomofoPair": "ㄧㄉ",
       "firstTarget": "ㄧ",
-      "secondTarget": "ㄉ"
+      "secondTarget": "ㄉ",
+      "cn": "一刀",
+      "en": "Yed"
     },
     {
       "englishPair": "VF",
       "bopomofoPair": "ㄧㄊ",
       "firstTarget": "ㄧ",
-      "secondTarget": "ㄊ"
+      "secondTarget": "ㄊ",
+      "cn": "一天",
+      "en": "Yet"
     },
     {
       "englishPair": "VG",
       "bopomofoPair": "ㄧㄋ",
       "firstTarget": "ㄧ",
-      "secondTarget": "ㄋ"
+      "secondTarget": "ㄋ",
+      "cn": "一年",
+      "en": "Yeno"
     },
     {
       "englishPair": "VH",
       "bopomofoPair": "ㄧㄌ",
       "firstTarget": "ㄧ",
-      "secondTarget": "ㄌ"
+      "secondTarget": "ㄌ",
+      "cn": "醫療",
+      "en": "Yail"
     },
     {
       "englishPair": "VI",
       "bopomofoPair": "ㄧㄍ",
       "firstTarget": "ㄧ",
-      "secondTarget": "ㄍ"
+      "secondTarget": "ㄍ",
+      "cn": "陽光",
+      "en": "Yag"
     },
     {
       "englishPair": "VJ",
       "bopomofoPair": "ㄧㄎ",
       "firstTarget": "ㄧ",
-      "secondTarget": "ㄎ"
+      "secondTarget": "ㄎ",
+      "cn": "遊客",
+      "en": "Yike"
     },
     {
       "englishPair": "VK",
       "bopomofoPair": "ㄧㄏ",
       "firstTarget": "ㄧ",
-      "secondTarget": "ㄏ"
+      "secondTarget": "ㄏ",
+      "cn": "櫻花",
+      "en": "Yhow"
     },
     {
       "englishPair": "VL",
       "bopomofoPair": "ㄧㄐ",
       "firstTarget": "ㄧ",
-      "secondTarget": "ㄐ"
+      "secondTarget": "ㄐ",
+      "cn": "眼鏡",
+      "en": "Yill"
     },
     {
       "englishPair": "VM",
       "bopomofoPair": "ㄧㄑ",
       "firstTarget": "ㄧ",
-      "secondTarget": "ㄑ"
+      "secondTarget": "ㄑ",
+      "cn": "雨傘",
+      "en": "Yim"
     },
     {
       "englishPair": "VN",
       "bopomofoPair": "ㄧㄒ",
       "firstTarget": "ㄧ",
-      "secondTarget": "ㄒ"
+      "secondTarget": "ㄒ",
+      "cn": "英雄",
+      "en": "Yin"
     },
     {
       "englishPair": "VO",
       "bopomofoPair": "ㄧㄓ",
       "firstTarget": "ㄧ",
-      "secondTarget": "ㄓ"
+      "secondTarget": "ㄓ",
+      "cn": "影子",
+      "en": "Yoad"
     },
     {
       "englishPair": "VP",
       "bopomofoPair": "ㄧㄔ",
       "firstTarget": "ㄧ",
-      "secondTarget": "ㄔ"
+      "secondTarget": "ㄔ",
+      "cn": "遊艇",
+      "en": "Yop"
     },
     {
       "englishPair": "VQ",
       "bopomofoPair": "ㄧㄕ",
       "firstTarget": "ㄧ",
-      "secondTarget": "ㄕ"
+      "secondTarget": "ㄕ",
+      "cn": "醫生",
+      "en": "Yash"
     },
     {
       "englishPair": "VR",
       "bopomofoPair": "ㄧㄖ",
       "firstTarget": "ㄧ",
-      "secondTarget": "ㄖ"
+      "secondTarget": "ㄖ",
+      "cn": "一人",
+      "en": "Year"
     },
     {
       "englishPair": "VS",
       "bopomofoPair": "ㄧㄗ",
       "firstTarget": "ㄧ",
-      "secondTarget": "ㄗ"
+      "secondTarget": "ㄗ",
+      "cn": "椅子",
+      "en": "Yaze"
     },
     {
       "englishPair": "VT",
       "bopomofoPair": "ㄧㄘ",
       "firstTarget": "ㄧ",
-      "secondTarget": "ㄘ"
+      "secondTarget": "ㄘ",
+      "cn": "一次",
+      "en": "Yit"
     },
     {
       "englishPair": "VU",
       "bopomofoPair": "ㄧㄙ",
       "firstTarget": "ㄧ",
-      "secondTarget": "ㄙ"
+      "secondTarget": "ㄙ",
+      "cn": "一絲",
+      "en": "Yud"
     },
     {
       "englishPair": "VW",
       "bopomofoPair": "ㄧㄨ",
       "firstTarget": "ㄧ",
-      "secondTarget": "ㄨ"
+      "secondTarget": "ㄨ",
+      "cn": "英文",
+      "en": "Yew"
     },
     {
       "englishPair": "VX",
       "bopomofoPair": "ㄧㄩ",
       "firstTarget": "ㄧ",
-      "secondTarget": "ㄩ"
+      "secondTarget": "ㄩ",
+      "cn": "魷魚",
+      "en": "Yux"
     },
     {
       "englishPair": "WA",
       "bopomofoPair": "ㄨㄅ",
       "firstTarget": "ㄨ",
-      "secondTarget": "ㄅ"
+      "secondTarget": "ㄅ",
+      "cn": "外包",
+      "en": "Wab"
     },
     {
       "englishPair": "WB",
       "bopomofoPair": "ㄨㄆ",
       "firstTarget": "ㄨ",
-      "secondTarget": "ㄆ"
+      "secondTarget": "ㄆ",
+      "cn": "網球",
+      "en": "Wope"
     },
     {
       "englishPair": "WC",
       "bopomofoPair": "ㄨㄇ",
       "firstTarget": "ㄨ",
-      "secondTarget": "ㄇ"
+      "secondTarget": "ㄇ",
+      "cn": "外貌",
+      "en": "Wame"
     },
     {
       "englishPair": "WD",
       "bopomofoPair": "ㄨㄈ",
       "firstTarget": "ㄨ",
-      "secondTarget": "ㄈ"
+      "secondTarget": "ㄈ",
+      "cn": "物防",
+      "en": "Waf"
     },
     {
       "englishPair": "WE",
       "bopomofoPair": "ㄨㄉ",
       "firstTarget": "ㄨ",
-      "secondTarget": "ㄉ"
+      "secondTarget": "ㄉ",
+      "cn": "溫度",
+      "en": "Wed"
     },
     {
       "englishPair": "WF",
       "bopomofoPair": "ㄨㄊ",
       "firstTarget": "ㄨ",
-      "secondTarget": "ㄊ"
+      "secondTarget": "ㄊ",
+      "cn": "網貼",
+      "en": "Wet"
     },
     {
       "englishPair": "WG",
       "bopomofoPair": "ㄨㄋ",
       "firstTarget": "ㄨ",
-      "secondTarget": "ㄋ"
+      "secondTarget": "ㄋ",
+      "cn": "外男",
+      "en": "Weno"
     },
     {
       "englishPair": "WH",
       "bopomofoPair": "ㄨㄌ",
       "firstTarget": "ㄨ",
-      "secondTarget": "ㄌ"
+      "secondTarget": "ㄌ",
+      "cn": "物料",
+      "en": "Wail"
     },
     {
       "englishPair": "WI",
       "bopomofoPair": "ㄨㄍ",
       "firstTarget": "ㄨ",
-      "secondTarget": "ㄍ"
+      "secondTarget": "ㄍ",
+      "cn": "網購",
+      "en": "Wag"
     },
     {
       "englishPair": "WJ",
       "bopomofoPair": "ㄨㄎ",
       "firstTarget": "ㄨ",
-      "secondTarget": "ㄎ"
+      "secondTarget": "ㄎ",
+      "cn": "網卡",
+      "en": "Wike"
     },
     {
       "englishPair": "WK",
       "bopomofoPair": "ㄨㄏ",
       "firstTarget": "ㄨ",
-      "secondTarget": "ㄏ"
+      "secondTarget": "ㄏ",
+      "cn": "文化",
+      "en": "Whow"
     },
     {
       "englishPair": "WL",
       "bopomofoPair": "ㄨㄐ",
       "firstTarget": "ㄨ",
-      "secondTarget": "ㄐ"
+      "secondTarget": "ㄐ",
+      "cn": "玩具",
+      "en": "Will"
     },
     {
       "englishPair": "WM",
       "bopomofoPair": "ㄨㄑ",
       "firstTarget": "ㄨ",
-      "secondTarget": "ㄑ"
+      "secondTarget": "ㄑ",
+      "cn": "網球",
+      "en": "Wim"
     },
     {
       "englishPair": "WN",
       "bopomofoPair": "ㄨㄒ",
       "firstTarget": "ㄨ",
-      "secondTarget": "ㄒ"
+      "secondTarget": "ㄒ",
+      "cn": "無限",
+      "en": "Win"
     },
     {
       "englishPair": "WO",
       "bopomofoPair": "ㄨㄓ",
       "firstTarget": "ㄨ",
-      "secondTarget": "ㄓ"
+      "secondTarget": "ㄓ",
+      "cn": "外人",
+      "en": "Woad"
     },
     {
       "englishPair": "WP",
       "bopomofoPair": "ㄨㄔ",
       "firstTarget": "ㄨ",
-      "secondTarget": "ㄔ"
+      "secondTarget": "ㄔ",
+      "cn": "網車",
+      "en": "Wop"
     },
     {
       "englishPair": "WQ",
       "bopomofoPair": "ㄨㄕ",
       "firstTarget": "ㄨ",
-      "secondTarget": "ㄕ"
+      "secondTarget": "ㄕ",
+      "cn": "外手",
+      "en": "Wash"
     },
     {
       "englishPair": "WR",
       "bopomofoPair": "ㄨㄖ",
       "firstTarget": "ㄨ",
-      "secondTarget": "ㄖ"
+      "secondTarget": "ㄖ",
+      "cn": "網人",
+      "en": "Wear"
     },
     {
       "englishPair": "WS",
       "bopomofoPair": "ㄨㄗ",
       "firstTarget": "ㄨ",
-      "secondTarget": "ㄗ"
+      "secondTarget": "ㄗ",
+      "cn": "襪子",
+      "en": "Waze"
     },
     {
       "englishPair": "WT",
       "bopomofoPair": "ㄨㄘ",
       "firstTarget": "ㄨ",
-      "secondTarget": "ㄘ"
+      "secondTarget": "ㄘ",
+      "cn": "外側",
+      "en": "Wit"
     },
     {
       "englishPair": "WU",
       "bopomofoPair": "ㄨㄙ",
       "firstTarget": "ㄨ",
-      "secondTarget": "ㄙ"
+      "secondTarget": "ㄙ",
+      "cn": "外送",
+      "en": "Wud"
     },
     {
       "englishPair": "WV",
       "bopomofoPair": "ㄨㄧ",
       "firstTarget": "ㄨ",
-      "secondTarget": "ㄧ"
+      "secondTarget": "ㄧ",
+      "cn": "外衣",
+      "en": "Wive"
     },
     {
       "englishPair": "WX",
       "bopomofoPair": "ㄨㄩ",
       "firstTarget": "ㄨ",
-      "secondTarget": "ㄩ"
+      "secondTarget": "ㄩ",
+      "cn": "烏魚",
+      "en": "Wux"
     },
     {
       "englishPair": "XA",
       "bopomofoPair": "ㄩㄅ",
       "firstTarget": "ㄩ",
-      "secondTarget": "ㄅ"
+      "secondTarget": "ㄅ",
+      "cn": "魚包",
+      "en": "Yub"
     },
     {
       "englishPair": "XB",
       "bopomofoPair": "ㄩㄆ",
       "firstTarget": "ㄩ",
-      "secondTarget": "ㄆ"
+      "secondTarget": "ㄆ",
+      "cn": "雲海",
+      "en": "Yuope"
     },
     {
       "englishPair": "XC",
       "bopomofoPair": "ㄩㄇ",
       "firstTarget": "ㄩ",
-      "secondTarget": "ㄇ"
+      "secondTarget": "ㄇ",
+      "cn": "羽毛",
+      "en": "Yume"
     },
     {
       "englishPair": "XD",
       "bopomofoPair": "ㄩㄈ",
       "firstTarget": "ㄩ",
-      "secondTarget": "ㄈ"
+      "secondTarget": "ㄈ",
+      "cn": "預防",
+      "en": "Yuf"
     },
     {
       "englishPair": "XE",
       "bopomofoPair": "ㄩㄉ",
       "firstTarget": "ㄩ",
-      "secondTarget": "ㄉ"
+      "secondTarget": "ㄉ",
+      "cn": "運動",
+      "en": "Yud"
     },
     {
       "englishPair": "XF",
       "bopomofoPair": "ㄩㄊ",
       "firstTarget": "ㄩ",
-      "secondTarget": "ㄊ"
+      "secondTarget": "ㄊ",
+      "cn": "魚貼",
+      "en": "Yut"
     },
     {
       "englishPair": "XG",
       "bopomofoPair": "ㄩㄋ",
       "firstTarget": "ㄩ",
-      "secondTarget": "ㄋ"
+      "secondTarget": "ㄋ",
+      "cn": "雨男",
+      "en": "Yune"
     },
     {
       "englishPair": "XH",
       "bopomofoPair": "ㄩㄌ",
       "firstTarget": "ㄩ",
-      "secondTarget": "ㄌ"
+      "secondTarget": "ㄌ",
+      "cn": "魚鱗",
+      "en": "Yail"
     },
     {
       "englishPair": "XI",
       "bopomofoPair": "ㄩㄍ",
       "firstTarget": "ㄩ",
-      "secondTarget": "ㄍ"
+      "secondTarget": "ㄍ",
+      "cn": "月光",
+      "en": "Yug"
     },
     {
       "englishPair": "XJ",
       "bopomofoPair": "ㄩㄎ",
       "firstTarget": "ㄩ",
-      "secondTarget": "ㄎ"
+      "secondTarget": "ㄎ",
+      "cn": "魚缸",
+      "en": "Yuke"
     },
     {
       "englishPair": "XK",
       "bopomofoPair": "ㄩㄏ",
       "firstTarget": "ㄩ",
-      "secondTarget": "ㄏ"
+      "secondTarget": "ㄏ",
+      "cn": "雨傘",
+      "en": "Yhow"
     },
     {
       "englishPair": "XL",
       "bopomofoPair": "ㄩㄐ",
       "firstTarget": "ㄩ",
-      "secondTarget": "ㄐ"
+      "secondTarget": "ㄐ",
+      "cn": "玉佩",
+      "en": "Yull"
     },
     {
       "englishPair": "XM",
       "bopomofoPair": "ㄩㄑ",
       "firstTarget": "ㄩ",
-      "secondTarget": "ㄑ"
+      "secondTarget": "ㄑ",
+      "cn": "玉器",
+      "en": "Yum"
     },
     {
       "englishPair": "XN",
       "bopomofoPair": "ㄩㄒ",
       "firstTarget": "ㄩ",
-      "secondTarget": "ㄒ"
+      "secondTarget": "ㄒ",
+      "cn": "預期",
+      "en": "Yun"
     },
     {
       "englishPair": "XO",
       "bopomofoPair": "ㄩㄓ",
       "firstTarget": "ㄩ",
-      "secondTarget": "ㄓ"
+      "secondTarget": "ㄓ",
+      "cn": "原子",
+      "en": "Yuoad"
     },
     {
       "englishPair": "XP",
       "bopomofoPair": "ㄩㄔ",
       "firstTarget": "ㄩ",
-      "secondTarget": "ㄔ"
+      "secondTarget": "ㄔ",
+      "cn": "遊艇",
+      "en": "Yuop"
     },
     {
       "englishPair": "XQ",
       "bopomofoPair": "ㄩㄕ",
       "firstTarget": "ㄩ",
-      "secondTarget": "ㄕ"
+      "secondTarget": "ㄕ",
+      "cn": "月球",
+      "en": "Yush"
     },
     {
       "englishPair": "XR",
       "bopomofoPair": "ㄩㄖ",
       "firstTarget": "ㄩ",
-      "secondTarget": "ㄖ"
+      "secondTarget": "ㄖ",
+      "cn": "魚人",
+      "en": "Yur"
     },
     {
       "englishPair": "XS",
       "bopomofoPair": "ㄩㄗ",
       "firstTarget": "ㄩ",
-      "secondTarget": "ㄗ"
+      "secondTarget": "ㄗ",
+      "cn": "原子",
+      "en": "Yuze"
     },
     {
       "englishPair": "XT",
       "bopomofoPair": "ㄩㄘ",
       "firstTarget": "ㄩ",
-      "secondTarget": "ㄘ"
+      "secondTarget": "ㄘ",
+      "cn": "預測",
+      "en": "Yut"
     },
     {
       "englishPair": "XU",
       "bopomofoPair": "ㄩㄙ",
       "firstTarget": "ㄩ",
-      "secondTarget": "ㄙ"
+      "secondTarget": "ㄙ",
+      "cn": "雨傘",
+      "en": "Yuud"
     },
     {
       "englishPair": "XV",
       "bopomofoPair": "ㄩㄧ",
       "firstTarget": "ㄩ",
-      "secondTarget": "ㄧ"
+      "secondTarget": "ㄧ",
+      "cn": "預算",
+      "en": "Yuive"
     },
     {
       "englishPair": "XW",
       "bopomofoPair": "ㄩㄨ",
       "firstTarget": "ㄩ",
-      "secondTarget": "ㄨ"
+      "secondTarget": "ㄨ",
+      "cn": "雨衣",
+      "en": "Yuw"
     }
   ]
 }

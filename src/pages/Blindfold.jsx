@@ -4,6 +4,9 @@ import bopomofoData from '../data/bopomofoMap.json'
 import { Brain, Search, Award, HelpCircle, Eye, RotateCw, Edit3, Save, Languages, ListFilter } from 'lucide-react'
 import { fetchBldMemosFromDb, saveBldMemoToDb } from '../utils/db'
 import { useAuth } from '../context/AuthContext'
+import CubePreview from '../components/CubePreview'
+import { Cube3x3, traceCorners, traceEdges, generateRandomScramble } from '../utils/bldTracer'
+
 
 // Clean letters (e.g. "A (UB)" -> "A")
 const getLetter = (keyStr) => keyStr ? keyStr.split(' ')[0] : ''
@@ -17,6 +20,17 @@ const cornerColKeys = cornerRowKeys
 // Translation helper
 const toBopomofo = (letter) => {
   return bopomofoData.charMap[letter] || letter
+}
+
+// Get default memo helper
+const getDefaultMemo = (pair, useBopomofo = true) => {
+  if (!pair) return ''
+  if (pair.length < 2) {
+    return useBopomofo ? toBopomofo(pair) : pair
+  }
+  const match = bopomofoData.pairs.find(p => p.englishPair === pair)
+  if (!match) return ''
+  return useBopomofo ? match.cn : match.en
 }
 
 // Get current formula from selectors
@@ -137,7 +151,7 @@ const Blindfold = () => {
       const searchLower = editorSearchQuery.toLowerCase()
       
       const savedMemoObj = memos.find(m => m.letter_pair === p.pair && m.type === p.type)
-      const memoText = savedMemoObj?.memo_text || ''
+      const memoText = savedMemoObj?.memo_text || getDefaultMemo(p.pair, useBopomofo)
 
       const matchesSearch = 
         p.pair.toLowerCase().includes(searchLower) ||
@@ -180,6 +194,11 @@ const Blindfold = () => {
   const [showTrainerFormula, setShowTrainerFormula] = useState(false)
   const [correctCount, setCorrectCount] = useState(0)
   const [totalCount, setTotalCount] = useState(0)
+
+  // Tracing Trainer state
+  const [quizScramble, setQuizScramble] = useState('')
+  const [quizEdgeTrace, setQuizEdgeTrace] = useState([])
+  const [quizCornerTrace, setQuizCornerTrace] = useState([])
   
   const { user } = useAuth()
 
@@ -192,10 +211,47 @@ const Blindfold = () => {
     setMemos(data)
   }
 
-  // Get current memo for the active pair
+  // Format tracing route output as pairs
+  const formatTracingOutput = (traceArr, useZh = false) => {
+    const pairs = []
+    for (let i = 0; i < traceArr.length; i += 2) {
+      const p1 = traceArr[i]
+      const p2 = traceArr[i+1] || ''
+      const displayStr = useZh 
+        ? `${toBopomofo(p1)}${p2 ? toBopomofo(p2) : ''}`
+        : `${p1}${p2}`
+      pairs.push(displayStr)
+    }
+    return pairs.map((p, idx) => (
+      <span key={idx} className="bg-brand-gray-100 dark:bg-brand-gray-900 px-2 py-0.5 rounded-lg text-xs font-bold text-black dark:text-white border border-brand-gray-200 dark:border-brand-gray-800">
+        {p}
+      </span>
+    ))
+  }
+
+  // Get matching memory words for trace array
+  const getTracingMemos = (traceArr, type) => {
+    const words = []
+    for (let i = 0; i < traceArr.length; i += 2) {
+      const p1 = traceArr[i]
+      const p2 = traceArr[i+1] || ''
+      if (p2) {
+        const pairKey = `${p1}${p2}`
+        const saved = memos.find(m => m.letter_pair === pairKey && m.type === type)?.memo_text
+        const displayWord = saved || getDefaultMemo(pairKey, useBopomofo)
+        words.push(displayWord ? `"${displayWord}"` : `(${pairKey})`)
+      } else {
+        // Odd target (parity/single letter)
+        const displayWord = useBopomofo ? toBopomofo(p1) : p1
+        words.push(`[${displayWord}]`)
+      }
+    }
+    return words.join(' ➔ ')
+  }
+
   const currentMemo = memos.find(
     (m) => m.letter_pair === `${rowTarget}${colTarget}` && m.type === bldType
-  )?.memo_text || ''
+  )?.memo_text || getDefaultMemo(`${rowTarget}${colTarget}`, useBopomofo)
 
   useEffect(() => {
     setMemoText(currentMemo)
@@ -222,6 +278,19 @@ const Blindfold = () => {
   const generateNextQuiz = () => {
     setShowTrainerFormula(false)
     setNewMemoInput('')
+
+    if (trainerTab === 'tracing') {
+      const scramble = generateRandomScramble()
+      const cube = new Cube3x3()
+      cube.applyScramble(scramble)
+      const eTrace = traceEdges(cube)
+      const cTrace = traceCorners(cube)
+      setQuizScramble(scramble)
+      setQuizEdgeTrace(eTrace)
+      setQuizCornerTrace(cTrace)
+      return
+    }
+
     let selectedRow = ''
     let selectedCol = ''
     let selectedFormula = ''
@@ -284,7 +353,7 @@ const Blindfold = () => {
 
   const quizMemo = memos.find(
     (m) => m.letter_pair === quizPair.engPair && m.type === bldType
-  )?.memo_text || ''
+  )?.memo_text || getDefaultMemo(quizPair.engPair, useBopomofo)
 
   // Letter selector lists
   const currentLetters = bldType === 'edges' 
@@ -417,7 +486,7 @@ const Blindfold = () => {
               <tbody>
                 {paginatedPairs.length > 0 ? (
                   paginatedPairs.map(item => {
-                    const initialMemo = memos.find(m => m.letter_pair === item.pair && m.type === item.type)?.memo_text || ''
+                    const initialMemo = memos.find(m => m.letter_pair === item.pair && m.type === item.type)?.memo_text || getDefaultMemo(item.pair, useBopomofo)
                     return (
                       <EditorRow
                         key={`${item.type}-${item.pair}`}
@@ -602,6 +671,16 @@ const Blindfold = () => {
                 >
                   編碼刻意練習
                 </button>
+                <button
+                  onClick={() => { setTrainerTab('tracing'); setTrainerActive(false); }}
+                  className={`py-1 px-3 rounded-lg text-[10px] font-bold transition-all ${
+                    trainerTab === 'tracing'
+                      ? 'bg-white dark:bg-black text-black dark:text-white shadow-sm'
+                      : 'text-brand-gray-400 hover:text-brand-gray-600 dark:hover:text-brand-gray-300'
+                  }`}
+                >
+                  追蹤步驟練習
+                </button>
               </div>
             </div>
 
@@ -640,12 +719,17 @@ const Blindfold = () => {
               <HelpCircle className="w-12 h-12 text-brand-gray-300 mx-auto" />
               <div className="space-y-1">
                 <p className="text-sm font-bold">
-                  {trainerTab === 'comms' ? '準備好抽測公式了嗎？' : '準備好背記憶編碼了嗎？'}
+                  {trainerTab === 'comms' 
+                    ? '準備好抽測公式了嗎？' 
+                    : (trainerTab === 'memos' ? '準備好背記憶編碼了嗎？' : '準備好練習 Tracing 追蹤了嗎？')}
                 </p>
                 <p className="text-xs text-brand-gray-400 max-w-xs mx-auto">
                   {trainerTab === 'comms' 
                     ? `系統將會隨機抽測 [ ${bldType === 'edges' ? '邊塊' : (bldType === 'corners' ? '角塊' : '奇偶')} ] 的 Commutator 公式步驟。`
-                    : `加倍強化您的編碼記憶速度，考驗注音字母與助記詞的直覺聯想。`
+                    : (trainerTab === 'memos'
+                        ? '加倍強化您的編碼記憶速度，考驗注音字母與助記詞的直覺聯想。'
+                        : '系統將隨機產生 3x3 打亂，考驗您寫下/想出正確的邊塊與角塊 Tracing 字母路徑與聯想詞對照的能力。'
+                      )
                   }
                 </p>
               </div>
@@ -663,8 +747,9 @@ const Blindfold = () => {
                 <span className="text-[10px] text-brand-gray-400 uppercase tracking-widest font-extrabold block">
                   {trainerTab === 'comms' 
                     ? '請在腦中回想公式' 
-                    : (memoDirection === 'pairToWord' ? '請回想此組合的助記文字' : '請回想對應的字母注音組合')
-                  }
+                    : (trainerTab === 'memos' 
+                        ? (memoDirection === 'pairToWord' ? '請回想此組合的助記文字' : '請回想對應的字母注音組合')
+                        : '請寫下/回想邊塊與角塊的 Tracing 路徑')}
                 </span>
 
                 {/* Trainer Tab Comms display */}
@@ -707,6 +792,16 @@ const Blindfold = () => {
                     )}
                   </div>
                 )}
+                {trainerTab === 'tracing' && (
+                  <div className="space-y-4">
+                    <div className="bg-brand-gray-50 dark:bg-brand-gray-950 p-3 rounded-2xl border border-brand-gray-150 dark:border-brand-gray-900 text-xs font-mono font-bold break-words leading-relaxed select-all">
+                      打亂公式: {quizScramble}
+                    </div>
+                    <div className="flex justify-center my-2 max-w-[240px] mx-auto">
+                      <CubePreview scramble={quizScramble} puzzleType="333" />
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* Show / Hide answer container */}
@@ -719,7 +814,7 @@ const Blindfold = () => {
                       <code className="text-sm font-mono font-extrabold text-black dark:text-white bg-brand-gray-50 dark:bg-brand-gray-950 p-3 rounded-2xl block border border-brand-gray-250 dark:border-brand-gray-900 break-words leading-relaxed select-all">
                         {quizPair.formula}
                       </code>
-                    ) : (
+                    ) : trainerTab === 'memos' ? (
                       /* Memos Trainer Answer Display */
                       <div className="space-y-3 bg-brand-gray-50 dark:bg-brand-gray-950 border border-brand-gray-200 dark:border-brand-gray-900 rounded-3xl p-4 text-xs">
                         <div className="flex justify-between items-center text-brand-gray-400">
@@ -749,6 +844,63 @@ const Blindfold = () => {
                           >
                             儲存
                           </button>
+                        </div>
+                      </div>
+                    ) : (
+                      /* Tracing Trainer Answer Display */
+                      <div className="space-y-4 bg-brand-gray-50 dark:bg-brand-gray-950 border border-brand-gray-200 dark:border-brand-gray-900 rounded-3xl p-4 text-xs text-left">
+                        {/* Edges Tracing */}
+                        <div className="space-y-1">
+                          <span className="text-[10px] text-brand-gray-400 uppercase font-extrabold block">邊塊 Tracing 路徑 (Buffer: UF)</span>
+                          <div className="p-3 bg-white dark:bg-black border border-brand-gray-150 dark:border-brand-gray-900 rounded-2xl">
+                            {quizEdgeTrace.length > 0 ? (
+                              <div className="space-y-2">
+                                <div className="flex flex-wrap gap-1.5 items-center">
+                                  <span className="text-[9px] font-bold text-brand-gray-400 w-10">字母對:</span>
+                                  {formatTracingOutput(quizEdgeTrace, false)}
+                                </div>
+                                <div className="flex flex-wrap gap-1.5 items-center pt-1.5 border-t border-dashed border-brand-gray-100 dark:border-brand-gray-900">
+                                  <span className="text-[9px] font-bold text-brand-gray-400 w-10">注音對:</span>
+                                  {formatTracingOutput(quizEdgeTrace, true)}
+                                </div>
+                                <div className="flex flex-wrap gap-1.5 items-center pt-1.5 border-t border-dashed border-brand-gray-100 dark:border-brand-gray-900">
+                                  <span className="text-[9px] font-bold text-brand-gray-400 w-10">記憶詞:</span>
+                                  <span className="text-xs font-bold text-brand-gray-600 dark:text-brand-gray-300">
+                                    {getTracingMemos(quizEdgeTrace, 'edges')}
+                                  </span>
+                                </div>
+                              </div>
+                            ) : (
+                              <span className="text-brand-gray-400 font-bold italic">無須還原 (已在 Solved 狀態)</span>
+                            )}
+                          </div>
+                        </div>
+
+                        {/* Corners Tracing */}
+                        <div className="space-y-1">
+                          <span className="text-[10px] text-brand-gray-400 uppercase font-extrabold block">角塊 Tracing 路徑 (Buffer: UFR)</span>
+                          <div className="p-3 bg-white dark:bg-black border border-brand-gray-150 dark:border-brand-gray-900 rounded-2xl">
+                            {quizCornerTrace.length > 0 ? (
+                              <div className="space-y-2">
+                                <div className="flex flex-wrap gap-1.5 items-center">
+                                  <span className="text-[9px] font-bold text-brand-gray-400 w-10">字母對:</span>
+                                  {formatTracingOutput(quizCornerTrace, false)}
+                                </div>
+                                <div className="flex flex-wrap gap-1.5 items-center pt-1.5 border-t border-dashed border-brand-gray-100 dark:border-brand-gray-900">
+                                  <span className="text-[9px] font-bold text-brand-gray-400 w-10">注音對:</span>
+                                  {formatTracingOutput(quizCornerTrace, true)}
+                                </div>
+                                <div className="flex flex-wrap gap-1.5 items-center pt-1.5 border-t border-dashed border-brand-gray-100 dark:border-brand-gray-900">
+                                  <span className="text-[9px] font-bold text-brand-gray-400 w-10">記憶詞:</span>
+                                  <span className="text-xs font-bold text-brand-gray-600 dark:text-brand-gray-300">
+                                    {getTracingMemos(quizCornerTrace, 'corners')}
+                                  </span>
+                                </div>
+                              </div>
+                            ) : (
+                              <span className="text-brand-gray-400 font-bold italic">無須還原 (已在 Solved 狀態)</span>
+                            )}
+                          </div>
                         </div>
                       </div>
                     )}

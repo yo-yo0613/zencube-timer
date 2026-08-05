@@ -51,13 +51,20 @@ const generate333Scramble = () => {
   return scramble.join(' ')
 }
 
-// Big Cubes Scrambler (4x4x4: 40 moves, 5x5x5: 60 moves, 6x6x6: 80 moves, 7x7x7: 100 moves)
-const generateBigCubeScramble = (movesCount, includeDoubleLayers) => {
-  const baseFaces = ['R', 'L', 'U', 'D', 'F', 'B']
+// WCA Standard Big Cubes Scrambler (4x4x4: 40 moves, 5x5x5: 60 moves, 6x6x6: 80 moves, 7x7x7: 100 moves)
+const generateBigCubeScramble = (size) => {
+  const movesCountMap = { 4: 40, 5: 60, 6: 80, 7: 100 }
+  const movesCount = movesCountMap[size] || 40
+  const maxDepthMap = { 4: 2, 5: 2, 6: 3, 7: 3 }
+  const maxDepth = maxDepthMap[size] || 2
+
+  const baseFaces = ['U', 'D', 'L', 'R', 'F', 'B']
   const modifiers = ['', "'", '2']
   const scramble = []
-  let prevAxis = -1
+  
   let prevFace = -1
+  let prevAxis = -1
+  let axisCount = 0
 
   for (let i = 0; i < movesCount; i++) {
     let faceIdx, axisIdx
@@ -65,37 +72,33 @@ const generateBigCubeScramble = (movesCount, includeDoubleLayers) => {
       faceIdx = Math.floor(Math.random() * baseFaces.length)
       axisIdx = Math.floor(faceIdx / 2)
     } while (
-      axisIdx === prevAxis && 
-      (faceIdx === prevFace || 
-        (scramble.length > 1 && 
-         Math.floor(baseFaces.indexOf(scramble[scramble.length - 2].charAt(0)) / 2) === axisIdx)
-      )
+      faceIdx === prevFace ||
+      (axisIdx === prevAxis && axisCount >= 2)
     )
 
-    // Decide turn layer: Outer (R), Double (Rw), or Triple for 6x6/7x7 (3Rw)
-    let layerPrefix = ''
-    if (includeDoubleLayers) {
-      const rand = Math.random()
-      if (rand < 0.35) {
-        layerPrefix = 'w' // e.g. Rw
-      } else if (movesCount >= 80 && rand < 0.5) {
-        layerPrefix = '3' // 3Rw for 6x6 / 7x7
-      }
+    if (axisIdx === prevAxis) {
+      axisCount++
+    } else {
+      prevAxis = axisIdx
+      axisCount = 1
     }
+    prevFace = faceIdx
 
+    // Equal probability for each layer depth (1, 2, or 3)
+    const depth = Math.floor(Math.random() * maxDepth) + 1
     const faceLetter = baseFaces[faceIdx]
     const modifier = modifiers[Math.floor(Math.random() * modifiers.length)]
-    
-    if (layerPrefix === '3') {
-      scramble.push(`3${faceLetter}w${modifier}`)
-    } else if (layerPrefix === 'w') {
-      scramble.push(`${faceLetter}w${modifier}`)
+
+    let moveStr = ''
+    if (depth === 1) {
+      moveStr = `${faceLetter}${modifier}`
+    } else if (depth === 2) {
+      moveStr = `${faceLetter}w${modifier}`
     } else {
-      scramble.push(faceLetter + modifier)
+      moveStr = `3${faceLetter}w${modifier}`
     }
 
-    prevAxis = axisIdx
-    prevFace = faceIdx
+    scramble.push(moveStr)
   }
   return scramble.join(' ')
 }
@@ -240,13 +243,13 @@ export const generateScramble = (type = '333') => {
     case '333':
       return generate333Scramble()
     case '444':
-      return generateBigCubeScramble(40, true)
+      return generateBigCubeScramble(4)
     case '555':
-      return generateBigCubeScramble(60, true)
+      return generateBigCubeScramble(5)
     case '666':
-      return generateBigCubeScramble(80, true)
+      return generateBigCubeScramble(6)
     case '777':
-      return generateBigCubeScramble(100, true)
+      return generateBigCubeScramble(7)
     case 'pyram':
       return generatePyraminxScramble()
     case 'skewb':

@@ -139,12 +139,27 @@ export class Cube3x3 {
   }
 }
 
-export function traceCorners(cube) {
+export const edgeBufferOptions = [
+  { index: 2, code: 'UF', name: 'UF (C/I - 3-Style)' },
+  { index: 8, code: 'DF', name: 'DF (U/K - M2)' },
+  { index: 0, code: 'UB', name: 'UB (A/Q)' },
+  { index: 3, code: 'UL', name: 'UL (D/E)' },
+  { index: 1, code: 'UR', name: 'UR (B/M)' }
+];
+
+export const cornerBufferOptions = [
+  { index: 2, code: 'UFR', name: 'UFR (C/M/J - 3-Style)' },
+  { index: 0, code: 'UBL', name: 'UBL (A/E/R - OP)' },
+  { index: 3, code: 'UFL', name: 'UFL (D/I/F)' },
+  { index: 1, code: 'UBR', name: 'UBR (B/Q/N)' }
+];
+
+export function traceCorners(cube, bufferIndex = 2) {
   const visited = new Set();
   const targets = [];
-  visited.add(2);
+  visited.add(bufferIndex);
   
-  let currentPos = 2;
+  let currentPos = bufferIndex;
   let currentOrient = 0;
   
   while (true) {
@@ -160,7 +175,7 @@ export function traceCorners(cube) {
       }
     }
     
-    if (targetPiece === 2) break;
+    if (targetPiece === bufferIndex) break;
     
     targets.push(label);
     visited.add(targetPiece);
@@ -203,12 +218,12 @@ export function traceCorners(cube) {
   return targets;
 }
 
-export function traceEdges(cube) {
+export function traceEdges(cube, bufferIndex = 2) {
   const visited = new Set();
   const targets = [];
-  visited.add(2);
+  visited.add(bufferIndex);
   
-  let currentPos = 2;
+  let currentPos = bufferIndex;
   let currentOrient = 0;
   
   while (true) {
@@ -224,7 +239,7 @@ export function traceEdges(cube) {
       }
     }
     
-    if (targetPiece === 2) break;
+    if (targetPiece === bufferIndex) break;
     
     targets.push(label);
     visited.add(targetPiece);

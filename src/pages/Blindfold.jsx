@@ -5,7 +5,7 @@ import { Brain, Search, Award, HelpCircle, Eye, RotateCw, Edit3, Save, Languages
 import { fetchBldMemosFromDb, saveBldMemoToDb } from '../utils/db'
 import { useAuth } from '../context/AuthContext'
 import CubePreview from '../components/CubePreview'
-import { Cube3x3, traceCorners, traceEdges, generateRandomScramble } from '../utils/bldTracer'
+import { Cube3x3, traceCorners, traceEdges, generateRandomScramble, edgeBufferOptions, cornerBufferOptions } from '../utils/bldTracer'
 
 
 // Clean letters (e.g. "A (UB)" -> "A")
@@ -199,7 +199,74 @@ const Blindfold = () => {
   const [quizScramble, setQuizScramble] = useState('')
   const [quizEdgeTrace, setQuizEdgeTrace] = useState([])
   const [quizCornerTrace, setQuizCornerTrace] = useState([])
-  
+
+  // BLD Buffer Preferences State
+  const [bldPreset, setBldPreset] = useState(() => {
+    return localStorage.getItem('bld_buffer_preset') || '3style'
+  })
+  const [edgeBuffer, setEdgeBuffer] = useState(() => {
+    const saved = localStorage.getItem('bld_edge_buffer')
+    return saved !== null ? parseInt(saved, 10) : 2
+  })
+  const [cornerBuffer, setCornerBuffer] = useState(() => {
+    const saved = localStorage.getItem('bld_corner_buffer')
+    return saved !== null ? parseInt(saved, 10) : 2
+  })
+
+  const handlePresetChange = (preset) => {
+    setBldPreset(preset)
+    localStorage.setItem('bld_buffer_preset', preset)
+    if (preset === '3style') {
+      setEdgeBuffer(2)
+      setCornerBuffer(2)
+      localStorage.setItem('bld_edge_buffer', '2')
+      localStorage.setItem('bld_corner_buffer', '2')
+    } else if (preset === 'm2op') {
+      setEdgeBuffer(8) // DF (M2)
+      setCornerBuffer(0) // UBL (OP)
+      localStorage.setItem('bld_edge_buffer', '8')
+      localStorage.setItem('bld_corner_buffer', '0')
+    }
+  }
+
+  const handleCustomEdgeBufferChange = (idxStr) => {
+    const val = parseInt(idxStr, 10)
+    setEdgeBuffer(val)
+    setBldPreset('custom')
+    localStorage.setItem('bld_buffer_preset', 'custom')
+    localStorage.setItem('bld_edge_buffer', val.toString())
+  }
+
+  const handleCustomCornerBufferChange = (idxStr) => {
+    const val = parseInt(idxStr, 10)
+    setCornerBuffer(val)
+    setBldPreset('custom')
+    localStorage.setItem('bld_buffer_preset', 'custom')
+    localStorage.setItem('bld_corner_buffer', val.toString())
+  }
+
+  const getEdgeBufferCode = () => {
+    const opt = edgeBufferOptions.find(o => o.index === edgeBuffer)
+    return opt ? opt.code : 'UF'
+  }
+
+  const getCornerBufferCode = () => {
+    const opt = cornerBufferOptions.find(o => o.index === cornerBuffer)
+    return opt ? opt.code : 'UFR'
+  }
+
+  // Auto re-trace current scramble when buffer changes
+  useEffect(() => {
+    if (trainerTab === 'tracing' && quizScramble) {
+      const cube = new Cube3x3()
+      cube.applyScramble(quizScramble)
+      const eTrace = traceEdges(cube, edgeBuffer)
+      const cTrace = traceCorners(cube, cornerBuffer)
+      setQuizEdgeTrace(eTrace)
+      setQuizCornerTrace(cTrace)
+    }
+  }, [edgeBuffer, cornerBuffer])
+
   const { user } = useAuth()
 
   useEffect(() => {
@@ -283,8 +350,8 @@ const Blindfold = () => {
       const scramble = generateRandomScramble()
       const cube = new Cube3x3()
       cube.applyScramble(scramble)
-      const eTrace = traceEdges(cube)
-      const cTrace = traceCorners(cube)
+      const eTrace = traceEdges(cube, edgeBuffer)
+      const cTrace = traceCorners(cube, cornerBuffer)
       setQuizScramble(scramble)
       setQuizEdgeTrace(eTrace)
       setQuizCornerTrace(cTrace)
@@ -712,6 +779,77 @@ const Blindfold = () => {
                 </div>
               </div>
             )}
+
+            {/* Tracing practice configuration row */}
+            {trainerTab === 'tracing' && (
+              <div className="mb-4 space-y-2 text-left">
+                <span className="text-[10px] uppercase font-bold text-brand-gray-400 block">解法模式與 Buffer 起始位置:</span>
+                <div className="grid grid-cols-3 gap-1.5 bg-brand-gray-100 dark:bg-brand-gray-950 p-1 rounded-xl text-center">
+                  <button
+                    type="button"
+                    onClick={() => handlePresetChange('3style')}
+                    className={`py-1.5 rounded-lg text-[10px] font-bold transition-all ${
+                      bldPreset === '3style'
+                        ? 'bg-white dark:bg-black text-black dark:text-white shadow-sm'
+                        : 'text-brand-gray-400 hover:text-brand-gray-600 dark:hover:text-brand-gray-300'
+                    }`}
+                  >
+                    🔵 3-Style (UF/UFR)
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => handlePresetChange('m2op')}
+                    className={`py-1.5 rounded-lg text-[10px] font-bold transition-all ${
+                      bldPreset === 'm2op'
+                        ? 'bg-white dark:bg-black text-black dark:text-white shadow-sm'
+                        : 'text-brand-gray-400 hover:text-brand-gray-600 dark:hover:text-brand-gray-300'
+                    }`}
+                  >
+                    🟢 M2 / OP (DF/UBL)
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => handlePresetChange('custom')}
+                    className={`py-1.5 rounded-lg text-[10px] font-bold transition-all ${
+                      bldPreset === 'custom'
+                        ? 'bg-white dark:bg-black text-black dark:text-white shadow-sm'
+                        : 'text-brand-gray-400 hover:text-brand-gray-600 dark:hover:text-brand-gray-300'
+                    }`}
+                  >
+                    ⚙️ 自訂 Buffer
+                  </button>
+                </div>
+
+                {bldPreset === 'custom' && (
+                  <div className="grid grid-cols-2 gap-2 pt-1 animate-in fade-in duration-200">
+                    <div>
+                      <span className="text-[9px] font-extrabold text-brand-gray-400 block mb-1">邊塊 Buffer:</span>
+                      <select
+                        value={edgeBuffer}
+                        onChange={(e) => handleCustomEdgeBufferChange(e.target.value)}
+                        className="w-full text-xs font-bold bg-brand-gray-50 dark:bg-brand-gray-900 border border-brand-gray-200 dark:border-brand-gray-800 rounded-xl p-1.5 text-black dark:text-white outline-none"
+                      >
+                        {edgeBufferOptions.map(opt => (
+                          <option key={opt.index} value={opt.index}>{opt.name}</option>
+                        ))}
+                      </select>
+                    </div>
+                    <div>
+                      <span className="text-[9px] font-extrabold text-brand-gray-400 block mb-1">角塊 Buffer:</span>
+                      <select
+                        value={cornerBuffer}
+                        onChange={(e) => handleCustomCornerBufferChange(e.target.value)}
+                        className="w-full text-xs font-bold bg-brand-gray-50 dark:bg-brand-gray-900 border border-brand-gray-200 dark:border-brand-gray-800 rounded-xl p-1.5 text-black dark:text-white outline-none"
+                      >
+                        {cornerBufferOptions.map(opt => (
+                          <option key={opt.index} value={opt.index}>{opt.name}</option>
+                        ))}
+                      </select>
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
 
           {!trainerActive ? (
@@ -851,7 +989,7 @@ const Blindfold = () => {
                       <div className="space-y-4 bg-brand-gray-50 dark:bg-brand-gray-950 border border-brand-gray-200 dark:border-brand-gray-900 rounded-3xl p-4 text-xs text-left">
                         {/* Edges Tracing */}
                         <div className="space-y-1">
-                          <span className="text-[10px] text-brand-gray-400 uppercase font-extrabold block">邊塊 Tracing 路徑 (Buffer: UF)</span>
+                          <span className="text-[10px] text-brand-gray-400 uppercase font-extrabold block">邊塊 Tracing 路徑 (Buffer: {getEdgeBufferCode()}{bldPreset === 'm2op' ? ' - M2' : (bldPreset === '3style' ? ' - 3-Style' : '')})</span>
                           <div className="p-3 bg-white dark:bg-black border border-brand-gray-150 dark:border-brand-gray-900 rounded-2xl">
                             {quizEdgeTrace.length > 0 ? (
                               <div className="space-y-2">
@@ -878,7 +1016,7 @@ const Blindfold = () => {
 
                         {/* Corners Tracing */}
                         <div className="space-y-1">
-                          <span className="text-[10px] text-brand-gray-400 uppercase font-extrabold block">角塊 Tracing 路徑 (Buffer: UFR)</span>
+                          <span className="text-[10px] text-brand-gray-400 uppercase font-extrabold block">角塊 Tracing 路徑 (Buffer: {getCornerBufferCode()}{bldPreset === 'm2op' ? ' - OP' : (bldPreset === '3style' ? ' - 3-Style' : '')})</span>
                           <div className="p-3 bg-white dark:bg-black border border-brand-gray-150 dark:border-brand-gray-900 rounded-2xl">
                             {quizCornerTrace.length > 0 ? (
                               <div className="space-y-2">
